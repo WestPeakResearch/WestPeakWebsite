@@ -13,6 +13,7 @@
     "gatsby-plugin-sharp": "^2.6.27",
     "gatsby-plugin-typography": "^2.5.10",
     "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-remark": "^2.8.29",
     "gatsby-transformer-sharp": "^2.5.13",
     "imagemin-pngquant": "^5.0.1",
     "install": "^0.13.0",
@@ -21,10 +22,12 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-headroom": "^3.0.0",
     "react-helmet": "^6.1.0",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
-    "typography-theme-kirkham": "^0.16.19"
+    "typography-theme-kirkham": "^0.16.19",
+    "typography-theme-lincoln": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "2.0.5"

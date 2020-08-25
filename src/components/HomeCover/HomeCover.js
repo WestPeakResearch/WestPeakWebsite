@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import styles from "./Home.module.css"
+import styles from "./HomeCover.module.css"
 
 
 

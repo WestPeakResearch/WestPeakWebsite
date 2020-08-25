@@ -1,5 +1,6 @@
 
 .container{
+  padding-top:3rem;
   padding-bottom:5rem;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */ 

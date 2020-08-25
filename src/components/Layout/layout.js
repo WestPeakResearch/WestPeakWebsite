@@ -10,18 +10,21 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styles from "./layout.module.css"
 import NavBar from "../NavBar"
+import Footer from "../Footer"
+import Headroom from "react-headroom"
 
 const Layout = ({ children }) => {
 
   return (
     <>
+    <Headroom>
+    <NavBar />
+    </Headroom>
+    
       <div>
-        <NavBar />
         <main className = {styles.container}>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          Love by Hasan
+          <Footer />
         </footer>
       </div>
     </>

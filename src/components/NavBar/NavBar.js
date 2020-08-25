@@ -17,11 +17,13 @@ const ListLink = props => (
 
 const Links = props => (
   <ul>
+    <ListLink to="/">Home</ListLink>
     <ListLink to="/about">About</ListLink>
     <ListLink to="/team">Team</ListLink>
     <ListLink to="/research">Research</ListLink>
     <ListLink to="/hiring">Hiring</ListLink>
     <ListLink to="/placements">Placements</ListLink>
+    <ListLink to="/legal">Legal</ListLink>
   </ul>
 )
 

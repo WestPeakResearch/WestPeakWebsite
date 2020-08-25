@@ -67,11 +67,13 @@
     color: #a8b2d1;
     text-decoration: none;
     text-align:center;
+    font-weight: 700;
 }
 
 .navbar a:hover {
     color: #a5cbf1;
     transition: all 0.3s ease;
+    text-decoration:underline;
 }
   
   .navbar ul {
@@ -107,6 +109,7 @@
   }
 
   .navbarMobileMenu a {
+      font-size:2rem;;
       text-transform: uppercase;
       color: #58677e;
       text-decoration: none;
@@ -116,6 +119,7 @@
 .navbarMobileMenu a:hover {
   color: #a5cbf1;
   transition: all 0.3s ease;
+  text-decoration:underline;
 }
   
   .navbarMobileMenu ul {
@@ -129,7 +133,7 @@
   }
   
   .navbarMobileMenu li {
-    margin: 20px;
+    margin: 3rem;
     display: block;
   }
 
@@ -137,7 +141,7 @@
     display: none;
   }
   
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 1025px) {
     .navbarDesktop {
       display: block;
     }
@@ -148,5 +152,11 @@
   
     .navbarMobileMenu {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      font-size:1rem;
     }
   }
