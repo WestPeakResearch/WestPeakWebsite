@@ -1,0 +1,30 @@
+.homeCover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../images/city.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: table;
+    width: 100%;
+    z-index:0;
+  }
+  
+  .homeTitle {    
+    margin: 0 auto;
+    vertical-align: center;
+    margin-top: 25vh;
+    width: 80vh;
+  }
+
+  
+  @media (max-width: 1024px) {
+    .homeTitle {
+      width: 90%;
+      margin-top:35vh;
+    }
+  }
+  
+  

@@ -92,6 +92,7 @@
   
   .navbarMobile {
     display: block;
+    z-index:100;
   }
   
   .navbarMobileMenu {
@@ -102,6 +103,7 @@
     height: 100%;
     display: table;
     background-color: #0a1930;
+    z-index:100;
   }
 
   .navbarMobileMenu a {
