@@ -1,0 +1,150 @@
+.logo {
+    color: #a5cbf1;
+    width:10px;
+}
+
+.logo:hover {
+    color: #a5cbf1;
+    transition: all 0.3s ease;
+}
+.navBarImage{
+  width: 6rem;
+  float: left;
+  margin-left: 3px;
+  margin-right:10px;
+}
+
+.menuButton {
+    float: right;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    color:#a5cbf1;
+  }
+
+  .mobileBrand{
+    color: #a5cbf1;
+    font-weight:600;
+    font-size:2rem;
+    
+  width: 6rem;
+  float: left;
+  margin-left: 3px;
+  margin-right:10px;
+    
+  }
+
+  .navbar {
+    text-align: center;
+    background-color: #0a233d;
+    margin-bottom: 30px;
+    height: 80px;
+    font-size: 1.3rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-decoration:none;
+
+  }
+
+  .navbar a {
+    text-transform: uppercase;
+    color: #a8b2d1;
+    text-decoration: none;
+    text-align:center;
+}
+
+.navbar a:hover {
+    color: #a5cbf1;
+    transition: all 0.3s ease;
+}
+  
+  .navbar ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: fit-content;
+    
+  }
+  
+  .navbar li {
+    margin: 10px 20px 10px 20px;
+    display: inline-block;
+  }
+  
+  
+  .navbarMobile {
+    display: block;
+  }
+  
+  .navbarMobileMenu {
+    text-align: center;
+    margin-bottom: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: #0a1930;
+  }
+
+  .navbarMobileMenu a {
+      text-transform: uppercase;
+      color: #58677e;
+      text-decoration: none;
+  }
+
+  
+.navbarMobileMenu a:hover {
+  color: #a5cbf1;
+  transition: all 0.3s ease;
+}
+  
+  .navbarMobileMenu ul {
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    
+  }
+  
+  .navbarMobileMenu li {
+    margin: 20px;
+    display: block;
+  }
+
+  .navbarDesktop{
+    display: none;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .navbarDesktop {
+      display: block;
+    }
+  
+    .navbarMobile {
+      display: none;
+    }
+  
+    .navbarMobileMenu {
+      display: none;
+    }
+  }
