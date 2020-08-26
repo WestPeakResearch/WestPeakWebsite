@@ -1,3 +1,98 @@
 .container{
-    padding-top:5rem;
+    padding-top:3rem;
+}
+
+.researchLink{
+    display:inline-block;
+    padding: 0.5rem 0.5rem;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    font-size:1.2rem;
+    color:white;
+    background-color:#0a233d;
+    border-radius: 0.8rem;
+    text-decoration:none;
+}
+
+.researchLink::hover{
+    background-color: #113d69;
+}
+
+.member{
+    width:100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+}
+
+.memberImage{
+    min-width:20rem;
+    max-width:20rem;
+    margin-right:1rem;
+    position: relative;
+}
+
+.memberImage img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:0.8rem;
+}
+
+.keyInfo{
+    display:block;
+    color:black;
+    font-weight:600;
+    margin: 0.5rem 0;
+    font-size:1.5rem;
+}
+
+.title{
+    font-size:1.1rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight:700;
+    margin-bottom:0.5rem;
+}
+
+.text{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size:0.9rem;
+    color:black;
+}
+
+
+
+@media screen and (max-width: 1068px){
+    .member{
+        max-width: 80rem;
+    }
+
+    .memberImage{
+        max-width: 30rem;
+        min-width: 30rem;
+    }
+}
+
+
+@media screen and (max-width: 868px){
+    .member{
+        max-width: 70rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .member{
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+
+    .memberImage{
+        max-width: 100%;
+        min-width: 100%;
+    }
 }

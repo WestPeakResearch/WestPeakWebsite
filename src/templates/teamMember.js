@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, withPrefix } from "gatsby"
 import styles from "./teamMember.module.css"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
+import {SiLinkedin} from "react-icons"
 
 export default function teamMember({ data }) {
   console.log(data)
@@ -12,30 +14,37 @@ export default function teamMember({ data }) {
       <div className={styles.container}>
         <div className= {styles.member}>
           <div className = {styles.memberImage}>
-              <img src = {post.frontmatter.headshot.publicURL} alt="showcase" />
+          <Img fluid={post.frontmatter.headshot.childImageSharp.fluid} fadeIn alt="headshot" />
           </div>
           <div className = {styles.memberInfo}>
             <div className = {styles.keyInfo}>       
-              <span>{post.frontmatter.name}</span>
-              <span>{post.frontmatter.degree}</span>    
+              <span className = {styles.name}>{post.frontmatter.name}</span>
+              <br />
+              <span className = {styles.degree}>{post.frontmatter.degree}</span>    
           </div>
           <span className = {styles.title}>{post.frontmatter.position}</span>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        </div>
-        <div className = {styles.research}>
-        <span>Research</span>
+            <div className = {styles.text} dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className = {styles.research}>
+        <span className = {styles.title}>Research</span>
+        <br />
         {research.map((paper, index) => (
           <>
+          <br />
              <a
              rel="noopener noreferrer"
-             href={withPrefix(`${paper.paper}`)}
+             href={withPrefix(`${paper}`)}
              target="_blank"
-             key = {index}> {paper.title}
+             key = {index}
+             className = {styles.researchLink}
+             >
+               {paper.substr(0, paper.indexOf('_'))}
              </a>
              <br />
              </>
   ))}
     </div>
+        </div>
+        
       </div>
       </div>
     </Layout>
@@ -53,7 +62,7 @@ export const query = graphql`
         headshot {
           publicURL
           childImageSharp {
-            fluid(quality: 100) {
+            fluid(maxWidth:900 maxHeight: 1000 quality: 100) {
               ...GatsbyImageSharpFluid
               base64
             }
