@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import PageCover from "../components/PageCover"
 import SEO from "../components/SEO"
 
-const TeamPage = () => (
+const Placements = () => (
   <Layout>
     <SEO title="Placements" />
     <PageCover  title = "Placements" />
@@ -12,4 +12,4 @@ const TeamPage = () => (
 </Layout>
 )
 
-export default TeamPage
+export default Placements

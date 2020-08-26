@@ -6,7 +6,7 @@ position: "Internal Coordinator"
 management: "True"
 headshot: "Bob.jpg"
 research: "GPI_Bob_Han.pdf"
-
+number: "5"
 ---
 
 Bob is a first-year commerce student planning to specialize in finance. Through working with WestPeak, he hopes to learn more about capital markets and different models to analyze public companies. He also aims to provide his perspective to the team from his personal background with Finance.
