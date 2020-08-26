@@ -1,5 +1,5 @@
 import Typography from 'typography'
-import lincolnTheme from 'typography-theme-lincoln'
-
-const typography = new Typography(lincolnTheme)
+import kirkhamTheme from 'typography-theme-kirkham'
+ 
+const typography = new Typography(kirkhamTheme)
 export default typography

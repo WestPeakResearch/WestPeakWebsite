@@ -6,7 +6,6 @@ import styles from "./PageCover.module.css"
 
 function PageCover(props){
   const title = props.title
-  console.log(title)
 
   return(
     <>
