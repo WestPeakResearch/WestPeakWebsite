@@ -21,7 +21,7 @@ function Team(){
                 headshot {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth:500 maxHeight: 500 quality:100) {
+                    fluid(maxWidth:700 maxHeight: 700 quality:100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -40,28 +40,41 @@ function Team(){
       const management  = team.filter(function (node) {
           return node.frontmatter.management === "True"
       })
-      const members = team.filter(function (node) {
+
+      let members = team.filter(function (node) {
           return node.frontmatter.management !== "True"
       })
-      console.log(management)
-      console.log(members)
+
+      function compare( a, b ) {
+        if ( a.frontmatter.name < b.frontmatter.name ){
+          return -1;
+        }
+        if ( a.frontmatter.name > b.frontmatter.name ){
+          return 1;
+        }
+        return 0;
+      }
+
+      members = members.sort(compare)
+      
 
 
     return(
         <>
         <h3 className = {styles.title}>MANAGEMENT</h3>
-        <main>
+        <main className = {styles.container}>
         <section className={styles.cards}>
           {management.map((member, index) => (
-              <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug} />
+              <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
           ))}
         </section>
-        </main>
-
-        <h1>Analysts</h1>
+        <h3 className = {styles.title}>ANALYSTS</h3>
+        <section className={styles.cards}>
          {members.map((member, index) => (
-            <TeamMemberCard key = {index} member = {member.frontmatter} slug = {member.fields.slug} />
+            <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
         ))}
+        </section>
+        </main>
         </>
     )
 }

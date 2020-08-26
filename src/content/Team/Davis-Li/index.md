@@ -4,7 +4,7 @@ name: "Davis Li"
 degree: "Bachelor of Commerce – Finance | Year 3"
 position: "External Coordinator"
 management: "True"
-research: "JWEL_Davis_Li.pdf"
+research: ["JWEL_Davis_Li.pdf"]
 headshot: "Davis.jpg"
 number: "3"
 

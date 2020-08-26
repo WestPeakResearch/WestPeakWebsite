@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import styles from "./layout.module.css"
+import styles from "./Layout.module.css"
 import NavBar from "../NavBar"
 import Footer from "../Footer"
 import Headroom from "react-headroom"

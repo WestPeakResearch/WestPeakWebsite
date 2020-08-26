@@ -6,6 +6,15 @@
     grid-gap:40px;
     padding: 10px 10%;
 }
+
+
+.container{
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
 .title{
     margin: 0 auto;
     padding-top:1rem;
@@ -28,6 +37,11 @@
         text-align:center;
         text-transform: uppercase;
     }
+    .container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
 }
 
 

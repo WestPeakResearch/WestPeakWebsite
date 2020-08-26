@@ -4,7 +4,7 @@ name: "Victor Shmulevich"
 degree: "Bachelor of Commerce – Finance | Year 3"
 position: "Director"
 management: "True"
-research: "WIFI_Victor_Shumlevich.pdf"
+research: ["WIFI_Victor_Shumlevich.pdf"]
 headshot: "Victor.jpg"
 number: "2"
 

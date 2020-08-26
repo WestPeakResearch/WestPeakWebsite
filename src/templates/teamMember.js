@@ -5,7 +5,10 @@ import styles from "./teamMember.module.css"
 import Layout from "../components/layout"
 
 export default function teamMember({ data }) {
+  console.log(data)
   const post = data.markdownRemark
+  const research = post.frontmatter.research
+  console.log(research[0])
   return (
     <Layout>
       <div className={styles.container}>
@@ -16,15 +19,18 @@ export default function teamMember({ data }) {
 
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        {post.frontmatter.research ?
-        <a
-            rel="noopener noreferrer"
-            href={withPrefix(`${post.frontmatter.research}`)}
-            target="_blank"> Click to see research
-            </a>
-            :
-            null
-        }
+
+        <h1>Research</h1>
+        {research.map((paper, index) => (
+          <>
+             <a
+             rel="noopener noreferrer"
+             href={withPrefix(`${paper}`)}
+             target="_blank"
+             key = {index}> Click to see research
+             </a>
+             </>
+  ))}
       </div>
     </Layout>
   )

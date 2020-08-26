@@ -1,12 +1,12 @@
 ---
 number: "1"
 type: "team"
-name: "Piero Ferrando"
+name: "Pranoy Debnath"
 degree: "Bachelor of Commerce – Finance | Year 3"
-position: "Director"
-management: "True"
-research: ["LZB_Piero_Ferrando.pdf", "FTT_Piero_Ferrando.pdf"]
-headshot: "Piero.jpg"
+position: "Analyst"
+management: "False"
+research: ["DIN_Pranoy_Debnath.pdf"]
+headshot: "Pranoy.jpg"
 
 ---
 
