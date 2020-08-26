@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React from "react"
 import {useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./HomeCover.module.css"

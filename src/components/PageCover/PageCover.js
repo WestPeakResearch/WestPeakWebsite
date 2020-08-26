@@ -1,5 +1,4 @@
 import React from "react"
-import Img from "gatsby-image"
 import styles from "./PageCover.module.css"
 
 

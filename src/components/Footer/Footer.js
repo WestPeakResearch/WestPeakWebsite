@@ -1,13 +1,23 @@
 import React from "react"
+import styles from "./Footer.module.css"
 
 
 function Footer(){
 
     return(
-        <>
-        © {new Date().getFullYear()},WestPeak Research Association. 
+    
+        <div className={styles.container}>
+            <div className={styles.text}>
+        © {new Date().getFullYear()}, WestPeak Research Association. 
         All rights reserved. Please see "LEGAL" for Terms of Use and Website Privacy Statement.
-        </>
+        <div className = {styles.shoutout}>
+                Made with Love by <a href="https://www.linkedin.com/in/hasanaltaf/">Hasan Altaf</a>
+
+            </div>
+        </div>
+            
+    
+        </div>
     )
 }
 

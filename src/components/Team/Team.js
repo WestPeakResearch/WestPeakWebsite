@@ -2,7 +2,6 @@ import React from "react"
 import styles from "./Team.module.css"
 import {useStaticQuery, graphql} from "gatsby"
 import ManagementCard from "../ManagementCard"
-import TeamMemberCard from "../TeamMemberCard"
 
 
 

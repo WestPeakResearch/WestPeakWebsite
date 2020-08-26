@@ -6,7 +6,6 @@ position: "Director"
 management: "True"
 research: ["WIFI_Victor_Shumlevich.pdf"]
 headshot: "Victor.jpg"
-number: "2"
 
 ---
 

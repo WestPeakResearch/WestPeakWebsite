@@ -1,0 +1,96 @@
+.container{
+    margin: 0 auto;
+    width: 80%;
+    padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+  }
+
+.reportPost{
+    width: 100%;
+    max-width: 98rem;
+    padding: 1rem;
+    margin:1rem;
+    box-shadow: - 1.4rem 9rem rgba(0,0,0,0.2);
+    display:flex;
+    align-items: center;
+    border-radius: 0.8rem;
+}
+
+.seperation hr{
+    height:0px;
+    border-bottom:10px solid #0a233d;
+
+}
+
+.reportDate span{
+    font-size:0.9rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.reportText{
+    margin-bottom: 1rem;
+    margin-top:0.5rem;
+    font-size:0.9rem;
+    color: rgba(0,0,0.7);
+    text-align:left;
+}
+
+
+
+.reportLink{
+    display:inline-block;
+    padding:1rem 1rem;
+    letter-spacing: 1px;
+    margin: 1rem 1rem;
+    text-transform: uppercase;
+    color:white;
+    text-decoration:none;
+    border-radius: 0.8rem;
+    background-color:#0a233d;
+}
+
+.reportLink:hover{
+    background-color: #113d69;
+}
+
+.reportTitle{
+    font-size:1rem;
+    font-weight:800;
+}
+
+
+@media screen and (max-width: 1068px){
+    .reportPost{
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .reportText{
+        display:none;
+    }
+    .reportLink{
+        margin:0.5rem 3rem;
+        font-size:0.9rem;
+    }
+}
+
+@media screen and (max-width: 868px){
+    .reportPost{
+        max-width: 90rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .reportPost{
+        padding:2.5rem;
+        flex-direction: column;
+    }
+}

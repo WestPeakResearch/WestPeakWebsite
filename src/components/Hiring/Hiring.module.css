@@ -2,12 +2,16 @@
     margin: 0 auto;
     width: 80%;
     padding: 2rem;
+    padding-bottom:30vh;
+    height:80vh;
 }
 
 @media (max-width: 1024px) {
     .container {
         width: 95%;
         padding: 1rem;
+        padding-bottom:10vh;
+
     }
   }
   

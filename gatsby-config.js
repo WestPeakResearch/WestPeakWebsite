@@ -20,6 +20,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    `gatsby-transformer-excel`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

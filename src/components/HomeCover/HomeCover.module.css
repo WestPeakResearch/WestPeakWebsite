@@ -6,10 +6,10 @@
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
-    color: white;
     display: table;
     width: 100%;
     z-index:0;
+  
   }
   
   .homeTitle {    

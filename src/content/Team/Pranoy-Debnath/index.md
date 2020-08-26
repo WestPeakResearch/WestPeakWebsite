@@ -1,5 +1,4 @@
 ---
-number: "1"
 type: "team"
 name: "Pranoy Debnath"
 degree: "Bachelor of Commerce – Finance | Year 3"

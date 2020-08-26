@@ -1,0 +1,29 @@
+.container{  
+  background-color: #0a233d;
+  background-position: center;
+  background-repeat: repeat;
+  position: absolute;
+  width: 100%;
+  height:6rem;
+  vertical-align: center;  
+}
+
+.text{
+  margin-top:25px;
+    color:white;
+    text-align:center;
+}
+
+.shoutout{
+  font-style:italic;
+}
+
+.shoutout a{
+  color:white;
+}
+
+@media (max-width: 1024px) {
+  .container {
+      height: 7.2rem;
+  }
+}
