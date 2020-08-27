@@ -22,14 +22,14 @@ function Contact(){
                     <Col lg = {6}>
                         <Form.Group className = {styles.name} controlId = "formBasicFirstName">
                             <Form.Label>First Name </Form.Label>
-                            <Form.Control size="sm" type = "text" />
+                            <Form.Control required size="sm" type = "text" name="first-name" />
                         </Form.Group>
                     </Col>
 
                     <Col lg = {6}>
                         <Form.Group className = {styles.name} controlId = "formBasicLastName">
                             <Form.Label>Last Name </Form.Label>
-                            <Form.Control size="sm" type = "text" />
+                            <Form.Control required size="sm" type = "text" name="last-name" />
                         </Form.Group>
                     </Col>
                 </Form.Row>
@@ -37,7 +37,7 @@ function Contact(){
                 <Col lg = {6}>
                         <Form.Group className = {styles.email} controlId = "formBasicEmail">
                             <Form.Label>Email Address </Form.Label>
-                            <Form.Control size="sm" type = "email" placeholder="name@example.com"/>
+                            <Form.Control required size="sm" type = "email" placeholder="name@example.com" name = "email"/>
                         </Form.Group>
                     </Col>
                 </Row>
@@ -45,7 +45,7 @@ function Contact(){
                 <Col lg = {6}>
                         <Form.Group className = {styles.textArea} controlId = "formBasicText">
                     <h2>Type your message here</h2>
-                            <Form.Control size="lg" as="textarea" type = "text" rows = "5"/>
+                            <Form.Control required size="lg" as="textarea" type = "text" rows = "5" name="info"/>
                         </Form.Group>
                     </Col>
                 </Row>
