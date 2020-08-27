@@ -7,6 +7,7 @@ function Footer(){
     return(
     
         <div className={styles.container}>
+
             <div className={styles.text}>
         © {new Date().getFullYear()}, WestPeak Research Association. 
         All rights reserved. Please see "LEGAL" for Terms of Use and Website Privacy Statement.

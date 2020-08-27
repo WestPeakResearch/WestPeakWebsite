@@ -23,6 +23,7 @@ const Links = props => (
     <ListLink to="/research">Research</ListLink>
     <ListLink to="/hiring">Hiring</ListLink>
     <ListLink to="/placements">Placements</ListLink>
+    <ListLink to="/contact">Contact</ListLink>
     <ListLink to="/legal">Legal</ListLink>
   </ul>
 )

@@ -28,6 +28,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^3.11.0",
     "react-typography": "^0.16.19",
+    "rebass": "^4.0.7",
     "typography": "^0.16.19",
     "typography-theme-kirkham": "^0.16.19",
     "typography-theme-lincoln": "^0.16.19",

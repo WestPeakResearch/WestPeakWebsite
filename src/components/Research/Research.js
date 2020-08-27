@@ -33,7 +33,7 @@ function Research(){
              return (
                <>
               <ResearchComponent key = {index} report = {paper.frontmatter}/>
-              {index ==- research.length - 1 ? null : <div className = {styles.seperation}>
+              {index === research.length - 1 ? null : <div className = {styles.seperation}>
               <hr />
               </div>}
               </>
