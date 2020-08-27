@@ -17,7 +17,7 @@ function Contact(){
                 data-netlify="true"
                 onSubmit="submit"
                 >
-                    <input type="hidden" name="form1" value="contact v1" />
+                    <input type="hidden" name="form-name" value="contact" />
                 <Form.Row>
                     <Col lg = {6}>
                         <Form.Group className = {styles.name} controlId = "formBasicFirstName">
