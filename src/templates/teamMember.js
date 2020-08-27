@@ -25,7 +25,7 @@ export default function teamMember({ data }) {
           <span className = {styles.title}>{post.frontmatter.position}</span>
             <div className = {styles.text} dangerouslySetInnerHTML={{ __html: post.html }} />
             <div className = {styles.research}>
-        <span className = {styles.title}>Research</span>
+        <span className = {styles.researchtitle}>Research</span>
         <br />
         {research.map((paper, index) => (
           <>
