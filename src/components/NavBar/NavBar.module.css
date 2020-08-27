@@ -12,6 +12,8 @@
   float: left;
   margin-left: 3px;
   margin-right:10px;
+  padding-left: 0.5rem;
+  padding-top:0.5rem;
 }
 
 .menuButton {
@@ -41,11 +43,12 @@
     color: #a5cbf1;
     font-weight:600;
     font-size:2rem;
-    
-  width: 6rem;
-  float: left;
-  margin-left: 3px;
-  margin-right:10px;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    width: 6rem;
+    float: left;
+    margin-left: 3px;
+    margin-right:10px;
     
   }
 
