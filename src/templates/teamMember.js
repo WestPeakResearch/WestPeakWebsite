@@ -62,7 +62,7 @@ export const query = graphql`
         headshot {
           publicURL
           childImageSharp {
-            fluid(maxWidth:900 maxHeight: 1000 quality: 100) {
+            fluid(maxWidth:900 maxHeight: 1000 quality: 70) {
               ...GatsbyImageSharpFluid
               base64
             }

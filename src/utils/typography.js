@@ -1,5 +1,5 @@
 import Typography from 'typography'
-import kirkhamTheme from 'typography-theme-kirkham'
- 
-const typography = new Typography(kirkhamTheme)
+import githubTheme from 'typography-theme-github'
+
+const typography = new Typography(githubTheme)
 export default typography

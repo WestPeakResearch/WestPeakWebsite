@@ -20,7 +20,7 @@ function Team(){
                 headshot {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth:700 maxHeight: 700 quality:100) {
+                    fluid(maxWidth:700 maxHeight: 700 quality:70) {
                       ...GatsbyImageSharpFluid
                     }
                   }
