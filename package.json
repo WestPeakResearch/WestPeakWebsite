@@ -13,6 +13,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sharp": "^2.6.27",
     "gatsby-plugin-typography": "^2.5.10",
+    "gatsby-remark-copy-linked-files": "^2.3.12",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-transformer-excel": "^2.4.10",
     "gatsby-transformer-remark": "^2.8.29",

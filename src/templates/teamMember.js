@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, withPrefix } from "gatsby"
 import styles from "./teamMember.module.css"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Img from "gatsby-image"
 import {SiLinkedin} from "react-icons"
 

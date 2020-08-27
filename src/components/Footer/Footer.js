@@ -12,7 +12,7 @@ function Footer(){
         © {new Date().getFullYear()}, WestPeak Research Association. 
         All rights reserved. Please see "LEGAL" for Terms of Use and Website Privacy Statement.
         <div className = {styles.shoutout}>
-                Made with Love by <a href="https://www.linkedin.com/in/hasanaltaf/">Hasan Altaf</a>
+                Developed by <a href="https://www.linkedin.com/in/hasanaltaf/">Hasan Altaf</a>
 
             </div>
         </div>
