@@ -1,5 +1,5 @@
-import React, {useState} from "react"
-import { useStaticQuery, graphql, StaticQuery } from "gatsby"
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import styles from "./CareersTable.module.css"
 
 const Careers = props => (
