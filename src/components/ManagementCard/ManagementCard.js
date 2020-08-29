@@ -9,7 +9,8 @@ import {Link} from "gatsby"
 function ManagementCard(props){
 
 
-
+    console.log(props.member.name)
+    console.log(props.member.headshot)
     return(
         <>
                 
