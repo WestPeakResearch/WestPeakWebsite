@@ -7,19 +7,20 @@ import {useStaticQuery, graphql} from "gatsby"
 function Research(){
     const data = useStaticQuery(graphql`
     query researchQuery {
-      allMarkdownRemark(filter: {frontmatter: {type: {eq: "report"}}}, sort: {fields: frontmatter___company}) {
+      allMarkdownRemark(filter: {frontmatter: {type: {eq: "report"}}}, sort: {fields: frontmatter___date, order: DESC}) {
         nodes {
           frontmatter {
             paper
             author
             company
-            date
             summary
             title
+            date (formatString: "MMMM DD, YYYY")
           }
         }
       }
     }
+    
     
       
     `)
