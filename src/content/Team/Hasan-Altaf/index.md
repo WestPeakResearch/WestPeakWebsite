@@ -6,6 +6,7 @@ position: "Technology Coordinator"
 management: "True"
 research: ["RGR_Hasan_Altaf.pdf"]
 headshot: "Hasan.JPG"
+linkedin: ""
 
 ---
 

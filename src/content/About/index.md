@@ -15,5 +15,6 @@ Our team is composed of students from different academic backgrounds. The only c
 WestPeak was founded on September 1, 2014 and became incorporated under the British Columbia Society Act on October 23, 2014. 
 
 
-Walton Lim & Tudor Barcan
-Co-Founders
+**Walton Lim & Tudor Barcan**
+
+**Co-Founders**

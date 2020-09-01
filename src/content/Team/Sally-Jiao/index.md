@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Sally Jiao"
-degree: "Bachelor of Commerce - General | Year 2"
+degree: "Bachelor of Commerce | Year 2"
 position: "Senior Analyst"
 management: "False"
 research: ["CAKE_Sally_Jiao.pdf"]
