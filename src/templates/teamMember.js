@@ -3,10 +3,8 @@ import { graphql, withPrefix } from "gatsby"
 import styles from "./teamMember.module.css"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
-import {SiLinkedin} from "react-icons"
 
 export default function teamMember({ data }) {
-  console.log(data)
   const post = data.markdownRemark
   const research = post.frontmatter.research
   return (
