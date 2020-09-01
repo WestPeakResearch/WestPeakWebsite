@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Surav Malla"
-degree: "Bachelor of Commerce - Finance | Year 2"
+degree: "Bachelor of Commerce - General | Year 2"
 position: "Senior Analyst"
 management: "False"
 research: ["PLCE_Surav_Malla.pdf"]
