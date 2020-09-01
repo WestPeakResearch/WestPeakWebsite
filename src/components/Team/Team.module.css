@@ -2,9 +2,10 @@
 .cards{
     grid-column: 2 / span 12;
     display: grid;
-    grid-template-columns: repeat(12, minmax(auto, 60px));
-    grid-gap:40px;
+    grid-template-columns: repeat(12, minmax(auto, 5rem));
+    grid-gap: 5rem;
     padding: 10px 10%;
+    justify-content: center;
 }
 
 
