@@ -51,7 +51,7 @@ function CareersTable(){
         <div className = {styles.content}>
             <span className = {styles.title}>A Higher Standard of Career Success</span>
             <p>At WestPeak, we’re redefining and raising the bar of successful careers, and our experiences speak to our 
-                commitment to professional development. We have countless memebers with competitive internships and full-time 
+                commitment to professional development. We have countless members with competitive internships and full-time 
                 experience at Fortune 500 companies, prestigious firms, and unicorn startups.</p>
         </div>
             <Careers data={placements} />
