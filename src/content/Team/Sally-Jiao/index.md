@@ -4,7 +4,7 @@ name: "Sally Jiao"
 degree: "Bachelor of Commerce - Finance| Year 2"
 position: "Senior Analyst"
 management: "False"
-research: ["CAKE_Sally_Jiao"]
+research: ["CAKE_Sally_Jiao.pdf"]
 headshot: "Sally.JPG"
 ---
 
