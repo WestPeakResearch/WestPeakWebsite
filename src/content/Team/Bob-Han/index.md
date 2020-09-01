@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Bob Han"
-degree: "Bachelor of Commerce – Finance | Year 2"
+degree: "Bachelor of Commerce – General | Year 2"
 position: "Internal Coordinator"
 management: "True"
 research: ["GPI_Bob_Han.pdf"]

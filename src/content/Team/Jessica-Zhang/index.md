@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Jessica Zhang"
-degree: "Bachelor of Commerce - Finance| Year 3"
+degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
 research: ["ZUMZ_Jessica_Zhang.pdf"]

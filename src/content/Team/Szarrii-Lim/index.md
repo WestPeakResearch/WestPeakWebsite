@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Szarrii Lim"
-degree: "Bachelor of Commerce - Finance| Year 2"
+degree: "Bachelor of Commerce - Finance | Year 2"
 position: "Senior Analyst"
 management: "False"
 research: ["URBN_Szarrii_Lim.pdf"]
