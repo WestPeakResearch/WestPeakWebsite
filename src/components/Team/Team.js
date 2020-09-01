@@ -57,7 +57,6 @@ function Team(){
       members = members.sort(compare)
       
 
-
     return(
         <>
         <h3 className = {styles.title}>MANAGEMENT</h3>

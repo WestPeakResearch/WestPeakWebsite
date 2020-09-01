@@ -5,11 +5,10 @@ degree: "Bachelor of Commerce – Finance | Year 3"
 position: "External Coordinator"
 management: "True"
 research: ["JWEL_Davis_Li.pdf"]
-headshot: "Davis.jpg"
+headshot: "Davis.JPG"
 
 ---
-Hasan is a second-year Commerce student pursuing a Combined Major in Business and Computer Science (BUCS). He joined WestPeak to gain a strong understanding of Finance and how technology can be integrated into the field. He has previously completed an internship in the Project Procurement department of BC Hydro.
 
+Davis is currently a third year student intending to specialize in finance. This past summer, he completed an internship at National Bank of Canada’s Wealth Management division, evaluating and advising on different types of investments to clients’ portfolios.
 
-Outside the classroom, Hasan can be found playing soccer, weightlifting or volunteering in the community.
-
+Outside of school, he can be found competitive swimming, working as a medic, or listening to his favorite podcasts!

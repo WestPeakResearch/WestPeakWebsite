@@ -9,7 +9,7 @@ headshot: "Pranoy.jpg"
 
 ---
 
-Piero is a second year commerce student intending to specialize in Finance. With experience in Commercial Banking and Management Consulting at BDC, Piero is an opportunity seeker, and is fascinated by the complex world of the capital markets. He will be joining Deloitte's M&A group next summer.
+Pranoy is a second year commerce student looking to specialize in Finance. His initial interest in the capital markets was sparked by simply being curious about how his family could maximize their returns with regards to their private finances. He hopes to use his time at WestPeak as a significant step towards gaining greater knowledge and confidence with regards to company valuation techniques.
 
-Piero loves sports, and outside of school, he can be found watching whatever is on the sports channel, be it tennis, formula 1, soccer, boxing, you name it!
+Outside of finance, he enjoys tennis, football, crying to Bojack Horseman, and playing guitar in his indie band “Pacific City Limits.”
 
