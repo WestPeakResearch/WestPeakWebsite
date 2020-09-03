@@ -4,7 +4,7 @@ name: "Irene Liu"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: ["PETS_Irene_Liu"]
+research: ["PETS_Irene_Liu.pdf"]
 headshot: Irene.JPG
 ---
 

@@ -4,7 +4,7 @@ name: "Szarrii Lim"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Senior Analyst"
 management: "False"
-research: ["URBN_Szarrii_Lim"]
+research: ["URBN_Szarrii_Lim.pdf"]
 headshot: Szarrii.JPG
 ---
 

@@ -4,7 +4,7 @@ name: "Tiffany Griesbach"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: ["HMSY_Tiffany_Griesbach"]
+research: ["HMSY_Tiffany_Griesbach.pdf"]
 headshot: Tiffany.JPG
 ---
 
