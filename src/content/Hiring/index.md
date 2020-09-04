@@ -31,7 +31,7 @@ When you join WestPeak, you are joining a community of current members and alumn
 
 ### OVERVIEW OF JUNIOR AND SENIOR PROGRAM
 
-This year, we are expanding our program to include a structured program for both Juniors and sSniors. Historically, we have only run the Junior Analyst program, which taught members the capital markets fundamentals and how to write an equity research report. Recognizing that there are students with more extensive prior experience in finance, we developed the Senior Analyst program to allow those to take an in-depth approach and specialize in a specific industry.
+This year, we are expanding our program to include a structured program for both Juniors and Seniors. Historically, we have only run the Junior Analyst program, which taught members the capital markets fundamentals and how to write an equity research report. Recognizing that there are students with more extensive prior experience in finance, we developed the Senior Analyst program to allow those to take an in-depth approach and specialize in a specific industry.
 
 
 ### 2020/2021 HIRING PROCESS
