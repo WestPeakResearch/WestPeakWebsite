@@ -3,6 +3,19 @@ title: "Hiring"
 type: "page"
 ---
 
+# 2020 - 2021 APPLICATIONS
+
+Please apply to the Junior or Senior Analyst position through the following Google Form:  [https://forms.gle/Xjc8BwX6tgQVXqe88](https://forms.gle/Xjc8BwX6tgQVXqe88)
+
+
+
+If you have not attended our information session, review the recording of the session below as it answers most FAQs.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w5TEPxA4Pj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+Full details regarding Junior and Senior Analyst positions can be found [here](HIRING_PACKAGE.pdf)
+
 ### WHAT WE DO
  
 WestPeak Research Association (“WestPeak”) is a student-run capital markets group that aims to create quality equity research while enriching the education of its members through active peer mentorship and structured training seminars. We seek to prepare our members with the necessary skills required for success in the capital markets.
@@ -26,6 +39,3 @@ This year, we are expanding our program to include a structured program for both
 **Dates:** Applications open on Friday, September 4th, 2020 and close on Sunday, September 27th, 2020. Decisions for both cohorts will be made in early October. 
 
 **Process:** The first round will include a cover letter, resume, and unofficial transcript submission. Chosen applicants will advance to an interview round.
-
-
-Full details regarding Junior and Senior Analyst positions can be found [here](HIRING_PACKAGE.pdf)
