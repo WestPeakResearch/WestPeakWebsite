@@ -9,6 +9,11 @@ function ResearchComponent(props){
     return(
         <>
         <div className = {styles.reportPost}>
+            
+        <a className = {styles.reportLink}
+                     rel="noopener noreferrer"
+                     href={withPrefix(`${report.paper}`)}
+                     target="_blank">{report.title}</a>
             <div className = {styles.reportInfo}>
                 <div className={styles.reportDate}>
                     <span>{report.date}</span>
@@ -17,11 +22,9 @@ function ResearchComponent(props){
                 <p className = {styles.reportText}>
                     {report.summary}
                 </p>
-                    <a className = {styles.reportLink}
-                     rel="noopener noreferrer"
-                     href={withPrefix(`${report.paper}`)}
-                     target="_blank">{report.title}</a>
-                    </div>
+                </div>
+                <br />
+                    
             </div>
                         </>
     )

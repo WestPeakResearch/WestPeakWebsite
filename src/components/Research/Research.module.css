@@ -43,7 +43,7 @@
 
 .container{
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     padding: 1rem;
 }
 
@@ -93,6 +93,9 @@
     padding:1rem 1rem;
     letter-spacing: 1px;
     margin: 2rem 2rem;
+
+    min-width:150px;
+    text-align:center;
     text-transform: uppercase;
     color:white;
     text-decoration:none;
@@ -112,7 +115,7 @@
 
 @media screen and (max-width: 1068px){
     .reportPost{
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
         margin-bottom: 1rem;
     }
@@ -127,13 +130,16 @@
 
 @media screen and (max-width: 868px){
     .reportPost{
-        max-width: 90rem;
+        max-width: 100%;
     }
 }
 
 @media screen and (max-width: 768px){
     .reportPost{
-        padding:2.5rem;
+        padding: 0;
         flex-direction: column;
+    }
+    .reportTitle{
+        margin-bottom: 1rem;
     }
 }

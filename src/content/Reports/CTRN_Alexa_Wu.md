@@ -14,5 +14,5 @@ and in‐house brands, are sold at significant discounts compared
 to the regular prices that are charged at department and specialty
 stores. Its target market consists of fashion‐conscious and price‐
 conscious consumers, specifically African‐American shoppers."
-title: "NASDAQ_CTRN"
+title: "NASDAQ: CTRN"
 ---

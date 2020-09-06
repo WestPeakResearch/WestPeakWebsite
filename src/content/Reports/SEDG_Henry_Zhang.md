@@ -11,5 +11,5 @@ systems. The Company is currently one of the largest PV inverter
 supplier with approximately 7% of global market share. Since
 2010, SolarEdge has shipped over 3.8 gigawatts of its DC
 optimized inverter systems to over 45 countries."
-title: "NASDAQ_SEDG"
+title: "NASDAQ: SEDG"
 ---
