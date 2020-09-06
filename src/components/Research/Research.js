@@ -1,7 +1,9 @@
-import React from "react"
+import React, {useState} from "react"
 import styles from "./Research.module.css"
 import ResearchComponent from "./ResearchComponent"
 import {useStaticQuery, graphql} from "gatsby"
+
+
 
 
 function Research(){
@@ -19,23 +21,48 @@ function Research(){
           }
         }
       }
-    }
-    
-    
-      
+    }   
     `)
 
-    const research = data.allMarkdownRemark.nodes
 
+    const [year, setYear] = useState("2020")
+
+    const research = data.allMarkdownRemark.nodes
+    const reportsData = {
+      "2020": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2020),
+      "2019": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2019),
+      "2018": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2018),
+      "2017": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2017),
+      "2016": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2016),
+    }
+
+    function handleYearButtonClick(event){
+      event.preventDefault()
+      setYear(event.target.value)
+    }
+
+    
     return(
         <div className = {styles.container}>
+          <div className = {styles.yearButtons}>
+            {
+              Object.keys(reportsData).reverse().map(key => (
+                <button  
+                onClick = {handleYearButtonClick}
+                value = {key}
+                className = { key === year ? styles.activeButton : styles.inactiveButton}
+                >
+                  {key}
+                  </button>
+              ))
+            }
+          </div>
           <div className = {styles.research}>   
-            {research.map((paper, index) => {
-              
+            {reportsData[year].map((paper, index) => {
              return (
                <>
               <ResearchComponent key = {index} report = {paper.frontmatter}/>
-              {index === research.length - 1 ? null : <div className = {styles.seperation}>
+              {index === reportsData[year].length - 1 ? null : <div className = {styles.seperation}>
               <hr />
               </div>}
               </>
