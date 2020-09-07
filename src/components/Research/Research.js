@@ -34,6 +34,8 @@ function Research(){
       "2018": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2018),
       "2017": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2017),
       "2016": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2016),
+      "2015": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2015),
+      "2014": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2014),
     }
 
     function handleYearButtonClick(event){
