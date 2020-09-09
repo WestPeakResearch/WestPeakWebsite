@@ -1,7 +1,7 @@
 ---
 type: "report"
 paper: "BOS_Matthias_Eyford.pdf"
-author: "Matthias_Eyford"
+author: "Matthias Eyford"
 company: "AirBoss of America Corp."
 date: "2017-02-06"
 summary: "AirBoss of America is an Ontario based holding company, which,
