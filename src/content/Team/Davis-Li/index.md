@@ -2,7 +2,7 @@
 type: "team"
 name: "Davis Li"
 degree: "Bachelor of Commerce – Finance | Year 3"
-position: "External Coordinator"
+position: "Director"
 management: "True"
 research: ["JWEL_Davis_Li.pdf"]
 headshot: "Davis.JPG"
