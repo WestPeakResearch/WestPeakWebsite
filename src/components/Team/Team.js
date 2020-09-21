@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./Team.module.css"
 import {useStaticQuery, graphql} from "gatsby"
 import ManagementCard from "../ManagementCard"
+import AlumniTable from "../AlumniTable"
 
 
 
@@ -41,8 +42,12 @@ function Team(){
       })
 
       let members = team.filter(function (node) {
-          return node.frontmatter.management !== "True"
+          return node.frontmatter.management !== "True" && node.frontmatter.position.includes("Analyst")
       })
+
+      let teamLeads = team.filter(function (node) {
+        return node.frontmatter.management !== "True" && node.frontmatter.position.includes("Head")
+    })
 
       function compare( a, b ) {
         if ( a.frontmatter.name < b.frontmatter.name ){
@@ -66,12 +71,21 @@ function Team(){
               <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
           ))}
         </section>
+        <h3 className = {styles.title}>TEAM LEADS</h3>
+        <section className={styles.cards}>
+          {teamLeads.map((member, index) => (
+              <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
+          ))}
+        </section>
         <h3 className = {styles.title}>ANALYSTS</h3>
         <section className={styles.cards}>
          {members.map((member, index) => (
             <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
         ))}
         </section>
+        <h3 className = {styles.title}>OUR ALUMNI</h3>
+
+        <AlumniTable />
         </main>
         </>
     )

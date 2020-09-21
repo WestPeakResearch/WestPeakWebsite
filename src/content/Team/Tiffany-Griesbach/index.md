@@ -2,7 +2,7 @@
 type: "team"
 name: "Tiffany Griesbach"
 degree: "Bachelor of Commerce - Finance | Year 4"
-position: "Senior Analyst"
+position: "Head, Natural Resources"
 management: "False"
 research: ["HMSY_Tiffany_Griesbach.pdf"]
 headshot: Tiffany.JPG

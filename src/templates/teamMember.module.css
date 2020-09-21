@@ -27,7 +27,7 @@
 }
 .member{
     width:100%;
-    max-width: 98rem;
+    max-width: 150rem;
     padding: 5rem;
     background-color: white;
     display: flex;
@@ -36,8 +36,8 @@
 }
 
 .memberImage{
-    min-width:20rem;
-    max-width:30rem;
+    min-width:30rem;
+    max-width:60rem;
     margin-right:1rem;
     position: relative;
 }
@@ -54,11 +54,11 @@
     color:black;
     font-weight:600;
     margin: 0.5rem 0;
-    font-size:1.5rem;
+    font-size:1.9rem;
 }
 
 .title{
-    font-size:1.1rem;
+    font-size:1.5rem;
     text-transform: uppercase;
     color: black;
     font-weight:700;
@@ -68,7 +68,7 @@
 .text{
     margin-bottom: 1rem;
     margin-top: 1rem;
-    font-size:0.9rem;
+    font-size:1rem;
     color:black;
 }
 
@@ -80,8 +80,8 @@
     }
 
     .memberImage{
-        max-width: 30rem;
-        min-width: 30rem;
+        max-width: 25rem;
+        min-width: 25rem;
     }
 }
 

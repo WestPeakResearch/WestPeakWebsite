@@ -1,0 +1,51 @@
+.table{
+    width:50%;
+    margin: 0 auto;
+    color:black;
+    text-align:center;
+
+}
+
+.name{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.tableContent a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.tableContent a:hover{
+    text-decoration: none;
+    color: #0a233d;
+    text-decoration: underline;
+}
+
+.content{
+    margin: 0 auto;
+    width: 50%;
+    padding: 1.5rem 1rem;
+}
+
+.title{
+    text-align:center;
+    margin: 0 auto;
+    font-size:2rem;
+    font-weight: 700;
+    padding-bottom:2rem;
+}
+
+@media screen and (max-width: 1068px){
+    .table{
+        width: 80%;
+    }
+
+    .content{
+        font-size:0.9rem;
+    }
+    .title{
+        font-size:1.5rem;
+    }
+}
