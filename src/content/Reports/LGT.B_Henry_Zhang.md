@@ -2,7 +2,7 @@
 type: "report"
 paper: "LGT.B_Henry_Zhang.pdf"
 author: "Henry Zhang"
-company: "Logitec Coporation"
+company: "Logistec Coporation"
 date: "2016-06-19"
 summary: "Logistec Corporation (Logistec) is a marine and environmental
 services provider based out of Montréal, Quebec. Within the
