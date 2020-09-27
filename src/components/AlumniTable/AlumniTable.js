@@ -18,9 +18,9 @@ function Careers(props){
             </tr>
             {props.data.nodes.map(node => (
               <tr className = {styles.tableContent}>
-                <td className = {styles.name}><a href = {node.linkedin1}>{node.name1}</a></td>
-                <td className = {styles.name}><a href = {node.linkedin2}>{node.name2}</a></td>
-                <td className = {styles.name}><a href = {node.linkedin3}>{node.name3}</a></td>
+                <td className = {styles.name}><a href = {node.linkedin1} target = "_blank" rel="noreferrer">{node.name1}</a></td>
+                <td className = {styles.name}><a href = {node.linkedin2} target = "_blank" rel="noreferrer">{node.name2}</a></td>
+                <td className = {styles.name}><a href = {node.linkedin3} target = "_blank" rel="noreferrer">{node.name3}</a></td>
               </tr>
             ))}
           </table>
