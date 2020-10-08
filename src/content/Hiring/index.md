@@ -3,18 +3,8 @@ title: "Hiring"
 type: "page"
 ---
 
-# 2020 - 2021 APPLICATIONS
+# Hiring has closed for the 2020 - 2021 cohort. Please check back September 2021.
 
-Please apply to the Junior or Senior Analyst position through the following Google Form:  [https://forms.gle/Xjc8BwX6tgQVXqe88](https://forms.gle/Xjc8BwX6tgQVXqe88)
-
-
-
-If you have not attended our information session, review the recording of the session below as it answers most FAQs.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w5TEPxA4Pj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-Full details regarding Junior and Senior Analyst positions can be found [here](HIRING_PACKAGE.pdf)
 
 ### WHAT WE DO
  
