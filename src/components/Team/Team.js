@@ -36,8 +36,6 @@ function Team(){
         
       `)
 
-      let savedTeam = localStorage.getItem('team');
-
       
       const [currTeam, setTeam] = useState(savedTeam ? savedTeam : "Management")
 
