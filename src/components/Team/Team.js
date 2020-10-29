@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import styles from "./Team.module.css"
 import {useStaticQuery, graphql} from "gatsby"
 import ManagementCard from "../ManagementCard"
@@ -43,10 +43,9 @@ function Team(){
 
       const team = data.allMarkdownRemark.nodes
       
-      window.onbeforeunload = function () {
-        localStorage.setItem('team', "Management");
-    };
-    
+      useEffect(() => {
+        setTeam(localStorage.getItem('team'))
+      }, [])
 
     const teamMembers = {
       "Management": team.filter( member => member.frontmatter.management === "True"),
