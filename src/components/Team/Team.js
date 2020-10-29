@@ -45,7 +45,13 @@ function Team(){
         setTeam(localStorage.getItem('team') ? localStorage.getItem('team') : "Management")
       }, [])
 
-    
+      useEffect(() => {
+        window.addEventListener('beforeunload', function (e) {
+          e.preventDefault();
+          localStorage.setItem('team', "Management");
+      });
+      });
+   
 
     const teamMembers = {
       "Management": team.filter( member => member.frontmatter.management === "True"),
