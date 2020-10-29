@@ -56,8 +56,8 @@ function Team(){
     const teamMembers = {
       "Management": team.filter( member => member.frontmatter.management === "True"),
       "Team Leads": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Head")),
-      "Senior Analyst": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Senior Analyst")),
-      "Junior Analyst": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Junior Analyst")),
+      "Senior Analysts": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Senior Analyst")),
+      "Junior Analysts": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Junior Analyst")),
       "Alumni": []
     }
 
