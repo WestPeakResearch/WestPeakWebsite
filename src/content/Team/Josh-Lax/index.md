@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Josh Lax"
-degree: "Bachelor of Commerce - Finance | Year 4"
+degree: "Bachelor of Commerce - Finance and Real Estate | Year 4"
 position: "Senior Analyst"
 management: "False"
 research: []

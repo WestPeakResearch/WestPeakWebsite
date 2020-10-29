@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Simrit Hundal"
-degree: "Bachelor of Commerce - General | Year 2"
+degree: "Bachelor of Commerce - Finance and BTM | Year 4"
 position: "Senior Analyst"
 management: "False"
 research: []
