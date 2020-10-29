@@ -37,7 +37,7 @@ function Team(){
       `)
 
       
-      const [currTeam, setTeam] = useState(savedTeam ? savedTeam : "Management")
+      const [currTeam, setTeam] = useState("Management")
 
       const team = data.allMarkdownRemark.nodes
       
