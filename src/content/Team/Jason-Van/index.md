@@ -1,11 +1,11 @@
 ---
 type: "team"
 name: "Jason Van"
-degree: "Bachelor of Commerce - Finance & Accounting| Year 4"
+degree: "Bachelor of Commerce - Finance & Accounting | Year 4"
 position: "Head, Technology, Media, & Telecommunications"
 management: "False"
-research: ["CVGW_Jason_Van"]
-headshot: "Jason-Van.jpeg"
+research: ["CVGW_Jason_Van.pdf"]
+headshot: "jasonvan.jpg"
 ---
 
 Jason is a fourth-year commerce student specializing in Finance & Accounting. After joining the organization in 2018, he spent his first two years as an analyst and now serves as head for the Technology, Media & Telecom (TMT) coverage group at WestPeak.

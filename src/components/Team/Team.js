@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import styles from "./Team.module.css"
 import {useStaticQuery, graphql} from "gatsby"
 import ManagementCard from "../ManagementCard"
@@ -21,7 +21,7 @@ function Team(){
                 headshot {
                   publicURL
                   childImageSharp {
-                    fluid(maxWidth:1000 maxHeight: 1500 quality:70) {
+                    fluid(maxWidth:1200 maxHeight: 1800 quality:70) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -36,18 +36,25 @@ function Team(){
         
       `)
 
+      let savedTeam = localStorage.getItem('team');
+
+      
+      const [currTeam, setTeam] = useState(savedTeam ? savedTeam : "Management")
+
       const team = data.allMarkdownRemark.nodes
-      const management  = team.filter(function (node) {
-          return node.frontmatter.management === "True"
-      })
+      
+      window.onbeforeunload = function () {
+        localStorage.setItem('team', "Management");
+    };
+    
 
-      let members = team.filter(function (node) {
-          return node.frontmatter.management !== "True" && node.frontmatter.position.includes("Analyst")
-      })
-
-      let teamLeads = team.filter(function (node) {
-        return node.frontmatter.management !== "True" && node.frontmatter.position.includes("Head")
-    })
+    const teamMembers = {
+      "Management": team.filter( member => member.frontmatter.management === "True"),
+      "Team Leads": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Head")),
+      "Senior Analyst": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Senior Analyst")),
+      "Junior Analyst": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Junior Analyst")),
+      "Alumni": []
+    }
 
       function compare( a, b ) {
         if ( a.frontmatter.name < b.frontmatter.name ){
@@ -59,19 +66,40 @@ function Team(){
         return 0;
       }
 
-      members = members.sort(compare)
+      
+      function handleMemberButtonClick(event){
+        setTeam(event.target.value)
+        localStorage.setItem('team', event.target.value);
+      }
+
       
 
     return(
         <>
-        <h3 className = {styles.title}>MANAGEMENT</h3>
         <main className = {styles.container}>
+        <div className = {styles.memberButtons}>
+            {
+              Object.keys(teamMembers).map(key => (
+                <button  
+                onClick = {handleMemberButtonClick}
+                value = {key}
+                className = { key === currTeam ? styles.activeButton : styles.inactiveButton}
+                >
+                  {key}
+                  </button>
+              ))
+            }
+          </div>
+          
+        <h3 className = {styles.title}>{currTeam}</h3>
         <section className={styles.cards}>
-          {management.map((member, index) => (
+          {teamMembers[currTeam].map((member, index) => (
+            <>
               <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
+            </>
           ))}
         </section>
-        <h3 className = {styles.title}>TEAM LEADS</h3>
+        {/* <h3 className = {styles.title}>TEAM LEADS</h3>
         <section className={styles.cards}>
           {teamLeads.map((member, index) => (
               <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
@@ -82,10 +110,10 @@ function Team(){
          {members.map((member, index) => (
             <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
         ))}
-        </section>
-        <h3 className = {styles.title}>OUR ALUMNI</h3>
+        </section> */}
 
-        <AlumniTable />
+        {currTeam === "Alumni" ? <AlumniTable /> : null }
+        
         </main>
         </>
     )

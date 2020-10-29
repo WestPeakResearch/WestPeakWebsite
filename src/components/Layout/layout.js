@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styles from "./Layout.module.css"
 import NavBar from "../NavBar"
 import Footer from "../Footer"

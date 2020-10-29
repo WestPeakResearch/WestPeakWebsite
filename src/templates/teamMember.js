@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 export default function teamMember({ data }) {
   const post = data.markdownRemark
   const research = post.frontmatter.research
+  console.log(data)
   return (
     <Layout>
       <div className={styles.container}>
@@ -25,7 +26,7 @@ export default function teamMember({ data }) {
             <div className = {styles.research}>
         <span className = {styles.researchtitle}>Research</span>
         <br />
-        {research.map((paper, index) => (
+        {research.length !== 0 ? research.map((paper, index) => (
           <>
           <br />
              <a
@@ -39,7 +40,7 @@ export default function teamMember({ data }) {
              </a>
              <br />
              </>
-  ))}
+  )): <p className = {styles.noResearch}>Coming Soon!</p>}
     </div>
         </div>
         
