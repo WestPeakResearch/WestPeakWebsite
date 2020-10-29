@@ -42,8 +42,10 @@ function Team(){
       const team = data.allMarkdownRemark.nodes
       
       useEffect(() => {
-        setTeam(localStorage.getItem('team'))
+        setTeam(localStorage.getItem('team') ? localStorage.getItem('team') : "Management")
       }, [])
+
+    
 
     const teamMembers = {
       "Management": team.filter( member => member.frontmatter.management === "True"),
