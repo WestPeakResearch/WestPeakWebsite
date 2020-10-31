@@ -12,4 +12,4 @@ Jason is a fourth-year commerce student specializing in Finance & Accounting. Af
 
 This past summer, Jason completed an investment banking internship with TD Securities’ TMT group in Toronto. Prior to that, he worked at Deloitte (M&A) and Tesla. 
 
-Outside of school and work, Jason loves playing volleyball, going hiking, and keeping up with sports and his fitnes
+Outside of school and work, Jason loves playing volleyball, going hiking, and keeping up with sports and his fitness

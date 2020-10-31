@@ -1,6 +1,6 @@
 ---
 type: "team"
-name: "Padriac Lau"
+name: "Padraic Lau"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
