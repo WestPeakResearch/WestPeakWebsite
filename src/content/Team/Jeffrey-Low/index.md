@@ -1,6 +1,6 @@
 ---
 type: "team"
-name: "Jeffery Low"
+name: "Jeffrey Low"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
