@@ -7,7 +7,6 @@ import Img from "gatsby-image"
 export default function teamMember({ data }) {
   const post = data.markdownRemark
   const research = post.frontmatter.research
-  console.log(data)
   return (
     <Layout>
       <div className={styles.container}>
