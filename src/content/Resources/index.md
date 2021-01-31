@@ -13,4 +13,4 @@ We have compiled a list of past WestPeak events and stock pitch competitions to 
 
 * **Recruiting Workshop (January 29, 2021)**
     * [Slides](FinanceRecruiting.pdf)
-    * [Link to recording](http://bit.ly/2YvN2yU)
+    * [Link to recording](https://youtu.be/99kU7TwjpI0)
