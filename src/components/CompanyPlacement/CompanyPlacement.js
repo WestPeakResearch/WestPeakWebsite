@@ -15,7 +15,7 @@ function CompanyPlacement(){
             }
         }
 
-        two: file(absolutePath: {regex: "/logo2.jpg/"}) {
+        two: file(absolutePath: {regex: "/Slide2.PNG/"}) {
             childImageSharp {
                 fluid(maxWidth: 2000) {
                     ...GatsbyImageSharpFluid
