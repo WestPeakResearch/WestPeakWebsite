@@ -104,19 +104,6 @@ function Team(){
             </>
           ))}
         </section>
-        {/* <h3 className = {styles.title}>TEAM LEADS</h3>
-        <section className={styles.cards}>
-          {teamLeads.map((member, index) => (
-              <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
-          ))}
-        </section>
-        <h3 className = {styles.title}>ANALYSTS</h3>
-        <section className={styles.cards}>
-         {members.map((member, index) => (
-            <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
-        ))}
-        </section> */}
-
         {currTeam === "Alumni" ? <AlumniTable /> : null }
         
         </main>
