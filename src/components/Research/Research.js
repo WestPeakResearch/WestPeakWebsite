@@ -25,10 +25,11 @@ function Research(){
     `)
 
 
-    const [year, setYear] = useState("2020")
+    const [year, setYear] = useState("2021")
 
     const research = data.allMarkdownRemark.nodes
     const reportsData = {
+      "2021": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2021),
       "2020": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2020),
       "2019": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2019),
       "2018": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2018),
