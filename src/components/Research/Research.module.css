@@ -2,6 +2,55 @@
     text-align:center;
 }
 
+.noReport{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3rem;
+    text-decoration: wavy;
+}
+.reportTypeButtons{
+    text-align:center;
+}
+
+.inactiveReportButton{
+    margin: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 175px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    
+  background-color: #eeeeee;
+  color: black;
+
+}
+
+.inactiveReportButton:hover {
+    background-color: #d8d8d8;
+    
+  }
+
+.activeReportButton{
+    margin: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color:white;
+    background-color:#0a233d;
+    
+    width: 175px;
+    height: 60px;
+}
+
 .inactiveButton{
     margin: 10px 10px;
     padding-top: 5px;

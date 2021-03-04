@@ -9,7 +9,7 @@ import {useStaticQuery, graphql} from "gatsby"
 function Research(){
     const data = useStaticQuery(graphql`
     query researchQuery {
-      allMarkdownRemark(filter: {frontmatter: {type: {eq: "report"}}}, sort: {fields: frontmatter___date, order: DESC}) {
+      allMarkdownRemark(filter: {frontmatter: {type: {in: "report"}}}, sort: {fields: frontmatter___date, order: DESC}) {
         nodes {
           frontmatter {
             paper
@@ -17,17 +17,23 @@ function Research(){
             company
             summary
             title
-            date (formatString: "MMMM DD, YYYY")
+            date(formatString: "MMMM DD, YYYY")
+            isPrimer
           }
         }
       }
-    }   
+    }      
     `)
 
 
     const [year, setYear] = useState("2021")
-
-    const research = data.allMarkdownRemark.nodes
+    const [reportType, setReportType] = useState('Industry Primers')
+    const allResearch = data.allMarkdownRemark.nodes
+    let research = data.allMarkdownRemark.nodes.filter(isResearch => isResearch.frontmatter.isPrimer !== 'true')
+    if(reportType === 'Industry Primers'){
+      research = data.allMarkdownRemark.nodes.filter(isResearch => isResearch.frontmatter.isPrimer === 'true')
+    }
+    
     const reportsData = {
       "2021": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2021),
       "2020": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2020),
@@ -44,12 +50,39 @@ function Research(){
       setYear(event.target.value)
     }
 
+    function handleTypeButtonClick(event){
+      event.preventDefault()
+      setReportType(event.target.value)
+    }
+
+
+
     
     return(
         <div className = {styles.container}>
+          <div className = {styles.reportTypeButtons}>
+            <button  
+            onClick = {handleTypeButtonClick}
+            value = 'Equity Research'
+            className = { 'Equity Research' === reportType ? styles.activeReportButton : styles.inactiveReportButton}
+            >
+              Equity Research
+            </button>
+            { allResearch.filter(paper => new Date(paper.frontmatter.date).getFullYear() === Number(year)).filter(isResearch => isResearch.frontmatter.isPrimer === 'true').length > 0 ?
+            <button  
+            onClick = {handleTypeButtonClick}
+            value = 'Industry Primers'
+            className = { 'Industry Primers' === reportType ? styles.activeReportButton : styles.inactiveReportButton}
+            >
+              Industry Primers
+            </button>
+            :
+            null
+}
+          </div>
           <div className = {styles.yearButtons}>
             {
-              Object.keys(reportsData).reverse().map(key => (
+              Object.keys(reportsData).reverse().filter((year) =>  reportsData[year].length > 0).map(key => (
                 <button  
                 onClick = {handleYearButtonClick}
                 value = {key}
@@ -61,7 +94,9 @@ function Research(){
             }
           </div>
           <div className = {styles.research}>   
-            {reportsData[year].map((paper, index) => {
+            {
+            reportsData[year].length > 0 ?
+            reportsData[year].map((paper, index) => {
              return (
                <>
               <ResearchComponent key = {index} report = {paper.frontmatter}/>
@@ -72,6 +107,8 @@ function Research(){
              )
             }
             )
+            :
+            <h4 className = {styles.noReport} >No data found for the year {year}.</h4>
           }
           </div>
         </div>

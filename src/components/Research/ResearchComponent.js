@@ -18,7 +18,10 @@ function ResearchComponent(props){
                 <div className={styles.reportDate}>
                     <span>{report.date}</span>
                 </div>
-                <span className = {styles.reportTitle}>{report.company} | {report.author}</span>
+                {
+                    report.author ?  <span className = {styles.reportTitle}>{report.company} | {report.author}</span> : <span className = {styles.reportTitle}>{report.company}</span>
+
+                }
                 <p className = {styles.reportText}>
                     {report.summary}
                 </p>
