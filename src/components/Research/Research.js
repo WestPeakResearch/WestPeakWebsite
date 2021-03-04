@@ -27,7 +27,7 @@ function Research(){
 
 
     const [year, setYear] = useState("2021")
-    const [reportType, setReportType] = useState('Industry Primers')
+    const [reportType, setReportType] = useState('Equity Research')
     const allResearch = data.allMarkdownRemark.nodes
     let research = data.allMarkdownRemark.nodes.filter(isResearch => isResearch.frontmatter.isPrimer !== 'true')
     if(reportType === 'Industry Primers'){
