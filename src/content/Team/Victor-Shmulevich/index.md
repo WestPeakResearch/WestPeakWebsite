@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce – Finance | Year 3"
 position: "Director"
 management: "True"
 research: ["WIFI_Victor_Shmulevich.pdf"]
-headshot: Victor.JPG
+headshot: Victor.jpg
 
 ---
 

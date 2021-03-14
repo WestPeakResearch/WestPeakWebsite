@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce – Finance | Year 3"
 position: "Director"
 management: "True"
 research: ["JWEL_Davis_Li.pdf"]
-headshot: "Davis.JPG"
+headshot: "Davis.jpg"
 
 ---
 

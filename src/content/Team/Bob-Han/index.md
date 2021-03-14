@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce – General | Year 2"
 position: "Internal Coordinator"
 management: "True"
 research: ["GPI_Bob_Han.pdf"]
-headshot: Bob.JPG
+headshot: Bob.jpg
 
 ---
 

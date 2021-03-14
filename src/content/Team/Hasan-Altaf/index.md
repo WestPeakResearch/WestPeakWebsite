@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Business and Computer Science | Year 2"
 position: "Technology Coordinator"
 management: "True"
 research: ["RGR_Hasan_Altaf.pdf"]
-headshot: Hasan.JPG
+headshot: Hasan.jpg
 
 ---
 

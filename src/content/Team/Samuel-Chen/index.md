@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce – General | Year 2"
 position: "Senior Analyst"
 management: "False"
 research: ["NP_Samuel_Chen.pdf"]
-headshot: Samuel.JPG
+headshot: Samuel.jpg
 
 ---
 

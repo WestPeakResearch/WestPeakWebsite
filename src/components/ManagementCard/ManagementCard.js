@@ -4,12 +4,9 @@ import Img from "gatsby-image"
 import {Link} from "gatsby"
 
 
-
-
 function ManagementCard(props){
     return(
         <>
-                
                 <div className={styles.card}>
                 <Link to={props.slug} className={styles.link}>
                     <div className={styles.cardImageContainer}>
@@ -26,6 +23,5 @@ function ManagementCard(props){
         </>
     )
 }
-
 
 export default ManagementCard

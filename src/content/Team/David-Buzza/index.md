@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce – Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
 research: ["TWNK_David_Buzza.pdf"]
-headshot: David.JPG
+headshot: David.jpg
 
 ---
 
