@@ -4,7 +4,7 @@ name: "James Tucker"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["CSIQ_James_Tucker.pdf"]
 headshot: james.jpg
 
 ---

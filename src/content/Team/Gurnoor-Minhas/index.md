@@ -4,7 +4,7 @@ name: "Gurnoor Minhas"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["CAS_Gurnoor_Minhas.pdf"]
 headshot: gurnoor.jpg
 
 ---

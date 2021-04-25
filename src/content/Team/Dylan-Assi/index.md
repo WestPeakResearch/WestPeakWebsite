@@ -4,7 +4,7 @@ name: "Dylan Assi"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["JWN_Dylan_Assi.pdf"]
 headshot: dylan.JPG
 
 ---

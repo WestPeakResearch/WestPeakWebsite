@@ -4,7 +4,7 @@ name: "Yewen Wang"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["CLW_Yewen_Wang.pdf"]
 headshot: yewen.jpg
 
 ---

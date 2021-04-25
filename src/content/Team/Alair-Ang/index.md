@@ -4,7 +4,7 @@ name: "Alair Ang"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["UEIC_Alair_Ang.pdf"]
 headshot: alair.JPG
 
 ---

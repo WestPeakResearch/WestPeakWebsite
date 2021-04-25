@@ -1,6 +1,6 @@
 ---
 type: "report"
-paper: "HSTM_Richard_Wong.pdf"
+paper: "HTSM_Richard_Wong.pdf"
 author: "Richard Wong"
 company: "HealthStream, Inc"
 date: "2014-12-30"

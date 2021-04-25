@@ -4,7 +4,7 @@ name: "Katerina Nieboer"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["ELF_Katerina_Nieboer.pdf"]
 headshot: tanya.JPG
 
 ---

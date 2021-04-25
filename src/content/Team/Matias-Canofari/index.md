@@ -4,7 +4,7 @@ name: "Matias Canofari"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["MCFT_Matias_Canofari.pdf"]
 headshot: matias.jpg
 
 ---

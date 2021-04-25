@@ -4,7 +4,7 @@ name: "Luka Roberts"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SHAK_Luka_Roberts.pdf"]
 headshot: luka.jpeg
 
 ---

@@ -4,7 +4,7 @@ name: "Cathie Ji"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["MIK_Cathie_Ji.pdf"]
 headshot: cathie.png
 
 ---

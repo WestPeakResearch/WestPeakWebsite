@@ -4,7 +4,7 @@ name: "Jocelyn Bachmann"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["PVH_Jocelyn_Bachmann.pdf"]
 headshot: jocelyn.JPG
 
 ---

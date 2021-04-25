@@ -4,7 +4,7 @@ name: "Jeffrey Low"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["MAT_Jeffrey_Low.pdf"]
 headshot: jeffery.jpg
 
 ---

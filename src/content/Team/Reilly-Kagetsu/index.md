@@ -4,7 +4,7 @@ name: "Reilly Kagetsu"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["GOOS_Reilly_Kagetsu.pdf"]
 headshot: reilly1.png
 
 ---

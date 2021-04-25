@@ -4,7 +4,7 @@ name: "Joshua Grewal"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SKX_Joshua_Grewal.pdf"]
 headshot: joshua.png
 
 ---

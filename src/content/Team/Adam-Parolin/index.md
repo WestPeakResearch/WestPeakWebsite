@@ -4,7 +4,7 @@ name: "Adam Parolin"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["TAP_Adam_Parolin.pdf"]
 headshot: adam.jpg
 
 ---
