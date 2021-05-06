@@ -4,7 +4,7 @@ name: "Angela Chen"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ['TRIP_Angela_Chen']
 headshot: angela.jpeg
 
 ---
