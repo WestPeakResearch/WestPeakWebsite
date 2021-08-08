@@ -2,7 +2,6 @@ import React from "react"
 import {useStaticQuery, graphql} from "gatsby"
 import styles from "./Hiring.module.css"
 
-
 function Hiring(){
     const data = useStaticQuery(graphql`
     query HiringQuery {

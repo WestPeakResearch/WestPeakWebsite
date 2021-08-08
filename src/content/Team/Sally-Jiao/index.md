@@ -2,7 +2,7 @@
 type: "team"
 name: "Sally Jiao"
 degree: "Bachelor of Commerce - General | Year 2"
-position: "Senior Analyst"
+position: "Head of Consumer Retail"
 management: "False"
 research: ["CAKE_Sally_Jiao.pdf"]
 headshot: sally.jpg

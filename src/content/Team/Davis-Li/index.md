@@ -2,8 +2,8 @@
 type: "team"
 name: "Davis Li"
 degree: "Bachelor of Commerce – Finance | Year 3"
-position: "Director"
-management: "True"
+position: "Head of Real Estate, Gaming & Lodging"
+management: "False"
 research: ["JWEL_Davis_Li.pdf"]
 headshot: "Davis.jpg"
 

@@ -2,7 +2,7 @@
 type: "team"
 name: "Padraic Lau"
 degree: "Bachelor of Commerce - Finance | Year 3"
-position: "Senior Analyst"
+position: "Head of TMT"
 management: "False"
 research: ["SCHL_Padraic_Lau.pdf"]
 headshot: padriac.jpeg

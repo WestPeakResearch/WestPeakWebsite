@@ -3,7 +3,7 @@ title: "Hiring"
 type: "page"
 ---
 
-# Hiring has closed for the 2020 - 2021 cohort. Please check back September 2021.
+# Applications for the 2021-2022 Cohort are open from August 31st to September 24th at 11:59pm. Please refer to the hiring package and key dates below.
 
 
 ### WHAT WE DO
@@ -18,7 +18,8 @@ We are looking for students with a high willingness to learn and an interest in 
 
 When you join WestPeak, you are joining a community of current members and alumni that are as driven as you. You will have access to exclusive training modules and resources designed to help you learn finance concepts and develop skills needed within the capital markets. Through your deliverables, you will gain valuable research, analytical, and financial modelling skills. In addition to the learning, you will also gain access to mentors and networking sessions held with industry professionals and alumni working in investment banking, sales and trading, asset management, wealth management, and more.
 
+We offer two programs: Junior and Senior Analysts. Please refer to the hiring package for more details on each.
 
-### OVERVIEW OF JUNIOR AND SENIOR PROGRAM
+Please contact us via email (see [contact page](https://westpeakresearch.com/contact/)) or our [Facebook page](https://www.facebook.com/WestPeakResearch/) for any inquiries.
 
-This year, we are expanding our program to include a structured program for both Juniors and Seniors. Historically, we have only run the Junior Analyst program, which taught members the capital markets fundamentals and how to write an equity research report. Recognizing that there are students with more extensive prior experience in finance, we developed the Senior Analyst program to allow those to take an in-depth approach and specialize in a specific industry.
+[2021-2022 Hiring Package](WPRA_2021-2022_Hiring_Package.pdf)

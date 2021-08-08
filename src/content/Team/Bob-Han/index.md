@@ -2,8 +2,8 @@
 type: "team"
 name: "Bob Han"
 degree: "Bachelor of Commerce – General | Year 2"
-position: "Internal Coordinator"
-management: "True"
+position: "Senior Analyst"
+management: "False"
 research: ["GPI_Bob_Han.pdf"]
 headshot: Bob.jpg
 

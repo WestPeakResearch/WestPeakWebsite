@@ -2,13 +2,14 @@
 type: "team"
 name: "Gurnoor Minhas"
 degree: "Bachelor of Commerce - General | Year 2"
-position: "Junior Analyst"
-management: "False"
+position: "Director & Head of Real Estate, Gaming & Lodging"
+management: "True"
 research: ["CAS_Gurnoor_Minhas.pdf"]
 headshot: gurnoor.jpg
 
 ---
 
-Gurnoor is a second-year commerce student with an intended specialization in Finance and a minor in Asia Studies, focused on Punjabi language and culture. She joined WestPeak to strengthen her skills in both equity research and financial modelling. Most recently, she completed an internship at Calgary Economic Development as a Research and Strategy intern, focusing on the city’s emerging sectors: Fintech, Cybersecurity, and Life Sciences.
+Gurnoor is a third-year commerce student specializing in Finance with a minor in Asia Studies, focused on Punjabi language and culture. This past summer, Gurnoor completed an internship with the LEAP Centre for Social Impact in Toronto, ON. 
+ 
+In her free time, Gurnoor can be found doing hot yoga, listening to a podcast, or exploring a new brunch spot!
 
-Outside of school, Gurnoor can be found doing hot yoga, listening to a podcast, or exploring a new brunch spot!

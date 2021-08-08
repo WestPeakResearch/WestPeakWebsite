@@ -2,13 +2,15 @@
 type: "team"
 name: "Luka Roberts"
 degree: "Bachelor of Commerce - General | Year 1"
-position: "Junior Analyst"
-management: "False"
+position: "Associate Director"
+management: "True"
 research: ["SHAK_Luka_Roberts.pdf"]
 headshot: luka.jpeg
 
 ---
 
-Luka is a first-year commerce student intending to specialize in finance. Luka is interested in the capital markets because of its ever-changing nature that challenges him to continually learn and adapt. At WestPeak, Luka looks forward to acquiring the skills that will help him succeed in this industry, as well as working collaboratively with other WestPeak members to create reports.
+Luka is a second-year Commerce student intending on specializing in Finance. This past summer, Luka completed an internship with Maverick Brands, working with their Venture Capital and Financial Advisory team in Vancouver. 
 
-Outside of finance, Luka loves to read, play basketball, and work as a music producer.
+Through WestPeak, Luka has learned essential technical skills and had exposure to an array of opportunities in the capital markets. He is excited to continue learning with WestPeak and further develop the analyst programs.
+
+In his free time, Luka loves playing basketball, making music, and travelling.
