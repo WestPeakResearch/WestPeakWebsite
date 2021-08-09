@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Gurnoor Minhas"
-degree: "Bachelor of Commerce - General | Year 2"
+degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Director & Head of Real Estate, Gaming & Lodging"
 management: "True"
 research: ["CAS_Gurnoor_Minhas.pdf"]

@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Jocelyn Bachmann"
-degree: "Bachelor of Commerce - General | Year 1"
+degree: "Bachelor of Commerce - Business and Computer Science | Year 2"
 position: "Tech Director"
 management: "True"
 research: ["PVH_Jocelyn_Bachmann.pdf"]

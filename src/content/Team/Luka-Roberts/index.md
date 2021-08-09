@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Luka Roberts"
-degree: "Bachelor of Commerce - General | Year 1"
+degree: "Bachelor of Commerce - General | Year 2"
 position: "Associate Director"
 management: "True"
 research: ["SHAK_Luka_Roberts.pdf"]
