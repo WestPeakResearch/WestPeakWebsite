@@ -18,8 +18,12 @@ We are looking for students with a high willingness to learn and an interest in 
 
 When you join WestPeak, you are joining a community of current members and alumni that are as driven as you. You will have access to exclusive training modules and resources designed to help you learn finance concepts and develop skills needed within the capital markets. Through your deliverables, you will gain valuable research, analytical, and financial modelling skills. In addition to the learning, you will also gain access to mentors and networking sessions held with industry professionals and alumni working in investment banking, sales and trading, asset management, wealth management, and more.
 
-We offer two programs: Junior and Senior Analysts. Please refer to the hiring package for more details on each.
+We offer two programs: Junior and Senior Analysts. Please refer to the hiring package for more details on each:
 
-Please contact us via email (see [contact page](https://westpeakresearch.com/contact/)) or our [Facebook page](https://www.facebook.com/WestPeakResearch/) for any inquiries.
+[2021-2022 Hiring Package](WPRA-Hiring-Package.pdf)
 
-[2021-2022 Hiring Package](WPRA_2021-2022_Hiring_Package.pdf)
+Sign up [here](https://forms.gle/ZXEXGAJ11fpcTgcZ6) for our August 31st information session. An in-person information session will also be held September 16th, please check back for more information closer to the date.
+
+Applications will open on [this Hiring page](https://westpeakresearch.com/hiring) and our [Facebook page](https://www.facebook.com/WestPeakResearch/) on August 31st at 8:30pm PT. 
+
+Please contact us via email (see [contact page](https://westpeakresearch.com/contact/)) or Facebook for any inquiries.
