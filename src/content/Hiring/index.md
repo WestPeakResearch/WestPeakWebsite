@@ -3,7 +3,7 @@ title: "Hiring"
 type: "page"
 ---
 
-# Applications for the 2021-2022 Cohort are open from August 31st to September 24th at 11:59pm. Please refer to the hiring package and key dates below.
+# Applications for the 2021-2022 Cohort are open from August 31st to September 24th. Please refer to the hiring package and key dates below.
 
 
 ### WHAT WE DO
@@ -20,10 +20,10 @@ When you join WestPeak, you are joining a community of current members and alumn
 
 We offer two programs: Junior and Senior Analysts. Please refer to the hiring package for more details on each:
 
-[2021-2022 Hiring Package](WPRA-Hiring-Package.pdf)
+[2021-2022 Hiring Package](WPRA_Hiring_Package.pdf)
 
 Sign up [here](https://forms.gle/ZXEXGAJ11fpcTgcZ6) for our August 31st information session. An in-person information session will also be held September 16th, please check back for more information closer to the date.
 
-Applications will open on [this Hiring page](https://westpeakresearch.com/hiring) and our [Facebook page](https://www.facebook.com/WestPeakResearch/) on August 31st at 8:30pm PT. 
+Applications open on [this Hiring page](https://westpeakresearch.com/hiring) and our [Facebook page](https://www.facebook.com/WestPeakResearch/) on August 31st at 8:30pm PT, and close September 24th at 11:59pm PT.
 
 Please contact us via email (see [contact page](https://westpeakresearch.com/contact/)) or Facebook for any inquiries.
