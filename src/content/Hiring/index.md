@@ -22,8 +22,8 @@ We offer two programs: Junior and Senior Analysts. Please refer to the hiring pa
 
 [2021-2022 Hiring Package](WPRA_Hiring_Package.pdf)
 
-Sign up [here](https://forms.gle/ZXEXGAJ11fpcTgcZ6) for our August 31st information session. An in-person information session will also be held September 16th, please check back for more information closer to the date.
+An in-person information session will be held September 16th, please check back for more information closer to the date.
 
-Applications open on [this Hiring page](https://westpeakresearch.com/hiring) and our [Facebook page](https://www.facebook.com/WestPeakResearch/) on August 31st at 8:30pm PT, and close September 24th at 11:59pm PT.
+[Apply here](https://docs.google.com/forms/d/1zlemh6lrEZYxYit-sZtWhaFhG5bjMzSlvnA1zTbLM4Y/edit) by September 24th at 11:59pm PT. 
 
 Please contact us via email (see [contact page](https://westpeakresearch.com/contact/)) or Facebook for any inquiries.
