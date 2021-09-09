@@ -22,7 +22,7 @@ We offer two programs: Junior and Senior Analysts. Please refer to the hiring pa
 
 [2021-2022 Hiring Package](WPRA_Hiring_Package.pdf)
 
-An in-person information session will be held September 16th, please check back for more information closer to the date.
+Sign up [Here](https://forms.gle/w6MeoH1a1BQtoTff8) for our September 16th information session.
 
 [Apply here](https://docs.google.com/forms/d/1zlemh6lrEZYxYit-sZtWhaFhG5bjMzSlvnA1zTbLM4Y/edit) by September 24th at 11:59pm PT. 
 
