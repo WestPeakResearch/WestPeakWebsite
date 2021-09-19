@@ -9,7 +9,8 @@ headshot: padriac.jpeg
 
 ---
 
+Padraic is a senior from Burnaby studying Finance. Next summer, he will intern at Ares Management in the private equity group. Last summer, he interned at Morgan Stanley in the investment banking division. 
 
-Padraic is in his fourth year of the BCom program, with a specialization in finance. Passionate about investing, Padraic hopes to grow his understanding of the capital markets and develop meaningful relationships in the process. He hopes to use his time at WestPeak wisely by learning more about company valuation and macroeconomic topics. Outside of WestPeak, Padraic enjoys hiking, playing volleyball, reading, and occasionally watching his favorite show, Suits.
+In his free time, Padraic enjoys working out, tennis and occasionally watching his favorite show, Friends. 
 
 ​
