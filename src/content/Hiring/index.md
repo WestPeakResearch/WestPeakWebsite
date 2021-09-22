@@ -22,6 +22,8 @@ We offer two programs: Junior and Senior Analysts. Please refer to the hiring pa
 
 [2021-2022 Hiring Package](WPRA_Hiring_Package.pdf)
 
+[Information Session Recording](https://youtu.be/6Nxuk3xVxMc)
+
 [Apply here](https://docs.google.com/forms/d/1zlemh6lrEZYxYit-sZtWhaFhG5bjMzSlvnA1zTbLM4Y/edit) by September 24th at 11:59pm PT. 
 
 Please contact us via email (see [contact page](https://westpeakresearch.com/contact/)) or Facebook for any inquiries.
