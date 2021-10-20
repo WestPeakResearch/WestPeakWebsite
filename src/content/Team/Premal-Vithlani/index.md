@@ -1,6 +1,6 @@
 ---
 type: "team"
-name: "Premal Vithlani
+name: "Premal Vithlani"
 degree: "Bachelor of Commerce - Accounting | Year 4"
 position: "Senior Analyst"
 management: "False"
