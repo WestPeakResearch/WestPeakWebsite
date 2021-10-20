@@ -1,14 +1,14 @@
 ---
 type: "team"
 name: "Logan Hale"
-degree: "Bachelor of Commerce - General | Year 3"
-position: "Junior Analyst"
+degree: "Bachelor of Commerce - Finance | Year 3"
+position: "Senior Analyst"
 management: "False"
 research: ["RL_Logan_Hale.pdf"]
-headshot: logan.jpg
+headshot: logan1.jpg
 
 ---
 
-Logan is a third year commerce student with an intended specialization in finance. He recently completed a wealth management internship this summer and is very excited to continue to build his knowledge of the capital markets.
+Logan is a third year commerce student specializing in finance. He recently worked as a summer analyst at Haywood Securities and gained experience at BMO as a wealth management summer intern after his first year. 
 
 Outside of school, Logan loves to spend his free time on the golf course. He fell in love with the sport in high school and spends his summers playing with friends. Other than this, he is an avid hockey player who has played the sport throughout his whole life, most recently in the UBC intramural league.

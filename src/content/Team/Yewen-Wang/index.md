@@ -2,10 +2,10 @@
 type: "team"
 name: "Yewen Wang"
 degree: "Bachelor of Commerce - Finance | Year 4"
-position: "Junior Analyst"
+position: "Senior Analyst"
 management: "False"
 research: ["CLW_Yewen_Wang.pdf"]
-headshot: yewen.jpg
+headshot: yewen1.jpg
 
 ---
 

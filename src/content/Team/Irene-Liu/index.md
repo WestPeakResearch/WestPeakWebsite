@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of Real Estate, Gaming & Lodging"
 management: "False"
 research: ["PETS_Irene_Liu.pdf"]
-headshot: Irene.jpg
+headshot: irene1.jpg
 ---
 
 Irene is a fourth year commerce student specializing in finance. Through WestPeak, she hopes to learn more about the capital markets and the different macroeconomic factors that affect companies and valuations.

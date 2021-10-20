@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Bob Han"
-degree: "Bachelor of Commerce – General | Year 3"
+degree: "Bachelor of Commerce – Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
 research: ["GPI_Bob_Han.pdf"]

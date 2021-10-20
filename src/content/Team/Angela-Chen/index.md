@@ -2,13 +2,13 @@
 type: "team"
 name: "Angela Chen"
 degree: "Bachelor of Commerce - General | Year 2"
-position: "Junior Analyst"
+position: "Senior Analyst"
 management: "False"
 research: ['TRIP_Angela_Chen']
-headshot: angela.jpeg
+headshot: angela.jpg
 
 ---
 
-Angela is a second-year commerce student intending to specialize in finance. Through WestPeak, she hopes to gain a deeper understanding of the capital markets, develop financial analysis skills, and explore the ways in which capital markets can be used for social change. 
+Angela is a second-year Commerce student intending to specialize in Finance with a Minor in Urban Studies. Through WestPeak, she hopes to continue developing her financial analysis skills, and explore the ways in which capital markets can be used for social change.
 
-Outside of school, Angela can be found hiking, playing hockey, or listening to musicals.
+Outside of school, Angela can be found trying new restaurants, hiking and listening to various podcasts. 

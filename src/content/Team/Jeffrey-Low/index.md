@@ -2,13 +2,13 @@
 type: "team"
 name: "Jeffrey Low"
 degree: "Bachelor of Commerce - General | Year 2"
-position: "Junior Analyst"
+position: "Senior Analyst"
 management: "False"
 research: ["MAT_Jeffrey_Low.pdf"]
-headshot: jeffery.jpg
+headshot: jeffrey1.jpg
 
 ---
 
-Jeffrey is a second year commerce student who intends to specialize in finance. The summer before entering UBC, he worked as an analyst for Growth Advising, where he was first introduced to finance and worked alongside a team to create stock pitches. Still curious about the rapidly evolving and interconnected nature of finance, he hopes to further explore capital markets during university.
+Jeffrey is a second year commerce student who intends to specialize in finance. In his first year, he joined WestPeak as a Junior Analyst and has interned at Finning International with their global treasury team. Still curious about the rapidly evolving and interconnected nature of finance, he hopes to further explore capital markets during university.
 
-In his spare time, Jeffrey enjoys participating in half-marathon races, experimenting with new recipes in the kitchen, watching science-fiction movies, and following the latest news in the fashion industry. 
+In his spare time, Jeffrey enjoys participating in half-marathon races, experimenting with new recipes in the kitchen, and following the latest news regarding sustainability.

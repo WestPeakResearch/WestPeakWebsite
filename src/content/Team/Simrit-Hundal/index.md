@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Finance & BTM | Year 4"
 position: "Director & Head of Natural Resources"
 management: "True"
 research: []
-headshot: simrit.png
+headshot: simrit.jpg
 
 ---
 

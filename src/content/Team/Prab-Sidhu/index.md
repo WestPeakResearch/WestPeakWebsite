@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Prab Sidhu"
-degree: "Bachelor of Commerce - Finance | Year 4"
+degree: "Bachelor of Commerce - Finance | Year 5"
 position: "Senior Analyst"
 management: "False"
 research: []
@@ -9,6 +9,8 @@ headshot: prab.jpg
 
 ---
 
- Prab is a fourth year commerce student specializing in finance. With experience in Business Management, Accounting, and most recently Equity Research at Canalyst, Prab is a student fascinated with learning about different business models and how they operate. 
+Prab is a fifth-year Commerce student specializing in Finance. This past summer, Prab completed an internship with Leith Wheeler Investment Counsel in Vancouver where he spent two months each on the Canadian Equity and High Yield Credit teams. Prab is also currently interning at BCI as a Public Markets Co-op on the Global Thematic team. 
 
- Outside of school, Prab loves playing and watching sports - his favourites being basketball and football, going to the gym, listening to various genres of music, and listening to podcasts. 
+Through WestPeak, Prab has become fascinated by the investment management space and is excited to continue with WestPeak to help mentor some junior analysts. 
+
+In his free time, Prab can be found listening to music, watching Netflix, or working out at the gym. 

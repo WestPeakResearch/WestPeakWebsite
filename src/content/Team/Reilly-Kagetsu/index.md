@@ -1,14 +1,14 @@
 ---
 type: "team"
 name: "Reilly Kagetsu"
-degree: "Bachelor of Commerce - General | Year 3"
-position: "Junior Analyst"
+degree: "Bachelor of Commerce - Finance | Year 3"
+position: "Senior Analyst"
 management: "False"
 research: ["GOOS_Reilly_Kagetsu.pdf"]
-headshot: reilly1.png
+headshot: reilly.jpg
 
 ---
 
-Reilly Kagetsu is a third-year commerce student intending to specialize in Finance. He joined WestPeak to put his interest in capital markets into action and develop his research, analytical, and financial modelling skills. Reilly is interested in the Technology and Automobile & Transportation industries.
+Reilly Kagetsu is a third-year commerce specializing in Finance. He joined WestPeak last year as a Junior Analyst and is now a TMT Senior Analyst. With experience in investment management researching future technologies, he is interested in autonomous driving, semiconductors, and SaaS companies.
 
-Outside of school, Reilly likes to be in the outdoors, chat about the news and sports and is an avid listener of the Joe Rogan Experience.
+Reilly can be found hiking, listening to a podcast, or planning his next trip in his free time.

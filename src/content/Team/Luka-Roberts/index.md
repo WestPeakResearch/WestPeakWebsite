@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - General | Year 2"
 position: "Associate Director"
 management: "True"
 research: ["SHAK_Luka_Roberts.pdf"]
-headshot: luka.jpeg
+headshot: luka.jpg
 
 ---
 

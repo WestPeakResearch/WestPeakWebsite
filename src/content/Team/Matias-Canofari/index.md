@@ -2,10 +2,10 @@
 type: "team"
 name: "Matias Canofari"
 degree: "Bachelor of Commerce - General | Year 2"
-position: "Junior Analyst"
+position: "Senior Analyst"
 management: "False"
 research: ["MCFT_Matias_Canofari.pdf"]
-headshot: matias.jpg
+headshot: matias1.jpg
 
 ---
 

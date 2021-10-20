@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of TMT"
 management: "False"
 research: ["SCHL_Padraic_Lau.pdf"]
-headshot: padriac.jpeg
+headshot: padraic.jpg
 
 ---
 

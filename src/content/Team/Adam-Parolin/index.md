@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - General | Year 3"
 position: "Junior Analyst"
 management: "False"
 research: ["TAP_Adam_Parolin.pdf"]
-headshot: adam.jpg
+headshot: adam1.jpg
 
 ---
 

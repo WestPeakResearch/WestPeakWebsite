@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce – Finance | Year 4"
 position: "Head of Real Estate, Gaming & Lodging"
 management: "False"
 research: ["JWEL_Davis_Li.pdf"]
-headshot: "Davis.jpg"
+headshot: davis1.jpg
 
 ---
 

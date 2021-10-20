@@ -1,11 +1,11 @@
 ---
 type: "team"
 name: "Huy Pham"
-degree: "Bachelor of Commerce - General | Year 3"
+degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
 research: [GRMN_Huy_Pham.pdf]
-headshot: huy.jpg
+headshot: huy1.jpg
 
 ---
 

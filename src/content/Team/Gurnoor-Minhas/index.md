@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Director"
 management: "True"
 research: ["CAS_Gurnoor_Minhas.pdf"]
-headshot: gurnoor.jpg
+headshot: gurnoor1.jpg
 
 ---
 
