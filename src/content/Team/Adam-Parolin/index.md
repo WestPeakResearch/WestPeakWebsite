@@ -2,13 +2,13 @@
 type: "team"
 name: "Adam Parolin"
 degree: "Bachelor of Commerce - General | Year 3"
-position: "Junior Analyst"
+position: "Senior Analyst"
 management: "False"
 research: ["TAP_Adam_Parolin.pdf"]
 headshot: adam1.jpg
 
 ---
 
-Adam is a third year commerce student with an intended specialization in finance with a concentration in sustainability and social impact. He joined WestPeak to further his understanding of capital markets and explore how he could combine sustainability with finance.
+Adam is a third-year commerce student specializing in finance with a concentration in sustainability and social impact. He recently completed a summer internship at Moneris in enterprise risk management and will be entering the capital markets next summer.
 
-Outside of finance, Adam can be found playing numerous sports. In the past, he has competed at a provincial and national level in alpine ski racing, rugby 7’s, and rugby 15’s.
+Outside of finance, Adam can be found playing numerous sports. In the past, he has competed at a provincial level in alpine ski racing, rugby 7’s, and rugby 15’s.

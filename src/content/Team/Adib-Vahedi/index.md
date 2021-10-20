@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Adib Vahedi"
-degree: "Bacehlor of Commerce - General | Year 2"
+degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
 research: []
