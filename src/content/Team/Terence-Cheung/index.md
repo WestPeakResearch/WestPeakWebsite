@@ -4,7 +4,7 @@ name: "Terence Cheung"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["DDS_Terence_Cheung.pdf"]
 headshot: terence.jpg
 
 ---

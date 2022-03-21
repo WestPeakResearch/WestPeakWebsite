@@ -26,15 +26,16 @@ function Research(){
     `)
 
 
-    const [year, setYear] = useState("2021")
+    const [year, setYear] = useState("2022") 
     const [reportType, setReportType] = useState('Equity Research')
     const allResearch = data.allMarkdownRemark.nodes
     let research = data.allMarkdownRemark.nodes.filter(isResearch => isResearch.frontmatter.isPrimer !== 'true')
-    if(reportType === 'Industry Primers'){
+    if(reportType === 'Industry Research'){
       research = data.allMarkdownRemark.nodes.filter(isResearch => isResearch.frontmatter.isPrimer === 'true')
     }
     
     const reportsData = {
+      "2022": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2022),
       "2021": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2021),
       "2020": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2020),
       "2019": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2019),
@@ -71,10 +72,10 @@ function Research(){
             { allResearch.filter(paper => new Date(paper.frontmatter.date).getFullYear() === Number(year)).filter(isResearch => isResearch.frontmatter.isPrimer === 'true').length > 0 ?
             <button  
             onClick = {handleTypeButtonClick}
-            value = 'Industry Primers'
-            className = { 'Industry Primers' === reportType ? styles.activeReportButton : styles.inactiveReportButton}
+            value = 'Industry Research'
+            className = { 'Industry Research' === reportType ? styles.activeReportButton : styles.inactiveReportButton}
             >
-              Industry Primers
+              Industry Research
             </button>
             :
             null
@@ -100,7 +101,7 @@ function Research(){
              return (
                <>
               <ResearchComponent key = {index} report = {paper.frontmatter}/>
-              {index === reportsData[year].length - 1 ? null : <div className = {styles.seperation}>
+              {index === reportsData[year].length - 1 ? null : <div className = {styles.separation}>
               <hr />
               </div>}
               </>
