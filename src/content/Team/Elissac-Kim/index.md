@@ -4,7 +4,7 @@ name: "Elissac Kim"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SIX_Elissac_Kim.pdf"]
 headshot: elissac.jpg
 
 ---

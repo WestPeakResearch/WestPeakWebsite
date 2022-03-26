@@ -4,7 +4,7 @@ name: "Lynne Shi"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SIG_Lynne_Shi.pdf"]
 headshot: lynne.jpg
 
 ---

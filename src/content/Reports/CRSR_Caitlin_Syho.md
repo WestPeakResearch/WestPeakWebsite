@@ -2,7 +2,7 @@
 type: "report"
 paper: "CRSR_Caitlin_Syho.pdf"
 author: "Caitlin Syho"
-company: "Corsair Gaming Inc."
+company: "Corsair Gaming, Inc."
 date: "2022-03-15"
 summary: "Headquartered in Fremont, California, Corsair Gaming, Inc.
 ('Corsair' or the 'Company') is a leading hardware and

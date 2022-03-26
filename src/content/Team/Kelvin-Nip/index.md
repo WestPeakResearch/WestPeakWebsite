@@ -4,7 +4,7 @@ name: "Kelvin Nip"
 degree: "Bachelor and Master of Management Dual Degree - Sociology | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["COLM_Kelvin_Nip.pdf"]
 headshot: kelvin.jpg
 
 ---
