@@ -2,6 +2,97 @@
     text-align:center;
 }
 
+.inactiveGroupButton{
+    margin: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 500px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    
+  background-color: #eeeeee;
+  color: black;
+}
+
+.inactiveGroupButton:hover {
+    background-color: #d8d8d8;
+  }
+
+.activeGroupButton{
+    margin: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color:white;
+    background-color:#0a233d;
+    
+    width: 500px;
+    height: 60px;
+}
+
+.activeBiggerGroupButton{
+    margin: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color:white;
+    background-color:#0a233d;
+    
+    width: 620px;
+    height: 60px;
+}
+
+.inactivePrimerOrDealButton{
+    margin: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 300px;
+    height: 230px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    
+  background-color: #eeeeee;
+  color: black;
+
+}
+
+.inactivePrimerOrDealButton:hover {
+    background-color: #d8d8d8;
+  }
+
+.activePrimerOrDealButton{
+    margin: 10px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color:white;
+    background-color:#0a233d;
+    
+    width: 300px;
+    height: 230px;
+}
+
 .noReport{
     text-align: center;
     padding-top: 50px;

@@ -4,7 +4,7 @@ name: "Lucas Lazzaroni"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["MIK_CR_LBO.pdf", "CR_Primer_2022.pdf"]
 headshot: lucas.jpg
 
 ---

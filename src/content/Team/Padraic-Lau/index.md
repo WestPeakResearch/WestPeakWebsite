@@ -4,7 +4,7 @@ name: "Padraic Lau"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of TMT"
 management: "False"
-research: ["SCHL_Padraic_Lau.pdf"]
+research: ["SCHL_Padraic_Lau.pdf", "TMT_Primer_2021.pdf"]
 headshot: padraic.jpg
 
 ---

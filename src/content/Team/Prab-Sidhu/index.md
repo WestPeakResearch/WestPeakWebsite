@@ -4,7 +4,7 @@ name: "Prab Sidhu"
 degree: "Bachelor of Commerce - Finance | Year 5"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["CR_Primer_2021.pdf"]
 headshot: prab.jpg
 
 ---

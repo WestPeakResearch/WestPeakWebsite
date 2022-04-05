@@ -30,7 +30,7 @@ export default function teamMember({ data }) {
           <br />
              <a
              rel="noopener noreferrer"
-             href={withPrefix(`${paper}`)}
+             href={withPrefix(`${paper}`)}n
              target="_blank"
              key = {index}
              className = {styles.researchLink}

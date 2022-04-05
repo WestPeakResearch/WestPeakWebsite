@@ -4,7 +4,7 @@ name: "Irene Liu"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of Real Estate, Gaming & Lodging"
 management: "False"
-research: ["PETS_Irene_Liu.pdf"]
+research: ["PETS_Irene_Liu.pdf", "NR_Primer_2021.pdf", "REGL_Primer_2022.pdf"]
 headshot: irene1.jpg
 ---
 

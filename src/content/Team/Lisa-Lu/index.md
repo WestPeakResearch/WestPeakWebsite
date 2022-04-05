@@ -4,7 +4,7 @@ name: "Lisa Lu"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["GP_Lisa_Lu.pdf"]
 headshot: lisa.jpg
 
 ---

@@ -4,7 +4,7 @@ name: "Premal Vithlani"
 degree: "Bachelor of Commerce - Accounting | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["OPAD_REGL_M&A.pdf", "REGL_Primer_2022.pdf"]
 headshot: premal.jpg
 
 ---

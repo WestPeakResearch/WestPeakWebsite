@@ -4,7 +4,7 @@ name: "Tareeq Mangalji"
 degree: "Bachelor and Master of Management Dual Degree - Psychology | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["RCH_Tareeq_Mangalji.pdf"]
 headshot: tareeq.jpg
 
 ---

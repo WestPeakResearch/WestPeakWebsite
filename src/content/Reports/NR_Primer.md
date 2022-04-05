@@ -1,7 +1,9 @@
 ---
 type: "report"
-isPrimer: 'true'
-paper: "NR_PRIMER_2021.pdf"
+isIndustryResearch: 'true'
+industryGroup: 'Natural Resources'
+primerOrDeal: 'Subsector Primers'
+paper: "NR_Primer_2021.pdf"
 author: ""
 company: "Natural Resources Primer"
 date: "2021-02-25"

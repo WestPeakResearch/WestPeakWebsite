@@ -4,7 +4,7 @@ name: "Cathie Ji"
 degree: "Bachelor of Commerce - Finance & Accounting | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: ["MIK_Cathie_Ji.pdf"]
+research: ["MIK_Cathie_Ji.pdf", "MIK_CR_LBO.pdf", "CR_Primer_2022.pdf"]
 headshot: cathie.jpg
 
 ---

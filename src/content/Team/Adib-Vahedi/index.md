@@ -4,7 +4,7 @@ name: "Adib Vahedi"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SFIX_Adib_Vahedi.pdf"]
 headshot: adib.jpg
 
 ---

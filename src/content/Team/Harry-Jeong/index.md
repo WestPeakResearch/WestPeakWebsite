@@ -4,7 +4,7 @@ name: "Harry Jeong"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["PLAY_Harry_Jeong.pdf"]
 headshot: harry.jpg
 
 ---

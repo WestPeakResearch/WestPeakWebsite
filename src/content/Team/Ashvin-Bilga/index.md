@@ -4,7 +4,7 @@ name: "Ashvin Bilga"
 degree: "Bachelor of Commerce - Finance & Accounting | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["OPAD_REGL_M&A.pdf", "REGL_Primer_2022.pdf"]
 headshot: ashvin.jpg
 
 ---

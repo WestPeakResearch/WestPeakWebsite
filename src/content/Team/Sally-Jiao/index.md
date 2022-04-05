@@ -4,7 +4,7 @@ name: "Sally Jiao"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Head of Consumer Retail"
 management: "False"
-research: ["CAKE_Sally_Jiao.pdf", "BURL_Sally_Jiao.pdf"]
+research: ["CAKE_Sally_Jiao.pdf", "BURL_Sally_Jiao.pdf", "CR_Primer_2021.pdf", "CR_Primer_2022.pdf"]
 headshot: sally1.jpg
 ---
 

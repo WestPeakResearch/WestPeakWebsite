@@ -4,7 +4,7 @@ name: "James Tucker"
 degree: "Bachelor of Commerce - Finance & Real Estate | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: ["CSIQ_James_Tucker.pdf"]
+research: ["CSIQ_James_Tucker.pdf", "OPAD_REGL_M&A.pdf", "REGL_Primer_2022.pdf"]
 headshot: james1.jpg
 
 ---

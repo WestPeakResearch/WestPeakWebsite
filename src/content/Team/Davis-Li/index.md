@@ -4,7 +4,7 @@ name: "Davis Li"
 degree: "Bachelor of Commerce – Finance | Year 4"
 position: "Head of Real Estate, Gaming & Lodging"
 management: "False"
-research: ["JWEL_Davis_Li.pdf"]
+research: ["JWEL_Davis_Li.pdf", "REGL_Primer_2022.pdf"]
 headshot: davis1.jpg
 
 ---

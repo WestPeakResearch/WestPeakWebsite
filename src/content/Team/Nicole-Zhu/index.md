@@ -4,7 +4,7 @@ name: "Nicole Zhu"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["FIT_TMT_M&A_Nicole_Zhu.pdf"]
 headshot: nicole.jpg
 
 ---

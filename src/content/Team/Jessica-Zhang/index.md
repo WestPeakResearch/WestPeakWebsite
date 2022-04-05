@@ -4,7 +4,7 @@ name: "Jessica Zhang"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of TMT"
 management: "False"
-research: ["ZUMZ_Jessica_Zhang.pdf"]
+research: ["ZUMZ_Jessica_Zhang.pdf", "CR_Primer_2021.pdf"]
 headshot: jessica1.jpg
 ---
 

@@ -4,7 +4,7 @@ name: "Joshua Grewal"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Senior Analyst"
 management: "False"
-research: ["SKX_Joshua_Grewal.pdf"]
+research: ["SKX_Joshua_Grewal.pdf", "OPAD_REGL_M&A.pdf", "REGL_Primer_2022.pdf"]
 headshot: joshua.jpg
 
 ---

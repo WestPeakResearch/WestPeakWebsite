@@ -4,7 +4,7 @@ name: "Angela Chen"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Senior Analyst"
 management: "False"
-research: ['TRIP_Angela_Chen']
+research: ["TRIP_Angela_Chen.pdf", "OPAD_REGL_M&A.pdf", "REGL_Primer_2022.pdf"]
 headshot: angela.jpg
 
 ---

@@ -4,7 +4,7 @@ name: "Huy Pham"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: [GRMN_Huy_Pham.pdf]
+research: ["GRMN_Huy_Pham.pdf", "TMT_Primer_2021.pdf"]
 headshot: huy1.jpg
 
 ---
