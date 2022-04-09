@@ -4,7 +4,7 @@ name: "Max Wong"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["HBI_Max_Wong.pdf"]
 headshot: max.jpg
 
 ---

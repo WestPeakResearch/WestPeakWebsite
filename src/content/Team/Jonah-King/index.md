@@ -4,7 +4,7 @@ name: "Jonah King"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["ALGT_Jonah_King.pdf"]
 headshot: jonah.jpg
 
 ---

@@ -4,7 +4,7 @@ name: "Paul Gill"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["FL_Paul_Gill.pdf"]
 headshot: paul.jpg
 
 ---
