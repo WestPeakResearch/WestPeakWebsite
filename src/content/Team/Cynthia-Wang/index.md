@@ -4,7 +4,7 @@ name: "Cynthia Wang"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["MFI_Cynthia_Wang.pdf"]
 headshot: cynthia.jpg
 
 ---

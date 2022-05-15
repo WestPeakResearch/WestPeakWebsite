@@ -4,7 +4,7 @@ name: "Ellen You"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["CRI_Ellen_You.pdf"]
 headshot: ellen.jpg
 
 ---
