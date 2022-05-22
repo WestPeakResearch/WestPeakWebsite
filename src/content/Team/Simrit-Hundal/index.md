@@ -4,7 +4,7 @@ name: "Simrit Hundal"
 degree: "Bachelor of Commerce - Finance & BTM | Year 4"
 position: "Director & Head of Natural Resources"
 management: "True"
-research: ["TMT_Primer_2021.pdf"]
+research: ["TMT_Primer_2021.pdf", "NR_Primer_2022.pdf", "ADI_Simrit_Hundal.pdf"]
 headshot: simrit.jpg
 
 ---

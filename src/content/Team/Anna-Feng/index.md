@@ -4,7 +4,7 @@ name: "Anna Feng"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: ["VSLR_NR_M&A_Anna_Feng.pdf"]
+research: ["VSLR_NR_M&A_Anna_Feng.pdf", "NR_Primer_2022.pdf"]
 headshot: anna.jpg
 
 ---

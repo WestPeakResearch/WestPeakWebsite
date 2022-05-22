@@ -4,7 +4,7 @@ name: "Jeffrey Low"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Senior Analyst"
 management: "False"
-research: ["MAT_Jeffrey_Low.pdf", "CXO_NR_M&A_Jeffrey_Low.pdf"]
+research: ["MAT_Jeffrey_Low.pdf", "CXO_NR_M&A_Jeffrey_Low.pdf", "NR_Primer_2022.pdf"]
 headshot: jeffrey1.jpg
 
 ---

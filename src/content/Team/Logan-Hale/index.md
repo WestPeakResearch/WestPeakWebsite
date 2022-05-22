@@ -4,7 +4,7 @@ name: "Logan Hale"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: ["RL_Logan_Hale.pdf", "ROXG_NR_M&A_Logan_Hale.pdf"]
+research: ["RL_Logan_Hale.pdf", "ROXG_NR_M&A_Logan_Hale.pdf", "NR_Primer_2022.pdf"]
 headshot: logan1.jpg
 
 ---

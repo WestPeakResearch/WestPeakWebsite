@@ -4,7 +4,7 @@ name: "Dylan Assi"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Director & Head of Natural Resources"
 management: "True"
-research: ["JWN_Dylan_Assi.pdf"]
+research: ["JWN_Dylan_Assi.pdf", "NR_Primer_2022.pdf"]
 headshot: dylan1.jpg
 
 ---
