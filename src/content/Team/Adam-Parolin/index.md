@@ -1,14 +1,14 @@
 ---
 type: "team"
 name: "Adam Parolin"
-degree: "Bachelor of Commerce - General | Year 3"
-position: "Senior Analyst"
-management: "False"
+degree: "Bachelor of Commerce - Finance | Year 4"
+position: "Director"
+management: "True"
 research: ["TAP_Adam_Parolin.pdf", "HSE_NR_M&A_Adam_Parolin.pdf", "NR_Primer_2022.pdf"]
 headshot: adam1.jpg
 
 ---
 
-Adam is a third-year commerce student specializing in finance with a concentration in sustainability and social impact. He recently completed a summer internship at Moneris in enterprise risk management and will be entering the capital markets next summer.
+Adam is a fourth-year commerce student specializing in Finance with a concentration in Sustainability and Social Impact. This summer, Adam is completing an internship with Scotiabank’s Energy Investment Banking team in Calgary. 
 
-Outside of finance, Adam can be found playing numerous sports. In the past, he has competed at a provincial level in alpine ski racing, rugby 7’s, and rugby 15’s.
+Outside of school and work, Adam enjoys watching rugby, grabbing a drink with friends, and skiing at the various hills around British Columbia.

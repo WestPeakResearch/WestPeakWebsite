@@ -105,7 +105,12 @@ function Team(){
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
               </>
             ))}
-            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('Associate')).map((member, index) => (
+            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('Internal')).map((member, index) => (
+              <>
+                <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
+              </>
+            ))}
+            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('External')).map((member, index) => (
               <>
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
               </>
