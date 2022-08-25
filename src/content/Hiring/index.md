@@ -21,7 +21,7 @@ When you join WestPeak, you are joining a community of current members and alumn
 
 We offer a **Junior Analyst** program and a **Senior Analyst** program. Please refer to our <a href="WPRA_Hiring_Package_2022.pdf" target="_blank">**Hiring Package**</a> for more details on each.
 
-Applications open on **August 24th at 6:30pm PT**, and will be available on this page and via our <a href="https://www.facebook.com/WestPeakResearch/" target="_blank">**Facebook page**</a> until **September 23rd at 11:59pm PT**.
+<a href="https://forms.gle/s5kjk5yHPgCoNfWt5" target="_blank">**Apply here**</a> by **September 23rd, 11:59pm PT**. Please note you must be a **UBC Vancouver student**, and may only apply to **one program**.
 
 For a more in depth overview of our programs and to meet the team, we encourage you to attend one of our upcoming information sessions:
 
