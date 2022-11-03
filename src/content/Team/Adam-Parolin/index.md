@@ -9,6 +9,6 @@ headshot: adam1.jpg
 
 ---
 
-Adam is a fourth-year commerce student specializing in Finance with a concentration in Sustainability and Social Impact. This summer, Adam is completing an internship with Scotiabank’s Energy Investment Banking team in Calgary. 
+Adam is a fourth-year commerce student specializing in Finance with a concentration in Sustainability and Social Impact. This summer, Adam completed an internship with Scotiabank’s Energy Investment Banking team in Calgary where he will be returning full-time.
 
 Outside of school and work, Adam enjoys watching rugby, grabbing a drink with friends, and skiing at the various hills around British Columbia.
