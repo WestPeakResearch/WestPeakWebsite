@@ -2,9 +2,10 @@ import React, {useState} from "react"
 import styles from "./Research.module.css"
 import ResearchComponent from "./ResearchComponent"
 import {useStaticQuery, graphql} from "gatsby"
+import Dropdown from "../Dropdown/Dropdown"
 
-
-
+const CURRENT_YEAR = 2022;
+const START_YEAR = 2014;
 
 function Research(){
   const data = useStaticQuery(graphql`
@@ -27,79 +28,56 @@ function Research(){
   }      
   `)
 
-
-  const [year, setYear] = useState("2022") 
+  const [year, setYear] = useState(CURRENT_YEAR) 
   const [reportType, setReportType] = useState('Equity Research')
   const [industryGroup, setIndustryGroup] = useState(null)
   const [primerOrDeal, setPrimerOrDeal] = useState(null)
   const [showPrimerOrDealResearch, setShowPrimerOrDealResearch] = useState(false)
   const allResearch = data.allMarkdownRemark.nodes
-  let research = data.allMarkdownRemark.nodes.filter(isResearch => isResearch.frontmatter.isIndustryResearch !== 'true')
+  let research = allResearch.filter(isResearch => isResearch.frontmatter.isIndustryResearch !== 'true')
   let showEquityResearch = true
+  let isIndustryResearch = false;
 
   if (reportType === 'Industry Research'){
-    showEquityResearch = false
-    
-    if (industryGroup === 'Consumer Retail') {
-      if (primerOrDeal === 'Subsector Primers') {
-        research = data.allMarkdownRemark.nodes.filter(isResearch => 
-          isResearch.frontmatter.isIndustryResearch === 'true' &&
-          isResearch.frontmatter.industryGroup === 'Consumer Retail' &&
-          isResearch.frontmatter.primerOrDeal === 'Subsector Primers' 
-          )
-      } else {
-        research = data.allMarkdownRemark.nodes.filter(isResearch => 
-          isResearch.frontmatter.isIndustryResearch === 'true' &&
-          isResearch.frontmatter.industryGroup === 'Consumer Retail' &&
-          isResearch.frontmatter.primerOrDeal === 'Deal Summaries' 
-          )
-      }
-    } else if (industryGroup === 'Natural Resources') {
-      if (primerOrDeal === 'Subsector Primers') {
-        research = data.allMarkdownRemark.nodes.filter(isResearch => 
-          isResearch.frontmatter.isIndustryResearch === 'true' &&
-          isResearch.frontmatter.industryGroup === 'Natural Resources' &&
-          isResearch.frontmatter.primerOrDeal === 'Subsector Primers' 
-          )
-      } else {
-        research = data.allMarkdownRemark.nodes.filter(isResearch => 
-          isResearch.frontmatter.isIndustryResearch === 'true' &&
-          isResearch.frontmatter.industryGroup === 'Natural Resources' &&
-          isResearch.frontmatter.primerOrDeal === 'Deal Summaries' 
-          )
-      }
-    } else if (industryGroup === 'Technology, Media, and Telecommunications') {
-      if (primerOrDeal === 'Subsector Primers') {
-        research = data.allMarkdownRemark.nodes.filter(isResearch => 
-          isResearch.frontmatter.isIndustryResearch === 'true' &&
-          isResearch.frontmatter.industryGroup === 'Technology, Media, and Telecommunications' &&
-          isResearch.frontmatter.primerOrDeal === 'Subsector Primers' 
-          )
-      } else {
-        research = data.allMarkdownRemark.nodes.filter(isResearch => 
-          isResearch.frontmatter.isIndustryResearch === 'true' &&
-          isResearch.frontmatter.industryGroup === 'Technology, Media, and Telecommunications' &&
-          isResearch.frontmatter.primerOrDeal === 'Deal Summaries' 
-          )
-      }
-    } else {
-      if (primerOrDeal === 'Subsector Primers') {
-        research = data.allMarkdownRemark.nodes.filter(isResearch => 
-          isResearch.frontmatter.isIndustryResearch === 'true' &&
-          isResearch.frontmatter.industryGroup === 'Real Estate, Gaming, and Lodging' &&
-          isResearch.frontmatter.primerOrDeal === 'Subsector Primers' 
-          )
-      } else {
-        research = data.allMarkdownRemark.nodes.filter(isResearch => 
-          isResearch.frontmatter.isIndustryResearch === 'true' &&
-          isResearch.frontmatter.industryGroup === 'Real Estate, Gaming, and Lodging' &&
-          isResearch.frontmatter.primerOrDeal === 'Deal Summaries' 
-          )
-      }
-    }
+    showEquityResearch = false;
+    isIndustryResearch = 'true';
+
+    research = allResearch.filter(isResearch => 
+      isResearch.frontmatter.isIndustryResearch === isIndustryResearch &&
+      isResearch.frontmatter.industryGroup === industryGroup &&
+      isResearch.frontmatter.primerOrDeal === primerOrDeal
+    );
   }
 
-  
+  const years = [
+    {label: 2022, value: 2022},
+    {label: 2021, value: 2021},
+    {label: 2020, value: 2020},
+    {label: 2019, value: 2019},
+    {label: 2018, value: 2018},
+    {label: 2017, value: 2017},
+    {label: 2016, value: 2016},
+    {label: 2015, value: 2015},
+    {label: 2014, value: 2014},
+  ]
+
+  const equityYears = [
+    {label: 2022, value: 2022},
+    {label: 2021, value: 2021},
+    {label: 2020, value: 2020},
+    {label: 2019, value: 2019},
+    {label: 2018, value: 2018},
+    {label: 2017, value: 2017},
+    {label: 2016, value: 2016},
+    {label: 2015, value: 2015},
+    {label: 2014, value: 2014},
+  ]
+
+  const industryYears = [
+    {label: 2022, value: 2022},
+    {label: 2021, value: 2021},
+  ]
+
   const reportsData = {
     "2022": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2022),
     "2021": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2021),
@@ -112,9 +90,14 @@ function Research(){
     "2014": research.filter( paper => new Date(paper.frontmatter.date).getFullYear() === 2014),
   }
 
-  function handleYearButtonClick(event){
-    event.preventDefault()
-    setYear(event.target.value)
+  const reportTypes = [
+    {label: 'Equity Research', value: 'Equity Research'},
+    {label: 'Industry Research', value: 'Industry Research'},
+  ]
+
+  function handleYearSelect(event){
+    event.preventDefault();
+    setYear(event.target.value);
   }
 
   function handleTypeButtonClick(event){
@@ -124,52 +107,49 @@ function Research(){
   }
 
   function handleIndustryButtonClick(event){
-    event.preventDefault()
-    setIndustryGroup(event.target.value)
-    setShowPrimerOrDealResearch(false)
-    setPrimerOrDeal(null)
+    event.preventDefault();
+    setIndustryGroup(event.target.value);
+    setShowPrimerOrDealResearch(false);
+    setPrimerOrDeal(null);
   }
 
   function handlePrimerOrDealButtonClick(event){
-    event.preventDefault()
-    setPrimerOrDeal(event.target.value)
-    setShowPrimerOrDealResearch(true)
+    event.preventDefault();
+    setPrimerOrDeal(event.target.value);
+    setShowPrimerOrDealResearch(true);
   }
 
-  
   return (
     <div className = {styles.container}>
 
-      {/* showing Equity and Industry Research buttons */}
+      {/* showing dropdowns for year and equity/industry research*/}
       <div className = {styles.reportTypeButtons}>
-        <button onClick = {handleTypeButtonClick} value = 'Equity Research' className = { 'Equity Research' === reportType ? styles.activeReportButton : styles.inactiveReportButton}>
-          Equity Research
-        </button>
-
-        {/* if there's industry research for the selected year, show Industry Research button */}
-        {allResearch.filter(paper => new Date(paper.frontmatter.date).getFullYear() === Number(year)).filter(isResearch => isResearch.frontmatter.isIndustryResearch === 'true').length > 0 ?
-          <button onClick = {handleTypeButtonClick} value = 'Industry Research' className = { 'Industry Research' === reportType ? styles.activeReportButton : styles.inactiveReportButton}>
-            Industry Research
+        <Dropdown
+          options={reportType === 'Equity Research' ? equityYears : industryYears}
+          handleChange={handleYearSelect}
+          value={year}
+          style={styles.dropdown}
+        ></Dropdown>
+        <div className = {styles.reportTypeButtons}>
+          <button onClick = {handleTypeButtonClick} value = 'Equity Research' className = { 'Equity Research' === reportType ? styles.activeReportButton : styles.inactiveReportButton}>
+            Equity Research
           </button>
-          :
-          null
-        }
+
+          {/* if there's industry research for the selected year, show Industry Research button */}
+          {allResearch.filter(paper => new Date(paper.frontmatter.date).getFullYear() === Number(year)).filter(isResearch => isResearch.frontmatter.isIndustryResearch === 'true').length > 0 ?
+            <button onClick = {handleTypeButtonClick} value = 'Industry Research' className = { 'Industry Research' === reportType ? styles.activeReportButton : styles.inactiveReportButton}>
+              Industry Research
+            </button>
+            :
+            null
+          }
+        </div>
       </div>
 
-      {/* CASE 1 - if Equity Research is clicked */}
+      {/* CASE 1 - if Equity Research is selected */}
       {showEquityResearch ? 
       
         <div>
-          {/* showing year buttons */}
-          <div className = {styles.yearButtons}>
-            {Object.keys(reportsData).reverse().filter((year) =>  reportsData[year].length > 0).map(key => 
-              (<button onClick = {handleYearButtonClick} value = {key} className = { key === year ? styles.activeButton : styles.inactiveButton}>
-                  {key}
-                </button>
-              ))
-            }
-          </div>
-
           {/* showing research for selected year */}
           <div className = {styles.research}>   
             {reportsData[year].length > 0 ?
@@ -193,7 +173,7 @@ function Research(){
 
         : 
 
-        // CASE 2 - if Industry Research is clicked
+        // CASE 2 - if Industry Research is selected
         <div>
           <div>
                 
@@ -207,24 +187,17 @@ function Research(){
                           
                     // showing selected industry group button and selected report type (primer / deal) button
                     <div>
-                      <div className = {styles.reportTypeButtons}>
-                        <button onClick = {handlePrimerOrDealButtonClick} value = {primerOrDeal} className = { styles.activeBiggerGroupButton }>
+                      <div className = {styles.buttonsContainer}>
+                        {/* <button className={styles.backButton} onClick={handleIndustryButtonClick} value={industryGroup}>
+                          &#60;
+                        </button>  */}
+                        <button onClick={handlePrimerOrDealButtonClick} value={primerOrDeal} className={styles.activeBiggerGroupButton}>
                           {industryGroup + ' ' + primerOrDeal}
                         </button>
                       </div>
 
 
                       <div>
-                         {/* showing year buttons */}
-                        <div className = {styles.yearButtons}>
-                          {Object.keys(reportsData).reverse().filter((year) =>  reportsData[year].length > 0).map(key => 
-                            (<button onClick = {handleYearButtonClick} value = {key} className = { key === year ? styles.activeButton : styles.inactiveButton}>
-                                {key}
-                              </button>
-                            ))
-                          }
-                        </div>
-
                         {/* showing research for selected year */}
                         <div className = {styles.research}>   
                           {reportsData[year].length > 0 ?
@@ -250,10 +223,13 @@ function Research(){
                     :
 
                     
-                    <div className = {styles.yearButtons}>
+                    <div className = {styles.buttons}>
 
                       {/* showing Industry Research button and selected industry group button */}
-                      <div>
+                      <div className={styles.buttonsContainer}>
+                        {/* <button className={styles.backButton} onClick={handleReportTypeSelect} value={reportType}>
+                          &#60;
+                        </button>  */}
                         <button onClick = {handleIndustryButtonClick} value = {industryGroup} className = { styles.activeBiggerGroupButton }>
                           {industryGroup}
                         </button>
@@ -277,7 +253,7 @@ function Research(){
 
                 <div>
                   {/* showing industry group buttons */}
-                  <div className = {styles.yearButtons}>
+                  <div className = {styles.buttons}>
                     <div>
                       <button onClick = {handleIndustryButtonClick} value = 'Consumer Retail' className = { 'Consumer Retail' === industryGroup ? styles.activeGroupButton : styles.inactiveGroupButton}>
                         Consumer Retail 
