@@ -16,8 +16,8 @@
 
 .pageTitle {    
   margin: 0 auto;
-  /* color:#0a233d; */
-  color: white;
+  color: #f2f2f2;
+  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
   padding-top:12vh;
   text-align:center;
   font-size:5rem;
