@@ -7,7 +7,7 @@ import styles from "./CompanyPlacement.module.css"
 function CompanyPlacement(){
   const data = useStaticQuery(graphql`
     query placementsQuery {
-      one: file(absolutePath: {regex: "/logo.jpg/"}) {
+      one: file(absolutePath: {regex: "/placements1.jpg/"}) {
         childImageSharp {
           fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
@@ -15,7 +15,7 @@ function CompanyPlacement(){
         }
       }
 
-      two: file(absolutePath: {regex: "/Slide2.PNG/"}) {
+      two: file(absolutePath: {regex: "/placements2.PNG/"}) {
         childImageSharp {
           fluid(maxWidth: 2000) {
               ...GatsbyImageSharpFluid
