@@ -5,96 +5,89 @@ import ManagementCard from "../ManagementCard"
 import AlumniTable from "../AlumniTable"
 
 
-
-
 function Team(){
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query teamQuery {
-        allMarkdownRemark(filter: {frontmatter: {type: {eq: "team"}}}, sort: {order: ASC, fields: frontmatter___name}) {
-            nodes {
-              frontmatter {
-                degree
-                management
-                name
-                position
-                research
-                headshot {
-                  publicURL
-                  childImageSharp {
-                    fluid(maxWidth:1200 maxHeight: 1800 quality:70) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
+      allMarkdownRemark(filter: {frontmatter: {type: {eq: "team"}}}, sort: {order: ASC, fields: frontmatter___name}) {
+        nodes {
+          frontmatter {
+            degree
+            management
+            name
+            position
+            research
+            headshot {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth:1200 maxHeight: 1800 quality:70) {
+                  ...GatsbyImageSharpFluid
                 }
-              }
-              fields {
-                slug
               }
             }
           }
+          fields {
+            slug
+          }
         }
-        
-      `)
+      }
+    }
+  `)
+ 
+  const [currTeam, setTeam] = useState("Management")
 
-      
-      const [currTeam, setTeam] = useState("Management")
+  const team = data.allMarkdownRemark.nodes
+  
+  useEffect(() => {
+    setTeam(localStorage.getItem('team') ? localStorage.getItem('team') : "Management")
+  }, [])
 
-      const team = data.allMarkdownRemark.nodes
-      
-      useEffect(() => {
-        setTeam(localStorage.getItem('team') ? localStorage.getItem('team') : "Management")
-      }, [])
-
-      useEffect(() => {
-        window.addEventListener('beforeunload', function (e) {
-          e.preventDefault();
-          localStorage.setItem('team', "Management");
-      });
-      });
+  useEffect(() => {
+    window.addEventListener('beforeunload', function (e) {
+      e.preventDefault();
+      localStorage.setItem('team', "Management");
+    });
+  });
    
 
-    const teamMembers = {
-      "Management": team.filter( member => member.frontmatter.management === "True"), 
-      "Team Leads": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Head")),
-      "Senior Analysts": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Senior Analyst")),
-      "Junior Analysts": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Junior Analyst")),
-      "Alumni": []
+  const teamMembers = {
+    "Management": team.filter( member => member.frontmatter.management === "True"), 
+    "Team Leads": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Head")),
+    "Senior Analysts": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Senior Analyst")),
+    "Junior Analysts": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Junior Analyst")),
+    "Alumni": []
+  }
+
+  function compare( a, b ) {
+    if ( a.frontmatter.name < b.frontmatter.name ){
+      return -1;
     }
+    if ( a.frontmatter.name > b.frontmatter.name ){
+      return 1;
+    }
+    return 0;
+  }
+ 
+  function handleMemberButtonClick(event){
+    setTeam(event.target.value)
+    localStorage.setItem('team', event.target.value);
+  }
 
-      function compare( a, b ) {
-        if ( a.frontmatter.name < b.frontmatter.name ){
-          return -1;
-        }
-        if ( a.frontmatter.name > b.frontmatter.name ){
-          return 1;
-        }
-        return 0;
-      }
-
-      
-      function handleMemberButtonClick(event){
-        setTeam(event.target.value)
-        localStorage.setItem('team', event.target.value);
-      }
-
-      
-
-    return(
-        <>
-        <main className = {styles.container}>
+  return(
+    <>
+      <main className = {styles.container}>
         <div className = {styles.memberButtons}>
-            {
-              Object.keys(teamMembers).map(key => (
-                <button  
+          {
+            Object.keys(teamMembers).map(key => (
+              <button  
                 onClick = {handleMemberButtonClick}
                 value = {key}
                 className = { key === currTeam ? styles.activeButton : styles.inactiveButton}
-                >
-                  {key}
-                </button>
-              ))
-            }
-          </div>
+              >
+                {key}
+              </button>
+            ))
+          }
+        </div>
           
         <h3 className = {styles.title}>{currTeam}</h3>
 
@@ -132,10 +125,10 @@ function Team(){
         }
 
         {currTeam === "Alumni" ? <AlumniTable /> : null }
-        
-        </main>
-        </>
-    )
+      
+      </main>
+    </>
+  )
 }
 
 

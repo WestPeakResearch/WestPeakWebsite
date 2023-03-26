@@ -1,35 +1,33 @@
 .pageCover {
-    background-color:#ebebeb;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 25vh;
-    color: white;
-    display: table;
-    width: 100%;
-    z-index:0;
-  }
-  
-  .pageTitle {    
-    margin: 0 auto;
-    color:#0a233d;
-    padding-top:12vh;
-    text-align:center;
-    font-size:5rem;
+  background-color:#ebebeb;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 25vh;
+  color: white;
+  display: table;
+  width: 100%;
+  z-index:0;
+}
+
+.pageTitle {    
+  margin: 0 auto;
+  color:#0a233d;
+  padding-top:12vh;
+  text-align:center;
+  font-size:5rem;
+  display:table;
+  font-weight:700;
+}
+
+
+@media (max-width: 1024px) {
+  .pageTitle {
+    width: 90%;
+    font-size:3rem;
     display:table;
-    font-weight:700;
   }
-
-  
-  @media (max-width: 1024px) {
-    .pageTitle {
-      width: 90%;
-      font-size:3rem;
-      display:table;
-    }
-
-
-  }
+}
   
   

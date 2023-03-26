@@ -1,315 +1,287 @@
 .buttons{
-    text-align:center;
+  text-align:center;
 }
 
 .buttonsContainer {
-    display: flex;
-    margin: auto;
-    width: 640px;
+  display: flex;
+  margin: auto;
+  width: 640px;
 }
 
 .inactiveGroupButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 500px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-
-    
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 500px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+ 
   background-color: #eeeeee;
   color: black;
 }
 
 .inactiveGroupButton:hover {
-    background-color: #d8d8d8;
-  }
+  background-color: #d8d8d8;
+}
 
 .activeGroupButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 500px;
-    height: 60px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#0a233d;
+  
+  width: 500px;
+  height: 60px;
 }
 
 .activeBiggerGroupButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 620px;
-    height: 60px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#0a233d;
+  
+  width: 620px;
+  height: 60px;
 }
 
 .inactivePrimerOrDealButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 300px;
-    height: 230px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 300px;
+  height: 230px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 
-    
   background-color: #eeeeee;
   color: black;
-
 }
 
 .inactivePrimerOrDealButton:hover {
-    background-color: #d8d8d8;
-  }
+  background-color: #d8d8d8;
+}
 
 .activePrimerOrDealButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 300px;
-    height: 230px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#0a233d;
+  
+  width: 300px;
+  height: 230px;
 }
 
 .noReport{
-    text-align: center;
-    padding-top: 50px;
-    font-size: 3rem;
-    text-decoration: wavy;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3rem;
+  text-decoration: wavy;
 }
 .reportTypeButtons{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .inactiveReportButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 175px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 175px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 
-    
   background-color: #eeeeee;
   color: black;
-
 }
 
 .inactiveReportButton:hover {
-    background-color: #d8d8d8;
-    
-  }
+  background-color: #d8d8d8;
+}
 
 .activeReportButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 175px;
-    height: 50px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#0a233d;
+  
+  width: 175px;
+  height: 50px;
 }
 
 .inactiveButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 
-    
   background-color: #eeeeee;
   color: black;
-
 }
 
 .inactiveButton:hover {
-    background-color: #d8d8d8;
-    
-  }
+  background-color: #d8d8d8;
+}
 
 .activeButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 100px;
-    height: 50px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#0a233d;
+  
+  width: 100px;
+  height: 50px;
 }
 
 .dropdown {
-    color:white !important;
-    background-color:#0a233d !important;
-}
-
-.backButton {
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 60px;
-    height: 60px;
+  color:white !important;
+  background-color:#0a233d !important;
 }
 
 .container{
-    margin: 0 auto;
-    width: 90%;
-    padding: 1rem;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem;
 }
 
 @media (max-width: 1024px) {
-    .container {
-        width: 95%;
-        padding: 1rem;
-    }
+  .container {
+    width: 95%;
+    padding: 1rem;
   }
+}
 
 .reportPost{
-    width: 100%;
-    max-width: 98rem;
-    padding: 1rem;
-    margin:1rem;
-    box-shadow: - 1.4rem 9rem rgba(0,0,0,0.2);
-    display:flex;
-    align-items: center;
-    border-radius: 0.8rem;
+  width: 100%;
+  max-width: 98rem;
+  padding: 1rem;
+  margin:1rem;
+  box-shadow: - 1.4rem 9rem rgba(0,0,0,0.2);
+  display:flex;
+  align-items: center;
+  border-radius: 0.8rem;
 }
 
 .separation hr{
-    height:0px;
-    border-bottom:10px solid #0a233d;
-
+  height:0px;
+  border-bottom:10px solid #0a233d;
 }
 
 .reportDate span{
-    font-size:0.9rem;
-    margin: 1.5rem 0 2rem;
-    text-transform: uppercase;
-    color: black;
+  font-size:0.9rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: black;
 }
 
 .reportText{
-    margin-bottom: 1rem;
-    margin-top:0.5rem;
-    font-size:1.05rem;
-    color: rgba(0,0,0.7);
-    text-align:left;
+  margin-bottom: 1rem;
+  margin-top:0.5rem;
+  font-size:1.05rem;
+  color: rgba(0,0,0.7);
+  text-align:left;
 }
 
-
-
 .reportLink{
-    display:inline-block;
-    padding:1rem 1rem;
-    letter-spacing: 1px;
-    margin: 2rem 2rem;
+  display:inline-block;
+  padding:1rem 1rem;
+  letter-spacing: 1px;
+  margin: 2rem 2rem;
 
-    min-width:150px;
-    text-align:center;
-    text-transform: uppercase;
-    color:white;
-    text-decoration:none;
-    border-radius: 0.8rem;
-    background-color:#0a233d;
+  min-width:150px;
+  text-align:center;
+  text-transform: uppercase;
+  color:white;
+  text-decoration:none;
+  border-radius: 0.8rem;
+  background-color:#0a233d;
 }
 
 .reportLink:hover{
-    background-color: #113d69;
+  background-color: #113d69;
 }
 
 .reportTitle{
-    font-size:1rem;
-    font-weight:800;
+  font-size:1rem;
+  font-weight:800;
 }
 
 
 @media screen and (max-width: 1068px){
-    .reportPost{
-        max-width: 100%;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-    }
-    .reportText{
-        display:none;
-    }
-    .reportLink{
-        margin:0.5rem 3rem;
-        font-size:0.9rem;
-    }
+  .reportPost{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .reportText{
+    display:none;
+  }
+  .reportLink{
+    margin:0.5rem 3rem;
+    font-size:0.9rem;
+  }
 }
 
 @media screen and (max-width: 868px){
-    .reportPost{
-        max-width: 100%;
-    }
+  .reportPost{
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px){
-    .reportPost{
-        padding: 0;
-        flex-direction: column;
-    }
-    .reportTitle{
-        margin-bottom: 1rem;
-    }
+  .reportPost{
+    padding: 0;
+    flex-direction: column;
+  }
+  .reportTitle{
+    margin-bottom: 1rem;
+  }
 }

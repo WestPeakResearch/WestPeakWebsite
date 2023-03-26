@@ -8,22 +8,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <Headroom>
-    <NavBar />
-    </Headroom>
-    
+      <Headroom>
+      <NavBar />
+      </Headroom>
       <div className = {styles.elements}>
         <main className = {styles.container}>{children}</main>
       </div>
-        <footer>
-          <Footer />
-        </footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
-
-// Layout.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
 
 export default Layout

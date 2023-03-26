@@ -10,7 +10,6 @@ const ResearchPage = () => (
     <SEO title="Research" />
     <PageCover  title = "Research" />
     <Research />
-
 </Layout>
 )
 

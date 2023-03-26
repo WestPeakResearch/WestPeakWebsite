@@ -9,23 +9,23 @@ const START_YEAR = 2014;
 
 function Research(){
   const data = useStaticQuery(graphql`
-  query researchQuery {
-    allMarkdownRemark(filter: {frontmatter: {type: {in: "report"}}}, sort: {fields: frontmatter___date, order: DESC}) {
-      nodes {
-        frontmatter {
-          paper
-          author
-          company
-          summary
-          title
-          date(formatString: "MMMM DD, YYYY")
-          isIndustryResearch
-          industryGroup
-          primerOrDeal
+    query researchQuery {
+      allMarkdownRemark(filter: {frontmatter: {type: {in: "report"}}}, sort: {fields: frontmatter___date, order: DESC}) {
+        nodes {
+          frontmatter {
+            paper
+            author
+            company
+            summary
+            title
+            date(formatString: "MMMM DD, YYYY")
+            isIndustryResearch
+            industryGroup
+            primerOrDeal
+          }
         }
       }
-    }
-  }      
+    }      
   `)
 
   const [year, setYear] = useState(CURRENT_YEAR) 
@@ -95,25 +95,25 @@ function Research(){
     {label: 'Industry Research', value: 'Industry Research'},
   ]
 
-  function handleYearSelect(event){
+  function handleYearSelect(event) {
     event.preventDefault();
     setYear(event.target.value);
   }
 
-  function handleTypeButtonClick(event){
+  function handleTypeButtonClick(event) {
     event.preventDefault()
     setReportType(event.target.value)
     setIndustryGroup(null)
   }
 
-  function handleIndustryButtonClick(event){
+  function handleIndustryButtonClick(event) {
     event.preventDefault();
     setIndustryGroup(event.target.value);
     setShowPrimerOrDealResearch(false);
     setPrimerOrDeal(null);
   }
 
-  function handlePrimerOrDealButtonClick(event){
+  function handlePrimerOrDealButtonClick(event) {
     event.preventDefault();
     setPrimerOrDeal(event.target.value);
     setShowPrimerOrDealResearch(true);
@@ -126,7 +126,7 @@ function Research(){
       <div className = {styles.reportTypeButtons}>
         <Dropdown
           options={reportType === 'Equity Research' ? equityYears : industryYears}
-          handleChange={handleYearSelect}
+          onChange={handleYearSelect}
           value={year}
           style={styles.dropdown}
         ></Dropdown>
@@ -154,24 +154,24 @@ function Research(){
           <div className = {styles.research}>   
             {reportsData[year].length > 0 ?
               reportsData[year].map((paper, index) => { return (
-                    <>
-                      <ResearchComponent key = {index} report = {paper.frontmatter}/>
-                        {index === reportsData[year].length - 1 ? 
-                          null 
-                          : 
-                          <div className = {styles.separation}>
-                            <hr />
-                          </div>
-                        }
-                    </>
-                  )})
+                <>
+                  <ResearchComponent key = {index} report = {paper.frontmatter}/>
+                  {index === reportsData[year].length - 1 ? 
+                    null 
+                    : 
+                    <div className = {styles.separation}>
+                      <hr />
+                    </div>
+                  }
+                </>
+              )})
               :
               <h4 className = {styles.noReport}> No data found for the year {year}. </h4>
             }
           </div> 
         </div>
 
-        : 
+      : 
 
         // CASE 2 - if Industry Research is selected
         <div>
@@ -188,9 +188,6 @@ function Research(){
                     // showing selected industry group button and selected report type (primer / deal) button
                     <div>
                       <div className = {styles.buttonsContainer}>
-                        {/* <button className={styles.backButton} onClick={handleIndustryButtonClick} value={industryGroup}>
-                          &#60;
-                        </button>  */}
                         <button onClick={handlePrimerOrDealButtonClick} value={primerOrDeal} className={styles.activeBiggerGroupButton}>
                           {industryGroup + ' ' + primerOrDeal}
                         </button>
@@ -202,17 +199,17 @@ function Research(){
                         <div className = {styles.research}>   
                           {reportsData[year].length > 0 ?
                             reportsData[year].map((paper, index) => { return (
-                                  <>
-                                    <ResearchComponent key = {index} report = {paper.frontmatter}/>
-                                      {index === reportsData[year].length - 1 ? 
-                                        null 
-                                        : 
-                                        <div className = {styles.separation}>
-                                          <hr />
-                                        </div>
-                                      }
-                                  </>
-                                )})
+                              <>
+                                <ResearchComponent key = {index} report = {paper.frontmatter}/>
+                                {index === reportsData[year].length - 1 ? 
+                                  null 
+                                  : 
+                                  <div className = {styles.separation}>
+                                    <hr />
+                                  </div>
+                                }
+                              </>
+                            )})
                             :
                             <h4 className = {styles.noReport}> No data found for the year {year}. </h4>
                           }
@@ -222,14 +219,10 @@ function Research(){
 
                     :
 
-                    
                     <div className = {styles.buttons}>
 
                       {/* showing Industry Research button and selected industry group button */}
                       <div className={styles.buttonsContainer}>
-                        {/* <button className={styles.backButton} onClick={handleReportTypeSelect} value={reportType}>
-                          &#60;
-                        </button>  */}
                         <button onClick = {handleIndustryButtonClick} value = {industryGroup} className = { styles.activeBiggerGroupButton }>
                           {industryGroup}
                         </button>

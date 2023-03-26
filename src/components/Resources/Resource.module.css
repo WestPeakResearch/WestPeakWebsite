@@ -1,16 +1,16 @@
 .container{
-    margin: 0 auto;
-    width: 80%;
-    padding: 2rem;
-    font-size:1.2rem;
+  margin: 0 auto;
+  width: 80%;
+  padding: 2rem;
+  font-size:1.2rem;
 }
 
 @media (max-width: 1024px) {
-    .container {
-        width: 95%;
-        padding: 1rem;
-        padding-bottom: 6rem;
-    }
+  .container {
+    width: 95%;
+    padding: 1rem;
+    padding-bottom: 6rem;
   }
+}
   
   

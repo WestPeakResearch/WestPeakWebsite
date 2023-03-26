@@ -1,37 +1,36 @@
 .content{
-    margin: 0 auto;
-    width: 90%;
-    padding: 1.5rem 1rem;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1.5rem 1rem;
 }
 
 .title{
-    text-align:center;
-    margin: 0 auto;
-    font-size:2rem;
-    font-weight: 700;
-    padding-bottom:2rem;
+  text-align:center;
+  margin: 0 auto;
+  font-size:2rem;
+  font-weight: 700;
+  padding-bottom:2rem;
 }
 
 .logoImage{
-    width: 75%;
-    margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width : 1000px){
-    .logoImage{
-        width: 80%;
-    }
+  .logoImage{
+      width: 80%;
+  }
 }
 
 @media only screen and (max-width : 700px){
-    .logoImage{
-        width: 80%;
-    }
+  .logoImage{
+      width: 80%;
+  }
 }
 
-
 @media only screen and (max-width : 500px){
-    .logoImage{
-        width: 98%;
-    }
+  .logoImage{
+      width: 98%;
+  }
 }

@@ -3,10 +3,6 @@ import styles from "./NavBar.module.css";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-
-
-
-
 const ListLink = props => (
   <li>
     <Link to={props.to}>
@@ -30,10 +26,9 @@ const Links = props => (
 )
 
 
-
 function MinimalBar(props){
-    const data = props.data;
-  if(!props.show){
+  const data = props.data;
+  if(!props.show) {
     return null;
   } else {
     return (
@@ -52,69 +47,73 @@ function MinimalBar(props){
   }
 }
 
-  function FullBar(props){
-    const data = props.data
-    return (
-      <div className={[styles.navbar, styles.navbarDesktop].join(" ")}>
-        <div className = {styles.navBarImage}>
-            <Img fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" />
-        </div>
-        <Links isFull={true} />
+function FullBar(props){
+  const data = props.data
+
+  return (
+    <div className={[styles.navbar, styles.navbarDesktop].join(" ")}>
+      <div className = {styles.navBarImage}>
+        <Img fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" />
       </div>
-    )
-  }
+      <Links isFull={true} />
+    </div>
+  )
+}
 
-  function NavMobileMenu(props){
-
-    if(!props.show){
-      return null;
-    } else {
-      return (
+function NavMobileMenu(props){
+  if(!props.show) {
+    return null;
+  } else {
+    return (
       <div className={props.className}>
         <button className={styles.closeButton} onClick={props.onClick}>
-            <span>Close</span>
+          <span>Close</span>
         </button>
         <Links isFull={false} />
       </div>
-      )
-    }
+    )
   }
+}
 
-  function Navbar(props){
-    const data = useStaticQuery(graphql`
+function Navbar(props){
+  const data = useStaticQuery(graphql`
     query logoQuery {
-        logo: file(absolutePath: {regex: "/logo.png/"}) {
-            childImageSharp {
-                fluid(maxWidth: 2000) {
-                    ...GatsbyImageSharpFluid
-                }
-            }
+      logo: file(absolutePath: {regex: "/logo.png/"}) {
+        childImageSharp {
+          fluid(maxWidth: 2000) {
+            ...GatsbyImageSharpFluid
+          }
         }
+      }
     }
-    `
-    )
-    const [toggled, setToggled] = useState(false);
+  `)
+  const [toggled, setToggled] = useState(false);
 
-    function handleMenuClick(){
-      setToggled(true);
-    }
-
-    function handleCloseButtonClick(){
-      setToggled(false);
-    }
-
-    return(
-      <div>
-        <FullBar className={[styles.navbar, styles.navbarDesktop, props.className].join(" ")} data = {data} />
-        <MinimalBar className = {[styles.navbar, styles.navbarMobile, props.className].join(" ")}
-        show={!toggled} onClick={handleMenuClick} data = {data}/>
-        <NavMobileMenu className={[styles.navbarMobileMenu, props.className].join(" ")} show ={toggled} onClick={handleCloseButtonClick} />
-      </div>
-    )
+  function handleMenuClick(){
+    setToggled(true);
   }
 
+  function handleCloseButtonClick(){
+    setToggled(false);
+  }
 
-
+  return(
+    <div>
+      <FullBar className={[styles.navbar, styles.navbarDesktop, props.className].join(" ")} data = {data} />
+      <MinimalBar 
+        className = {[styles.navbar, styles.navbarMobile, props.className].join(" ")}
+        show={!toggled} 
+        onClick={handleMenuClick}
+        data={data}
+      />
+      <NavMobileMenu 
+        className={[styles.navbarMobileMenu, props.className].join(" ")}
+        show ={toggled}
+        onClick={handleCloseButtonClick} 
+      />
+    </div>
+  )
+}
 
 export default props => (
   <Navbar>
