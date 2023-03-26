@@ -1,19 +1,23 @@
 .pageCover {
-  background-color:#ebebeb;
+  /* background-color:#ebebeb; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 25vh;
+  height: 35vh;
   color: white;
-  display: table;
+  /* display: table; */
+  display: flex;
+  align-items: center;
   width: 100%;
   z-index:0;
 }
 
 .pageTitle {    
   margin: 0 auto;
-  color:#0a233d;
+  /* color:#0a233d; */
+  color: white;
   padding-top:12vh;
   text-align:center;
   font-size:5rem;
