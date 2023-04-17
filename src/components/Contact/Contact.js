@@ -8,7 +8,7 @@ function Contact(){
   return(
     <>
       <h2 className = {styles.header}>Please fill out the contact form below or email us at contact@westpeakresearch.com</h2>
-      <Container>
+      <Container className={styles.container}>
           <Form
           name="contact"
           method="post"
