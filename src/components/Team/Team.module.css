@@ -54,14 +54,6 @@
   margin: 0 auto;
 }
 
-.title{
-  margin: 0 auto;
-  padding-top:1rem;
-  font-size: 3rem;
-  text-align:center;
-  text-transform: uppercase;
-}
-
 @media only screen and (max-width : 500px){
   .cards{
     grid-column: 2 / span 6;

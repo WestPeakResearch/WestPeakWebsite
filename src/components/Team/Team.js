@@ -88,8 +88,6 @@ function Team(){
             ))
           }
         </div>
-          
-        <h3 className = {styles.title}>{currTeam}</h3>
 
         {currTeam === "Management" ? 
           <section className={styles.cards}>
