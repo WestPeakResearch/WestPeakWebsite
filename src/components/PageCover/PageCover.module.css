@@ -1,5 +1,4 @@
 .pageCover {
-  /* background-color:#ebebeb; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/banner.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,7 +6,6 @@
   background-size: cover;
   height: 35vh;
   color: white;
-  /* display: table; */
   display: flex;
   align-items: center;
   width: 100%;
@@ -17,7 +15,7 @@
 .pageTitle {    
   margin: 0 auto;
   color: #f2f2f2;
-  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+  text-shadow: 0 3px 5px rgba(0,0,0,0.5);
   padding-top:12vh;
   text-align:center;
   font-size:5rem;
