@@ -12,6 +12,10 @@
   padding-bottom:2rem;
 }
 
+.description {
+  line-height: 1.7rem;
+}
+
 .logoImage{
   width: 75%;
   margin: 0 auto;

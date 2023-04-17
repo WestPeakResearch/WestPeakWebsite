@@ -29,7 +29,7 @@ function CompanyPlacement(){
     <>
       <div className = {styles.content}>
         <span className = {styles.title}>A Higher Standard of Career Success</span>
-        <p>At WestPeak, we’re redefining and raising the bar of successful careers, and our experiences speak to our 
+        <p className = {styles.description}>At WestPeak, we’re redefining and raising the bar of successful careers, and our experiences speak to our 
             commitment to professional development. We have countless members with competitive internships and full-time 
             experience at Fortune 500 companies, prestigious firms, and unicorn startups.</p>
       </div>

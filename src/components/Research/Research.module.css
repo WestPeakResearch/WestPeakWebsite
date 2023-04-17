@@ -225,9 +225,9 @@
 .reportText{
   margin-bottom: 1rem;
   margin-top:0.5rem;
-  font-size:1.05rem;
   color: rgba(0,0,0.7);
   text-align:left;
+  line-height: 1.7rem;
 }
 
 .reportLink{

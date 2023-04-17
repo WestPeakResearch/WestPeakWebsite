@@ -1,12 +1,14 @@
 body {
   font-family: "Roboto";
+  font-size: 1rem;
 }
 
 .container{
   margin: 0 auto;
   width: 80%;
   padding: 2rem;
-  font-size:1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.8rem;
 }
 
 @media (max-width: 1024px) {
@@ -16,5 +18,3 @@ body {
     padding-bottom: 6rem;
   }
 }
-  
-  
