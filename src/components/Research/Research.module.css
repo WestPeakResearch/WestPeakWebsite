@@ -76,14 +76,24 @@
 }
 
 .inactiveYearDropdown {
+  height: 45px;
+  width: 102px;
   text-align: center;
   background-color: #eeeeee !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
 }
 
 .activeYearDropdown {
+  height: 45px;
+  width: 102px;
   text-align: center;
   color:white !important;
   background-color:#0a233d !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
 }
 
 .activeYearDropdown span {
@@ -92,17 +102,29 @@
   padding-right: 5px;
 }
 
+body > .p-dropdown-panel {
+  background-color: green !important;
+}
+
 .inactiveDropdown {
+  height: 45px;
   width: 200px;
   text-align: center;
   background-color: #eeeeee !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
 }
 
 .activeDropdown {
+  height: 45px;
   width: 200px;
   text-align: center;
   color:white !important;
   background-color:#0a233d !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
 }
 
 .activeDropdown span {
@@ -128,7 +150,7 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 175px;
-  height: 40px;
+  height: 45px;
   border: none;
   cursor: pointer;
   outline: none;
@@ -154,8 +176,8 @@
   color:white;
   background-color:#0a233d;
   
-  width: 200px;
-  height: 40px;
+  width: 175px;
+  height: 45px;
 }
 
 .inactiveButton{

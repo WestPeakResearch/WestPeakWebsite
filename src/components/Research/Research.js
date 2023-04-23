@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React, {useState} from "react"
 import styles from "./Research.module.css"
 import ResearchComponent from "./ResearchComponent"
 import {useStaticQuery, graphql} from "gatsby"
@@ -39,7 +39,7 @@ function Research(){
   const [year, setYear] = useState(CURRENT_YEAR);
   const [reportType, setReportType] = useState(REPORT_TYPES.equity);
   const [industryGroup, setIndustryGroup] = useState(null);
-  const allResearch = data.allMarkdownRemark.nodes;
+  const research = data.allMarkdownRemark.nodes;
 
   const equityYears = [
     {label: 2022, value: 2022},
@@ -66,7 +66,7 @@ function Research(){
     {label: 'Technology, Media, and Telecommunications', value: 'Technology, Media, and Telecommunications'},
   ];
 
-  const handleIndustryGroupSelection = (event) => {
+  const handleIndustryGroupSelect = (event) => {
     event.preventDefault();
     setReportType(REPORT_TYPES.industry);
     setIndustryGroup(event.target.value);
@@ -104,13 +104,13 @@ function Research(){
             {REPORT_TYPES.equity}
           </button>
 
-          {allResearch.filter(paper => new Date(paper.frontmatter.date).getFullYear() === Number(year)).filter(isResearch => isResearch.frontmatter.isIndustryResearch === 'true').length > 0 ?
+          {research.filter(paper => new Date(paper.frontmatter.date).getFullYear() === Number(year)).filter(isResearch => isResearch.frontmatter.isIndustryResearch === 'true').length > 0 ?
             <div>
               <span className="p-float-label">
                   <Dropdown 
                     inputId="industry-research-dropdown"
                     value={industryGroup}
-                    onChange={handleIndustryGroupSelection}
+                    onChange={handleIndustryGroupSelect}
                     options={industryGroups}
                     optionValue="value"
                     optionLabel="label"
@@ -131,7 +131,7 @@ function Research(){
         </div>
       </div>
 
-      <FilteredReports year={year} allResearch={allResearch} reportType={reportType} industryGroup={industryGroup}/>
+      <FilteredReports research={research} year={year} reportType={reportType} industryGroup={industryGroup}/>
       {/* {showEquityResearch ||  industryGroup ? 
         <FilteredReports year={year} allResearch={allResearch} reportType={reportType} industryGroup={industryGroup}/>
         : 
@@ -142,9 +142,9 @@ function Research(){
 }
 
 
-function FilteredReports({year, allResearch, reportType, industryGroup}) {
+function FilteredReports({research, year, reportType, industryGroup}) {
   const isIndustryResearch = reportType === REPORT_TYPES.industry;
-  const allResearchForYear = allResearch.filter(paper => new Date(paper.frontmatter.date).getFullYear() === year);
+  const allResearchForYear = research.filter(paper => new Date(paper.frontmatter.date).getFullYear() === year);
   const filteredResearch = allResearchForYear.filter(isResearch => {
     if (isIndustryResearch) {
       if (industryGroup && industryGroup !== 'All') {

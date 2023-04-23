@@ -5,13 +5,14 @@
 }
 
 .inactiveButton{
+  border-radius: 4px;
   margin: 10px 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
   width: 200px;
-  height: 60px;
+  height: 45px;
   border: none;
   cursor: pointer;
   outline: none;
@@ -25,6 +26,7 @@
 }
 
 .activeButton{
+  border-radius: 4px;
   margin: 10px 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -37,7 +39,7 @@
   background-color:#0a233d;
   
   width: 200px;
-  height: 60px;
+  height: 45px;
 }
 
 .cards{
