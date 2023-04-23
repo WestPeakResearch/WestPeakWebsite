@@ -241,8 +241,9 @@ body > .p-dropdown-panel {
 }
 
 .separation hr{
-  height:0px;
-  border-bottom:10px solid #0a233d;
+  height: 0px;
+  border-bottom: 8px solid #0a233d;
+  border-radius: 4px;
 }
 
 .reportDate span{
