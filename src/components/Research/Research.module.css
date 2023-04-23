@@ -1,11 +1,18 @@
-.buttons{
-  text-align:center;
+.container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem;
 }
 
-.buttonsContainer {
-  display: flex;
-  margin: auto;
-  width: 640px;
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+.buttons {
+  text-align:center;
 }
 
 .inactiveGroupButton{
@@ -41,22 +48,6 @@
   background-color:#0a233d;
   
   width: 500px;
-  height: 60px;
-}
-
-.activeBiggerGroupButton{
-  margin: 10px 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color:white;
-  background-color:#0a233d;
-  
-  width: 620px;
   height: 60px;
 }
 
@@ -102,10 +93,6 @@
   padding-right: 5px;
 }
 
-body > .p-dropdown-panel {
-  background-color: green !important;
-}
-
 .inactiveDropdown {
   height: 45px;
   width: 200px;
@@ -142,7 +129,7 @@ body > .p-dropdown-panel {
   left: 0.25rem !important;
 }
 
-.inactiveReportButton{
+.inactiveReportButton {
   border-radius: 4px;
   margin: 10px 10px;
   padding-top: 5px;
@@ -163,7 +150,7 @@ body > .p-dropdown-panel {
   background-color: #d8d8d8;
 }
 
-.activeReportButton{
+.activeReportButton {
   border-radius: 4px;
   margin: 10px 10px;
   padding-top: 5px;
@@ -180,95 +167,46 @@ body > .p-dropdown-panel {
   height: 45px;
 }
 
-.inactiveButton{
-  margin: 10px 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100px;
-  height: 50px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-
-  background-color: #eeeeee;
-  color: black;
-}
-
-.inactiveButton:hover {
-  background-color: #d8d8d8;
-}
-
-.activeButton{
-  margin: 10px 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color:white;
-  background-color:#0a233d;
-  
-  width: 100px;
-  height: 50px;
-}
-
-.container{
-  margin: 0 auto;
-  width: 90%;
-  padding: 1rem;
-}
-
-@media (max-width: 1024px) {
-  .container {
-    width: 95%;
-    padding: 1rem;
-  }
-}
-
-.reportPost{
+.reportPost {
   width: 100%;
   max-width: 98rem;
   padding: 1rem;
-  margin:1rem;
+  margin: 1rem;
   box-shadow: - 1.4rem 9rem rgba(0,0,0,0.2);
-  display:flex;
+  display: flex;
   align-items: center;
   border-radius: 0.8rem;
 }
 
-.separation hr{
+.separation hr {
   height: 0px;
   border-bottom: 8px solid #0a233d;
   border-radius: 4px;
 }
 
-.reportDate span{
-  font-size:0.9rem;
+.reportDate span {
+  font-size: 0.9rem;
   margin: 1.5rem 0 2rem;
   text-transform: uppercase;
   color: black;
 }
 
-.reportText{
+.reportText {
   margin-bottom: 1rem;
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
   color: rgba(0,0,0.7);
-  text-align:left;
+  text-align: left;
   line-height: 1.7rem;
 }
 
-.reportLink{
-  display:inline-block;
-  padding:1rem 1rem;
+.reportLink {
+  display: inline-block;
+  padding: 1rem 1rem;
   letter-spacing: 1px;
   margin: 2rem 2rem;
 
-  min-width:150px;
-  text-align:center;
+  min-width: 150px;
+  text-align: center;
   text-transform: uppercase;
   color:white;
   text-decoration:none;
@@ -276,43 +214,43 @@ body > .p-dropdown-panel {
   background-color:#0a233d;
 }
 
-.reportLink:hover{
+.reportLink:hover {
   background-color: #113d69;
 }
 
-.reportTitle{
-  font-size:1rem;
-  font-weight:800;
+.reportTitle {
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 
-@media screen and (max-width: 1068px){
-  .reportPost{
+@media screen and (max-width: 1068px) {
+  .reportPost {
     max-width: 100%;
     margin: 0 auto;
     margin-bottom: 1rem;
   }
-  .reportText{
-    display:none;
+  .reportText {
+    display: none;
   }
-  .reportLink{
-    margin:0.5rem 3rem;
-    font-size:0.9rem;
+  .reportLink {
+    margin: 0.5rem 3rem;
+    font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 868px){
-  .reportPost{
+@media screen and (max-width: 868px) {
+  .reportPost {
     max-width: 100%;
   }
 }
 
-@media screen and (max-width: 768px){
-  .reportPost{
+@media screen and (max-width: 768px) {
+  .reportPost {
     padding: 0;
     flex-direction: column;
   }
-  .reportTitle{
+  .reportTitle {
     margin-bottom: 1rem;
   }
 }
