@@ -60,69 +60,81 @@
   height: 60px;
 }
 
-.inactivePrimerOrDealButton{
-  margin: 10px 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 300px;
-  height: 230px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-
-  background-color: #eeeeee;
-  color: black;
-}
-
-.inactivePrimerOrDealButton:hover {
-  background-color: #d8d8d8;
-}
-
-.activePrimerOrDealButton{
-  margin: 10px 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color:white;
-  background-color:#0a233d;
-  
-  width: 300px;
-  height: 230px;
-}
-
 .noReport{
   text-align: center;
   padding-top: 50px;
   font-size: 3rem;
   text-decoration: wavy;
 }
+
 .reportTypeButtons{
   text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+.inactiveYearDropdown {
+  text-align: center;
+  background-color: #eeeeee !important;
+}
+
+.activeYearDropdown {
+  text-align: center;
+  color:white !important;
+  background-color:#0a233d !important;
+}
+
+.activeYearDropdown span {
+  color: white;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.inactiveDropdown {
+  width: 200px;
+  text-align: center;
+  background-color: #eeeeee !important;
+}
+
+.activeDropdown {
+  width: 200px;
+  text-align: center;
+  color:white !important;
+  background-color:#0a233d !important;
+}
+
+.activeDropdown span {
+  color: white;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.inactiveDropdownLabel {
+  padding-left: 8px;
+}
+
+.activeDropdownLabel {
+  padding-left: 0;
+  left: 0.25rem !important;
 }
 
 .inactiveReportButton{
+  border-radius: 4px;
   margin: 10px 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
   padding-right: 15px;
   width: 175px;
-  height: 50px;
+  height: 40px;
   border: none;
   cursor: pointer;
   outline: none;
 
   background-color: #eeeeee;
-  color: black;
+  color: #6c757d;
 }
 
 .inactiveReportButton:hover {
@@ -130,6 +142,7 @@
 }
 
 .activeReportButton{
+  border-radius: 4px;
   margin: 10px 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -141,8 +154,8 @@
   color:white;
   background-color:#0a233d;
   
-  width: 175px;
-  height: 50px;
+  width: 200px;
+  height: 40px;
 }
 
 .inactiveButton{
@@ -179,11 +192,6 @@
   
   width: 100px;
   height: 50px;
-}
-
-.dropdown {
-  color:white !important;
-  background-color:#0a233d !important;
 }
 
 .container{
