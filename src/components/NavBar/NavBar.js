@@ -13,7 +13,6 @@ const ListLink = props => (
 
 const Links = props => (
   <ul>
-    <ListLink to="/">Home</ListLink>
     <ListLink to="/about">About</ListLink>
     <ListLink to="/team">Team</ListLink>
     <ListLink to="/research">Research</ListLink>
@@ -53,7 +52,9 @@ function FullBar(props){
   return (
     <div className={[styles.navbar, styles.navbarDesktop].join(" ")}>
       <div className = {styles.navBarImage}>
-        <Img fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" />
+        <a href="/">
+          <Img fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" />
+        </a>
       </div>
       <Links isFull={true} />
     </div>
