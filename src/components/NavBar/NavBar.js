@@ -34,7 +34,9 @@ function MinimalBar(props){
       <div
         className={props.className}
       >
-        <span className={styles.mobileBrand}><Img fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" /></span>
+        <a className={styles.mobileBrand} href="/">
+          <Img fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" />
+        </a>
         <button
           className={styles.closeButton}
           onClick={props.onClick}
