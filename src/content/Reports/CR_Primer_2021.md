@@ -1,8 +1,7 @@
 ---
 type: "report"
-isIndustryResearch: 'true'
-industryGroup: 'Consumer Retail'
-primerOrDeal: 'Subsector Primers'
+isIndustryResearch: "true"
+industryGroup: "Consumer Retail"
 paper: "CR_Primer_2021.pdf"
 author: ""
 company: "Consumer Retail Primer 2021"

@@ -1,8 +1,7 @@
 ---
 type: "report"
-isIndustryResearch: 'true'
-industryGroup: 'Real Estate, Gaming, and Lodging'
-primerOrDeal: 'Subsector Primers'
+isIndustryResearch: "true"
+industryGroup: "Real Estate, Gaming, and Lodging"
 paper: "REGL_Primer_2022.pdf"
 author: ""
 company: "Real Estate, Gaming, and Lodging Primer 2022"

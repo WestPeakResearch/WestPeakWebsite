@@ -1,8 +1,8 @@
 ---
 type: "report"
-isIndustryResearch: 'true'
-industryGroup: 'Natural Resources'
-primerOrDeal: 'Deal Summaries'
+isIndustryResearch: "true"
+industryGroup: "Natural Resources"
+primerOrDeal: "Deal Summaries"
 paper: "HSE_NR_M&A_Adam_Parolin.pdf"
 author: "Adam Parolin"
 company: "Husk Energy Inc. (Target), Cenovus Energy Inc. (Acquirer)"

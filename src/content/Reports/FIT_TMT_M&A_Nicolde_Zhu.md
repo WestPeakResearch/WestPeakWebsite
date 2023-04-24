@@ -1,8 +1,8 @@
 ---
 type: "report"
-isIndustryResearch: 'true'
-industryGroup: 'Technology, Media, and Telecommunications'
-primerOrDeal: 'Deal Summaries'
+isIndustryResearch: "true"
+industryGroup: "Technology, Media, and Telecommunications"
+primerOrDeal: "Deal Summaries"
 paper: "FIT_TMT_M&A_Nicole_Zhu.pdf"
 author: "Nicole Zhu"
 company: "Fitbit (Target), Google (Acquirer)"

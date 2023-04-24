@@ -1,8 +1,8 @@
 ---
 type: "report"
-isIndustryResearch: 'true'
-industryGroup: 'Natural Resources'
-primerOrDeal: 'Deal Summaries'
+isIndustryResearch: "true"
+industryGroup: "Natural Resources"
+primerOrDeal: "Deal Summaries"
 paper: "CXO_NR_M&A_Jeffrey_Low.pdf"
 author: "Jeffrey Low"
 company: "Concho Resources Inc. (Target), ConocoPhillips (Acquirer)"

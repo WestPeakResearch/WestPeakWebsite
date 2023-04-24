@@ -1,8 +1,7 @@
 ---
 type: "report"
-isIndustryResearch: 'true'
-industryGroup: 'Technology, Media, and Telecommunications'
-primerOrDeal: 'Subsector Primers'
+isIndustryResearch: "true"
+industryGroup: "Technology, Media, and Telecommunications"
 paper: "TMT_Primer_2021.pdf"
 author: ""
 company: "Technology, Media, and Telecommunications Primer 2021"

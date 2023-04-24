@@ -1,8 +1,7 @@
 ---
 type: "report"
-isIndustryResearch: 'true'
-industryGroup: 'Natural Resources'
-primerOrDeal: 'Subsector Primers'
+isIndustryResearch: "true"
+industryGroup: "Natural Resources"
 paper: "NR_Primer_2022.pdf"
 author: ""
 company: "Natural Resources Primer 2022"
