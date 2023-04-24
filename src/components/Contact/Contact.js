@@ -137,10 +137,10 @@ function Contact(){
         <div className={styles.socials}>
           <h3>Make sure to follow our socials to stay up to date on events and hiring!</h3>
           <div className={styles.socialsIcons}>
-            <a href="https://www.facebook.com/WestPeakResearch/" target="_blank">
+            <a href="https://www.facebook.com/WestPeakResearch/" target="_blank" rel="noopener noreferrer">
               <img src={FacebookLogo} alt="Facebook" />
             </a>
-            <a href="https://linkedin.com/company/westpeak-research" target="_blank">
+            <a href="https://linkedin.com/company/westpeak-research" target="_blank" rel="noopener noreferrer">
               <img src={LinkedinLogo} alt="Linkedin" />
             </a>
           </div>

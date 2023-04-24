@@ -56,16 +56,6 @@ function Team(){
     "Junior Analysts": team.filter( member => member.frontmatter.management !== "True" && member.frontmatter.position.includes("Junior Analyst")),
     "Alumni": []
   }
-
-  function compare( a, b ) {
-    if ( a.frontmatter.name < b.frontmatter.name ){
-      return -1;
-    }
-    if ( a.frontmatter.name > b.frontmatter.name ){
-      return 1;
-    }
-    return 0;
-  }
  
   function handleMemberButtonClick(event){
     setTeam(event.target.value)

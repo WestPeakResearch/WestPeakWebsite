@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import styles from "./Research.module.css"
 import ResearchComponent from "./ResearchComponent"
 import {useStaticQuery, graphql} from "gatsby"
@@ -14,6 +14,14 @@ const INDUSTRY_START_YEAR = 2021;
 const REPORT_TYPES = {
   equity: 'Equity Research',
   industry: 'Industry Research',
+}
+
+const INDUSTRY_GROUPS = {
+  all: 'All Groups',
+  cr: 'Consumer Retail',
+  nr: 'Natural Resources',
+  regl: 'Real Estate, Gaming, and Lodging',
+  tmt: 'Technology, Media, and Telecommunications',
 }
 
 function Research(){
@@ -37,34 +45,30 @@ function Research(){
   `);
 
   const [year, setYear] = useState(CURRENT_YEAR);
+  const [years, setYears] = useState(null);
   const [reportType, setReportType] = useState(REPORT_TYPES.equity);
   const [industryGroup, setIndustryGroup] = useState(null);
   const research = data.allMarkdownRemark.nodes;
+  const industryGroupOptions = [];
 
-  const equityYears = [
-    {label: 2022, value: 2022},
-    {label: 2021, value: 2021},
-    {label: 2020, value: 2020},
-    {label: 2019, value: 2019},
-    {label: 2018, value: 2018},
-    {label: 2017, value: 2017},
-    {label: 2016, value: 2016},
-    {label: 2015, value: 2015},
-    {label: 2014, value: 2014},
-  ]
+  useEffect(() => {
+    const years = [];
+    let startYear = EQUITY_START_YEAR;
+    if (reportType === REPORT_TYPES.industry) startYear = INDUSTRY_START_YEAR;
 
-  const industryYears = [
-    {label: 2022, value: 2022},
-    {label: 2021, value: 2021},
-  ]
+    for (var i=CURRENT_YEAR; i>=startYear; i--) {
+      years.push({label: i, value: i})
+    }
 
-  const industryGroups = [
-    {label: 'All Groups', value: 'All'},
-    {label: 'Consumer Retail', value: 'Consumer Retail'}, 
-    {label: 'Natural Resources', value: 'Natural Resources'},  
-    {label: 'Real Estate, Gaming, and Lodging', value: 'Real Estate, Gaming, and Lodging'}, 
-    {label: 'Technology, Media, and Telecommunications', value: 'Technology, Media, and Telecommunications'},
-  ];
+    setYears(years);
+  }, [reportType]);
+
+  useEffect(() => {
+    Object.keys(INDUSTRY_GROUPS).map(key => industryGroupOptions.push({
+      label: INDUSTRY_GROUPS[key], 
+      value: INDUSTRY_GROUPS[key]
+    }))
+  })
 
   const handleIndustryGroupSelect = (event) => {
     event.preventDefault();
@@ -91,7 +95,7 @@ function Research(){
               <Dropdown 
                 value={year}
                 onChange={handleYearSelect}
-                options={reportType === REPORT_TYPES.equity ? equityYears : industryYears}
+                options={years}
                 optionValue="value"
                 optionLabel="label"
                 className={year ? styles.activeYearDropdown : styles.inactiveYearDropdown}
@@ -100,7 +104,11 @@ function Research(){
         </div>
         
         <div className={styles.reportTypeButtons}>
-          <button onClick={handleTypeButtonClick} value={REPORT_TYPES.equity} className={ REPORT_TYPES.equity === reportType ? styles.activeReportButton : styles.inactiveReportButton}>
+          <button 
+            onClick={handleTypeButtonClick}
+            value={REPORT_TYPES.equity} 
+            className={ REPORT_TYPES.equity === reportType ? styles.activeReportButton : styles.inactiveReportButton}
+          >
             {REPORT_TYPES.equity}
           </button>
 
@@ -111,7 +119,7 @@ function Research(){
                     inputId="industry-research-dropdown"
                     value={industryGroup}
                     onChange={handleIndustryGroupSelect}
-                    options={industryGroups}
+                    options={industryGroupOptions}
                     optionValue="value"
                     optionLabel="label"
                     className={REPORT_TYPES.industry === reportType ? styles.activeDropdown : styles.inactiveDropdown}
@@ -132,11 +140,6 @@ function Research(){
       </div>
 
       <FilteredReports research={research} year={year} reportType={reportType} industryGroup={industryGroup}/>
-      {/* {showEquityResearch ||  industryGroup ? 
-        <FilteredReports year={year} allResearch={allResearch} reportType={reportType} industryGroup={industryGroup}/>
-        : 
-        <IndustryGroupButtons industryGroup={industryGroup} setIndustryGroup={setIndustryGroup}/>
-      } */}
     </div>
   )
 }
@@ -147,7 +150,7 @@ function FilteredReports({research, year, reportType, industryGroup}) {
   const allResearchForYear = research.filter(paper => new Date(paper.frontmatter.date).getFullYear() === year);
   const filteredResearch = allResearchForYear.filter(isResearch => {
     if (isIndustryResearch) {
-      if (industryGroup && industryGroup !== 'All') {
+      if (industryGroup && industryGroup !== INDUSTRY_GROUPS.all) {
         return isResearch.frontmatter.isIndustryResearch === 'true' && isResearch.frontmatter.industryGroup === industryGroup;
       } else {
         return isResearch.frontmatter.isIndustryResearch === 'true'
@@ -160,9 +163,10 @@ function FilteredReports({research, year, reportType, industryGroup}) {
   return (
     <div className={styles.research}>   
       {filteredResearch.length > 0 ?
-        filteredResearch.map((paper, index) => { return (
-          <>
-            <ResearchComponent key={index} report={paper.frontmatter}/>
+        filteredResearch.map((paper, index) => {
+          return (
+          <div key={index}>
+            <ResearchComponent report={paper.frontmatter}/>
             {index === filteredResearch.length - 1 ? 
               null 
               : 
@@ -170,40 +174,13 @@ function FilteredReports({research, year, reportType, industryGroup}) {
                 <hr />
               </div>
             }
-          </>
+          </div>
         )})
         :
         <h4 className={styles.noReport}> No data found for the year {year}. </h4>
       }
     </div>
   ) 
-}
-
-
-function IndustryGroupButtons({industryGroup, setIndustryGroup}) {
-  const industryGroups = [
-    'Consumer Retail', 
-    'Natural Resources', 
-    'Real Estate, Gaming, and Lodging', 
-    'Technology, Media, and Telecommunications'
-  ];
-
-  const handleIndustryButtonClick = (event) => {
-    event.preventDefault();
-    setIndustryGroup(event.target.value);
-  };
-
-  return (
-    <div className={styles.buttons}>
-      {industryGroups.map(group => (
-        <div>
-          <button onClick={handleIndustryButtonClick} value={group} className={ group === industryGroup ? styles.activeGroupButton : styles.inactiveGroupButton}>
-            {group} 
-          </button>
-        </div>
-      ))}
-    </div>
-  )
 }
 
 
