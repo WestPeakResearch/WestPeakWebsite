@@ -208,14 +208,15 @@
   min-width: 150px;
   text-align: center;
   text-transform: uppercase;
-  color:white;
-  text-decoration:none;
+  color: white;
+  text-decoration: none;
   border-radius: 0.8rem;
-  background-color:#0a233d;
+  background-color: #0a233d;
 }
 
 .reportLink:hover {
   background-color: #113d69;
+  text-decoration: none;
 }
 
 .reportTitle {
