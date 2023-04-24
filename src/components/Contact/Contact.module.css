@@ -1,38 +1,109 @@
 .container {
+  margin: 0 auto;
+  width: 80%;
   padding-bottom: 2rem;
 }
 
-.header{
+.container h2 {
   text-align:center;
-  margin: 1rem 0rem;
+  margin: 1rem auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid hsla(0,0%,0%,0.07);
 }
 
-.name{
+.header {
+  text-align: left;
+  margin: 1rem auto;
+  width: 80%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid hsla(0,0%,0%,0.07);
+}
+
+.infoContainer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.firstName {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lastName, .email {
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.textarea span textarea {
+  width: 100% !important;
+  max-width: 850px;
+  min-height: 12rem !important;
+}
+
+.buttons {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button {
+  border: none !important;
+  color:white;
+  background-color:#0a233d !important;
+  width: 6rem;
+}
+
+.submit {
+  margin-left: 1rem !important;
+}
+
+.socials {
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.socialsIcons img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-left: 1rem !important;
+  margin-bottom: 0;
+}
+
+.socialsIcons {
+  margin-left: 7%;
+}
+
+/* .name {
   margin: 2rem 0rem;
   text-align: center;
   color:black;
-}
+} */
 
-.email{
+/* .email {
   text-align: center;
   margin-right:24px;
   color:black;
-}
+} */
 
-.textArea{
+/* .textArea {
   text-align: center;
-}
+} */
 
-.submit{
+/* .submit {
   text-align: center;
   margin: 2rem 2rem;
-}
-.button{
-  margin: 0 auto;
-}
+} */
 
-@media screen and (max-width: 1068px){
-  .header{
+/* .button {
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid #6c757d;
+} */
+
+@media screen and (max-width: 1068px) {
+  .header {
       font-size:1.2rem;
   }
 }
