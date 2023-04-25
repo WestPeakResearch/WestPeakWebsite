@@ -4,13 +4,7 @@ name: "Logan Hale"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of Natural Resources"
 management: "False"
-research:
-  [
-    "RL_Logan_Hale.pdf",
-    "ROXG_NR_M&A_Logan_Hale.pdf",
-    "NR_Primer_2022.pdf",
-    "NR_Primer_2023.pdf",
-  ]
+research: ["RL_Logan_Hale.pdf", "NR_Primer_2022.pdf", "NR_Primer_2023.pdf"]
 headshot: logan1.jpg
 ---
 
