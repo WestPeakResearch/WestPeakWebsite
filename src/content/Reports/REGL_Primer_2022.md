@@ -7,5 +7,5 @@ author: ""
 company: "Real Estate, Gaming, and Lodging Primer 2022"
 date: "2022-01-30"
 summary: "The 2022 Real Estate, Gaming, and Lodging Primer contains an in-depth analysis of the industrial and commercial sectors."
-title: "REGL"
+title: "REGL 2022"
 ---
