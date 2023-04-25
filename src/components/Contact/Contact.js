@@ -45,13 +45,9 @@ function Contact(){
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...data })
       })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(response.status)
-        } else {
-          showSuccessToast();
-          clearForm();
-        }
+      .then(() => {
+        showSuccessToast();
+        clearForm();
       })
       .catch(() => {
         showErrorToast();
@@ -91,11 +87,9 @@ function Contact(){
       <form 
         className={styles.container}
         name="contact" 
-        method="post"
         data-netlify={true}
         onSubmit={formik.handleSubmit} 
       >
-        <input type="hidden" name="form-name" value="contact" />
         <Toast ref={successToast} />
         <Toast ref={errorToast} />
 

@@ -10,8 +10,8 @@
 
 .text{
   margin-top:25px;
-    color:white;
-    text-align:center;
+  color:white;
+  text-align:center;
 }
 
 .shoutout{
@@ -24,6 +24,6 @@
 
 @media (max-width: 1024px) {
   .container {
-      height: 8.2rem;
+    height: 8.2rem;
   }
 }

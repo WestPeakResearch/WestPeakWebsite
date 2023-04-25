@@ -8,8 +8,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <HomeCover />
-
-    </Layout>
+  </Layout>
 )
 
 export default IndexPage

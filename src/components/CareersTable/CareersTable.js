@@ -30,102 +30,33 @@ const Careers = props => (
 
 
 function CareersTable(){
-
-    const data = useStaticQuery(graphql`
-        query careersQuery{
-            internships2020: allCareersXlsxInternships2019
-              {
-               nodes {
-                 name
-                 position
-                 company
-                 location
-                 type
-               }
-             }
+  const data = useStaticQuery(graphql`
+    query careersQuery{
+      internships2020: allCareersXlsxInternships2019
+        {
+          nodes {
+            name
+            position
+            company
+            location
+            type
+          }
         }
-    `)
-    const placements = data.internships2020
-    return(
-        <>
-        <div className = {styles.content}>
-            <span className = {styles.title}>A Higher Standard of Career Success</span>
-            <p>At WestPeak, we’re redefining and raising the bar of successful careers, and our experiences speak to our 
-                commitment to professional development. We have countless members with competitive internships and full-time 
-                experience at Fortune 500 companies, prestigious firms, and unicorn startups.</p>
-        </div>
-            <Careers data={placements} />
-        </>
-    )
+    }
+  `)
+  const placements = data.internships2020
 
-
-
-
+  return(
+    <>
+      <div className = {styles.content}>
+        <span className = {styles.title}>A Higher Standard of Career Success</span>
+        <p>At WestPeak, we’re redefining and raising the bar of successful careers, and our experiences speak to our 
+            commitment to professional development. We have countless members with competitive internships and full-time 
+            experience at Fortune 500 companies, prestigious firms, and unicorn startups.</p>
+      </div>
+      <Careers data={placements} />
+    </>
+  )
 }
 
 export default CareersTable
-
-
-// export default function CareersTable(props){
-
-//     const [year, setYear] = useState(props.defaultYear);
-
-//     const handleYearButtonClick = year => {
-//         setYear(year)
-//     }
-
-//     return(
-//     <StaticQuery
-//         query={graphql`
-//           {
-//             internships2020: allCareersXlsxInternships2019
-//              {
-//               nodes {
-//                 name
-//                 position
-//                 company
-//                 location
-//                 type
-//               }
-//             }
-//           }
-//         `}
-//         render={data => {
-//           const careersData = {
-//             "2020": [
-//               {
-//                 name: "Internships",
-//                 data: data.internships2020,
-//               }
-//             ],
-//           }
-
-//             return (
-//                 <div>
-//                 {Object.keys(careersData)
-//                   .reverse()
-//                   .map(key => (
-//                     <YearButton
-//                       value={key}
-//                       currentYear={year}
-//                       onClick={handleYearButtonClick}
-//                     />
-//                   ))}
-                
-//                 {careersData[2020].map(table => (
-//                 <Careers
-//                   title={`2020 ${table.name}`}
-//                   data={table.data}
-//                 />
-//               ))}
-//               </div>  
-//           )
-//         }
-//     }
-//     />
-//     )
-// }
-
-
-
-          

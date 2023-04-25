@@ -1,5 +1,5 @@
-import Typography from 'typography'
-import githubTheme from 'typography-theme-github'
+import Typography from 'typography';
+import roboto from 'typeface-roboto';
 
-const typography = new Typography(githubTheme)
+const typography = new Typography(roboto)
 export default typography

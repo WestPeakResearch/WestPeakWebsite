@@ -1,96 +1,81 @@
 .memberButtons{
-    text-align:center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+  text-align:center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .inactiveButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 200px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-
-    
+  border-radius: 4px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 200px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  
   background-color: #eeeeee;
   color: black;
-
 }
 
 .inactiveButton:hover {
-    background-color: #d8d8d8;
-    
-  }
+  background-color: #d8d8d8;
+}
 
 .activeButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 200px;
-    height: 60px;
+  border-radius: 4px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#0a233d;
+  
+  width: 200px;
+  height: 45px;
 }
-
-
-
 
 .cards{
-    grid-column: 2 / span 12;
-    display: grid;
-    grid-template-columns: repeat(12, minmax(auto, 5rem));
-    grid-gap: 5rem;
-    padding: 10px 10%;
-    justify-content: center;
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(auto, 5rem));
+  grid-gap: 5rem;
+  padding: 10px 10%;
+  justify-content: center;
 }
-
-
-
 
 .container{
-    justify-content: center;
-    margin: 0 auto;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
-
-
-.title{
-    margin: 0 auto;
-    padding-top:1rem;
-    font-size: 3rem;
-    text-align:center;
-    text-transform: uppercase;
-}
-
 
 @media only screen and (max-width : 500px){
-    .cards{
-        grid-column: 2 / span 6;
-        grid-template-columns: repeat(6, 1fr);
-        grid-gap:20px;
-    }
-    .title{
-        margin: 0 auto;
-        padding-top:1rem;
-        font-size: 2.4rem;
-        text-align:center;
-        text-transform: uppercase;
-    }
-    .container{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
+  .cards{
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap:20px;
+  }
+
+  .title{
+    margin: 0 auto;
+    padding-top:1rem;
+    font-size: 2.4rem;
+    text-align:center;
+    text-transform: uppercase;
+  }
+
+  .container{
+    margin-left: 5%;
+    margin-right: 5%;
+  }   
 }
 
 

@@ -10,7 +10,7 @@ const LegalPage = () => (
     <SEO title="Legal" />
     <PageCover  title = "Legal" />
     <Legal/>
-</Layout>
+  </Layout>
 )
 
 export default LegalPage

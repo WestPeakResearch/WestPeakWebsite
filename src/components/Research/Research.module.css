@@ -1,315 +1,258 @@
-.buttons{
-    text-align:center;
+.container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem;
 }
 
-.buttonsContainer {
-    display: flex;
-    margin: auto;
-    width: 640px;
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+.buttons {
+  text-align:center;
 }
 
 .inactiveGroupButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 500px;
-    height: 60px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-
-    
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 500px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+ 
   background-color: #eeeeee;
   color: black;
 }
 
 .inactiveGroupButton:hover {
-    background-color: #d8d8d8;
-  }
+  background-color: #d8d8d8;
+}
 
 .activeGroupButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 500px;
-    height: 60px;
-}
-
-.activeBiggerGroupButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 620px;
-    height: 60px;
-}
-
-.inactivePrimerOrDealButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 300px;
-    height: 230px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-
-    
-  background-color: #eeeeee;
-  color: black;
-
-}
-
-.inactivePrimerOrDealButton:hover {
-    background-color: #d8d8d8;
-  }
-
-.activePrimerOrDealButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 300px;
-    height: 230px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#0a233d;
+  
+  width: 500px;
+  height: 60px;
 }
 
 .noReport{
-    text-align: center;
-    padding-top: 50px;
-    font-size: 3rem;
-    text-decoration: wavy;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3rem;
+  text-decoration: wavy;
 }
+
 .reportTypeButtons{
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.inactiveReportButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 175px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+.inactiveYearDropdown {
+  height: 45px;
+  width: 102px;
+  text-align: center;
+  background-color: #eeeeee !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
+}
 
-    
+.activeYearDropdown {
+  height: 45px;
+  width: 102px;
+  text-align: center;
+  color:white !important;
+  background-color:#0a233d !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
+}
+
+.activeYearDropdown span {
+  color: white;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.inactiveDropdown {
+  height: 45px;
+  width: 200px;
+  text-align: center;
+  background-color: #eeeeee !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
+}
+
+.activeDropdown {
+  height: 45px;
+  width: 200px;
+  text-align: center;
+  color:white !important;
+  background-color:#0a233d !important;
+  border: none !important;
+  box-shadow: none !important;
+  align-items: center;
+}
+
+.activeDropdown span {
+  color: white;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+.inactiveDropdownLabel {
+  padding-left: 8px;
+  color: black !important;
+}
+
+.activeDropdownLabel {
+  padding-left: 0;
+  left: 0.25rem !important;
+}
+
+.inactiveReportButton {
+  border-radius: 4px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 175px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
   background-color: #eeeeee;
   color: black;
-
 }
 
 .inactiveReportButton:hover {
-    background-color: #d8d8d8;
-    
-  }
-
-.activeReportButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 175px;
-    height: 50px;
+  background-color: #d8d8d8;
 }
 
-.inactiveButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
-    outline: none;
+.activeReportButton {
+  border-radius: 4px;
+  margin: 10px 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:white;
+  background-color:#0a233d;
+  
+  width: 175px;
+  height: 45px;
+}
 
-    
-  background-color: #eeeeee;
+.reportPost {
+  width: 100%;
+  max-width: 98rem;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: - 1.4rem 9rem rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+.separation hr {
+  height: 0px;
+  border-bottom: 8px solid #0a233d;
+  border-radius: 4px;
+}
+
+.reportDate span {
+  font-size: 0.9rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
   color: black;
-
 }
 
-.inactiveButton:hover {
-    background-color: #d8d8d8;
-    
-  }
-
-.activeButton{
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 100px;
-    height: 50px;
+.reportText {
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  color: rgba(0,0,0.7);
+  text-align: left;
+  line-height: 1.7rem;
 }
 
-.dropdown {
-    color:white !important;
-    background-color:#0a233d !important;
+.reportLink {
+  display: inline-block;
+  padding: 1rem 1rem;
+  letter-spacing: 1px;
+  margin: 2rem 2rem;
+
+  min-width: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  background-color: #0a233d;
 }
 
-.backButton {
-    margin: 10px 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    color:white;
-    background-color:#0a233d;
-    
-    width: 60px;
-    height: 60px;
+.reportLink:hover {
+  background-color: #113d69;
+  text-decoration: none;
 }
 
-.container{
+.reportTitle {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+
+@media screen and (max-width: 1068px) {
+  .reportPost {
+    max-width: 100%;
     margin: 0 auto;
-    width: 90%;
-    padding: 1rem;
-}
-
-@media (max-width: 1024px) {
-    .container {
-        width: 95%;
-        padding: 1rem;
-    }
-  }
-
-.reportPost{
-    width: 100%;
-    max-width: 98rem;
-    padding: 1rem;
-    margin:1rem;
-    box-shadow: - 1.4rem 9rem rgba(0,0,0,0.2);
-    display:flex;
-    align-items: center;
-    border-radius: 0.8rem;
-}
-
-.separation hr{
-    height:0px;
-    border-bottom:10px solid #0a233d;
-
-}
-
-.reportDate span{
-    font-size:0.9rem;
-    margin: 1.5rem 0 2rem;
-    text-transform: uppercase;
-    color: black;
-}
-
-.reportText{
     margin-bottom: 1rem;
-    margin-top:0.5rem;
-    font-size:1.05rem;
-    color: rgba(0,0,0.7);
-    text-align:left;
+  }
+  .reportText {
+    display: none;
+  }
+  .reportLink {
+    margin: 0.5rem 3rem;
+    font-size: 0.9rem;
+  }
 }
 
-
-
-.reportLink{
-    display:inline-block;
-    padding:1rem 1rem;
-    letter-spacing: 1px;
-    margin: 2rem 2rem;
-
-    min-width:150px;
-    text-align:center;
-    text-transform: uppercase;
-    color:white;
-    text-decoration:none;
-    border-radius: 0.8rem;
-    background-color:#0a233d;
+@media screen and (max-width: 868px) {
+  .reportPost {
+    max-width: 100%;
+  }
 }
 
-.reportLink:hover{
-    background-color: #113d69;
-}
-
-.reportTitle{
-    font-size:1rem;
-    font-weight:800;
-}
-
-
-@media screen and (max-width: 1068px){
-    .reportPost{
-        max-width: 100%;
-        margin: 0 auto;
-        margin-bottom: 1rem;
-    }
-    .reportText{
-        display:none;
-    }
-    .reportLink{
-        margin:0.5rem 3rem;
-        font-size:0.9rem;
-    }
-}
-
-@media screen and (max-width: 868px){
-    .reportPost{
-        max-width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .reportPost{
-        padding: 0;
-        flex-direction: column;
-    }
-    .reportTitle{
-        margin-bottom: 1rem;
-    }
+@media screen and (max-width: 768px) {
+  .reportPost {
+    padding: 0;
+    flex-direction: column;
+  }
+  .reportTitle {
+    margin-bottom: 1rem;
+  }
 }
