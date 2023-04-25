@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import styles from "./Contact.module.css"
-import { useFormik } from 'formik';
+import { useFormik, Formik, Form } from 'formik';
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from 'primereact/inputtextarea';    
 import { Button } from 'primereact/button';
@@ -88,94 +88,99 @@ function Contact(){
   return (
     <div>
       <h2 className={styles.header}>Please fill out the contact form below or email us at contact@westpeakresearch.com</h2>
-      <form 
-        className={styles.container}
-        name="contact" 
-        method="post"
-        data-netlify={true}
-        onSubmit={formik.handleSubmit} 
+      <Formik
+        initialValues={formik.initialValues}
+        validate={formik.validate}
+        onSubmit={formik.onSubmit}
       >
-        <input type="hidden" name="form-name" value="contact" />
-        <Toast ref={successToast} />
-        <Toast ref={errorToast} />
+        <Form
+          className={styles.container}
+          name="contact" 
+          method="post"
+          data-netlify={true}
+          onSubmit={formik.handleSubmit}
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <Toast ref={successToast} />
+          <Toast ref={errorToast} />
 
-        <div className={styles.infoContainer}>
-          <div className={styles.firstName}>
+          <div className={styles.infoContainer}>
+            <div className={styles.firstName}>
+              <span className="p-float-label">
+                <InputText
+                  id="first-name"
+                  name="first_name"
+                  value={formik.values.first_name}
+                  onChange={(e) => onChange('first_name', e)}
+                  className={classNames({ 'p-invalid': isFormFieldInvalid('first_name') })}
+                />
+                <label id="first-name-label" htmlFor="first-name">First Name</label>
+              </span>
+            </div>
+
+            <div className={styles.lastName}>
+              <span className="p-float-label">
+                <InputText
+                  id="last-name"
+                  name="last_name"
+                  value={formik.values.last_name}
+                  onChange={(e) => onChange('last_name', e)}
+                  className={classNames({ 'p-invalid': isFormFieldInvalid('last_name') })}
+                />
+                <label id="last-name-label" htmlFor="last-name">Last Name</label>
+              </span>
+            </div>
+
+            <div className={styles.email}>
+              <span className="p-float-label">
+                <InputText
+                  id="email"
+                  name="email"
+                  value={formik.values.email}
+                  onChange={(e) => onChange('email', e)}
+                  className={classNames({ 'p-invalid': isFormFieldInvalid('email') })}
+                />
+                <label id="email-label" htmlFor="email">Email</label>
+              </span>
+            </div>
+          </div>
+
+          <div className={styles.textarea}>
             <span className="p-float-label">
-              <InputText
-                id="first-name"
-                name="first_name"
-                value={formik.values.first_name}
-                onChange={(e) => onChange('first_name', e)}
-                className={classNames({ 'p-invalid': isFormFieldInvalid('first_name') })}
+              <InputTextarea
+                id="message"
+                name="message"
+                value={formik.values.message}
+                onChange={(e) => onChange('message', e)}
+                className={classNames({ 'p-invalid': isFormFieldInvalid('message') })}
               />
-              <label id="first-name-label" htmlFor="first-name">First Name</label>
+              <label id="message-label" htmlFor="message">Type your message here</label>
             </span>
           </div>
 
-          <div className={styles.lastName}>
-            <span className="p-float-label">
-              <InputText
-                id="last-name"
-                name="last_name"
-                value={formik.values.last_name}
-                onChange={(e) => onChange('last_name', e)}
-                className={classNames({ 'p-invalid': isFormFieldInvalid('last_name') })}
-              />
-              <label id="last-name-label" htmlFor="last-name">Last Name</label>
-            </span>
+          <div className={styles.error}>
+            {getErrors()}
           </div>
 
-          <div className={styles.email}>
-            <span className="p-float-label">
-              <InputText
-                id="email"
-                name="email"
-                value={formik.values.email}
-                onChange={(e) => onChange('email', e)}
-                className={classNames({ 'p-invalid': isFormFieldInvalid('email') })}
-              />
-              <label id="email-label" htmlFor="email">Email</label>
-            </span>
+          <div className={styles.buttons}>
+            <Button className={styles.button} type="reset" label="Clear" onClick={clearForm} />
+            <Button className={styles.button + ' ' + styles.submit} type="submit" label="Submit" />
           </div>
-        </div>
 
-        <div className={styles.textarea}>
-          <span className="p-float-label">
-            <InputTextarea
-              id="message"
-              name="message"
-              value={formik.values.message}
-              onChange={(e) => onChange('message', e)}
-              className={classNames({ 'p-invalid': isFormFieldInvalid('message') })}
-            />
-            <label id="message-label" htmlFor="message">Type your message here</label>
-          </span>
-        </div>
-
-        <div className={styles.error}>
-          {getErrors()}
-        </div>
-
-        <div className={styles.buttons}>
-          <Button className={styles.button} type="reset" label="Clear" onClick={clearForm} />
-          <Button className={styles.button + ' ' + styles.submit} type="submit" label="Submit" />
-        </div>
-
-        <div className={styles.socials}>
-          <h3>Make sure to follow our socials to stay up to date on events and hiring!</h3>
-          <div className={styles.socialsIcons}>
-            <a href="https://www.facebook.com/WestPeakResearch/" target="_blank" rel="noopener noreferrer">
-              <img src={FacebookLogo} alt="Facebook" />
-            </a>
-            <a href="https://linkedin.com/company/westpeak-research" target="_blank" rel="noopener noreferrer">
-              <img src={LinkedinLogo} alt="Linkedin" />
-            </a>
+          <div className={styles.socials}>
+            <h3>Make sure to follow our socials to stay up to date on events and hiring!</h3>
+            <div className={styles.socialsIcons}>
+              <a href="https://www.facebook.com/WestPeakResearch/" target="_blank" rel="noopener noreferrer">
+                <img src={FacebookLogo} alt="Facebook" />
+              </a>
+              <a href="https://linkedin.com/company/westpeak-research" target="_blank" rel="noopener noreferrer">
+                <img src={LinkedinLogo} alt="Linkedin" />
+              </a>
+            </div>
           </div>
-        </div>
-      </form>
+        </Form>
+      </Formik>
     </div>
-    
   )
 }
 
