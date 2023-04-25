@@ -7,6 +7,20 @@ import Img from "gatsby-image"
 export default function teamMember({ data }) {
   const post = data.markdownRemark
   const research = post.frontmatter.research
+
+  const getResearchButtonLabel = (paper) => {
+    const industryPrefixes = ['CR', 'NR', 'REGL', 'TMT'];
+    const prefix = paper.substr(0, paper.indexOf('_'));
+    let label = prefix
+
+    // add the year to the label if it's industry research
+    if (industryPrefixes.includes(prefix)) {
+      label = prefix + ' ' + paper.substring(paper.length - 8, paper.length - 4)
+    }
+
+    return label;
+  }
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -35,7 +49,7 @@ export default function teamMember({ data }) {
              key = {index}
              className = {styles.researchLink}
              >
-               {paper.substr(0, paper.indexOf('_'))}
+               {getResearchButtonLabel(paper)}
              </a>
              <br />
              </>

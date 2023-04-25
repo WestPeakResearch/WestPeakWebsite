@@ -16,14 +16,6 @@ const REPORT_TYPES = {
   industry: 'Industry Research',
 }
 
-const INDUSTRY_GROUPS = {
-  all: 'All Groups',
-  cr: 'Consumer Retail',
-  nr: 'Natural Resources',
-  regl: 'Real Estate, Gaming, and Lodging',
-  tmt: 'Technology, Media, and Telecommunications',
-}
-
 function Research(){
   const data = useStaticQuery(graphql`
     query researchQuery {
@@ -49,7 +41,13 @@ function Research(){
   const [reportType, setReportType] = useState(REPORT_TYPES.equity);
   const [industryGroup, setIndustryGroup] = useState(null);
   const research = data.allMarkdownRemark.nodes;
-  const industryGroupOptions = [];
+  const industryGroupOptions = [
+    {label: 'All Groups', value: 'All'},
+    {label: 'Consumer Retail', value: 'Consumer Retail'},
+    {label: 'Natural Resources', value: 'Natural Resources'},
+    {label: 'Real Estate, Gaming, and Lodging', value: 'Real Estate, Gaming, and Lodging'},
+    {label: 'Technology, Media, and Telecommunications', value: 'Technology, Media, and Telecommunications'},
+  ];
 
   useEffect(() => {
     const years = [];
@@ -62,13 +60,6 @@ function Research(){
 
     setYears(years);
   }, [reportType]);
-
-  useEffect(() => {
-    Object.keys(INDUSTRY_GROUPS).map(key => industryGroupOptions.push({
-      label: INDUSTRY_GROUPS[key], 
-      value: INDUSTRY_GROUPS[key]
-    }))
-  })
 
   const handleIndustryGroupSelect = (event) => {
     event.preventDefault();
@@ -150,7 +141,7 @@ function FilteredReports({research, year, reportType, industryGroup}) {
   const allResearchForYear = research.filter(paper => new Date(paper.frontmatter.date).getFullYear() === year);
   const filteredResearch = allResearchForYear.filter(isResearch => {
     if (isIndustryResearch) {
-      if (industryGroup && industryGroup !== INDUSTRY_GROUPS.all) {
+      if (industryGroup && industryGroup !== 'All') {
         return isResearch.frontmatter.isIndustryResearch === 'true' && isResearch.frontmatter.industryGroup === industryGroup;
       } else {
         return isResearch.frontmatter.isIndustryResearch === 'true'

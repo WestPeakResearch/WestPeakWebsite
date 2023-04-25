@@ -38,7 +38,7 @@
   margin: 0 auto;
 }
 
-.link{
+.link:hover {
   text-decoration: none;   
 }
 
