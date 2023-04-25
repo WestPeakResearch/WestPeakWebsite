@@ -7,7 +7,7 @@ import 'primereact/resources/themes/bootstrap4-light-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
         
 
-const CURRENT_YEAR = 2022;
+const CURRENT_YEAR = 2023;
 const EQUITY_START_YEAR = 2014;
 const INDUSTRY_START_YEAR = 2021;
 
@@ -38,8 +38,10 @@ function Research(){
 
   const [year, setYear] = useState(CURRENT_YEAR);
   const [years, setYears] = useState(null);
-  const [reportType, setReportType] = useState(REPORT_TYPES.equity);
-  const [industryGroup, setIndustryGroup] = useState(null);
+  // const [reportType, setReportType] = useState(REPORT_TYPES.equity);
+  const [reportType, setReportType] = useState(REPORT_TYPES.industry);
+  // const [industryGroup, setIndustryGroup] = useState(null);
+  const [industryGroup, setIndustryGroup] = useState('All');
   const research = data.allMarkdownRemark.nodes;
   const industryGroupOptions = [
     {label: 'All Groups', value: 'All'},
