@@ -11,10 +11,15 @@ import LinkedinLogo from '../../images/linkedin.svg';
 
 
 function Contact(){
-  const toast = useRef(null);
+  const successToast = useRef(null);
+  const errorToast = useRef(null);
 
-  const showToast = () => {
-    toast.current.show({ severity: "success", summary: "Form Submitted", detail: "We'll get back to you as soon as possible!" });
+  const showSuccessToast = () => {
+    successToast.current.show({ severity: "success", summary: "Form Submitted", detail: "We'll get back to you as soon as possible!" });
+  };
+
+  const showErrorToast = () => {
+    errorToast.current.show({ severity: "error", summary: "Form Not Submitted", detail: "Sorry, there was an issue submitting the form! Please contact us at contact@westpeakresearch.com" });
   };
 
   const formik = useFormik({
@@ -34,9 +39,20 @@ function Contact(){
 
       return errors;
     },
-    onSubmit: (data) => {
-      data && showToast(data);
-      clearForm();
+    onSubmit: (data, actions) => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...data })
+      })
+      .then(() => {
+        showSuccessToast();
+        clearForm();
+      })
+      .catch(() => {
+        showErrorToast();
+      })
+      .finally(() => actions.setSubmitting(false))
     }
   });
 
@@ -59,17 +75,23 @@ function Contact(){
     return error ? <small className="p-error">All fields are required</small> : <small className="p-error">&nbsp;</small>;
   }
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   return (
     <div>
       <h2 className={styles.header}>Please fill out the contact form below or email us at contact@westpeakresearch.com</h2>
       <form 
         className={styles.container}
         name="contact" 
-        method="POST" 
-        data-netlify="true"
+        data-netlify={true}
         onSubmit={formik.handleSubmit} 
       >
-        <Toast ref={toast} />
+        <Toast ref={successToast} />
+        <Toast ref={errorToast} />
 
         <div className={styles.infoContainer}>
           <div className={styles.firstName}>
