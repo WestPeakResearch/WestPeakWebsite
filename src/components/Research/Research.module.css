@@ -122,6 +122,7 @@
 
 .inactiveDropdownLabel {
   padding-left: 8px;
+  color: black !important;
 }
 
 .activeDropdownLabel {
