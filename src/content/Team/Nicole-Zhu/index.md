@@ -4,9 +4,8 @@ name: "Nicole Zhu"
 degree: "Bachelor of Commerce - Finance | Year 5"
 position: "Head of TMT"
 management: "False"
-research: ["FIT_TMT_M&A_Nicole_Zhu.pdf"]
+research: ["TMT_Primer_2023.pdf"]
 headshot: nicole.jpg
-
 ---
 
 Nicole is a fifth-year commerce student specializing in Finance. This fall, Nicole is completing an Analyst internship with RBC Corporate Client Group in Vancouver. BC.

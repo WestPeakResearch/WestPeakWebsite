@@ -4,9 +4,8 @@ name: "Lynne Shi"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "External Director"
 management: "True"
-research: ["SIG_Lynne_Shi.pdf"]
+research: ["SIG_Lynne_Shi.pdf", "TMT_Primer_2023.pdf"]
 headshot: lynne.jpg
-
 ---
 
 Lynne is a third-year commerce student specializing in Finance. Through WestPeak, she has come to better understand the capital markets.

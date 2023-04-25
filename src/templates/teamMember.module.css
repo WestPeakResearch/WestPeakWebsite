@@ -22,8 +22,9 @@
     text-decoration:none;
 }
 
-.researchLink::hover{
+.researchLink:hover{
     background-color: #113d69;
+    text-decoration: none;
 }
 .researchtitle{
     font-weight:700;
@@ -44,9 +45,9 @@
 }
 
 .memberImage{
-    min-width:30rem;
-    max-width:60rem;
-    margin-right:1rem;
+    min-width: 24rem;
+    max-width: 60rem;
+    margin-right: 1rem;
     position: relative;
 }
 
@@ -78,6 +79,7 @@
     margin-top: 1rem;
     font-size:1rem;
     color:black;
+    line-height: 1.7rem;
 }
 
 

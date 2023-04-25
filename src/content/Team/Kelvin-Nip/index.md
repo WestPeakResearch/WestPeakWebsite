@@ -4,9 +4,8 @@ name: "Kelvin Nip"
 degree: "Bachelor of Arts - Bachelor and Master of Management Dual Degree | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: ["COLM_Kelvin_Nip.pdf"]
+research: ["COLM_Kelvin_Nip.pdf", "CR_Primer_2023.pdf"]
 headshot: kelvin.jpg
-
 ---
 
 Kelvin is a fourth year B+MM student. Through WestPeak, Kelvin hopes to accumulate relevant finance knowledge and build everlasting friendships. Past summer, he interned at PwC in the M&A advisory team.

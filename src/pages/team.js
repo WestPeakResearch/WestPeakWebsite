@@ -10,7 +10,7 @@ const TeamPage = () => (
     <SEO title="Team" />
     <PageCover  title = "Our Team" />
     <Team/>
-</Layout>
+  </Layout>
 )
 
 export default TeamPage

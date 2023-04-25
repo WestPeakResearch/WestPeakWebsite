@@ -10,7 +10,7 @@ const ResourcesPage = () => (
     <SEO title="Resources" />
     <PageCover  title = "Resources" />
     <Resources/>
-</Layout>
+  </Layout>
 )
 
 export default ResourcesPage
