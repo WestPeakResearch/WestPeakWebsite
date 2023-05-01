@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./PageCover.module.css"
+import { pageCover, pageTitle } from "./PageCover.module.css"
 
 
 function PageCover(props){
@@ -7,8 +7,8 @@ function PageCover(props){
 
   return(
     <>
-      <div className={styles.pageCover}>
-        <div className = {styles.pageTitle}>
+      <div className={pageCover}>
+        <div className = {pageTitle}>
           {title}
         </div>
       </div>

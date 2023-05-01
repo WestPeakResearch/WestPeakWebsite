@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./Research.module.css"
+import { reportPost, reportLink, reportDate, reportText, reportTitle } from "./Research.module.css"
 import {withPrefix} from "gatsby"
 
 
@@ -8,26 +8,26 @@ function ResearchComponent(props){
 
     return(
       <>
-        <div className = {styles.reportPost}>
+        <div className = {reportPost}>
           <a 
-            className = {styles.reportLink}
+            className = {reportLink}
             rel="noopener noreferrer"
             href={withPrefix(`${report.paper}`)}
             target="_blank"
           >
             {report.title}
           </a>
-          <div className = {styles.reportInfo}>
-            <div className={styles.reportDate}>
+          <div>
+            <div className={reportDate}>
             <span>{report.date}</span>
           </div>
             {
               report.author ?
-                <span className = {styles.reportTitle}>{report.company} | {report.author}</span> 
+                <span className = {reportTitle}>{report.company} | {report.author}</span> 
                 : 
-                <span className = {styles.reportTitle}>{report.company}</span>
+                <span className = {reportTitle}>{report.company}</span>
             }
-            <p className = {styles.reportText}>
+            <p className = {reportText}>
                 {report.summary}
             </p>
           </div>

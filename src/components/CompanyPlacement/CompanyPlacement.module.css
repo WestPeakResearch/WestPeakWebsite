@@ -16,6 +16,13 @@
   line-height: 1.7rem;
 }
 
+.images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
 .logoImage{
   width: 75%;
   margin: 0 auto;

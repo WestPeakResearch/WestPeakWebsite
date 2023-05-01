@@ -1,6 +1,6 @@
 import React from "react"
 import {useStaticQuery, graphql} from "gatsby"
-import styles from "./Resource.module.css"
+import { container } from "./Resource.module.css"
 
 
 function Resources(){
@@ -16,7 +16,7 @@ function Resources(){
   const description = data.allMarkdownRemark.nodes[0].html 
 
   return(
-    <div className = {styles.container}>
+    <div className = {container}>
       <span dangerouslySetInnerHTML={{ __html: description }} />
     </div>
   )

@@ -16,13 +16,14 @@
   vertical-align: center;
   margin-top: 25vh;
   width: 80vh;
+  display: flex;
 }
 
 
 @media (max-width: 1024px) {
   .homeTitle {
-    width: 80%;
-    margin-top:20vh;
+    width: 80vh;
+    margin-top: 25vh;
   }
 }
   

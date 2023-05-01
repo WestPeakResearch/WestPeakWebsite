@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import styles from "./Team.module.css"
+import { container, memberButtons, activeButton, inactiveButton, cards } from "./Team.module.css"
 import {useStaticQuery, graphql} from "gatsby"
 import ManagementCard from "../ManagementCard"
 import AlumniTable from "../AlumniTable"
@@ -8,7 +8,10 @@ import AlumniTable from "../AlumniTable"
 function Team(){
   const data = useStaticQuery(graphql`
     query teamQuery {
-      allMarkdownRemark(filter: {frontmatter: {type: {eq: "team"}}}, sort: {order: ASC, fields: frontmatter___name}) {
+      allMarkdownRemark(
+        filter: {frontmatter: {type: {eq: "team"}}}
+        sort: {frontmatter: {name: ASC}}
+      ) {
         nodes {
           frontmatter {
             degree
@@ -19,9 +22,7 @@ function Team(){
             headshot {
               publicURL
               childImageSharp {
-                fluid(maxWidth:1200 maxHeight: 1800 quality:70) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(width: 2000, height: 1800, quality: 70)
               }
             }
           }
@@ -64,14 +65,14 @@ function Team(){
 
   return(
     <>
-      <main className = {styles.container}>
-        <div className = {styles.memberButtons}>
+      <main className = {container}>
+        <div className = {memberButtons}>
           {
             Object.keys(teamMembers).map(key => (
               <button  
                 onClick = {handleMemberButtonClick}
                 value = {key}
-                className = { key === currTeam ? styles.activeButton : styles.inactiveButton}
+                className = { key === currTeam ? activeButton : inactiveButton}
               >
                 {key}
               </button>
@@ -80,7 +81,7 @@ function Team(){
         </div>
 
         {currTeam === "Management" ? 
-          <section className={styles.cards}>
+          <section className={cards}>
             {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('Director')).map((member, index) => (
               <>
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
@@ -103,7 +104,7 @@ function Team(){
             ))}
           </section>
           :
-          <section className={styles.cards}>
+          <section className={cards}>
             {teamMembers[currTeam].map((member, index) => (
               <>
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
