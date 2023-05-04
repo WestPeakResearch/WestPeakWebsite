@@ -10,6 +10,10 @@
   width: 100%;
   z-index:0;
 }
+
+.homeCover >* {
+  display: flex;
+}
   
 .homeTitle {    
   margin: 0 auto;
