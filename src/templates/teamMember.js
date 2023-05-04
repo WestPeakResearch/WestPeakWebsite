@@ -87,7 +87,7 @@ export const query=graphql`
         headshot {
           publicURL
           childImageSharp {
-            gatsbyImageData(width: 1000, height: 1500, quality: 70)
+            gatsbyImageData(placeholder: BLURRED, width: 1000, height: 1500, quality: 70)
           }
         }
       }

@@ -9,13 +9,13 @@ function CompanyPlacement(){
     query placementsQuery {
       one: file(absolutePath: {regex: "/placements1.jpg/"}) {
         childImageSharp {
-          gatsbyImageData(width: 2000)
+          gatsbyImageData(placeholder: BLURRED, width: 2000)
         }
       }
 
       two: file(absolutePath: {regex: "/placements2.PNG/"}) {
         childImageSharp {
-          gatsbyImageData(width: 2000)
+          gatsbyImageData(placeholder: BLURRED, width: 2000)
         }
       }
     }

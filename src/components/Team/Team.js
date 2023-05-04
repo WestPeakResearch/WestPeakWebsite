@@ -6,33 +6,31 @@ import AlumniTable from "../AlumniTable"
 
 
 function Team(){
-  const data = useStaticQuery(graphql`
-    query teamQuery {
-      allMarkdownRemark(
-        filter: {frontmatter: {type: {eq: "team"}}}
-        sort: {frontmatter: {name: ASC}}
-      ) {
-        nodes {
-          frontmatter {
-            degree
-            management
-            name
-            position
-            research
-            headshot {
-              publicURL
-              childImageSharp {
-                gatsbyImageData(width: 2000, height: 1800, quality: 70)
-              }
-            }
-          }
-          fields {
-            slug
+  const data = useStaticQuery(graphql`query teamQuery {
+  allMarkdownRemark(
+    filter: {frontmatter: {type: {eq: "team"}}}
+    sort: {frontmatter: {name: ASC}}
+  ) {
+    nodes {
+      frontmatter {
+        degree
+        management
+        name
+        position
+        research
+        headshot {
+          publicURL
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, quality: 70, layout: CONSTRAINED, width: 1200, height: 1800)
           }
         }
       }
+      fields {
+        slug
+      }
     }
-  `)
+  }
+}`)
  
   const [currTeam, setTeam] = useState("Management")
 

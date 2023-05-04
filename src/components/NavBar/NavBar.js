@@ -86,7 +86,7 @@ function Navbar(props){
     query logoQuery {
       logo: file(absolutePath: {regex: "/logo.png/"}) {
         childImageSharp {
-          gatsbyImageData(width: 200)
+          gatsbyImageData(placeholder: BLURRED, width: 200)
         }
       }
     }

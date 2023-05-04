@@ -9,7 +9,7 @@ function Home(){
     query homeQuery {
       logo: file(absolutePath: {regex: "/logo.png/"}) {
         childImageSharp {
-          gatsbyImageData(width: 2000)
+          gatsbyImageData(placeholder: BLURRED, width: 2000)
         }
       }
     }

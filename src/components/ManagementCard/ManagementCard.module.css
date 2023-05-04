@@ -12,20 +12,16 @@
   transform: translateY(-10px);
 }
 
-.cardImageContainer {
+.cardImageContainer >* {
   width: 100%;
   overflow: hidden;
   position: relative;
   border-radius: 4px;
 }
 
-.cardImageContainer >* {
+.cardImageContainer:first-child {
   padding-bottom: 60%;
-}
-
-.cardImageContainer img{
-  width: 100%;
-  position: absolute;
+  display: contents;
 }
 
 .cardContent{

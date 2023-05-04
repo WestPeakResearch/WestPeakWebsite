@@ -47,10 +47,13 @@
 }
 
 .memberImage { 
-  min-width: 24rem;
-  max-width: 60rem;
   margin-right: 1rem;
   position: relative;
+}
+
+.memberImage >* {
+  min-width: 24rem;
+  max-width: 50rem;
 }
 
 .memberImage img { 
