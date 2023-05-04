@@ -54,10 +54,8 @@ function Research(){
 
   const [year, setYear] = useState(CURRENT_YEAR);
   const [years, setYears] = useState(null);
-  // const [reportType, setReportType] = useState(REPORT_TYPES.equity);
-  const [reportType, setReportType] = useState(REPORT_TYPES.industry);
-  // const [industryGroup, setIndustryGroup] = useState(null);
-  const [industryGroup, setIndustryGroup] = useState('All');
+  const [reportType, setReportType] = useState(REPORT_TYPES.equity);
+  const [industryGroup, setIndustryGroup] = useState(null);
   const research = data.allMarkdownRemark.nodes;
   const industryGroupOptions = [
     {label: 'All Groups', value: 'All'},

@@ -4,9 +4,8 @@ name: "Tony Liaw"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["MGPI_Tony_Liaw.pdf"]
 headshot: tony.jpg
-
 ---
 
 Tony is a second-year Commerce student intending to specialize in Finance with a minor in Economics. By joining WestPeak, he hopes to continue exploring his interest in the capital market, acquiring financial knowledge, and building friendships.
