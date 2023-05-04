@@ -12,7 +12,7 @@
 }
 
 .homeCover >* {
-  display: flex;
+  display: flex !important;
 }
   
 .homeTitle {    
