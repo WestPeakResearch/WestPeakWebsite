@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Hasan Altaf <hasanaltaf2001@gmail.com>",
   "dependencies": {
+    "deepmerge": "^4.3.1",
     "dotenv": "^16.0.3",
     "formik": "^2.2.9",
     "gatsby": "^5.9.0",
