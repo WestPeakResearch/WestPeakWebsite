@@ -1,7 +1,7 @@
 import React from "react"
 import {useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import styles from "./HomeCover.module.css"
+import { homeCover, homeTitle } from "./HomeCover.module.css"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 function Home(){
@@ -9,20 +9,18 @@ function Home(){
     query homeQuery {
       logo: file(absolutePath: {regex: "/logo.png/"}) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-              ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(placeholder: BLURRED, width: 2000)
         }
       }
     }
   `)
 
+  const logo = getImage(data.logo.childImageSharp);
+
   return(
     <>
-      <div className={styles.homeCover}>
-        <div>
-          <Img className={styles.homeTitle} fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" />
-        </div>
+      <div className={homeCover}>
+        <GatsbyImage className={homeTitle} image={logo} fadeIn alt="logo" />
       </div>
     </>
   )

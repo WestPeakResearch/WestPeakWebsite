@@ -1,5 +1,18 @@
 import React, {useState, useEffect} from "react"
-import styles from "./Research.module.css"
+import { 
+  container, 
+  reportTypeButtons, 
+  activeYearDropdown, 
+  inactiveYearDropdown,
+  activeReportButton,
+  inactiveReportButton,
+  activeDropdown,
+  inactiveDropdown,
+  activeDropdownLabel,
+  inactiveDropdownLabel,
+  separation,
+  noReport,
+} from "./Research.module.css"
 import ResearchComponent from "./ResearchComponent"
 import {useStaticQuery, graphql} from "gatsby"
 import { Dropdown } from 'primereact/dropdown';
@@ -19,7 +32,10 @@ const REPORT_TYPES = {
 function Research(){
   const data = useStaticQuery(graphql`
     query researchQuery {
-      allMarkdownRemark(filter: {frontmatter: {type: {in: "report"}}}, sort: {fields: frontmatter___date, order: DESC}) {
+      allMarkdownRemark(
+        filter: {frontmatter: {type: {in: "report"}}}
+        sort: {frontmatter: {date: DESC}}
+      ) {
         nodes {
           frontmatter {
             paper
@@ -38,10 +54,8 @@ function Research(){
 
   const [year, setYear] = useState(CURRENT_YEAR);
   const [years, setYears] = useState(null);
-  // const [reportType, setReportType] = useState(REPORT_TYPES.equity);
-  const [reportType, setReportType] = useState(REPORT_TYPES.industry);
-  // const [industryGroup, setIndustryGroup] = useState(null);
-  const [industryGroup, setIndustryGroup] = useState('All');
+  const [reportType, setReportType] = useState(REPORT_TYPES.equity);
+  const [industryGroup, setIndustryGroup] = useState(null);
   const research = data.allMarkdownRemark.nodes;
   const industryGroupOptions = [
     {label: 'All Groups', value: 'All'},
@@ -81,8 +95,8 @@ function Research(){
   }
 
   return (
-    <div className={styles.container}>
-      <div className={styles.reportTypeButtons}>
+    <div className={container}>
+      <div className={reportTypeButtons}>
         <div>
           <span className="p-float-label">
               <Dropdown 
@@ -91,16 +105,16 @@ function Research(){
                 options={years}
                 optionValue="value"
                 optionLabel="label"
-                className={year ? styles.activeYearDropdown : styles.inactiveYearDropdown}
+                className={year ? activeYearDropdown : inactiveYearDropdown}
               />
           </span>
         </div>
         
-        <div className={styles.reportTypeButtons}>
+        <div className={reportTypeButtons}>
           <button 
             onClick={handleTypeButtonClick}
             value={REPORT_TYPES.equity} 
-            className={ REPORT_TYPES.equity === reportType ? styles.activeReportButton : styles.inactiveReportButton}
+            className={ REPORT_TYPES.equity === reportType ? activeReportButton : inactiveReportButton}
           >
             {REPORT_TYPES.equity}
           </button>
@@ -115,11 +129,11 @@ function Research(){
                     options={industryGroupOptions}
                     optionValue="value"
                     optionLabel="label"
-                    className={REPORT_TYPES.industry === reportType ? styles.activeDropdown : styles.inactiveDropdown}
+                    className={REPORT_TYPES.industry === reportType ? activeDropdown : inactiveDropdown}
                   />
                   <label 
                     htmlFor="industry-research-dropdown"
-                    className={industryGroup ? styles.activeDropdownLabel : styles.inactiveDropdownLabel}
+                    className={industryGroup ? activeDropdownLabel : inactiveDropdownLabel}
                   >
                     {REPORT_TYPES.industry}
                   </label>
@@ -154,7 +168,7 @@ function FilteredReports({research, year, reportType, industryGroup}) {
   })
 
   return (
-    <div className={styles.research}>   
+    <div className={research}>   
       {filteredResearch.length > 0 ?
         filteredResearch.map((paper, index) => {
           return (
@@ -163,14 +177,14 @@ function FilteredReports({research, year, reportType, industryGroup}) {
             {index === filteredResearch.length - 1 ? 
               null 
               : 
-              <div className={styles.separation}>
+              <div className={separation}>
                 <hr />
               </div>
             }
           </div>
         )})
         :
-        <h4 className={styles.noReport}> No data found for the year {year}. </h4>
+        <h4 className={noReport}> No data found for the year {year}. </h4>
       }
     </div>
   ) 

@@ -1,68 +1,81 @@
 import React from "react"
 import { graphql, withPrefix } from "gatsby"
-import styles from "./teamMember.module.css"
+import { 
+  container, 
+  member, 
+  memberImage, 
+  keyInfo, 
+  title, 
+  text, 
+  researchTitle,
+  researchLink,
+  noResearch
+} from "./teamMember.module.css"
 import Layout from "../components/Layout"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function teamMember({ data }) {
-  const post = data.markdownRemark
-  const research = post.frontmatter.research
+  const post=data.markdownRemark
+  const research=post.frontmatter.research
 
-  const getResearchButtonLabel = (paper) => {
-    const industryPrefixes = ['CR', 'NR', 'REGL', 'TMT'];
-    const prefix = paper.substr(0, paper.indexOf('_'));
-    let label = prefix
+  const getResearchButtonLabel=(paper) => {
+    const industryPrefixes=['CR', 'NR', 'REGL', 'TMT'];
+    const prefix=paper.substr(0, paper.indexOf('_'));
+    let label=prefix
 
     // add the year to the label if it's industry research
     if (industryPrefixes.includes(prefix)) {
-      label = prefix + ' ' + paper.substring(paper.length - 8, paper.length - 4)
+      label=prefix + ' ' + paper.substring(paper.length - 8, paper.length - 4)
     }
 
     return label;
   }
 
+  const headshot = getImage(post.frontmatter.headshot.childImageSharp);
+
   return (
     <Layout>
-      <div className={styles.container}>
-        <div className= {styles.member}>
-          <div className = {styles.memberImage}>
-          <Img fluid={post.frontmatter.headshot.childImageSharp.fluid} fadeIn alt="headshot" />
+      <div className={container}>
+        <div className={member}>
+          <div className={memberImage}>
+            <GatsbyImage image={headshot} fadeIn alt="headshot" />
           </div>
-          <div className = {styles.memberInfo}>
-            <div className = {styles.keyInfo}>       
-              <span className = {styles.name}>{post.frontmatter.name}</span>
+          <div>
+            <div className={keyInfo}>       
+              <span>{post.frontmatter.name}</span>
               <br />
-              <span className = {styles.degree}>{post.frontmatter.degree}</span>    
+              <span>{post.frontmatter.degree}</span>    
+            </div>
+
+            <span className={title}>{post.frontmatter.position}</span>
+
+            <div className={text} dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div>
+              <span className={researchTitle}>Research</span>
+              <br />
+              {research.length !== 0 ? research.map((paper, index) => (
+                <>
+                  <br />
+                    <a
+                      rel="noopener noreferrer"
+                      href={withPrefix(`${paper}`)}n
+                      target="_blank"
+                      key={index}
+                      className={researchLink}
+                    >
+                      {getResearchButtonLabel(paper)}
+                    </a>
+                  <br />
+                </>
+                )): <p className={noResearch}>Coming Soon!</p>}
+            </div>
           </div>
-          <span className = {styles.title}>{post.frontmatter.position}</span>
-            <div className = {styles.text} dangerouslySetInnerHTML={{ __html: post.html }} />
-            <div className = {styles.research}>
-        <span className = {styles.researchtitle}>Research</span>
-        <br />
-        {research.length !== 0 ? research.map((paper, index) => (
-          <>
-          <br />
-             <a
-             rel="noopener noreferrer"
-             href={withPrefix(`${paper}`)}n
-             target="_blank"
-             key = {index}
-             className = {styles.researchLink}
-             >
-               {getResearchButtonLabel(paper)}
-             </a>
-             <br />
-             </>
-  )): <p className = {styles.noResearch}>Coming Soon!</p>}
-    </div>
         </div>
-        
-      </div>
       </div>
     </Layout>
   )
 }
-export const query = graphql`
+export const query=graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
@@ -74,10 +87,7 @@ export const query = graphql`
         headshot {
           publicURL
           childImageSharp {
-            fluid(maxWidth:1000 maxHeight: 1500 quality:70) {
-              ...GatsbyImageSharpFluid
-              base64
-            }
+            gatsbyImageData(placeholder: BLURRED, width: 1000, height: 1500, quality: 70)
           }
         }
       }

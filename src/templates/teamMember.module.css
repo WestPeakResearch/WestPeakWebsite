@@ -1,115 +1,120 @@
-.container{
-    padding-top:3rem;
+.container { 
+  padding-top: 3rem;
 }
 
-.noResearch{
-    padding-top: 0.5rem;
-    font-size:1.3rem;
-    color:black;
-    font-style: italic;
-    font-weight: 600;
+.noResearch { 
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+  color: black;
+  font-style: italic;
+  font-weight: 600;
 }
 
-.researchLink{
-    display:inline-block;
-    padding: 0.5rem 2rem;
-    letter-spacing:1px;
-    text-transform: uppercase;
-    font-size:1.2rem;
-    color:white;
-    background-color:#0a233d;
-    border-radius: 0.8rem;
-    text-decoration:none;
+.researchLink { 
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #0a233d;
+  border-radius: 0.8rem;
+  text-decoration: none;
 }
 
-.researchLink:hover{
-    background-color: #113d69;
-    text-decoration: none;
-}
-.researchtitle{
-    font-weight:700;
-    font-size:1.2rem;
-    text-align:center;
-    text-transform: uppercase;
-    color:black;
-    text-decoration:underline;
-}
-.member{
-    width:100%;
-    max-width: 150rem;
-    padding: 5rem;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-radius: 0.8rem;
+.researchLink:hover { 
+  background-color: #113d69;
+  text-decoration: none;
 }
 
-.memberImage{
-    min-width: 24rem;
-    max-width: 60rem;
-    margin-right: 1rem;
-    position: relative;
+.researchTitle { 
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: underline;
 }
 
-.memberImage img{
-    width:100%;
-    height:auto;
-    display:block;
-    border-radius:0.8rem;
+.member { 
+  width: 100%;
+  max-width: 150rem;
+  padding: 5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius:  0.8rem;
 }
 
-.keyInfo{
-    display:block;
-    color:black;
-    font-weight:600;
-    margin: 0.5rem 0;
-    font-size:1.9rem;
+.memberImage { 
+  margin-right: 1rem;
+  position: relative;
 }
 
-.title{
-    font-size:1.5rem;
-    text-transform: uppercase;
-    color: black;
-    font-weight:700;
-    margin-bottom:0.5rem;
+.memberImage >* {
+  min-width: 24rem;
+  max-width: 50rem;
 }
 
-.text{
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    font-size:1rem;
-    color:black;
-    line-height: 1.7rem;
+.memberImage img { 
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.8rem;
 }
 
+.keyInfo { 
+  display: block;
+  color: black;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  font-size: 1.9rem;
+}
 
+.title { 
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
 
-@media screen and (max-width: 1068px){
-    .member{
-        max-width: 80rem;
-    }
-
-    .memberImage{
-        max-width: 25rem;
-        min-width: 25rem;
-    }
+.text { 
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: black;
+  line-height: 1.7rem;
 }
 
 
-@media screen and (max-width: 868px){
-    .member{
-        max-width: 70rem;
-    }
+
+@media screen and (max-width:  1068px) { 
+  .member { 
+    max-width: 80rem;
+  }
+
+  .memberImage { 
+    max-width: 25rem;
+    min-width: 25rem;
+  }
 }
 
-@media screen and (max-width: 768px){
-    .member{
-        padding: 2.5rem;
-        flex-direction: column;
-    }
 
-    .memberImage{
-        max-width: 100%;
-        min-width: 100%;
-    }
+@media screen and (max-width: 868px) { 
+  .member { 
+    max-width: 70rem;
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .member { 
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+
+  .memberImage { 
+    max-width: 100%;
+    min-width: 100%;
+  }
 }

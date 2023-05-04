@@ -1,12 +1,12 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import styles from "./AlumniTable.module.css"
+import { table, tableContent, name } from "./AlumniTable.module.css"
 
 
 function Careers(props){
 
   return(
-    <div className = {styles.table}>
+    <div className = {table}>
       <div style={{ overflowX: "auto" }}>
         <table style={{ fontSize: 16 }}>
           <tr>
@@ -15,10 +15,10 @@ function Careers(props){
             <th></th>
           </tr>
           {props.data.nodes.map(node => (
-            <tr className = {styles.tableContent}>
-              <td className = {styles.name}><a href = {node.linkedin1} target = "_blank" rel="noreferrer">{node.name1}</a></td>
-              <td className = {styles.name}><a href = {node.linkedin2} target = "_blank" rel="noreferrer">{node.name2}</a></td>
-              <td className = {styles.name}><a href = {node.linkedin3} target = "_blank" rel="noreferrer">{node.name3}</a></td>
+            <tr className = {tableContent}>
+              <td className = {name}><a href = {node.linkedin1} target = "_blank" rel="noreferrer">{node.name1}</a></td>
+              <td className = {name}><a href = {node.linkedin2} target = "_blank" rel="noreferrer">{node.name2}</a></td>
+              <td className = {name}><a href = {node.linkedin3} target = "_blank" rel="noreferrer">{node.name3}</a></td>
             </tr>
           ))}
         </table>

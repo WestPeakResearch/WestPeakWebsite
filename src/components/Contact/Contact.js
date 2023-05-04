@@ -1,5 +1,18 @@
 import React, { useRef } from "react"
-import styles from "./Contact.module.css"
+import { 
+  header, 
+  container, 
+  infoContainer, 
+  firstName, 
+  lastName, 
+  email, 
+  textarea,
+  buttons, 
+  button, 
+  submit, 
+  socials, 
+  socialsIcons
+} from "./Contact.module.css"
 import { useFormik, Formik, Form } from 'formik';
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from 'primereact/inputtextarea';    
@@ -87,14 +100,14 @@ function Contact(){
 
   return (
     <div>
-      <h2 className={styles.header}>Please fill out the contact form below or email us at contact@westpeakresearch.com</h2>
+      <h2 className={header}>Please fill out the contact form below or email us at contact@westpeakresearch.com</h2>
       <Formik
         initialValues={formik.initialValues}
         validate={formik.validate}
         onSubmit={formik.onSubmit}
       >
         <Form
-          className={styles.container}
+          className={container}
           name="contact" 
           method="post"
           data-netlify={true}
@@ -104,8 +117,8 @@ function Contact(){
           <Toast ref={successToast} />
           <Toast ref={errorToast} />
 
-          <div className={styles.infoContainer}>
-            <div className={styles.firstName}>
+          <div className={infoContainer}>
+            <div className={firstName}>
               <span className="p-float-label">
                 <InputText
                   id="first-name"
@@ -118,7 +131,7 @@ function Contact(){
               </span>
             </div>
 
-            <div className={styles.lastName}>
+            <div className={lastName}>
               <span className="p-float-label">
                 <InputText
                   id="last-name"
@@ -131,7 +144,7 @@ function Contact(){
               </span>
             </div>
 
-            <div className={styles.email}>
+            <div className={email}>
               <span className="p-float-label">
                 <InputText
                   id="email"
@@ -145,7 +158,7 @@ function Contact(){
             </div>
           </div>
 
-          <div className={styles.textarea}>
+          <div className={textarea}>
             <span className="p-float-label">
               <InputTextarea
                 id="message"
@@ -158,18 +171,18 @@ function Contact(){
             </span>
           </div>
 
-          <div className={styles.error}>
+          <div>
             {getErrors()}
           </div>
 
-          <div className={styles.buttons}>
-            <Button className={styles.button} type="reset" label="Clear" onClick={clearForm} />
-            <Button className={styles.button + ' ' + styles.submit} type="submit" label="Submit" />
+          <div className={buttons}>
+            <Button className={button} type="reset" label="Clear" onClick={clearForm} />
+            <Button className={button + ' ' + submit} type="submit" label="Submit" />
           </div>
 
-          <div className={styles.socials}>
+          <div className={socials}>
             <h3>Make sure to follow our socials to stay up to date on events and hiring!</h3>
-            <div className={styles.socialsIcons}>
+            <div className={socialsIcons}>
               <a href="https://www.facebook.com/WestPeakResearch/" target="_blank" rel="noopener noreferrer">
                 <img src={FacebookLogo} alt="Facebook" />
               </a>

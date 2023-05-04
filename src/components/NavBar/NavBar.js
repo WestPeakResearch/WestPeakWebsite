@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import styles from "./NavBar.module.css";
+import { mobileBrand, closeButton, navbar, navbarDesktop, navbarMobile, navBarImage, navbarMobileMenu } from "./NavBar.module.css";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const ListLink = props => (
   <li>
@@ -30,15 +30,17 @@ function MinimalBar(props){
   if(!props.show) {
     return null;
   } else {
+    const logo = getImage(data.logo.childImageSharp);
+
     return (
       <div
         className={props.className}
       >
-        <a className={styles.mobileBrand} href="/">
-          <Img fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" />
+        <a className={mobileBrand} href="/">
+          <GatsbyImage image={logo} fadeIn alt="logo" />
         </a>
         <button
-          className={styles.closeButton}
+          className={closeButton}
           onClick={props.onClick}
         >
           <span style={{ color: props.textColor }}>Menu</span>
@@ -50,12 +52,13 @@ function MinimalBar(props){
 
 function FullBar(props){
   const data = props.data
+  const logo = getImage(data.logo.childImageSharp);
 
   return (
-    <div className={[styles.navbar, styles.navbarDesktop].join(" ")}>
-      <div className = {styles.navBarImage}>
+    <div className={[navbar, navbarDesktop].join(" ")}>
+      <div className = {navBarImage}>
         <a href="/">
-          <Img fluid={data.logo.childImageSharp.fluid} fadeIn alt="logo" />
+          <GatsbyImage image={logo} fadeIn alt="logo" />
         </a>
       </div>
       <Links isFull={true} />
@@ -69,7 +72,7 @@ function NavMobileMenu(props){
   } else {
     return (
       <div className={props.className}>
-        <button className={styles.closeButton} onClick={props.onClick}>
+        <button className={closeButton} onClick={props.onClick}>
           <span>Close</span>
         </button>
         <Links isFull={false} />
@@ -83,9 +86,7 @@ function Navbar(props){
     query logoQuery {
       logo: file(absolutePath: {regex: "/logo.png/"}) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(placeholder: BLURRED, width: 200)
         }
       }
     }
@@ -102,24 +103,26 @@ function Navbar(props){
 
   return(
     <div>
-      <FullBar className={[styles.navbar, styles.navbarDesktop, props.className].join(" ")} data = {data} />
+      <FullBar className={[navbar, navbarDesktop, props.className].join(" ")} data={data} />
       <MinimalBar 
-        className = {[styles.navbar, styles.navbarMobile, props.className].join(" ")}
+        className={[navbar, navbarMobile, props.className].join(" ")}
         show={!toggled} 
         onClick={handleMenuClick}
         data={data}
       />
       <NavMobileMenu 
-        className={[styles.navbarMobileMenu, props.className].join(" ")}
-        show ={toggled}
+        className={[navbarMobileMenu, props.className].join(" ")}
+        show={toggled}
         onClick={handleCloseButtonClick} 
       />
     </div>
   )
 }
 
-export default props => (
+const props = () => (
   <Navbar>
     {props.children}
   </Navbar>
 );
+
+export default props;
