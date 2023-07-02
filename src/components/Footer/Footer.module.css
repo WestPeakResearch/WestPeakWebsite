@@ -29,3 +29,13 @@
     height: 8.2rem;
   }
 }
+
+@media (max-width: 375px) {
+  .container {
+    height: 9rem;
+  }
+
+  .text {
+    margin-top: 15px;
+  }
+}

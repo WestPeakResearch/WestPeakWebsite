@@ -94,7 +94,7 @@
     max-width: 80rem;
   }
 
-  .memberImage { 
+  .memberImage >* { 
     max-width: 25rem;
     min-width: 25rem;
   }
@@ -109,12 +109,22 @@
 
 @media screen and (max-width: 768px) { 
   .member { 
+    display: flex;
+    align-items: flex-start;
     padding: 2.5rem;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
-  .memberImage { 
-    max-width: 100%;
-    min-width: 100%;
+  .memberImage >* { 
+    max-width: 20rem;
+    min-width: 20rem;
+  }
+}
+
+@media screen and (max-width: 350px) { 
+  .memberImage >* { 
+    max-width: 15rem;
+    min-width: 15rem;
   }
 }
