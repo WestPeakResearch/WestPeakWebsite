@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <>
     <Headroom>
-    <NavBar />
+      <NavBar />
     </Headroom>
     
       <div>

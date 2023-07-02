@@ -17,17 +17,36 @@
   
 .homeTitle {    
   margin: 0 auto;
-  vertical-align: center;
   margin-top: 25vh;
   width: 80vh;
-  display: flex;
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .homeTitle {
-    width: 80vh;
+    width: 70vh;
     margin-top: 25vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .homeTitle {
+    width: 60vh;
+    margin-top: 25vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .homeTitle {
+    width: 50vh;
+    margin-top: 30vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .homeTitle {
+    width: 40vh;
+    margin-top: 35vh;
   }
 }
   
