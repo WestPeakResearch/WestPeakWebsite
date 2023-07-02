@@ -62,6 +62,7 @@
   text-align: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -254,5 +255,11 @@
   }
   .reportTitle {
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reportTypeButtons * {
+    margin-left: 0;
   }
 }
