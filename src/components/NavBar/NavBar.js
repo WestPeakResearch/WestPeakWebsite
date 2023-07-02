@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { mobileBrand, closeButton, navbar, navbarDesktop, navbarMobile, navBarImage, navbarMobileMenu, test } from "./NavBar.module.css";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import CloseIcon from '../../images/close.svg';
 
 const ListLink = props => (
   <li>
@@ -73,7 +74,7 @@ function NavMobileMenu(props){
     return (
       <div className={props.className}>
         <button className={closeButton} onClick={props.onClick}>
-          <span>Close</span>
+          <img src={CloseIcon} alt="close" />
         </button>
         <Links isFull={false} />
       </div>
