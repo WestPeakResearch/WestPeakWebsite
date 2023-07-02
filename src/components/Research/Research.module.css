@@ -259,7 +259,11 @@
 }
 
 @media screen and (max-width: 500px) {
-  .reportTypeButtons * {
-    margin-left: 0;
+  .reportTypeButtons {
+    margin-bottom: 1rem;
+  }
+
+  .reportTypeButtons button {
+    margin-bottom: 2rem;
   }
 }
