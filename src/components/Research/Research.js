@@ -99,14 +99,14 @@ function Research(){
       <div className={reportTypeButtons}>
         <div>
           <span className="p-float-label">
-              <Dropdown 
-                value={year}
-                onChange={handleYearSelect}
-                options={years}
-                optionValue="value"
-                optionLabel="label"
-                className={year ? activeYearDropdown : inactiveYearDropdown}
-              />
+            <Dropdown 
+              value={year}
+              onChange={handleYearSelect}
+              options={years}
+              optionValue="value"
+              optionLabel="label"
+              className={year ? activeYearDropdown : inactiveYearDropdown}
+            />
           </span>
         </div>
         
