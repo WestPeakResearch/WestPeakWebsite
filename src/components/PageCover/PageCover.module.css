@@ -6,6 +6,7 @@
   -o-background-size: cover;
   background-size: cover;
   height: 30vh;
+  background-color: #89899c;
   color: white;
   display: flex;
   align-items: center;
