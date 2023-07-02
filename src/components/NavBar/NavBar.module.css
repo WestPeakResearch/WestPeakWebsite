@@ -139,8 +139,35 @@
 .navbarDesktop{
   display: none;
 }
-  
-@media screen and (min-width: 1200px) {
+
+@media screen and (max-width: 1230px) {
+  .navbar li {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .navbar li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .navbar {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .navbar li {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .navbarDesktop {
     display: block;
   }
@@ -151,11 +178,5 @@
 
   .navbarMobileMenu {
     display: none;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .navbar {
-    font-size:1rem;
   }
 }
