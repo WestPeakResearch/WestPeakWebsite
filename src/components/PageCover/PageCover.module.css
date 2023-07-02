@@ -26,11 +26,28 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .pageTitle {
     width: 90%;
     font-size: 3rem;
     display: table;
+  }
+
+  .pageCover {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .pageTitle {
+    width: 90%;
+    font-size: 2.5rem;
+    display: table;
+  }
+
+  .pageCover {
+    height: 21vh;
+    padding-bottom: 10px;
   }
 }
   
