@@ -2,8 +2,8 @@
 type: "team"
 name: "Justin Houlberg"
 degree: "Bachelor of Commerce - Finance | Year 3"
-position: "Junior Analyst"
-management: "False"
+position: "Vice President External"
+management: "True"
 research: ["PLNT_Justin_Houlberg.pdf"]
 headshot: justin.jpg
 ---

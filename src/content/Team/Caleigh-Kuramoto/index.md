@@ -2,8 +2,8 @@
 type: "team"
 name: "Caleigh Kuramoto"
 degree: "Bachelor of Commerce - Finance | Year 3"
-position: "Junior Analyst"
-management: "False"
+position: "Co-Director"
+management: "True"
 research: ["GPK_Caleigh_Kuramoto.pdf"]
 headshot: caleigh.jpg
 ---

@@ -2,8 +2,8 @@
 type: "team"
 name: "Hilary Lau"
 degree: "Bachelor of Commerce - General | Year 1"
-position: "Junior Analyst"
-management: "False"
+position: "Tech Director"
+management: "True"
 research: ["WING_Hilary_Lau.pdf"]
 headshot: hilary.jpg
 ---

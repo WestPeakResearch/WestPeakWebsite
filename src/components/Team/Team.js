@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import { container, memberButtons, activeButton, inactiveButton, cards, mobileDropdownContainer, mobileDropdown } from "./Team.module.css"
+import { container, memberButtons, activeButton, inactiveButton, cards, mobileDropdownContainer, mobileDropdown, breakCard } from "./Team.module.css"
 import {useStaticQuery, graphql} from "gatsby"
 import ManagementCard from "../ManagementCard"
 import AlumniTable from "../AlumniTable"
@@ -108,22 +108,24 @@ function Team(){
 
         {currTeam === "Management" ? 
           <section className={cards}>
-            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('Director')).map((member, index) => (
+            <div className={breakCard}></div>
+            {teamMembers[currTeam].filter(member => member.frontmatter.position.includes('Co-Director')).map((member, index) => (
               <>
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
               </>
             ))}
-            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('Internal')).map((member, index) => (
+            <div className={breakCard}></div>
+            {teamMembers[currTeam].filter(member => member.frontmatter.position.includes('Internal')).map((member, index) => (
               <>
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
               </>
             ))}
-            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('External')).map((member, index) => (
+            {teamMembers[currTeam].filter(member => member.frontmatter.position.includes('External')).map((member, index) => (
               <>
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
               </>
             ))}
-            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('Tech')).map((member, index) => (
+            {teamMembers[currTeam].filter(member => member.frontmatter.position.includes('Tech')).map((member, index) => (
               <>
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
               </>

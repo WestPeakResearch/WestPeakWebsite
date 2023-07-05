@@ -2,8 +2,8 @@
 type: "team"
 name: "Shaan Hooey"
 degree: "Bachelor of International Economics - Financial Economics | Year 3"
-position: "Senior Analyst"
-management: "False"
+position: "Co-Director"
+management: "True"
 research: ["NR_Primer_2023.pdf"]
 headshot: shaan.jpg
 ---

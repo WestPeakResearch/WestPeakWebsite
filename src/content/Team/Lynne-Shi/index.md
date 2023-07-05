@@ -2,8 +2,8 @@
 type: "team"
 name: "Lynne Shi"
 degree: "Bachelor of Commerce - Finance | Year 3"
-position: "External Director"
-management: "True"
+position: "Senior Analyst"
+management: "False"
 research: ["SIG_Lynne_Shi.pdf", "TMT_Primer_2023.pdf"]
 headshot: lynne.jpg
 ---
