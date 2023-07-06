@@ -1,13 +1,13 @@
 ---
 type: "team"
 name: "Hilary Lau"
-degree: "Bachelor of Commerce - General | Year 1"
+degree: "Bachelor of Science - General | Year 2"
 position: "Tech Director"
 management: "True"
 research: ["WING_Hilary_Lau.pdf"]
 headshot: hilary.jpg
 ---
 
-Hilary is a first-year commerce student intending to specialize in Finance. Hilary hopes to develop his passion for investing and the capital markets within WestPeak, by acquiring quantitative and analytical skills, as well as meeting like-minded people with similar ideals.
+Hilary is a second-year student in the Faculty of Science. He hopes to apply skills from technology within WestPeak, as well as continuing to learn more about the capital markets.
 
-In his free time, Hilary enjoys biking to Stanley Park, running around campus, hiking on the North Shore and taking photos around Vancouver. He is also an avid biography reader.
+In his free time, Hilary enjoys biking around Vancouver, running on trails in Pacific Spirit Park, hiking on the North Shore and taking photos of landscapes. He is also an avid chess player.
