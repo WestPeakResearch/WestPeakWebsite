@@ -24,6 +24,7 @@
     "gatsby-transformer-sharp": "^5.9.0",
     "imagemin-pngquant": "^9.0.2",
     "install": "^0.13.0",
+    "framer-motion": "^10.12.18",
     "node": "^19.8.1",
     "npm": "^9.6.5",
     "pngquant-bin": "^8.0.1",

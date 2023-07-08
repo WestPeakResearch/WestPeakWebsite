@@ -6,9 +6,39 @@ body {
 .container{
   margin: 0 auto;
   width: 80%;
+  max-width: 1600px;
   padding: 2rem;
   font-size: 1.05rem;
   line-height: 1.8rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 0px 5em;
+  margin: 1em 1em;
+}
+
+.media {
+  max-width:100%;
+  max-height:100%;
+}
+
+.strategy-card {
+  margin: 0.75em 1em 2em 1em;
+}
+
+.images {
+  gap: 0px 1em;
+}
+
+@media only screen and (max-width: 1000px) {
+  section {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 1000px) {

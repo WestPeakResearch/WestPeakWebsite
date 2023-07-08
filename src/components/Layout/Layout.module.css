@@ -17,3 +17,12 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+blockquote {
+  border-left: 3px solid #113d69;
+  color: #113d69;
+  font-size: 1.75em;
+  line-height: 1.25em;
+  margin: 0.75em 1em;
+  padding: 0.25em 1em;
+}

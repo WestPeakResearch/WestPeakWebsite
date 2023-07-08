@@ -1,10 +1,8 @@
 ---
-title: "About us"
-type: "page"
+type: "about"
+name: "Our Story"
+order: 2
 ---
-
-**WestPeak Research Association is a capital markets group that aims to create quality equity research while enriching the education of its members through active peer mentorship and structured training seminars.**
- 
 
 When we realized how few opportunities there were for students to apply their academic learning and be recognized for their talent, we took it upon ourselves to change the situation. WestPeak Research Association was started in the hopes of bridging the gap between the classroom and the workplace. Through peer mentorship and professional seminars, we seek to prepare our members with the necessary skills required for success in the capital markets industry.
 
