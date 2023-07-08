@@ -1,7 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { container, media, strategyCard, images } from "./About.module.css"
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import FadeInBox from "../FadeInBox/FadeInBox"
 
 
 function About(){
@@ -54,38 +55,46 @@ function About(){
 
   return(
     <div className={container}>
-      <span dangerouslySetInnerHTML={{ __html: ourMission }} />
-      <div>
-        <h1>Our Story</h1>
-        <section>
-          <span dangerouslySetInnerHTML={{ __html: ourStory }} />
-          <div>
-            <GatsbyImage
-              className={media}
-              image={image2}
-              fadeIn
-              alt="our mission" />
-          </div>
-        </section>
-      </div>
-      <span dangerouslySetInnerHTML={{ __html: ourStrategy }} />
+      <FadeInBox>
+        <span dangerouslySetInnerHTML={{ __html: ourMission }} />
+      </FadeInBox>
+      <FadeInBox>
+        <div>
+          <h1>Our Story</h1>
+          <section>
+            <span dangerouslySetInnerHTML={{ __html: ourStory }} />
+            <div>
+              <GatsbyImage
+                className={media}
+                image={image2}
+                fadeIn
+                alt="our mission" />
+            </div>
+          </section>
+        </div>
+      </FadeInBox>
+      <FadeInBox>
+        <span dangerouslySetInnerHTML={{ __html: ourStrategy }} />
+      </FadeInBox>
       {
         strategies.map ((node) => (
-          <div className={strategyCard}>
-            <h3>{node.frontmatter.name}</h3>
-            <span dangerouslySetInnerHTML={{ __html: node.html }} />
-            <section className={images}>
-            {
-              node.frontmatter.images.map((image) => (
-                <GatsbyImage
-                  className={media}
-                  image={getImage(image.childImageSharp)}
-                  fadeIn
-                  alt={node.frontmatter.name} />
-              ))
-            }
-            </section>
-          </div>
+          <FadeInBox>
+            <div className={strategyCard}>
+              <h3>{node.frontmatter.name}</h3>
+              <span dangerouslySetInnerHTML={{ __html: node.html }} />
+              <section className={images}>
+              {
+                node.frontmatter.images.map((image) => (
+                  <GatsbyImage
+                    className={media}
+                    image={getImage(image.childImageSharp)}
+                    fadeIn
+                    alt={node.frontmatter.name} />
+                ))
+              }
+              </section>
+            </div>
+          </FadeInBox>
         ))
       }
     </div>
