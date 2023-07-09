@@ -36,8 +36,12 @@ section {
 }
 
 @media only screen and (max-width: 1000px) {
-  section {
+  .mobile-grid {
     grid-template-columns: 1fr;
+  }
+
+  .mobile-grid > * > .media {
+    margin: 0px 10%;
   }
 }
 

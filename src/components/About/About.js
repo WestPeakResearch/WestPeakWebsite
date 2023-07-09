@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { container, media, strategyCard, images } from "./About.module.css"
+import { container, media, strategyCard, images, mobileGrid } from "./About.module.css"
 import FadeInBox from "../FadeInBox/FadeInBox"
 
 
@@ -61,7 +61,7 @@ function About(){
       <FadeInBox>
         <div>
           <h1>Our Story</h1>
-          <section>
+          <section className={ mobileGrid }>
             <span dangerouslySetInnerHTML={{ __html: ourStory }} />
             <div>
               <GatsbyImage
