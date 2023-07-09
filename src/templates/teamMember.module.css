@@ -1,8 +1,8 @@
-.container { 
+.container {
   padding-top: 3rem;
 }
 
-.noResearch { 
+.noResearch {
   padding-top: 0.5rem;
   font-size: 1.3rem;
   color: black;
@@ -10,7 +10,7 @@
   font-weight: 600;
 }
 
-.researchLink { 
+.researchLink {
   display: inline-block;
   padding: 0.5rem 2rem;
   letter-spacing: 1px;
@@ -22,12 +22,12 @@
   text-decoration: none;
 }
 
-.researchLink:hover { 
+.researchLink:hover {
   background-color: #113d69;
   text-decoration: none;
 }
 
-.researchTitle { 
+.researchTitle {
   font-weight: 700;
   font-size: 1.2rem;
   text-align: center;
@@ -36,34 +36,34 @@
   text-decoration: underline;
 }
 
-.member { 
+.member {
   width: 100%;
   max-width: 150rem;
   padding: 5rem;
   background-color: white;
   display: flex;
   align-items: center;
-  border-radius:  0.8rem;
+  border-radius: 0.8rem;
 }
 
-.memberImage { 
+.memberImage {
   margin-right: 1rem;
   position: relative;
 }
 
-.memberImage >* {
+.memberImage > * {
   min-width: 24rem;
   max-width: 50rem;
 }
 
-.memberImage img { 
+.memberImage img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 0.8rem;
 }
 
-.keyInfo { 
+.keyInfo {
   display: block;
   color: black;
   font-weight: 600;
@@ -71,7 +71,7 @@
   font-size: 1.9rem;
 }
 
-.title { 
+.title {
   font-size: 1.5rem;
   text-transform: uppercase;
   color: black;
@@ -79,7 +79,7 @@
   margin-bottom: 0.5rem;
 }
 
-.text { 
+.text {
   margin-bottom: 1rem;
   margin-top: 1rem;
   font-size: 1rem;
@@ -87,28 +87,25 @@
   line-height: 1.7rem;
 }
 
-
-
-@media screen and (max-width:  1068px) { 
-  .member { 
+@media screen and (max-width: 1068px) {
+  .member {
     max-width: 80rem;
   }
 
-  .memberImage >* { 
+  .memberImage > * {
     max-width: 25rem;
     min-width: 25rem;
   }
 }
 
-
-@media screen and (max-width: 868px) { 
-  .member { 
+@media screen and (max-width: 868px) {
+  .member {
     max-width: 70rem;
   }
 }
 
-@media screen and (max-width: 768px) { 
-  .member { 
+@media screen and (max-width: 768px) {
+  .member {
     display: flex;
     align-items: flex-start;
     padding: 2.5rem;
@@ -116,14 +113,14 @@
     flex-wrap: wrap;
   }
 
-  .memberImage >* { 
+  .memberImage > * {
     max-width: 20rem;
     min-width: 20rem;
   }
 }
 
-@media screen and (max-width: 350px) { 
-  .memberImage >* { 
+@media screen and (max-width: 350px) {
+  .memberImage > * {
     max-width: 15rem;
     min-width: 15rem;
   }

@@ -2,11 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { table, tableContent, name } from "./AlumniTable.module.css"
 
-
-function Careers(props){
-
-  return(
-    <div className = {table}>
+function Careers(props) {
+  return (
+    <div className={table}>
       <div style={{ overflowX: "auto" }}>
         <table style={{ fontSize: 16 }}>
           <tr>
@@ -15,10 +13,22 @@ function Careers(props){
             <th></th>
           </tr>
           {props.data.nodes.map(node => (
-            <tr className = {tableContent}>
-              <td className = {name}><a href = {node.linkedin1} target = "_blank" rel="noreferrer">{node.name1}</a></td>
-              <td className = {name}><a href = {node.linkedin2} target = "_blank" rel="noreferrer">{node.name2}</a></td>
-              <td className = {name}><a href = {node.linkedin3} target = "_blank" rel="noreferrer">{node.name3}</a></td>
+            <tr className={tableContent}>
+              <td className={name}>
+                <a href={node.linkedin1} target="_blank" rel="noreferrer">
+                  {node.name1}
+                </a>
+              </td>
+              <td className={name}>
+                <a href={node.linkedin2} target="_blank" rel="noreferrer">
+                  {node.name2}
+                </a>
+              </td>
+              <td className={name}>
+                <a href={node.linkedin3} target="_blank" rel="noreferrer">
+                  {node.name3}
+                </a>
+              </td>
             </tr>
           ))}
         </table>
@@ -27,28 +37,24 @@ function Careers(props){
   )
 }
 
-  
-  function AlumniTable(){
-    const data = useStaticQuery(graphql`
-      query alumniQuery{
-        alumni: allAlumniXlsxAlumni
-          {
-            nodes {
-              name1
-              linkedin1                  
-              name2
-              linkedin2                  
-              name3
-              linkedin3
-            }
-          }
+function AlumniTable() {
+  const data = useStaticQuery(graphql`
+    query alumniQuery {
+      alumni: allAlumniXlsxAlumni {
+        nodes {
+          name1
+          linkedin1
+          name2
+          linkedin2
+          name3
+          linkedin3
+        }
       }
-    `)
-    const alumni = data.alumni
+    }
+  `)
+  const alumni = data.alumni
 
-    return(
-      <Careers data={alumni} />
-    )
-  }
+  return <Careers data={alumni} />
+}
 
-  export default AlumniTable
+export default AlumniTable

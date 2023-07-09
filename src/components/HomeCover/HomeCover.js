@@ -1,13 +1,12 @@
 import React from "react"
-import {useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { homeCover, homeTitle } from "./HomeCover.module.css"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-
-function Home(){
+function Home() {
   const data = useStaticQuery(graphql`
     query homeQuery {
-      logo: file(absolutePath: {regex: "/logo.png/"}) {
+      logo: file(absolutePath: { regex: "/logo.png/" }) {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, width: 2000)
         }
@@ -15,9 +14,9 @@ function Home(){
     }
   `)
 
-  const logo = getImage(data.logo.childImageSharp);
+  const logo = getImage(data.logo.childImageSharp)
 
-  return(
+  return (
     <>
       <div className={homeCover}>
         <GatsbyImage className={homeTitle} image={logo} fadeIn alt="logo" />
@@ -25,5 +24,5 @@ function Home(){
     </>
   )
 }
- 
+
 export default Home

@@ -1,19 +1,19 @@
 .logo {
   color: #a5cbf1;
-  width:10px;
+  width: 10px;
 }
 
 .logo:hover {
   color: #a5cbf1;
   transition: all 0.3s ease;
 }
-.navBarImage{
+.navBarImage {
   width: 6rem;
   float: left;
   margin-left: 3px;
-  margin-right:10px;
+  margin-right: 10px;
   padding-left: 0.5rem;
-  padding-top:0.5rem;
+  padding-top: 0.5rem;
 }
 
 .menuButton {
@@ -25,7 +25,7 @@
   cursor: pointer;
   padding: 20px;
 }
-  
+
 .closeButton {
   position: absolute;
   top: 0;
@@ -37,9 +37,9 @@
   cursor: pointer;
   padding: 20px;
   text-transform: uppercase;
-  color:#ebebeb ;
+  color: #ebebeb;
   text-decoration: none;
-  text-align:center;
+  text-align: center;
   font-weight: 700;
 }
 
@@ -50,14 +50,14 @@
 
 .mobileBrand {
   color: #a5cbf1;
-  font-weight:600;
-  font-size:2rem;
+  font-weight: 600;
+  font-size: 2rem;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
   width: 6rem;
   float: left;
   margin-left: 3px;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 .navbar {
@@ -69,14 +69,14 @@
   position: absolute;
   width: 100%;
   top: 0;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .navbar a {
   text-transform: uppercase;
-  color:#ebebeb ;
+  color: #ebebeb;
   text-decoration: none;
-  text-align:center;
+  text-align: center;
   font-weight: 700;
 }
 
@@ -84,7 +84,7 @@
   color: #a5cbf1;
   transition: all 0.3s ease;
 }
-  
+
 .navbar ul {
   margin: 0;
   display: flex;
@@ -92,7 +92,6 @@
   text-align: center;
   height: 100%;
   width: fit-content;
-  
 }
 
 .navbar li {
@@ -100,12 +99,11 @@
   display: inline-block;
 }
 
-
 .navbarMobile {
   display: block;
-  z-index:100;
+  z-index: 100;
 }
-  
+
 .navbarMobileMenu {
   text-align: center;
   margin-bottom: 30px;
@@ -114,13 +112,13 @@
   height: 100%;
   display: table;
   background-color: #0a1930;
-  z-index:100;
+  z-index: 100;
 }
 
 .navbarMobileMenu a {
-  font-size: 1.5rem;;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  color:#ebebeb ;
+  color: #ebebeb;
   text-decoration: none;
   text-align: center;
   font-weight: 700;
@@ -130,7 +128,7 @@
   color: #a5cbf1;
   transition: all 0.3s ease;
 }
-  
+
 .navbarMobileMenu ul {
   align-items: center;
   text-align: center;
@@ -138,15 +136,14 @@
   margin: 0 auto;
   display: table-cell;
   vertical-align: middle;
-  
 }
-  
+
 .navbarMobileMenu li {
   margin: 2rem;
   display: block;
 }
 
-.navbarDesktop{
+.navbarDesktop {
   display: none;
 }
 

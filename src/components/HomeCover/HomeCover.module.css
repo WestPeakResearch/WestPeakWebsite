@@ -1,5 +1,6 @@
 .homeCover {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8,19 +9,18 @@
   height: 100vh;
   display: table;
   width: 100%;
-  z-index:0;
+  z-index: 0;
 }
 
-.homeCover >* {
+.homeCover > * {
   display: flex !important;
 }
-  
-.homeTitle {    
+
+.homeTitle {
   margin: 0 auto;
   margin-top: 25vh;
   width: 80vh;
 }
-
 
 @media (max-width: 1000px) {
   .homeTitle {
@@ -49,5 +49,3 @@
     margin-top: 35vh;
   }
 }
-  
-  

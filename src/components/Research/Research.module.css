@@ -12,10 +12,10 @@
 }
 
 .buttons {
-  text-align:center;
+  text-align: center;
 }
 
-.inactiveGroupButton{
+.inactiveGroupButton {
   margin: 10px 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -26,7 +26,7 @@
   border: none;
   cursor: pointer;
   outline: none;
- 
+
   background-color: #eeeeee;
   color: black;
 }
@@ -35,7 +35,7 @@
   background-color: #d8d8d8;
 }
 
-.activeGroupButton{
+.activeGroupButton {
   margin: 10px 10px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -44,21 +44,21 @@
   border: none;
   cursor: pointer;
   outline: none;
-  color:white;
-  background-color:#0a233d;
-  
+  color: white;
+  background-color: #0a233d;
+
   width: 500px;
   height: 60px;
 }
 
-.noReport{
+.noReport {
   text-align: center;
   padding-top: 50px;
   font-size: 3rem;
   text-decoration: wavy;
 }
 
-.reportTypeButtons{
+.reportTypeButtons {
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -81,8 +81,8 @@
   height: 45px;
   width: 102px;
   text-align: center;
-  color:white !important;
-  background-color:#0a233d !important;
+  color: white !important;
+  background-color: #0a233d !important;
   border: none !important;
   box-shadow: none !important;
   align-items: center;
@@ -108,8 +108,8 @@
   height: 45px;
   width: 200px;
   text-align: center;
-  color:white !important;
-  background-color:#0a233d !important;
+  color: white !important;
+  background-color: #0a233d !important;
   border: none !important;
   box-shadow: none !important;
   align-items: center;
@@ -162,9 +162,9 @@
   border: none;
   cursor: pointer;
   outline: none;
-  color:white;
-  background-color:#0a233d;
-  
+  color: white;
+  background-color: #0a233d;
+
   width: 175px;
   height: 45px;
 }
@@ -174,7 +174,7 @@
   max-width: 98rem;
   padding: 1rem;
   margin: 1rem;
-  box-shadow: - 1.4rem 9rem rgba(0,0,0,0.2);
+  box-shadow: -1.4rem 9rem rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
@@ -196,7 +196,7 @@
 .reportText {
   margin-bottom: 1rem;
   margin-top: 0.5rem;
-  color: rgba(0,0,0.7);
+  color: rgba(0, 0, 0.7);
   text-align: left;
   line-height: 1.7rem;
 }
@@ -225,7 +225,6 @@
   font-size: 1rem;
   font-weight: 800;
 }
-
 
 @media screen and (max-width: 1068px) {
   .reportPost {

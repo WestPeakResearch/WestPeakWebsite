@@ -8,8 +8,8 @@ import SEO from "../components/SEO"
 const ResourcesPage = () => (
   <Layout>
     <SEO title="Resources" />
-    <PageCover  title = "Resources" />
-    <Resources/>
+    <PageCover title="Resources" />
+    <Resources />
   </Layout>
 )
 

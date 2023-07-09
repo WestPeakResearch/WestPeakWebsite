@@ -5,10 +5,10 @@
 }
 
 .container h2 {
-  text-align:center;
+  text-align: center;
   margin: 1rem auto;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid hsla(0,0%,0%,0.07);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
 }
 
 .header {
@@ -16,7 +16,7 @@
   margin: 1rem auto;
   width: 80%;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid hsla(0,0%,0%,0.07);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
 }
 
 .infoContainer {
@@ -26,7 +26,9 @@
   flex-wrap: wrap;
 }
 
-.firstName, .lastName, .email {
+.firstName,
+.lastName,
+.email {
   margin: 0 2rem 1rem 0;
 }
 
@@ -44,8 +46,8 @@
 
 .button {
   border: none !important;
-  color:white;
-  background-color:#0a233d !important;
+  color: white;
+  background-color: #0a233d !important;
   width: 6rem;
 }
 
@@ -78,5 +80,3 @@
     font-size: 1.2rem;
   }
 }
-
-  

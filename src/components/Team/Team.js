@@ -63,7 +63,9 @@ function Team() {
 
   useEffect(() => {
     setTeam(
-      localStorage.getItem("team") ? localStorage.getItem("team") : "Management"
+      localStorage.getItem("team")
+        ? localStorage.getItem("team")
+        : "Management",
     )
   }, [])
 
@@ -79,17 +81,17 @@ function Team() {
     "Team Leads": team.filter(
       member =>
         member.frontmatter.management !== "True" &&
-        member.frontmatter.position.includes("Head")
+        member.frontmatter.position.includes("Head"),
     ),
     "Senior Analysts": team.filter(
       member =>
         member.frontmatter.management !== "True" &&
-        member.frontmatter.position.includes("Senior Analyst")
+        member.frontmatter.position.includes("Senior Analyst"),
     ),
     "Junior Analysts": team.filter(
       member =>
         member.frontmatter.management !== "True" &&
-        member.frontmatter.position.includes("Junior Analyst")
+        member.frontmatter.position.includes("Junior Analyst"),
     ),
     Alumni: [],
   }
@@ -138,7 +140,7 @@ function Team() {
             <div className={breakCard}></div>
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter.position.includes("Co-Director")
+                member.frontmatter.position.includes("Co-Director"),
               )
               .map((member, index) => (
                 <>
@@ -152,7 +154,7 @@ function Team() {
             <div className={breakCard}></div>
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter.position.includes("Internal")
+                member.frontmatter.position.includes("Internal"),
               )
               .map((member, index) => (
                 <>
@@ -165,7 +167,7 @@ function Team() {
               ))}
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter.position.includes("External")
+                member.frontmatter.position.includes("External"),
               )
               .map((member, index) => (
                 <>

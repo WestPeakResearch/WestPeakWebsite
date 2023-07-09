@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { table, content, title } from "./CareersTable.module.css"
 
 const Careers = props => (
-  <div className = {table}>
+  <div className={table}>
     <div style={{ overflowX: "auto" }}>
       <table style={{ fontSize: 16 }}>
         <col width="200px" />
@@ -28,31 +28,33 @@ const Careers = props => (
   </div>
 )
 
-
-function CareersTable(){
+function CareersTable() {
   const data = useStaticQuery(graphql`
-    query careersQuery{
-      internships2020: allCareersXlsxInternships2019
-        {
-          nodes {
-            name
-            position
-            company
-            location
-            type
-          }
+    query careersQuery {
+      internships2020: allCareersXlsxInternships2019 {
+        nodes {
+          name
+          position
+          company
+          location
+          type
         }
+      }
     }
   `)
   const placements = data.internships2020
 
-  return(
+  return (
     <>
-      <div className = {content}>
-        <span className = {title}>A Higher Standard of Career Success</span>
-        <p>At WestPeak, we’re redefining and raising the bar of successful careers, and our experiences speak to our 
-            commitment to professional development. We have countless members with competitive internships and full-time 
-            experience at Fortune 500 companies, prestigious firms, and unicorn startups.</p>
+      <div className={content}>
+        <span className={title}>A Higher Standard of Career Success</span>
+        <p>
+          At WestPeak, we’re redefining and raising the bar of successful
+          careers, and our experiences speak to our commitment to professional
+          development. We have countless members with competitive internships
+          and full-time experience at Fortune 500 companies, prestigious firms,
+          and unicorn startups.
+        </p>
       </div>
       <Careers data={placements} />
     </>

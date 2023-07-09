@@ -1,37 +1,37 @@
 import React from "react"
 import { graphql, withPrefix } from "gatsby"
-import { 
-  container, 
-  member, 
-  memberImage, 
-  keyInfo, 
-  title, 
-  text, 
+import {
+  container,
+  member,
+  memberImage,
+  keyInfo,
+  title,
+  text,
   researchTitle,
   researchLink,
-  noResearch
+  noResearch,
 } from "./teamMember.module.css"
 import Layout from "../components/Layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function teamMember({ data }) {
-  const post=data.markdownRemark
-  const research=post.frontmatter.research
+  const post = data.markdownRemark
+  const research = post.frontmatter.research
 
-  const getResearchButtonLabel=(paper) => {
-    const industryPrefixes=['CR', 'NR', 'REGL', 'TMT'];
-    const prefix=paper.substr(0, paper.indexOf('_'));
-    let label=prefix
+  const getResearchButtonLabel = paper => {
+    const industryPrefixes = ["CR", "NR", "REGL", "TMT"]
+    const prefix = paper.substr(0, paper.indexOf("_"))
+    let label = prefix
 
     // add the year to the label if it's industry research
     if (industryPrefixes.includes(prefix)) {
-      label=prefix + ' ' + paper.substring(paper.length - 8, paper.length - 4)
+      label = prefix + " " + paper.substring(paper.length - 8, paper.length - 4)
     }
 
-    return label;
+    return label
   }
 
-  const headshot = getImage(post.frontmatter.headshot.childImageSharp);
+  const headshot = getImage(post.frontmatter.headshot.childImageSharp)
 
   return (
     <Layout>
@@ -41,33 +41,41 @@ export default function teamMember({ data }) {
             <GatsbyImage image={headshot} fadeIn alt="headshot" />
           </div>
           <div>
-            <div className={keyInfo}>       
+            <div className={keyInfo}>
               <span>{post.frontmatter.name}</span>
               <br />
-              <span>{post.frontmatter.degree}</span>    
+              <span>{post.frontmatter.degree}</span>
             </div>
 
             <span className={title}>{post.frontmatter.position}</span>
 
-            <div className={text} dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div
+              className={text}
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
             <div>
               <span className={researchTitle}>Research</span>
               <br />
-              {research.length !== 0 ? research.map((paper, index) => (
-                <>
-                  <br />
+              {research.length !== 0 ? (
+                research.map((paper, index) => (
+                  <>
+                    <br />
                     <a
                       rel="noopener noreferrer"
-                      href={withPrefix(`${paper}`)}n
+                      href={withPrefix(`${paper}`)}
+                      n
                       target="_blank"
                       key={index}
                       className={researchLink}
                     >
                       {getResearchButtonLabel(paper)}
                     </a>
-                  <br />
-                </>
-                )): <p className={noResearch}>Coming Soon!</p>}
+                    <br />
+                  </>
+                ))
+              ) : (
+                <p className={noResearch}>Coming Soon!</p>
+              )}
             </div>
           </div>
         </div>
@@ -75,8 +83,8 @@ export default function teamMember({ data }) {
     </Layout>
   )
 }
-export const query=graphql`
-  query($slug: String!) {
+export const query = graphql`
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -87,7 +95,12 @@ export const query=graphql`
         headshot {
           publicURL
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, width: 1000, height: 1500, quality: 70)
+            gatsbyImageData(
+              placeholder: BLURRED
+              width: 1000
+              height: 1500
+              quality: 70
+            )
           }
         }
       }

@@ -8,8 +8,8 @@ import SEO from "../components/SEO"
 const LegalPage = () => (
   <Layout>
     <SEO title="Legal" />
-    <PageCover  title = "Legal" />
-    <Legal/>
+    <PageCover title="Legal" />
+    <Legal />
   </Layout>
 )
 

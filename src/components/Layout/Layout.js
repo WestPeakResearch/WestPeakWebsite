@@ -5,19 +5,18 @@ import Footer from "../Footer"
 import Headroom from "react-headroom"
 
 const Layout = ({ children }) => {
-
   return (
     <>
-    <Headroom>
-      <NavBar />
-    </Headroom>
-    
+      <Headroom>
+        <NavBar />
+      </Headroom>
+
       <div>
-        <main className = {container}>{children}</main>
+        <main className={container}>{children}</main>
       </div>
-        <footer>
-          <Footer />
-        </footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }
