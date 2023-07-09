@@ -1,15 +1,17 @@
 import React from "react"
-import { m, LazyMotion, domAnimation } from "framer-motion"
+import { m, LazyMotion, domAnimation, easeInOut } from "framer-motion"
 
 function FadeInBox(props) {
   const sectionVariant = {
     visible: {
       opacity: 1,
-      y: 0,
-      x: 0,
-      transition: { duration: 0.5, ease: [0.42, 0, 0.58, 1] },
+      transition: {
+        ease: easeInOut,
+        delay: 0.25,
+        duration: 1,
+      },
     },
-    hidden: { opacity: 0, y: 24 },
+    hidden: { opacity: 0 },
   }
 
   return (
@@ -18,7 +20,7 @@ function FadeInBox(props) {
         variants={sectionVariant}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, marign: "0px 0px 20% 0px" }}
+        viewport={{ once: true }}
         {...props.rest}
       >
         {props.children}

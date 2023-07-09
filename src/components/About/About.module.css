@@ -6,12 +6,15 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1600px;
-  padding: 2rem;
   font-size: 1.05rem;
   line-height: 1.8rem;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 80%;
+  max-width: 1600px;
 }
 
 section {
@@ -21,7 +24,7 @@ section {
   justify-items: center;
   align-items: center;
   gap: 0px 5em;
-  margin: 1em 1em;
+  margin: 1em 2em;
 }
 
 .media {
@@ -31,6 +34,19 @@ section {
 
 .strategy-card {
   margin: 0.75em 1em 2em 1em;
+}
+
+.story {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/background-lionsgate.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.blur-bg {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .images {
@@ -49,16 +65,22 @@ section {
 
 @media (max-width: 1000px) {
   .container {
-    width: 90%;
     padding: 1rem;
     padding-bottom: 6rem;
+  }
+
+  .content {
+    width: 90%;
   }
 }
 
 @media (max-width: 500px) {
   .container {
-    width: 95%;
     padding: 1rem;
     padding-bottom: 6rem;
+  }
+
+  .content {
+    width: 95%;
   }
 }
