@@ -1,5 +1,5 @@
 import React from "react";
-import { m, LazyMotion, domAnimation} from "framer-motion"
+import { m, LazyMotion, domAnimation } from "framer-motion"
 
 function FadeInBox(props) {
 
@@ -10,7 +10,7 @@ function FadeInBox(props) {
 
     return (
         <LazyMotion features={domAnimation}>
-            <m.div variants={sectionVariant} initial="hidden" whileInView="visible" viewport={{ once: true }} { ... props.rest }>
+            <m.div variants={sectionVariant} initial="hidden" whileInView="visible" viewport={{ once: true, marign: "0px 0px 20% 0px" }} { ... props.rest }>
                 { props.children }
             </m.div>
         </LazyMotion>

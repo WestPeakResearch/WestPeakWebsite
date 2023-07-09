@@ -4,7 +4,7 @@ name: "WestPeak Wednesdays"
 order: 1
 images:
   - "images/westpeak.jpg"
-  - "images/BannerPhoto.jpg"
+  - "images/WP W 2021-2022.jpg"
 ---
 
 Every wednesday every wednesday every wednesday yes yes yes
