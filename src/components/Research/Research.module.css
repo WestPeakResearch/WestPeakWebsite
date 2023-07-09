@@ -174,7 +174,7 @@
   max-width: 98rem;
   padding: 1rem;
   margin: 1rem;
-  box-shadow: -1.4rem 9rem rgba(0, 0, 0, 0.2);
+  /* box-shadow: - 1.4rem 1rem rgba(0,0,0,0.2); this line does not do anything */
   display: flex;
   align-items: center;
   border-radius: 0.8rem;
