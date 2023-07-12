@@ -65,7 +65,6 @@ section {
 
 @media (max-width: 1000px) {
   .container {
-    padding: 1rem;
     padding-bottom: 6rem;
   }
 
