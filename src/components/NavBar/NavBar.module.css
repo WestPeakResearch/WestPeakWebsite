@@ -7,6 +7,7 @@
   color: #a5cbf1;
   transition: all 0.3s ease;
 }
+
 .navBarImage {
   width: 6rem;
   float: left;
@@ -91,12 +92,20 @@
   align-items: center;
   text-align: center;
   height: 100%;
-  width: fit-content;
 }
 
 .navbar li {
   margin: 10px 24px;
   display: inline-block;
+}
+
+.navbarDesktop {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.spacer { /* hacky way of putting margins in the nav that resizes properly*/
+  max-width: 10%;
 }
 
 .navbarMobile {

@@ -7,7 +7,7 @@ import {
   navbarMobile,
   navBarImage,
   navbarMobileMenu,
-  test,
+  spacer
 } from "./NavBar.module.css"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
@@ -20,7 +20,7 @@ const ListLink = props => (
 )
 
 const Links = props => (
-  <ul className={test}>
+  <ul>
     <ListLink to="/about">About</ListLink>
     <ListLink to="/team">Team</ListLink>
     <ListLink to="/research">Research</ListLink>
@@ -28,9 +28,7 @@ const Links = props => (
     <ListLink to="/resources">Resources</ListLink>
     <ListLink to="/placements">Placements</ListLink>
     <ListLink to="/contact">Contact</ListLink>
-    <ListLink to="/legal" className={test}>
-      Legal
-    </ListLink>
+    <ListLink to="/legal">Legal</ListLink>
   </ul>
 )
 
@@ -60,12 +58,14 @@ function FullBar(props) {
 
   return (
     <div className={[navbar, navbarDesktop].join(" ")}>
+      <div className={spacer}></div>
       <div className={navBarImage}>
         <a href="/">
           <GatsbyImage image={logo} fadeIn alt="logo" />
         </a>
       </div>
       <Links isFull={true} />
+      <div className={spacer}></div>
     </div>
   )
 }
