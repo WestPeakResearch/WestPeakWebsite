@@ -17,6 +17,7 @@ function FadeInBox(props) {
   return (
     <LazyMotion features={domAnimation}>
       <m.div
+        className={props.className}
         variants={sectionVariant}
         initial="hidden"
         whileInView="visible"

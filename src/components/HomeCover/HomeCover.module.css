@@ -6,46 +6,86 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100vh;
+  height: 50vh;
   display: table;
   width: 100%;
   z-index: 0;
+  font-size: 1.05rem;
+  line-height: 1.8rem;
 }
 
-.homeCover > * {
+.homeCover > * > * {
   display: flex !important;
 }
 
 .homeTitle {
   margin: 0 auto;
-  margin-top: 25vh;
-  width: 80vh;
+  margin-top: 20vh;
+  height: 100%;
+  width: 40vh;
 }
+
+.homeCover span {
+  max-width: 1600px;
+  margin: 7vh 10% 20vh 10%;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.homeCover h1 {
+  flex-basis: 100%;
+  margin: 0 auto 1rem auto;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 80%;
+  max-width: 1600px;
+  margin: 5em auto;
+}
+
+.accomplishments {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.accomplishments > * {
+  flex: 1 1 0px;
+}
+
 
 @media (max-width: 1000px) {
   .homeTitle {
     width: 70vh;
-    margin-top: 25vh;
   }
 }
 
 @media (max-width: 600px) {
   .homeTitle {
     width: 60vh;
-    margin-top: 25vh;
   }
 }
 
 @media (max-width: 500px) {
   .homeTitle {
     width: 50vh;
-    margin-top: 30vh;
+    margin: 30vh auto;
   }
 }
 
 @media (max-width: 400px) {
   .homeTitle {
     width: 40vh;
-    margin-top: 35vh;
+    margin: 35vh auto;
+  }
+
+  .container {
+    /* !!! */
   }
 }
