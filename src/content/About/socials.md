@@ -3,7 +3,7 @@ type: "about-strategies"
 name: "Socials"
 order: 2
 images:
-  - "images/westpeak.jpg"
+  - "images/socials-1.jpg"
   - "images/BannerPhoto.jpg"
 ---
 
