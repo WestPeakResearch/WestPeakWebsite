@@ -109,7 +109,7 @@ function Team(){
         {currTeam === "Management" ? 
           <section className={cards}>
             <div className={breakCard}></div>
-            {teamMembers[currTeam].filter(member => member.frontmatter.position.includes('Co-Director')).map((member, index) => (
+            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('Director')).map((member, index) => (
               <>
                 <ManagementCard key = {index} member = {member.frontmatter} slug = {member.fields.slug}/>
               </>

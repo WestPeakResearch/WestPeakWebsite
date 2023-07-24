@@ -1,13 +1,13 @@
 ---
 type: "team"
 name: "Justin Houlberg"
-degree: "Bachelor of Commerce - Finance | Year 3"
+degree: "Bachelor of Commerce - Finance | Year 5"
 position: "Vice President External"
 management: "True"
 research: ["PLNT_Justin_Houlberg.pdf"]
 headshot: justin.jpg
 ---
 
-Justin is a third-year student specializing in Finance. He is keen on developing a deep understanding of why some businesses fail and others succeed. By joining WestPeak, Justin hopes to develop the skills necessary to accurately value a business and build connections with like-minded individuals.
+Justin is a fifth-year commerce student specializing in Finance. This summer, Justin completed an internship with Pathfinder Asset Management in Vancouver and is joining BCI's Private Equity team in Victoria this Fall.
 
-Outside of school, you can find Justin snowboarding at Whistler, going on hikes, or watching Formula One.
+In his free time, you can find Justin in the mountains, either hiking in the summer or snowboarding in the winter.
