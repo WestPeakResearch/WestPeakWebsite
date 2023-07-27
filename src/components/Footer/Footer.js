@@ -16,14 +16,22 @@ function Footer() {
             rel="noreferrer"
           >
             Hasan Altaf
-          </a>{" "}
-          and{" "}
+          </a>
+          ,{" "}
           <a
             href="https://www.linkedin.com/in/jocelynbachmann/"
             target="_blank"
             rel="noreferrer"
           >
             Jocelyn Bachmann
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.linkedin.com/in/hilarylau/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Hilary Lau
           </a>
         </div>
       </div>

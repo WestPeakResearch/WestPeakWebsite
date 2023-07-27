@@ -20,10 +20,31 @@ function Home() {
           gatsbyImageData(placeholder: BLURRED, width: 2000)
         }
       }
+      alumni: allAlumniXlsxAlumni {
+        nodes {
+          name1
+          name2
+          name3
+        }
+      }
+      research: allMarkdownRemark(
+        filter: { frontmatter: { type: { in: "report" } } }
+        sort: { frontmatter: { date: DESC } }
+      ) {
+        nodes {
+          frontmatter {
+            isIndustryResearch
+          }
+        }
+      }
     }
+
   `)
 
   const logo = getImage(data.logo.childImageSharp)
+  const alumniCount = (data.alumni.nodes.length - 1) * 3 + Object.values(data.alumni.nodes.at(-1)).filter(e => e !== null).length
+  const industryCount = data.research.nodes.filter(node => node.frontmatter.isIndustryResearch).length
+  const researchCount = data.research.nodes.length - industryCount
 
   return (
     <>
@@ -34,12 +55,12 @@ function Home() {
       </FadeInBox>
       </div>
       <div className={container}>
-        <h1>Since 2014, we have...</h1>
+        <h1>Over the {new Date(new Date() - new Date("2014-09-01")).getFullYear() - 1970} years since 2014, we have...</h1>
         <FadeInBox>
           <div className={accomplishments}>
-            <IncreasingBox to={20}>Test</IncreasingBox>
-            <IncreasingBox to={34}>Lorem ipsum dolor sit amet</IncreasingBox>
-            <IncreasingBox to={321}>Testing again, lorem ipsum</IncreasingBox>
+            <IncreasingBox to={researchCount}>Equity research reports published</IncreasingBox>
+            <IncreasingBox to={industryCount}>Industry primers published</IncreasingBox>
+            <IncreasingBox to={alumniCount}>Alumni</IncreasingBox>
           </div>
         </FadeInBox>
       </div>
