@@ -11,6 +11,7 @@ import {
   blurBg,
 } from "./About.module.css"
 import FadeInBox from "../FadeInBox/FadeInBox"
+import BlurredBackground from "../BlurredBackground/BlurredBackground"
 
 function About() {
   const data = useStaticQuery(graphql`
@@ -57,15 +58,13 @@ function About() {
           <span dangerouslySetInnerHTML={{ __html: ourMission }} />
         </FadeInBox>
       </div>
-      <div className={story}>
-        <div className={blurBg}>
-          <FadeInBox>
-            <div className={content}>
-              <span dangerouslySetInnerHTML={{ __html: ourStory }} />
-            </div>
-          </FadeInBox>
-        </div>
-      </div>
+      <BlurredBackground url="/background/lionsgate.jpg">
+        <FadeInBox>
+          <div className={content}>
+            <span dangerouslySetInnerHTML={{ __html: ourStory }} />
+          </div>
+        </FadeInBox>
+      </BlurredBackground>
       <div className={content}>
         <FadeInBox>
           <span dangerouslySetInnerHTML={{ __html: ourStrategy }} />
