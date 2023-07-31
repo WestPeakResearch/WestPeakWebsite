@@ -26,13 +26,13 @@
 
 @media (max-width: 1024px) {
   .container {
-    height: 8.2rem;
+    height: 9.2rem;
   }
 }
 
 @media (max-width: 375px) {
   .container {
-    height: 9rem;
+    height: 10rem;
   }
 
   .text {

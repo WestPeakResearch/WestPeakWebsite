@@ -104,7 +104,8 @@
   justify-content: space-between;
 }
 
-.spacer { /* hacky way of putting margins in the nav that resizes properly*/
+.spacer {
+  /* hacky way of putting margins in the nav that resizes properly*/
   max-width: 10%;
 }
 

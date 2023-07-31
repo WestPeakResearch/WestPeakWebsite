@@ -7,7 +7,7 @@ import {
   navbarMobile,
   navBarImage,
   navbarMobileMenu,
-  spacer
+  spacer,
 } from "./NavBar.module.css"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
