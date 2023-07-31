@@ -50,16 +50,29 @@
 
 .accomplishments {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 1000px;
+  gap: 30px;
   margin: 0 auto;
 }
 
 .accomplishments > * {
   flex: 1 1 0px;
+  width: 0;
 }
 
+@media (max-width: 600px) {
+  .accomplishments {
+    flex-wrap: wrap;
+  }
 
+  .accomplishments > * {
+    flex-basis: 100%;
+    width: 0;
+  }
+}
+
+/*
 @media (max-width: 1000px) {
   .homeTitle {
     width: 70vh;
@@ -88,4 +101,4 @@
   .container {
     width: 95%;
   }
-}
+}*/

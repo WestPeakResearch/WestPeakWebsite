@@ -17,13 +17,13 @@ body {
   max-width: 1600px;
 }
 
-section {
+.images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   justify-items: center;
   align-items: center;
-  gap: 0px 5em;
+  gap: 1em 1em;
   margin: 1em 2em;
 }
 
@@ -49,21 +49,18 @@ section {
   -webkit-backdrop-filter: blur(4px);
 }
 
-.images {
-  gap: 0px 1em;
-}
-
-@media only screen and (max-width: 1000px) {
-  .mobile-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .mobile-grid > * > .media {
-    margin: 0px 10%;
-  }
-}
-
 @media (max-width: 1000px) {
+  .images {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .strategy-card {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .container {
     padding-bottom: 6rem;
   }
@@ -74,11 +71,6 @@ section {
 }
 
 @media (max-width: 500px) {
-  .container {
-    padding: 1rem;
-    padding-bottom: 6rem;
-  }
-
   .content {
     width: 95%;
   }

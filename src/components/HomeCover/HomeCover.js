@@ -55,7 +55,7 @@ function Home() {
       </FadeInBox>
       </div>
       <div className={container}>
-        <h1>Over the {new Date(new Date() - new Date("2014-09-01")).getFullYear() - 1970} years since 2014, we have...</h1>
+        <h1>Over the {new Date(new Date() - new Date("2014-09-01")).getFullYear() - 1970} years since inception, we have...</h1>
         <FadeInBox>
           <div className={accomplishments}>
             <IncreasingBox to={researchCount}>Equity research reports published</IncreasingBox>
