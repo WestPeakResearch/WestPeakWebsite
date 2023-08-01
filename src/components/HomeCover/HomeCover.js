@@ -1,19 +1,25 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { Button } from "primereact/button"
 import {
   container,
   homeCover,
   homeTitle,
   accomplishments,
+  button
 } from "./HomeCover.module.css"
-import FadeInBox from "../FadeInBox/FadeInBox"
-import IncreasingBox from "../IncreasingBox/IncreasingBox"
+import FadeInBox from "../ui/FadeInBox/FadeInBox"
+import IncreasingBox from "../ui/IncreasingBox/IncreasingBox"
+import BlurredBackground from "../ui/BlurredBackground/BlurredBackground"
 
 function Home() {
   const data = useStaticQuery(graphql`
     query homeQuery {
-      allMarkdownRemark(filter: { frontmatter: { type: { eq: "home" } } }) {
+      allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: "home" } } }
+        sort: { frontmatter: { order: ASC } }
+      ) {
         nodes {
           html
         }
@@ -65,11 +71,13 @@ function Home() {
         </FadeInBox>
       </div>
       <div className={container}>
-        <h1>
-          Over the{" "}
-          {new Date(new Date() - new Date("2014-09-01")).getFullYear() - 1970}{" "}
-          years since inception, we have...
-        </h1>
+        <FadeInBox>
+          <h1>
+            Over the{" "}
+            {new Date(new Date() - new Date("2014-09-01")).getFullYear() - 1970}{" "}
+            years since inception, we have...
+          </h1>
+        </FadeInBox>
         <FadeInBox>
           <div className={accomplishments}>
             <IncreasingBox to={researchCount}>
@@ -82,6 +90,24 @@ function Home() {
           </div>
         </FadeInBox>
       </div>
+      <BlurredBackground url="/background/vancouver.jpg">
+        <div className={ container }>
+            <FadeInBox>
+              <div 
+                dangerouslySetInnerHTML={{
+                  __html: data.allMarkdownRemark.nodes[1].html,
+                }}
+              ></div>
+              <Link to="/research">
+                <Button
+                  className={ button }
+                  label="View Research"
+                  outlined
+                />
+              </Link> 
+            </FadeInBox>
+        </div>
+      </BlurredBackground>
     </>
   )
 }

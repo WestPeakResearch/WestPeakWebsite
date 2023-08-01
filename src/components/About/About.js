@@ -6,12 +6,10 @@ import {
   media,
   strategyCard,
   images,
-  story,
-  content,
-  blurBg,
+  content
 } from "./About.module.css"
-import FadeInBox from "../FadeInBox/FadeInBox"
-import BlurredBackground from "../BlurredBackground/BlurredBackground"
+import FadeInBox from "../ui/FadeInBox/FadeInBox"
+import BlurredBackground from "../ui/BlurredBackground/BlurredBackground"
 
 function About() {
   const data = useStaticQuery(graphql`

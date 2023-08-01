@@ -27,7 +27,8 @@
 
 .homeCover span {
   max-width: 1600px;
-  margin: 7vh 10% 20vh 10%;
+  margin: 7vh 10% 7vh 10%;
+  padding: 2rem;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
@@ -45,7 +46,8 @@
 .container {
   width: 80%;
   max-width: 1600px;
-  margin: 5em auto;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .accomplishments {
@@ -61,6 +63,14 @@
   width: 0;
 }
 
+.button {
+  color: white !important;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+}
+
 @media (max-width: 600px) {
   .accomplishments {
     flex-wrap: wrap;
@@ -70,6 +80,10 @@
     flex-basis: 100%;
     width: 0;
   }
+}
+
+.section {
+  padding: 5em 0;
 }
 
 /*
