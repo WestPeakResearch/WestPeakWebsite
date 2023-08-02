@@ -63,12 +63,22 @@
   width: 0;
 }
 
-.button {
-  color: white !important;
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
-.button:hover {
-  background-color: rgba(255, 255, 255, 0.25) !important;
+.section .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section img {
+  border-radius: 5px 0 0 5px;
+  margin-right: -100px;
 }
 
 @media (max-width: 600px) {
@@ -80,10 +90,6 @@
     flex-basis: 100%;
     width: 0;
   }
-}
-
-.section {
-  padding: 5em 0;
 }
 
 /*

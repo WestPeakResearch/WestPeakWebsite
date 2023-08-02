@@ -1,17 +1,18 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { Button } from "primereact/button"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 import {
   container,
   homeCover,
   homeTitle,
   accomplishments,
-  button
+  content,
+  section
 } from "./HomeCover.module.css"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import IncreasingBox from "../ui/IncreasingBox/IncreasingBox"
 import BlurredBackground from "../ui/BlurredBackground/BlurredBackground"
+import LinkButton from "../ui/LinkButton/LinkButton"
 
 function Home() {
   const data = useStaticQuery(graphql`
@@ -90,26 +91,25 @@ function Home() {
           </div>
         </FadeInBox>
       </div>
-      <BlurredBackground url="/background/vancouver.jpg">
-        <div className={ container }>
-            <FadeInBox>
-              <div 
+      <FadeInBox>
+        <div className={container}>
+          <div className={section}>
+            <div className={content}>
+              <div
                 dangerouslySetInnerHTML={{
                   __html: data.allMarkdownRemark.nodes[1].html,
                 }}
-              ></div>
-              <Link to="/research">
-                <Button
-                  className={ button }
-                  label="View Research"
-                  outlined
-                />
-              </Link> 
-            </FadeInBox>
+              />
+              <LinkButton link="/research" text="View Research" />
+            </div>
+            <StaticImage src="../../images/van1.jpg" />
+          </div>
         </div>
-      </BlurredBackground>
+      </FadeInBox>
     </>
   )
 }
 
 export default Home
+
+
