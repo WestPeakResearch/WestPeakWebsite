@@ -3,7 +3,6 @@ type: "home"
 order: 2
 ---
 
-# Equity Research is...
+# Our Equity Research...
 
-Built on the quantitative analysis of financial statements and market trends, in combination with the qualitative consideration of competitive strengths and weaknesses, and how these
-factors impact valuation considerations.
+Investigates the valuation considerations of public equities, built on a balance of both the quantitative analysis of financial statements and market trends, as well as the qualitative consideration of competitive strengths and weaknesses.

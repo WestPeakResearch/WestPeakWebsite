@@ -3,7 +3,7 @@ type: "about-strategies"
 name: "WestPeak Wednesdays"
 order: 1
 images:
-  - "images/westpeak.jpg"
+  - "images/wpw.jpeg"
   - "images/WP W 2021-2022.jpg"
 ---
 

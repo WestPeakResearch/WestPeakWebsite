@@ -3,7 +3,7 @@ type: "about-strategies"
 name: "Women in WestPeak"
 order: 3
 images:
-  - "images/westpeak.jpg"
+  - "images/wiwp.jpeg"
   - "images/BannerPhoto.jpg"
 ---
 

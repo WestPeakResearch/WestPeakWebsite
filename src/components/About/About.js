@@ -34,7 +34,11 @@ function About() {
             name
             images {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, width: 1000, height: 600)
+                gatsbyImageData(
+                  placeholder: BLURRED, 
+                  width: 1000,
+                  height: 600
+                )
               }
             }
           }
@@ -67,6 +71,7 @@ function About() {
         <FadeInBox>
           <span dangerouslySetInnerHTML={{ __html: ourStrategy }} />
         </FadeInBox>
+        {/*
         {strategies.map(node => (
           <FadeInBox>
             <div className={strategyCard}>
@@ -85,6 +90,7 @@ function About() {
             </div>
           </FadeInBox>
         ))}
+        */}
       </div>
     </div>
   )

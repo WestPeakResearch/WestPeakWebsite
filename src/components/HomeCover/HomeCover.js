@@ -7,11 +7,12 @@ import {
   homeTitle,
   accomplishments,
   content,
-  section
+  section,
+  imgRight,
+  imgLeft
 } from "./HomeCover.module.css"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import IncreasingBox from "../ui/IncreasingBox/IncreasingBox"
-import BlurredBackground from "../ui/BlurredBackground/BlurredBackground"
 import LinkButton from "../ui/LinkButton/LinkButton"
 
 function Home() {
@@ -92,18 +93,51 @@ function Home() {
         </FadeInBox>
       </div>
       <FadeInBox>
-        <div className={container}>
-          <div className={section}>
-            <div className={content}>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: data.allMarkdownRemark.nodes[1].html,
-                }}
-              />
-              <LinkButton link="/research" text="View Research" />
-            </div>
-            <StaticImage src="../../images/van1.jpg" />
+        <div className={section}>
+          <div />
+          <div className={content}>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.allMarkdownRemark.nodes[1].html,
+              }}
+            />
+            <LinkButton link="/research" text="View Research" />
           </div>
+          <StaticImage 
+            className={imgRight} alt="research" src="../../images/van1.jpg" placeholder="blurred"
+          />
+        </div>
+      </FadeInBox>
+      <FadeInBox>
+        <div className={section}>
+          <StaticImage 
+            className={imgLeft} alt="placements" src="../../images/glass1.jpg" placeholder="blurred"
+          />
+          <div className={content}>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.allMarkdownRemark.nodes[2].html,
+              }}
+            />
+            <LinkButton link="/placements" text="See Our Placements" />
+          </div>
+          <div />
+        </div>
+      </FadeInBox>
+      <FadeInBox>
+        <div className={section}>
+          <div />
+          <div className={content}>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.allMarkdownRemark.nodes[3].html,
+              }}
+            />
+            <LinkButton link="/hiring" text="View Hiring Details" />
+          </div>
+          <StaticImage 
+            className={imgRight} alt="research" src="../../images/van2.jpg" placeholder="blurred"
+          />
         </div>
       </FadeInBox>
     </>
