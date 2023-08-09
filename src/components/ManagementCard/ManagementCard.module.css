@@ -8,11 +8,11 @@
   border-radius: 4px;
 }
 
-.card:hover{
+.card:hover {
   transform: translateY(-10px);
 }
 
-.cardImageContainer >* {
+.cardImageContainer > * {
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -24,11 +24,11 @@
   display: contents;
 }
 
-.cardContent{
-  padding: 20px
+.cardContent {
+  padding: 20px;
 }
 
-.cardTitle{
+.cardTitle {
   color: white;
   font-weight: 600px;
   text-align: center;
@@ -36,39 +36,32 @@
 }
 
 .link:hover {
-  text-decoration: none;   
+  text-decoration: none;
 }
 
-
-@media only screen and (max-width : 1000px){
-  .card{
+@media only screen and (max-width: 1000px) {
+  .card {
     grid-column-end: span 6;
     justify-self: center;
   }
 }
 
-@media only screen and (max-width : 900px){
-  .card{
+@media only screen and (max-width: 900px) {
+  .card {
     width: 90%;
     justify-self: center;
   }
 }
 
-@media only screen and (max-width : 700px){
-  .card{
+@media only screen and (max-width: 700px) {
+  .card {
     grid-column-end: span 12;
     justify-self: center;
   }
 }
 
-@media only screen and (max-width : 500px){
-  .card{
+@media only screen and (max-width: 500px) {
+  .card {
     grid-column-end: span 6;
   }
 }
-
-
-
-
-
-

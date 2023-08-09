@@ -13,25 +13,25 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-    const { createPage } = actions
-    const result = await graphql(`
-      query {
-        allMarkdownRemark {
-            edges {
-              node {
-                frontmatter {
-                  type
-                }
-                fields {
-                  slug
-                }
-              }
+  const { createPage } = actions
+  const result = await graphql(`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              type
+            }
+            fields {
+              slug
             }
           }
         }
-    `)
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if(node.frontmatter.type == "team"){
+      }
+    }
+  `)
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    if (node.frontmatter.type == "team") {
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/teamMember.js`),
@@ -42,5 +42,5 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       })
     }
-    })
-  }
+  })
+}

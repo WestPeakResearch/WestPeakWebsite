@@ -1,7 +1,6 @@
-
-.container{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */ 
+.container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   min-height: 100vh;
 }
 
@@ -16,4 +15,13 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+blockquote {
+  border-left: 3px solid #113d69;
+  color: #113d69;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  margin: 0.75em 1em;
+  padding: 0.25em 1em;
 }

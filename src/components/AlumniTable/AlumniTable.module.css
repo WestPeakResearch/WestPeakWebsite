@@ -1,50 +1,48 @@
-.table{
-  width:80%;
+.table {
+  width: 80%;
   margin: 0 auto;
-  color:black;
-  text-align:center;
-
+  color: black;
+  text-align: center;
 }
 
-.name{
-  text-align: center; 
+.name {
+  text-align: center;
   vertical-align: middle;
 }
 
-.tableContent a{
+.tableContent a {
   text-decoration: none;
   color: black;
 }
 
-
-.tableContent a:hover{
+.tableContent a:hover {
   text-decoration: none;
   color: #0a233d;
   text-decoration: underline;
 }
 
-.content{
+.content {
   margin: 0 auto;
   width: 80%;
   padding: 1.5rem 1rem;
 }
 
-.title{
-  text-align:center;
-  font-size:2rem;
+.title {
+  text-align: center;
+  font-size: 2rem;
   font-weight: 700;
-  padding-bottom:2rem;
+  padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 1068px){
-  .table{
+@media screen and (max-width: 1068px) {
+  .table {
     width: 100%;
   }
 
-  .content{
-    font-size:0.9rem;
+  .content {
+    font-size: 0.9rem;
   }
-  .title{
-    font-size:1.5rem;
+  .title {
+    font-size: 1.5rem;
   }
 }

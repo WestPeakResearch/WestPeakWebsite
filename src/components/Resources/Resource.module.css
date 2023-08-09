@@ -1,13 +1,13 @@
-.container{
+.container {
   margin: 0 auto;
   width: 80%;
   padding: 2rem;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
 .container h2 {
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid hsla(0,0%,0%,0.07);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
   margin-bottom: 0.5rem;
 }
 
@@ -18,5 +18,3 @@
     padding-bottom: 6rem;
   }
 }
-  
-  

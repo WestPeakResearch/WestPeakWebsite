@@ -1,5 +1,6 @@
 .pageCover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../images/banner.jpg");
   background-position-y: 60%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,17 +15,16 @@
   z-index: 0;
 }
 
-.pageTitle {    
+.pageTitle {
   margin: 0 auto;
   color: #f2f2f2;
-  text-shadow: 0 3px 5px rgba(0,0,0,0.5);
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
   padding-top: 12vh;
   text-align: center;
   font-size: 4rem;
   display: table;
   font-weight: 700;
 }
-
 
 @media (max-width: 1000px) {
   .pageTitle {
@@ -50,5 +50,3 @@
     padding-bottom: 10px;
   }
 }
-  
-  

@@ -1,0 +1,10 @@
+.background {
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.blur {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}

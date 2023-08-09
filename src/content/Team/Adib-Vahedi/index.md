@@ -6,7 +6,6 @@ position: "Senior Analyst"
 management: "False"
 research: ["SFIX_Adib_Vahedi.pdf"]
 headshot: adib.jpg
-
 ---
 
 Adib is a third-year Commerce student. He is passionate about finance and joined WestPeak in second-year to further his understanding of the capital markets and build meaningful relationships.

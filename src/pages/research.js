@@ -8,9 +8,9 @@ import Research from "../components/Research"
 const ResearchPage = () => (
   <Layout>
     <SEO title="Research" />
-    <PageCover  title = "Research" />
+    <PageCover title="Research" />
     <Research />
-</Layout>
+  </Layout>
 )
 
 export default ResearchPage

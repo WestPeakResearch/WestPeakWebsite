@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.container span {
+  font-size: 5em;
+  font-weight: normal;
+}
+
+.container p {
+  font-size: 1em;
+}

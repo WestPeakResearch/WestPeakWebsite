@@ -1,10 +1,10 @@
-.memberButtons{
-  text-align:center;
+.memberButtons {
+  text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.inactiveButton{
+.inactiveButton {
   border-radius: 4px;
   margin: 10px 10px;
   padding-top: 5px;
@@ -16,7 +16,7 @@
   border: none;
   cursor: pointer;
   outline: none;
-  
+
   background-color: #eeeeee;
   color: black;
 }
@@ -25,7 +25,7 @@
   background-color: #d8d8d8;
 }
 
-.activeButton{
+.activeButton {
   border-radius: 4px;
   margin: 10px 10px;
   padding-top: 5px;
@@ -35,14 +35,14 @@
   border: none;
   cursor: pointer;
   outline: none;
-  color:white;
-  background-color:#0a233d;
-  
+  color: white;
+  background-color: #0a233d;
+
   width: 200px;
   height: 45px;
 }
 
-.cards{
+.cards {
   grid-column: 2 / span 12;
   display: grid;
   grid-template-columns: repeat(12, minmax(auto, 5rem));
@@ -51,24 +51,24 @@
   justify-content: center;
 }
 
-.container{
+.container {
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
 
 .breakCard {
-  grid-column: span 2
+  grid-column: span 2;
 }
 
 .mobileDropdown {
   display: none !important;
 }
 
-@media only screen and (max-width: 1000px){
-  .breakCard{
+@media only screen and (max-width: 1000px) {
+  .breakCard {
     display: none;
-  } 
+  }
 }
 
 @media only screen and (max-width: 900px){
@@ -78,13 +78,13 @@
     grid-gap: 10px;
   }
 
-  .container{
+  .container {
     margin-left: 5%;
     margin-right: 5%;
-  }   
+  }
 }
 
-@media only screen and (max-width: 735px){
+@media only screen and (max-width: 735px) {
   .mobileDropdownContainer {
     display: flex;
     justify-content: center;
@@ -97,7 +97,7 @@
     height: 45px;
     width: 200px;
     text-align: center;
-    background-color:#0a233d !important;
+    background-color: #0a233d !important;
     border: none !important;
     box-shadow: none !important;
     align-items: center;
@@ -114,17 +114,15 @@
   }
 }
 
-@media only screen and (max-width: 500px){
-  .cards{
+@media only screen and (max-width: 500px) {
+  .cards {
     grid-column: 2 / span 6;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
   }
 
-  .container{
+  .container {
     margin-left: 5%;
     margin-right: 5%;
-  }   
+  }
 }
-
-

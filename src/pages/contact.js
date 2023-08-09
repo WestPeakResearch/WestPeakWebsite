@@ -8,9 +8,9 @@ import Contact from "../components/Contact"
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <PageCover  title = "Contact" />
+    <PageCover title="Contact" />
     <Contact />
-</Layout>
+  </Layout>
 )
 
 export default ContactPage

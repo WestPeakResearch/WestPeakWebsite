@@ -1,4 +1,4 @@
-.container{
+.container {
   margin: 0 auto;
   width: 80%;
   padding: 2rem;
@@ -7,7 +7,7 @@
 
 .container h1 {
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid hsla(0,0%,0%,0.07);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
 }
 
 @media (max-width: 1024px) {
@@ -16,5 +16,3 @@
     padding: 1rem;
   }
 }
-  
-  

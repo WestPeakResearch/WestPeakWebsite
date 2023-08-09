@@ -1,19 +1,26 @@
-import React, {useState} from "react";
-import { mobileBrand, closeButton, navbar, navbarDesktop, navbarMobile, navBarImage, navbarMobileMenu, test } from "./NavBar.module.css";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import React, { useState } from "react"
+import {
+  mobileBrand,
+  closeButton,
+  navbar,
+  navbarDesktop,
+  navbarMobile,
+  navBarImage,
+  navbarMobileMenu,
+  spacer,
+} from "./NavBar.module.css"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import CloseIcon from '../../images/close.svg';
+import CloseIcon from "../../images/close.svg"
 
 const ListLink = props => (
   <li>
-    <Link to={props.to}>
-      {props.children}
-    </Link>
+    <Link to={props.to}>{props.children}</Link>
   </li>
-);
+)
 
 const Links = props => (
-  <ul className={test}>
+  <ul>
     <ListLink to="/about">About</ListLink>
     <ListLink to="/team">Team</ListLink>
     <ListLink to="/research">Research</ListLink>
@@ -21,29 +28,23 @@ const Links = props => (
     <ListLink to="/resources">Resources</ListLink>
     <ListLink to="/placements">Placements</ListLink>
     <ListLink to="/contact">Contact</ListLink>
-    <ListLink to="/legal" className={test}>Legal</ListLink>
+    <ListLink to="/legal">Legal</ListLink>
   </ul>
 )
 
-
-function MinimalBar(props){
-  const data = props.data;
-  if(!props.show) {
-    return null;
+function MinimalBar(props) {
+  const data = props.data
+  if (!props.show) {
+    return null
   } else {
-    const logo = getImage(data.logo.childImageSharp);
+    const logo = getImage(data.logo.childImageSharp)
 
     return (
-      <div
-        className={props.className}
-      >
+      <div className={props.className}>
         <a className={mobileBrand} href="/">
           <GatsbyImage image={logo} fadeIn alt="logo" />
         </a>
-        <button
-          className={closeButton}
-          onClick={props.onClick}
-        >
+        <button className={closeButton} onClick={props.onClick}>
           <span style={{ color: props.textColor }}>Menu</span>
         </button>
       </div>
@@ -51,25 +52,27 @@ function MinimalBar(props){
   }
 }
 
-function FullBar(props){
+function FullBar(props) {
   const data = props.data
-  const logo = getImage(data.logo.childImageSharp);
+  const logo = getImage(data.logo.childImageSharp)
 
   return (
     <div className={[navbar, navbarDesktop].join(" ")}>
-      <div className = {navBarImage}>
+      <div className={spacer}></div>
+      <div className={navBarImage}>
         <a href="/">
           <GatsbyImage image={logo} fadeIn alt="logo" />
         </a>
       </div>
       <Links isFull={true} />
+      <div className={spacer}></div>
     </div>
   )
 }
 
-function NavMobileMenu(props){
-  if(!props.show) {
-    return null;
+function NavMobileMenu(props) {
+  if (!props.show) {
+    return null
   } else {
     return (
       <div className={props.className}>
@@ -82,48 +85,47 @@ function NavMobileMenu(props){
   }
 }
 
-function Navbar(props){
+function Navbar(props) {
   const data = useStaticQuery(graphql`
     query logoQuery {
-      logo: file(absolutePath: {regex: "/logo.png/"}) {
+      logo: file(absolutePath: { regex: "/logo.png/" }) {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, width: 200)
         }
       }
     }
   `)
-  const [toggled, setToggled] = useState(false);
+  const [toggled, setToggled] = useState(false)
 
-  function handleMenuClick(){
-    setToggled(true);
+  function handleMenuClick() {
+    setToggled(true)
   }
 
-  function handleCloseButtonClick(){
-    setToggled(false);
+  function handleCloseButtonClick() {
+    setToggled(false)
   }
 
-  return(
+  return (
     <div>
-      <FullBar className={[navbar, navbarDesktop, props.className].join(" ")} data={data} />
-      <MinimalBar 
+      <FullBar
+        className={[navbar, navbarDesktop, props.className].join(" ")}
+        data={data}
+      />
+      <MinimalBar
         className={[navbar, navbarMobile, props.className].join(" ")}
-        show={!toggled} 
+        show={!toggled}
         onClick={handleMenuClick}
         data={data}
       />
-      <NavMobileMenu 
+      <NavMobileMenu
         className={[navbarMobileMenu, props.className].join(" ")}
         show={toggled}
-        onClick={handleCloseButtonClick} 
+        onClick={handleCloseButtonClick}
       />
     </div>
   )
 }
 
-const props = () => (
-  <Navbar>
-    {props.children}
-  </Navbar>
-);
+const props = () => <Navbar>{props.children}</Navbar>
 
-export default props;
+export default props
