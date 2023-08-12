@@ -17,6 +17,7 @@
     "gatsby-plugin-react-helmet": "^6.9.0",
     "gatsby-plugin-sharp": "^5.9.0",
     "gatsby-plugin-typography": "^5.9.0",
+    "gatsby-react-router-scroll": "^6.11.0",
     "gatsby-remark-copy-linked-files": "^6.9.0",
     "gatsby-source-filesystem": "^5.9.0",
     "gatsby-transformer-excel": "^5.9.0",
