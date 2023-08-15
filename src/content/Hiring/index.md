@@ -3,7 +3,23 @@ title: "Hiring"
 type: "page"
 ---
 
-# Hiring has closed for 2022-2023 cohort. Please check back September 2023.
+# Applications for the 2023-2024 cohort will open on August 21, 2023.
+
+### HOW TO APPLY
+
+The link to the application will be available **at this page** on **August 21, 2023** until **September 22, 2023**.
+
+For a more in depth overview of our programs and to meet the team, we encourage you to **attend one of our upcoming information sessions**:
+ - <a href=https://forms.gle/YxcSnbtWNHq9EAgL9 target="_blank">**August 20, 7:00pm PT, Zoom:**</a> Sign up closes August 20, 4:00pm PT
+ - **September 13, 7:00pm PT, In Person:** Available soon!
+
+### TIMELINE
+
+ - August 20: Information Session 1 Online, 7:00pm PT
+ - August 21: Applications Open
+ - September 13: Information Session 2 In Person, 7:00pm PT
+ - September 22: Applications Close, 11:59pm PT
+ - September 26-30: Successful candidates will be contacted for interviews
 
 ### WHAT WE DO
 
@@ -18,3 +34,5 @@ We are looking for students with a high willingness to learn and an interest in 
 ### WHAT WE OFFER
 
 When you join WestPeak, you are joining a community of current members and alumni that are as driven as you. You will have access to exclusive training modules and resources designed to help you learn finance concepts and develop skills needed within the capital markets. Through your deliverables, you will gain valuable research, analytical, and financial modelling skills. In addition to the learning, you will also gain access to mentors and networking sessions held with industry professionals and alumni working in investment banking, sales and trading, asset management, wealth management, and more.
+
+![Hiring Timeline](hiring_timeline.png)
