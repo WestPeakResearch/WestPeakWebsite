@@ -38,6 +38,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.8.0",
     "react-typography": "^0.16.23",
+    "rehype-react": "^7.2.0",
     "rebass": "^4.0.7",
     "typeface-roboto": "^1.1.13",
     "typography": "^0.16.21",

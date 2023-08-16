@@ -5,7 +5,7 @@ import { button } from "./LinkButton.module.css"
 
 function LinkButton(props) {
   return (
-    <Link to={props.link}>
+    <Link to={props.link} target={props.target || "_self"}>
       <Button
         className={button}
         label={props.text}

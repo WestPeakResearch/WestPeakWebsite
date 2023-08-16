@@ -9,6 +9,8 @@ type: "page"
 
 The link to the application will be available **at this page** on **August 21, 2023** until **September 22, 2023**.
 
+<link-button link="https://forms.gle/YxcSnbtWNHq9EAgL9" target="_blank" text="Access the 2023 WestPeak Research Association Application Form"></link-button>
+
 For a more in depth overview of our programs and to meet the team, we encourage you to **attend one of our upcoming information sessions**:
  - <a href=https://forms.gle/YxcSnbtWNHq9EAgL9 target="_blank">**August 20, 7:00pm PT, Zoom:**</a> Sign up closes August 20, 4:00pm PT
  - **September 13, 7:00pm PT, In Person:** Available soon!
