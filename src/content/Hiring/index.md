@@ -3,16 +3,17 @@ title: "Hiring"
 type: "page"
 ---
 
-# Applications for the 2023-2024 cohort will open on August 21, 2023.
+# Applications for the 2023-2024 cohort is open until September 22, 2023.
 
 ### HOW TO APPLY
 
-The link to the application will be available **at this page** on **August 21, 2023** until **September 22, 2023**.
+We offer a **Junior Analyst** program and a **Senior Analyst** program. Please refer to our <a href="WPRA_Hiring_Package_2023.pdf" target="_blank">**Hiring Package**</a> for more details on each.
 
-<link-button link="https://forms.gle/YxcSnbtWNHq9EAgL9" target="_blank" text="Access the 2023 WestPeak Research Association Application Form"></link-button>
+Please apply using the button below before **September 22nd, 11:59pm PT**. Please note you must be a **UBC Vancouver student**, and may only apply to **one program**.
+
+<link-button link="https://forms.gle/nvLdQidLSUG5x7VP6" target="_blank" text="Access the 2023 WestPeak Research Association Application Form"></link-button>
 
 For a more in depth overview of our programs and to meet the team, we encourage you to **attend one of our upcoming information sessions**:
- - <a href=https://forms.gle/YxcSnbtWNHq9EAgL9 target="_blank">**August 20, 7:00pm PT, Zoom:**</a> Sign up closes August 20, 4:00pm PT
  - **September 13, 7:00pm PT, In Person:** Available soon!
 
 ### TIMELINE
