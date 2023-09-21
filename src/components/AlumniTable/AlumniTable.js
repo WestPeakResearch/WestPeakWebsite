@@ -13,14 +13,18 @@ function Alumni(props) {
   return (
     <div className={table}>
       <div style={{ overflowX: "auto" }}>
-        {props.data.edges.sort((a, b) => {return b.node.order - a.node.order}).map((edge, i) => (
-          <YearRow
-            key={"row" + i}
-            year={edge.node.year}
-            management={edge.node.management}
-            gh={edge.node.gh}
-          />
-        ))}
+        {props.data.edges
+          .toSorted((a, b) => {
+            return b.node.order - a.node.order
+          })
+          .map((edge, i) => (
+            <YearRow
+              key={"row" + i}
+              year={edge.node.year}
+              management={edge.node.management}
+              gh={edge.node.gh}
+            />
+          ))}
       </div>
     </div>
   )
@@ -32,42 +36,60 @@ function YearRow(props) {
       <div className={year}>
         <h3>{props.year}</h3>
       </div>
-      <div className={nameRow}>
-        <div
-          style={{ gridRow: "span " + Math.ceil(props.management.length / 3) }}
-          className={nameRowTitle}
-        >
-          Management
-        </div>
-        {props.management.map((mgmt, i) => (
-          <a
-            className={name}
-            href={mgmt.linkedin}
-            key={"mgmt" + i}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {mgmt.name}
-          </a>
-        ))}
-      </div>
-      {props.gh.length > 0 && (
-        <div className={nameRow}>
-          <div
-            style={{ gridRow: "span " + Math.ceil(props.gh.length / 3) }}
-            className={nameRowTitle}
-          >
-            Group Heads
+      {props.gh.length > 0 ? (
+        <>
+          <div className={nameRow}>
+            <div
+              style={{
+                gridRow: "span " + Math.ceil(props.management.length / 3),
+              }}
+              className={nameRowTitle}
+            >
+              Management
+            </div>
+            {props.management.map((mgmt, i) => (
+              <a
+                className={name}
+                href={mgmt.linkedin}
+                key={"mgmt" + i}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {mgmt.name}
+              </a>
+            ))}
           </div>
-          {props.gh.map((gh, i) => (
+          <div className={nameRow}>
+            <div
+              style={{ gridRow: "span " + Math.ceil(props.gh.length / 3) }}
+              className={nameRowTitle}
+            >
+              Group Heads
+            </div>
+            {props.gh.map((gh, i) => (
+              <a
+                className={name}
+                href={gh.linkedin}
+                key={"gh" + i}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {gh.name}
+              </a>
+            ))}
+          </div>
+        </>
+      ) : (
+        <div className={nameRow}>
+          {props.management.map((mgmt, i) => (
             <a
               className={name}
-              href={gh.linkedin}
-              key={"gh" + i}
+              href={mgmt.linkedin}
+              key={"mgmt" + i}
               target="_blank"
               rel="noreferrer"
             >
-              {gh.name}
+              {mgmt.name}
             </a>
           ))}
         </div>

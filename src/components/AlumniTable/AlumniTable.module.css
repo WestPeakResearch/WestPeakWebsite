@@ -31,9 +31,9 @@
 }
 
 .name {
-  text-align: center;
-  vertical-align: middle;
-  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: -1px;
   padding: 1rem;
   color: black;
@@ -67,11 +67,22 @@
   .table {
     width: 100%;
   }
-
-  .content {
-    font-size: 0.9rem;
+  .year {
+    grid-template-columns: 1fr 2fr;
   }
-  .title {
-    font-size: 1.5rem;
+
+  .nameRow {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .nameRowTitle {
+    grid-row: span 1 !important;
+    grid-column: span 3;
+    justify-content: left;
+    padding: 1rem 0.5rem
+  }
+
+  .row {
+    margin-bottom: 3rem;
   }
 }
