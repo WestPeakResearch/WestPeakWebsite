@@ -52,9 +52,10 @@ function Home() {
   `)
 
   const logo = getImage(data.logo.childImageSharp)
-  const alumniCount =
-    (data.alumni.nodes.length - 1) * 3 +
-    Object.values(data.alumni.nodes.at(-1)).filter(e => e !== null).length
+  //const alumniCount =
+  //  (data.alumni.nodes.length - 1) * 3 +
+  //  Object.values(data.alumni.nodes.at(-1)).filter(e => e !== null).length
+  const alumniCount = 100
   const industryCount = data.research.nodes.filter(
     node => node.frontmatter.isIndustryResearch,
   ).length
@@ -88,7 +89,7 @@ function Home() {
             <IncreasingBox to={industryCount}>
               Industry primers published
             </IncreasingBox>
-            <IncreasingBox to={alumniCount}>Alumni</IncreasingBox>
+            <IncreasingBox to={alumniCount} add={true}>Alumni</IncreasingBox>
           </div>
         </FadeInBox>
       </div>
