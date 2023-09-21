@@ -1,0 +1,15 @@
+{
+  "order": 2,
+  "year": "2015-2016",
+  "management": [
+    {
+      "name": "Nick Everett",
+      "linkedin": "https://www.linkedin.com/in/nicholaseverett/"
+    },
+    {
+      "name": "Ali Jatoi",
+      "linkedin": "https://www.linkedin.com/in/alijatoi/"
+    }
+  ],
+  "gh": []
+}

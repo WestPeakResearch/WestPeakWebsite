@@ -1,0 +1,23 @@
+{
+  "order": 6,
+  "year": "2019-2020",
+  "management": [
+    {
+      "name": "Alexander McGuigan",
+      "linkedin": "https://www.linkedin.com/in/alexandermcguigan/"
+    },
+    {
+      "name": "Beverley Fung",
+      "linkedin": "https://www.linkedin.com/in/beverleyfung/"
+    },
+    {
+      "name": "Jason Brennan",
+      "linkedin": "https://www.linkedin.com/in/jasonb6/"
+    },
+    {
+      "name": "Piero Ferrando",
+      "linkedin": "https://www.linkedin.com/in/pieroferrando/"
+    }
+  ],
+  "gh": []
+}

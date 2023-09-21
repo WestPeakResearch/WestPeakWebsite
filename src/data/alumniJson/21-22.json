@@ -1,0 +1,48 @@
+{
+  "order": 8,
+  "year": "2021-2022",
+  "management": [
+    {
+      "name": "Simrit Hundal",
+      "linkedin": "https://www.linkedin.com/in/simrithundal/"
+    },
+    {
+      "name": "Gurnoor Minhas",
+      "linkedin": "https://www.linkedin.com/in/gurnoorkm/"
+    },
+    {
+      "name": "Dylan Assi",
+      "linkedin": "https://www.linkedin.com/in/dylanassi/"
+    },
+    {
+      "name": "Luka Roberts",
+      "linkedin": "https://www.linkedin.com/in/lukaroberts/"
+    },
+    {
+      "name": "Jocelyn Bachmann",
+      "linkedin": "https://www.linkedin.com/in/jocelynbachmann/"
+    }
+  ],
+  "gh": [
+    {
+      "name": "Padriac Lau",
+      "linkedin": "https://www.linkedin.com/in/padraiclau/"
+    },
+    {
+      "name": "Jessica Zhang",
+      "linkedin": "https://www.linkedin.com/in/jessicazrzhang/"
+    },
+    {
+      "name": "Sally Jiao",
+      "linkedin": "https://www.linkedin.com/in/sallyjiao2/"
+    },
+    {
+      "name": "Davis Li",
+      "linkedin": "https://www.linkedin.com/in/davisli1/"
+    },
+    {
+      "name": "Irene Liu",
+      "linkedin": "https://www.linkedin.com/in/ireneqliu/"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "order": 3,
+  "year": "2016-2017",
+  "management": [
+    {
+      "name": "Braeden Price",
+      "linkedin": "https://www.linkedin.com/in/braedenprice/"
+    },
+    {
+      "name": "Nick Everett",
+      "linkedin": "https://www.linkedin.com/in/nicholaseverett/"
+    },
+    {
+      "name": "Keegan Taberner",
+      "linkedin": "https://www.linkedin.com/in/keegantaberner/"
+    },
+    {
+      "name": "Joban Sandhu",
+      "linkedin": "https://www.linkedin.com/"
+    }
+  ],
+  "gh": []
+}

@@ -4,7 +4,7 @@ name: "Ellen You"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Vice President Internal"
 management: "True"
-research: ["CRI_Ellen_You.pdf"]
+research: []
 headshot: ellen.jpg
 ---
 

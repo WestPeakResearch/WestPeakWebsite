@@ -1,0 +1,23 @@
+{
+  "order": 4,
+  "year": "2017-2018",
+  "management": [
+    {
+      "name": "Henry Zhang",
+      "linkedin": "https://www.linkedin.com/in/zhanghenry/"
+    },
+    {
+      "name": "Alexa Wu",
+      "linkedin": "https://www.linkedin.com/in/alexa-wu/"
+    },
+    {
+      "name": "Miguel Valarao",
+      "linkedin": "https://www.linkedin.com/in/miguelvalarao/"
+    },
+    {
+      "name": "Matthias Eyford",
+      "linkedin": "https://www.linkedin.com/in/matthiaseyford/"
+    }
+  ],
+  "gh": []
+}

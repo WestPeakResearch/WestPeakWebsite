@@ -1,0 +1,36 @@
+{
+  "order": 7,
+  "year": "2020-2021",
+  "management": [
+    {
+      "name": "Piero Ferrando",
+      "linkedin": "https://www.linkedin.com/in/pieroferrando/"
+    },
+    {
+      "name": "Victor Shmulevich",
+      "linkedin": "https://www.linkedin.com/in/victor-shmulevich/"
+    },
+    {
+      "name": "Davis Li",
+      "linkedin": "https://www.linkedin.com/in/davisli1/"
+    },
+    {
+      "name": "Bob Han",
+      "linkedin": "https://www.linkedin.com/in/hanbob/"
+    }
+  ],
+  "gh": [
+    {
+      "name": "Beverley Fung",
+      "linkedin": "https://www.linkedin.com/in/beverleyfung/"
+    },
+    {
+      "name": "Jason Van",
+      "linkedin": "https://www.linkedin.com/in/jason-van/"
+    },
+    {
+      "name": "Tiffany Griesbach",
+      "linkedin": "https://www.linkedin.com/in/tiffanygriesbach/"
+    }
+  ]
+}

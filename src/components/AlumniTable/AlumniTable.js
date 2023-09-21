@@ -1,38 +1,77 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { table, tableContent, name } from "./AlumniTable.module.css"
+import {
+  table,
+  name,
+  year,
+  row,
+  nameRow,
+  nameRowTitle,
+} from "./AlumniTable.module.css"
 
-function Careers(props) {
+function Alumni(props) {
   return (
     <div className={table}>
       <div style={{ overflowX: "auto" }}>
-        <table style={{ fontSize: 16 }}>
-          <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-          {props.data.nodes.map(node => (
-            <tr className={tableContent}>
-              <td className={name}>
-                <a href={node.linkedin1} target="_blank" rel="noreferrer">
-                  {node.name1}
-                </a>
-              </td>
-              <td className={name}>
-                <a href={node.linkedin2} target="_blank" rel="noreferrer">
-                  {node.name2}
-                </a>
-              </td>
-              <td className={name}>
-                <a href={node.linkedin3} target="_blank" rel="noreferrer">
-                  {node.name3}
-                </a>
-              </td>
-            </tr>
-          ))}
-        </table>
+        {props.data.edges.sort((a, b) => {return b.node.order - a.node.order}).map((edge, i) => (
+          <YearRow
+            key={"row" + i}
+            year={edge.node.year}
+            management={edge.node.management}
+            gh={edge.node.gh}
+          />
+        ))}
       </div>
+    </div>
+  )
+}
+
+function YearRow(props) {
+  return (
+    <div className={row}>
+      <div className={year}>
+        <h3>{props.year}</h3>
+      </div>
+      <div className={nameRow}>
+        <div
+          style={{ gridRow: "span " + Math.ceil(props.management.length / 3) }}
+          className={nameRowTitle}
+        >
+          Management
+        </div>
+        {props.management.map((mgmt, i) => (
+          <a
+            className={name}
+            href={mgmt.linkedin}
+            key={"mgmt" + i}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {mgmt.name}
+          </a>
+        ))}
+      </div>
+      {props.gh.length > 0 && (
+        <div className={nameRow}>
+          <div
+            style={{ gridRow: "span " + Math.ceil(props.gh.length / 3) }}
+            className={nameRowTitle}
+          >
+            Group Heads
+          </div>
+          {props.gh.map((gh, i) => (
+            <a
+              className={name}
+              href={gh.linkedin}
+              key={"gh" + i}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {gh.name}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   )
 }
@@ -40,21 +79,26 @@ function Careers(props) {
 function AlumniTable() {
   const data = useStaticQuery(graphql`
     query alumniQuery {
-      alumni: allAlumniXlsxAlumni {
-        nodes {
-          name1
-          linkedin1
-          name2
-          linkedin2
-          name3
-          linkedin3
+      alumni: allAlumniJsonJson {
+        edges {
+          node {
+            order
+            year
+            management {
+              name
+              linkedin
+            }
+            gh {
+              name
+              linkedin
+            }
+          }
         }
       }
     }
   `)
   const alumni = data.alumni
-
-  return <Careers data={alumni} />
+  return <Alumni data={alumni} />
 }
 
 export default AlumniTable

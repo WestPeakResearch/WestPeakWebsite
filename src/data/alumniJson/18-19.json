@@ -1,0 +1,23 @@
+{
+  "order": 5,
+  "year": "2018-2019",
+  "management": [
+    {
+      "name": "Franklin Wang",
+      "linkedin": "https://www.linkedin.com/in/franklin-q-wang/"
+    },
+    {
+      "name": "Miguel Valarao",
+      "linkedin": "https://www.linkedin.com/in/miguelvalarao/"
+    },
+    {
+      "name": "Gurman Sihota",
+      "linkedin": "https://www.linkedin.com/in/gurmansihota/"
+    },
+    {
+      "name": "Alexander McGuigan",
+      "linkedin": "https://www.linkedin.com/in/alexandermcguigan/"
+    }
+  ],
+  "gh": []
+}

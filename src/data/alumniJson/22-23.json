@@ -1,0 +1,64 @@
+{
+  "order": 9,
+  "year": "2022-2023",
+  "management": [
+    {
+      "name": "Luka Roberts",
+      "linkedin": "https://www.linkedin.com/in/lukaroberts/"
+    },
+    {
+      "name": "Adam Parolin",
+      "linkedin": "https://www.linkedin.com/in/adam-parolin/"
+    },
+    {
+      "name": "Joshua Grewal",
+      "linkedin": "https://www.linkedin.com/in/joshua-grewal/"
+    },
+    {
+      "name": "Lynne Shi",
+      "linkedin": "https://www.linkedin.com/in/lynneshi/"
+    },
+    {
+      "name": "Ellen You",
+      "linkedin": "https://www.linkedin.com/in/ellenyou/"
+    },
+    {
+      "name": "Jocelyn Bachmann",
+      "linkedin": "https://www.linkedin.com/in/jocelynbachmann/"
+    }
+  ],
+  "gh": [
+    {
+      "name": "Yewen Wang",
+      "linkedin": "https://www.linkedin.com/in/yewen-wang/"
+    },
+    {
+      "name": "Huy Pham",
+      "linkedin": "https://www.linkedin.com/in/huypham-ubc-2023/"
+    },
+    {
+      "name": "Sally Jiao",
+      "linkedin": "https://www.linkedin.com/in/sallyjiao2/"
+    },
+    {
+      "name": "James Tucker",
+      "linkedin": "https://www.linkedin.com/in/jameshavelocktucker/"
+    },
+    {
+      "name": "Logan Hale",
+      "linkedin": "https://www.linkedin.com/in/loganhale2001/"
+    },
+    {
+      "name": "Nicole Zhu",
+      "linkedin": "https://www.linkedin.com/in/nicolezhu00/"
+    },
+    {
+      "name": "Matthew Farquhar",
+      "linkedin": "https://www.linkedin.com/in/farquharmatthew/"
+    },
+    {
+      "name": "Bob Han",
+      "linkedin": "https://www.linkedin.com/in/hanbob/"
+    }
+  ]
+}
