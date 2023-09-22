@@ -7,4 +7,5 @@ images:
   - "images/wiwp-2.jpg"
 ---
 
-Women in WP template placeholder Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+In a male-dominated field, WestPeak strives to provide the skills and knowledge neccessary to women for success within the capital markets.
+We aim to create an welcoming and inclusive environment through events such as socials and the WP x YWiB Stock Pitch.

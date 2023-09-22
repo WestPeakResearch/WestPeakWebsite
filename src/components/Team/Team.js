@@ -53,7 +53,7 @@ function Team() {
   // const [teamMobileSelection, setTeamMobileSelection] = useState('Management');
   const teamMobileOptions = [
     { label: "Management", value: "Management" },
-    { label: "Team Leads", value: "Team Leads" },
+    { label: "Group Heads", value: "Group Heads" },
     { label: "Senior Analysts", value: "Senior Analysts" },
     { label: "Junior Analysts", value: "Junior Analysts" },
     { label: "Alumni", value: "Alumni" },
@@ -78,7 +78,7 @@ function Team() {
 
   const teamMembers = {
     Management: team.filter(member => member.frontmatter.management === "True"),
-    "Team Leads": team.filter(
+    "Group Heads": team.filter(
       member =>
         member.frontmatter.management !== "True" &&
         member.frontmatter.position.includes("Head"),

@@ -71,7 +71,6 @@ function About() {
         <FadeInBox>
           <span dangerouslySetInnerHTML={{ __html: ourStrategy }} />
         </FadeInBox>
-        {/*
         {strategies.map(node => (
           <FadeInBox>
             <div className={strategyCard}>
@@ -90,7 +89,6 @@ function About() {
             </div>
           </FadeInBox>
         ))}
-        */}
       </div>
     </div>
   )
