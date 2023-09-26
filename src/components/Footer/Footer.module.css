@@ -16,6 +16,12 @@
   padding-right: 0.5rem;
 }
 
+.linkText {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+}
+
 .shoutout {
   font-style: italic;
 }
