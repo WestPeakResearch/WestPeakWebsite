@@ -1,9 +1,8 @@
 import React from "react"
-import { Link, graphql, withPrefix } from "gatsby"
+import { graphql, withPrefix } from "gatsby"
 import {
   container,
   member,
-  backButton,
   memberImage,
   name,
   degree,

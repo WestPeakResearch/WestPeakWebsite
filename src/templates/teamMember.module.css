@@ -47,10 +47,6 @@
   border-radius: 0.8rem;
 }
 
-.backButton {
-  grid-column: span 2;
-}
-
 .memberImage {
   margin-right: 1rem;
   position: relative;
