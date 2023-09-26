@@ -5,7 +5,7 @@ import {
   navbar,
   navbarDesktop,
   navbarMobile,
-  navBarImage,
+  navbarImage,
   navbarMobileMenu,
   spacer,
 } from "./NavBar.module.css"
@@ -57,14 +57,14 @@ function FullBar(props) {
 
   return (
     <div className={[navbar, navbarDesktop].join(" ")}>
-      <div className={spacer}></div>
-      <div className={navBarImage}>
-        <a href="/">
-          <GatsbyImage image={logo} fadeIn alt="logo" />
-        </a>
+      <div className={spacer}>
+        <div className={navbarImage}>
+          <a href="/">
+            <GatsbyImage image={logo} fadeIn alt="logo" />
+          </a>
+        </div>
+        <Links isFull={true} />
       </div>
-      <Links isFull={true} />
-      <div className={spacer}></div>
     </div>
   )
 }

@@ -8,13 +8,14 @@
   transition: all 0.3s ease;
 }
 
-.navBarImage {
+.navbarImage {
   width: 6rem;
   float: left;
   margin-left: 3px;
   margin-right: 10px;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
+  flex-shrink: 0;
 }
 
 .menuButton {
@@ -66,7 +67,7 @@
   background-color: #0a233d;
   margin-bottom: 30px;
   height: 80px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   position: absolute;
   width: 100%;
   top: 0;
@@ -91,11 +92,10 @@
   display: flex;
   align-items: center;
   text-align: center;
-  height: 100%;
 }
 
 .navbar li {
-  margin: 10px 24px;
+  margin: 10px 0 10px 2rem;
   display: inline-block;
 }
 
@@ -104,8 +104,9 @@
 }
 
 .spacer {
-  /* hacky way of putting margins in the nav that resizes properly*/
-  max-width: 10%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbarMobile {
@@ -152,37 +153,23 @@
   display: block;
 }
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1300px) {
   .navbar li {
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 1155px) {
-  .navbar li {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-@media screen and (max-width: 1120px) {
-  .navbar {
-    font-size: 1.2rem;
+    margin-left: 1.8rem;
+    font-size: 1.1rem;
   }
 }
 
 @media screen and (max-width: 1050px) {
   .navbar li {
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
+    margin-left: 1.6rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .navbarDesktop {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .navbarMobile {
