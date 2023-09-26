@@ -1,13 +1,14 @@
 .container {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 3rem;
 }
 
 .noResearch {
   padding-top: 0.5rem;
-  font-size: 1.3rem;
   color: black;
   font-style: italic;
-  font-weight: 600;
 }
 
 .researchLink {
@@ -15,7 +16,6 @@
   padding: 0.5rem 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-size: 1.2rem;
   color: white;
   background-color: #0a233d;
   border-radius: 0.8rem;
@@ -29,7 +29,6 @@
 
 .researchTitle {
   font-weight: 700;
-  font-size: 1.2rem;
   text-align: center;
   text-transform: uppercase;
   color: black;
@@ -41,9 +40,15 @@
   max-width: 150rem;
   padding: 5rem;
   background-color: white;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
   align-items: center;
   border-radius: 0.8rem;
+}
+
+.backButton {
+  grid-column: span 2;
 }
 
 .memberImage {
@@ -52,7 +57,6 @@
 }
 
 .memberImage > * {
-  min-width: 24rem;
   max-width: 50rem;
 }
 
@@ -63,7 +67,7 @@
   border-radius: 0.8rem;
 }
 
-.keyInfo {
+.name {
   display: block;
   color: black;
   font-weight: 600;
@@ -71,8 +75,14 @@
   font-size: 1.9rem;
 }
 
+.degree {
+  display: block;
+  color: black;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
 .title {
-  font-size: 1.5rem;
   text-transform: uppercase;
   color: black;
   font-weight: 700;
@@ -92,9 +102,12 @@
     max-width: 80rem;
   }
 
+  .container {
+    width: 95%;
+  }
+
   .memberImage > * {
     max-width: 25rem;
-    min-width: 25rem;
   }
 }
 
@@ -115,7 +128,6 @@
 
   .memberImage > * {
     max-width: 20rem;
-    min-width: 20rem;
   }
 }
 

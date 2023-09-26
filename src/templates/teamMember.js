@@ -1,10 +1,12 @@
 import React from "react"
-import { graphql, withPrefix } from "gatsby"
+import { Link, graphql, withPrefix } from "gatsby"
 import {
   container,
   member,
+  backButton,
   memberImage,
-  keyInfo,
+  name,
+  degree,
   title,
   text,
   researchTitle,
@@ -41,13 +43,9 @@ export default function teamMember({ data }) {
             <GatsbyImage image={headshot} fadeIn alt="headshot" />
           </div>
           <div>
-            <div className={keyInfo}>
-              <span>{post.frontmatter.name}</span>
-              <br />
-              <span>{post.frontmatter.degree}</span>
-            </div>
-
+            <span className={name}>{post.frontmatter.name}</span>
             <span className={title}>{post.frontmatter.position}</span>
+            <span className={degree}>{post.frontmatter.degree}</span>
 
             <div
               className={text}

@@ -19,7 +19,7 @@ const ListLink = props => (
   </li>
 )
 
-const Links = props => (
+const Links = () => (
   <ul>
     <ListLink to="/about">About</ListLink>
     <ListLink to="/team">Team</ListLink>
