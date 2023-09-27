@@ -12,13 +12,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 function CompanyPlacement() {
   const data = useStaticQuery(graphql`
     query placementsQuery {
-      one: file(absolutePath: { regex: "/placements1.jpg/" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, width: 2000)
-        }
-      }
-
-      two: file(absolutePath: { regex: "/placements2.PNG/" }) {
+      one: file(absolutePath: { regex: "/placements.png/" }) {
         childImageSharp {
           gatsbyImageData(placeholder: BLURRED, width: 2000)
         }
@@ -27,7 +21,6 @@ function CompanyPlacement() {
   `)
 
   const image1 = getImage(data.one.childImageSharp)
-  const image2 = getImage(data.two.childImageSharp)
 
   return (
     <>
@@ -43,7 +36,6 @@ function CompanyPlacement() {
       </div>
       <div className={images}>
         <GatsbyImage className={logoImage} image={image1} fadeIn alt="logo" />
-        <GatsbyImage className={logoImage} image={image2} fadeIn alt="logo" />
       </div>
     </>
   )
