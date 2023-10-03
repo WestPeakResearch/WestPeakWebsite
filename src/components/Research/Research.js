@@ -2,28 +2,26 @@ import React, { useState, useEffect } from "react"
 import {
   container,
   reportTypeButtons,
-  activeYearDropdown,
-  inactiveYearDropdown,
-  activeReportButton,
-  inactiveReportButton,
-  activeDropdown,
-  inactiveDropdown,
-  activeDropdownLabel,
-  inactiveDropdownLabel,
+  yearDropdown,
+  dropdown,
   separation,
   noReport,
+  searchBar
 } from "./Research.module.css"
 import ResearchComponent from "./ResearchComponent"
 import { useStaticQuery, graphql } from "gatsby"
 import { Dropdown } from "primereact/dropdown"
+import { InputText } from "primereact/inputtext"
 import "primereact/resources/themes/bootstrap4-light-blue/theme.css"
 import "primereact/resources/primereact.min.css"
+import "primeicons/primeicons.css"
 
 const CURRENT_YEAR = 2023
 const EQUITY_START_YEAR = 2014
 const INDUSTRY_START_YEAR = 2021
 
 const REPORT_TYPES = {
+  all: "All Research",
   equity: "Equity Research",
   industry: "Industry Research",
 }
@@ -51,41 +49,30 @@ function Research() {
     }
   `)
 
-  const [year, setYear] = useState(CURRENT_YEAR)
+  const [year, setYear] = useState(-1)
   const [years, setYears] = useState(null)
-  const [reportType, setReportType] = useState(REPORT_TYPES.equity)
-  const [industryGroup, setIndustryGroup] = useState(null)
+  const [researchType, setResearchType] = useState(REPORT_TYPES.all)
+  const [search, setSearch] = useState(null)
   const research = data.allMarkdownRemark.nodes
-  const industryGroupOptions = [
-    { label: "All Groups", value: "All" },
-    { label: "Consumer Retail", value: "Consumer Retail" },
-    { label: "Natural Resources", value: "Natural Resources" },
-    {
-      label: "Real Estate, Gaming, and Lodging",
-      value: "Real Estate, Gaming, and Lodging",
-    },
-    {
-      label: "Technology, Media, and Telecommunications",
-      value: "Technology, Media, and Telecommunications",
-    },
+  const researchOptions = [
+    { label: "All Research", value: REPORT_TYPES.all },
+    { label: "Equity Research", value: REPORT_TYPES.equity },
+    { label: "Industry Research", value: REPORT_TYPES.industry },
   ]
 
   useEffect(() => {
     const years = []
+    years.push({ label: "All Years", value: -1 })
     let startYear = EQUITY_START_YEAR
-    if (reportType === REPORT_TYPES.industry) startYear = INDUSTRY_START_YEAR
-
     for (var i = CURRENT_YEAR; i >= startYear; i--) {
       years.push({ label: i, value: i })
     }
-
     setYears(years)
-  }, [reportType])
+  }, [])
 
-  const handleIndustryGroupSelect = event => {
+  const handleResearchSelect = event => {
     event.preventDefault()
-    setReportType(REPORT_TYPES.industry)
-    setIndustryGroup(event.target.value)
+    setResearchType(event.target.value)
   }
 
   function handleYearSelect(event) {
@@ -93,10 +80,9 @@ function Research() {
     setYear(event.target.value)
   }
 
-  function handleTypeButtonClick(event) {
+  function handleSearch(event) {
     event.preventDefault()
-    setReportType(event.target.value)
-    setIndustryGroup(null)
+    setSearch(event.target.value)
   }
 
   return (
@@ -105,95 +91,88 @@ function Research() {
         <div>
           <span className="p-float-label">
             <Dropdown
+              id="year"
               value={year}
               onChange={handleYearSelect}
               options={years}
               optionValue="value"
               optionLabel="label"
-              className={year ? activeYearDropdown : inactiveYearDropdown}
+              className={yearDropdown}
             />
           </span>
         </div>
-
-        <div className={reportTypeButtons}>
-          <button
-            onClick={handleTypeButtonClick}
-            value={REPORT_TYPES.equity}
-            className={
-              REPORT_TYPES.equity === reportType
-                ? activeReportButton
-                : inactiveReportButton
-            }
-          >
-            {REPORT_TYPES.equity}
-          </button>
-
-          {research
-            .filter(
-              paper =>
-                new Date(paper.frontmatter.date).getFullYear() === Number(year),
-            )
-            .filter(
-              isResearch =>
-                isResearch.frontmatter.isIndustryResearch === "true",
-            ).length > 0 ? (
-            <div>
-              <span className="p-float-label">
-                <Dropdown
-                  inputId="industry-research-dropdown"
-                  value={industryGroup}
-                  onChange={handleIndustryGroupSelect}
-                  options={industryGroupOptions}
-                  optionValue="value"
-                  optionLabel="label"
-                  className={
-                    REPORT_TYPES.industry === reportType
-                      ? activeDropdown
-                      : inactiveDropdown
-                  }
-                />
-                <label
-                  htmlFor="industry-research-dropdown"
-                  className={
-                    industryGroup ? activeDropdownLabel : inactiveDropdownLabel
-                  }
-                >
-                  {REPORT_TYPES.industry}
-                </label>
-              </span>
-            </div>
-          ) : null}
+        <div>
+          <span className="">
+            <Dropdown
+              id="research-type"
+              inputId="industry-research-dropdown"
+              value={researchType}
+              onChange={handleResearchSelect}
+              options={researchOptions}
+              optionValue="value"
+              optionLabel="label"
+              className={dropdown}
+            />
+          </span>
+        </div>
+        <div>
+          <span className="p-input-icon-left">
+            <i className="pi pi-search" />
+            <InputText
+              id="search"
+              name="search"
+              value={search}
+              placeholder="Enter company, ticker, analyst name..."
+              onChange={handleSearch}
+              className={searchBar}
+            />
+          </span>
         </div>
       </div>
 
       <FilteredReports
         research={research}
         year={year}
-        reportType={reportType}
-        industryGroup={industryGroup}
+        researchType={researchType}
+        search={search}
       />
     </div>
   )
 }
 
-function FilteredReports({ research, year, reportType, industryGroup }) {
-  const isIndustryResearch = reportType === REPORT_TYPES.industry
-  const allResearchForYear = research.filter(
-    paper => new Date(paper.frontmatter.date).getFullYear() === year,
-  )
-  const filteredResearch = allResearchForYear.filter(isResearch => {
-    if (isIndustryResearch) {
-      if (industryGroup && industryGroup !== "All") {
-        return (
-          isResearch.frontmatter.isIndustryResearch === "true" &&
-          isResearch.frontmatter.industryGroup === industryGroup
-        )
-      } else {
-        return isResearch.frontmatter.isIndustryResearch === "true"
-      }
+function FilteredReports({ research, year, researchType, search }) {
+  const filteredByYear = research.filter(paper => {
+    if (year === -1) {
+      return true
     }
-
+    return new Date(paper.frontmatter.date).getFullYear() === year
+  })
+  const filteredByType = filteredByYear.filter(isResearch => {
+    if (researchType === REPORT_TYPES.all) {
+      return true
+    }
+    if (researchType === REPORT_TYPES.industry) {
+      return isResearch.frontmatter.isIndustryResearch === "true"
+    }
     return isResearch.frontmatter.isIndustryResearch !== "true"
+  })
+  const filteredResearch = filteredByType.filter(res => {
+    if (!search) {
+      return true
+    }
+    if (res.frontmatter.title.toLowerCase().includes(search.toLowerCase())) {
+      return true
+    }
+    if (res.frontmatter.company.toLowerCase().includes(search.toLowerCase())) {
+      return true
+    }
+    if (res.frontmatter.author.toLowerCase().includes(search.toLowerCase())) {
+      return true
+    }
+    if (res.frontmatter.summary.toLowerCase().includes(search.toLowerCase())) {
+      return true
+    }
+    return false
   })
 
   return (
@@ -212,7 +191,16 @@ function FilteredReports({ research, year, reportType, industryGroup }) {
           )
         })
       ) : (
-        <h4 className={noReport}> No data found for the year {year}. </h4>
+        <div className={noReport}>
+          <i
+            className="pi pi-exclamation-triangle"
+            style={{ fontSize: "5rem" }}
+          />
+          <h3> </h3>
+          <h3> No results found </h3>
+          <p>Sorry, no reports matched the applied filters.</p>
+          <p>Please modify your search criteria.</p>
+        </div>
       )}
     </div>
   )

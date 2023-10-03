@@ -1,6 +1,7 @@
 .container {
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
+  max-width: 1600px;
   padding: 1rem;
 }
 
@@ -54,8 +55,6 @@
 .noReport {
   text-align: center;
   padding-top: 50px;
-  font-size: 3rem;
-  text-decoration: wavy;
 }
 
 .reportTypeButtons {
@@ -65,11 +64,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
-.inactiveYearDropdown {
+.yearDropdown {
   height: 45px;
-  width: 102px;
+  width: 140px;
   text-align: center;
   background-color: #eeeeee !important;
   border: none !important;
@@ -77,24 +77,7 @@
   align-items: center;
 }
 
-.activeYearDropdown {
-  height: 45px;
-  width: 102px;
-  text-align: center;
-  color: white !important;
-  background-color: #0a233d !important;
-  border: none !important;
-  box-shadow: none !important;
-  align-items: center;
-}
-
-.activeYearDropdown span {
-  color: white;
-  padding-left: 20px;
-  padding-right: 5px;
-}
-
-.inactiveDropdown {
+.dropdown {
   height: 45px;
   width: 200px;
   text-align: center;
@@ -104,69 +87,9 @@
   align-items: center;
 }
 
-.activeDropdown {
+.searchBar {
   height: 45px;
-  width: 200px;
-  text-align: center;
-  color: white !important;
-  background-color: #0a233d !important;
-  border: none !important;
-  box-shadow: none !important;
-  align-items: center;
-}
-
-.activeDropdown span {
-  color: white;
-  padding-left: 20px;
-  padding-right: 5px;
-}
-
-.inactiveDropdownLabel {
-  padding-left: 8px;
-  color: black !important;
-}
-
-.activeDropdownLabel {
-  padding-left: 0;
-  left: 0.25rem !important;
-}
-
-.inactiveReportButton {
-  border-radius: 4px;
-  margin: 10px 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 175px;
-  height: 45px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-
-  background-color: #eeeeee;
-  color: black;
-}
-
-.inactiveReportButton:hover {
-  background-color: #d8d8d8;
-}
-
-.activeReportButton {
-  border-radius: 4px;
-  margin: 10px 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  color: white;
-  background-color: #0a233d;
-
-  width: 175px;
-  height: 45px;
+  width: 357px;
 }
 
 .reportPost {
@@ -228,6 +151,7 @@
 
 @media screen and (max-width: 1068px) {
   .reportPost {
+    width: 95%;
     max-width: 100%;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -241,12 +165,6 @@
   }
 }
 
-@media screen and (max-width: 868px) {
-  .reportPost {
-    max-width: 100%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .reportPost {
     padding: 0;
@@ -255,11 +173,9 @@
   .reportTitle {
     margin-bottom: 1rem;
   }
-}
 
-@media screen and (max-width: 500px) {
   .reportTypeButtons {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .reportTypeButtons button {
