@@ -5,9 +5,7 @@ degree: "Bachelor of Arts - Bachelor and Master of Management Dual Degree | Year
 position: "Head of Consumer Retail"
 management: "False"
 research: ["COLM_Kelvin_Nip.pdf", "CR_Primer_2023.pdf"]
-headshot: kelvin.jpg
+headshot: Kelvin_Nip.jpg
 ---
 
-Kelvin is a fifth year B+MM student. Through WestPeak, Kelvin hopes to accumulate relevant finance knowledge and build everlasting friendships. Past summer, he interned at PwC in the M&A advisory team.
-
-Outside of school, Kelvin enjoys playing competitive sports: Soccer, rugby and tennis. He also likes to play music on his acoustic guitar!
+Kelvin is a UBC student perusing the Master of Management & Bachelor of Arts Dual Degree program. This summer, Kelvin completed an internship at Morrison Park Advisor’s Investment Banking team in Toronto. In his free time, he enjoys playing soccer, rugby and tennis.

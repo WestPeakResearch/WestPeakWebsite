@@ -5,9 +5,9 @@ degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of TMT"
 management: "False"
 research: ["WOOF_Dennis_Quek.pdf"]
-headshot: dennis.jpg
+headshot: Dennis_Quek.jpg
 ---
 
-Dennis is a fourth-year commerce student specializing in finance. Through joining WestPeak, Dennis hopes to learn more about the capital markets, improve his technical skills, and meet other students with similar career aspirations.
+Dennis is a fourth-year commerce student specializing in finance. This upcoming summer, Dennis will be joining Blackstone's Strategic Partners team in New York.
 
-Outside of school, Dennis enjoys playing basketball, going to the gym, and skiing up at Whistler.
+Outside of school, Dennis enjoys playing basketball, watching soccer, and skiing.

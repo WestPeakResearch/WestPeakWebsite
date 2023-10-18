@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Director"
 management: "True"
 research: ["GPK_Caleigh_Kuramoto.pdf"]
-headshot: caleigh.jpg
+headshot: Caleigh_Kuramoto.jpg
 ---
 
 Caleigh is a fourth-year commerce student specializing in Finance at the Sauder School of Business. This past summer, Caleigh completed an internship with CAI Capital Partners in Vancouver.

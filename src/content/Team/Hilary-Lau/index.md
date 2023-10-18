@@ -5,7 +5,7 @@ degree: "Bachelor of Science - General | Year 2"
 position: "Tech Director"
 management: "True"
 research: ["WING_Hilary_Lau.pdf"]
-headshot: hilary.jpg
+headshot: Hilary_Lau.jpg
 ---
 
 Hilary is a second-year student in the Faculty of Science. He hopes to apply skills from technology within WestPeak, as well as continuing to learn more about the capital markets.

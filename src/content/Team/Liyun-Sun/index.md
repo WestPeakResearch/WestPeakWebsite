@@ -1,13 +1,11 @@
 ---
 type: "team"
 name: "Liyun Sun"
-degree: "Bachelor of Commerce - Finance | Year 3"
-position: "Junior Analyst"
+degree: "Bachelor of Commerce - Finance | Year 4"
+position: "Senior Analyst"
 management: "False"
 research: ["RVLV_Liyun_Sun.pdf"]
-headshot: liyun.jpg
+headshot: Liyun_Sun.jpg
 ---
 
-Liyun is a third-year Commerce student specializing in Finance. This summer, Liyun completed an investment banking internship with the debt capital markets team at China Securities.
-
-In her free time, Liyun loves to find new restaurants with friends and listen to K-pop music.
+Liyun is a fourth-year Commerce student specializing in Finance. This summer, Liyun completed an internship with Bloomberg's Analytics & Sales team in Shanghai. In her free time, Liyun loves to dance, listen to K-pop music, and play badminton.

@@ -137,7 +137,7 @@ function Home() {
             <LinkButton link="/hiring" text="View Hiring Details" />
           </div>
           <StaticImage 
-            className={imgRight} alt="research" src="../../images/van2.jpg" placeholder="blurred"
+            className={imgRight} alt="hiring" src="../../images/Junior_Analysts.jpg" placeholder="blurred"
           />
         </div>
       </FadeInBox>

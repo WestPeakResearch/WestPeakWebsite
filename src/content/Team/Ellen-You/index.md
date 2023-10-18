@@ -5,9 +5,9 @@ degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Vice President Internal"
 management: "True"
 research: []
-headshot: ellen.jpg
+headshot: Ellen_You_V2.jpg
 ---
 
-Ellen is a third-year student studying finance. This past summer, Ellen completed a Sales & Trading internship at Scotiabank on the Commodity Derivatives team. She joined WestPeak in her first-year and loved the club so much that she decided to come back for her third year!
+Ellen is a third-year student studying finance. This upcoming summer, Ellen will be joining National Bank Financial in Toronto as an Investment Banking Summer Analyst. 
 
-In her free time, Ellen enjoys running, boxing, and weightlifting.
+In her free time, Ellen loves to run, listen to music and go to the gym.

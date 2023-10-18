@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of TMT"
 management: "False"
 research: ["SIG_Lynne_Shi.pdf", "TMT_Primer_2023.pdf"]
-headshot: lynne.jpg
+headshot: Lynne_Shi.jpg
 ---
 
 Lynne is a fourth-year commerce student specializing in Finance. Through WestPeak, she has come to better understand the capital markets.
