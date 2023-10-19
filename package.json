@@ -9,6 +9,7 @@
     "dotenv": "^16.0.3",
     "formik": "^2.2.9",
     "gatsby": "^5.9.0",
+    "gatsby-background-image-es5": "^1.6.0",
     "gatsby-plugin-catch-links": "^5.9.0",
     "gatsby-plugin-google-analytics": "^5.9.0",
     "gatsby-plugin-image": "^3.9.0",
