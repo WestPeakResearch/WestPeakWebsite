@@ -8,7 +8,7 @@ import Contact from "../components/Contact"
 const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <PageCover title="Contact" />
+    <PageCover title="Contact" image="contact" />
     <Contact />
   </Layout>
 )

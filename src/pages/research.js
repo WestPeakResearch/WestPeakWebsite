@@ -8,7 +8,7 @@ import Research from "../components/Research"
 const ResearchPage = () => (
   <Layout>
     <SEO title="Research" />
-    <PageCover title="Research" />
+    <PageCover title="Research" image="research" />
     <Research />
   </Layout>
 )

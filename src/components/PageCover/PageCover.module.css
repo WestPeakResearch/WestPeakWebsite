@@ -42,6 +42,7 @@
 @media (max-width: 1000px) {
   .pageTitle {
     font-size: 3rem;
+    padding-top: 13vh;
     display: table;
   }
 
