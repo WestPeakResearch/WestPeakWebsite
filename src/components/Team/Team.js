@@ -50,7 +50,6 @@ function Team() {
   `)
 
   const [currTeam, setTeam] = useState("Management")
-  // const [teamMobileSelection, setTeamMobileSelection] = useState('Management');
   const teamMobileOptions = [
     { label: "Management", value: "Management" },
     { label: "Group Heads", value: "Group Heads" },
@@ -68,13 +67,6 @@ function Team() {
         : "Management",
     )
   }, [])
-
-  useEffect(() => {
-    window.addEventListener("beforeunload", function (e) {
-      e.preventDefault()
-      localStorage.setItem("team", "Management")
-    })
-  })
 
   const teamMembers = {
     Management: team.filter(member => member.frontmatter.management === "True"),
