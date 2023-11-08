@@ -1,5 +1,6 @@
 import React from "react"
 import rehypeReact from "rehype-react"
+import {Fragment, jsx, jsxs} from 'react/jsx-runtime'
 import { useStaticQuery, graphql } from "gatsby"
 import { container } from "./Hiring.module.css"
 import LinkButton from "../ui/LinkButton/LinkButton"
@@ -17,14 +18,16 @@ function Hiring() {
   const content = data.allMarkdownRemark.nodes[0].htmlAst
 
   const renderAst = new rehypeReact({
-    createElement: React.createElement,
+    Fragment: Fragment,
+    jsx: jsx,
+    jsxs: jsxs,
     components: { "link-button": LinkButton },
-  }).Compiler
+  }).compiler
 
   return (
     <div className={container}>
       {
-        renderAst(content)  
+        renderAst(content, "Hiring.js")  
       }
     </div>
   )
