@@ -111,34 +111,3 @@
     order: 2;
   }
 }
-
-/*
-@media (max-width: 1000px) {
-  .homeTitle {
-    width: 70vh;
-  }
-}
-
-@media (max-width: 600px) {
-  .homeTitle {
-    width: 60vh;
-  }
-}
-
-@media (max-width: 500px) {
-  .homeTitle {
-    width: 50vh;
-    margin: 30vh auto;
-  }
-}
-
-@media (max-width: 400px) {
-  .homeTitle {
-    width: 40vh;
-    margin: 35vh auto;
-  }
-
-  .container {
-    width: 95%;
-  }
-}*/

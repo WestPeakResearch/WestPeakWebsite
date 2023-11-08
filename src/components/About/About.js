@@ -6,7 +6,7 @@ import {
   media,
   strategyCard,
   images,
-  content
+  content,
 } from "./About.module.css"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import BlurredBackground from "../ui/BlurredBackground/BlurredBackground"
@@ -34,11 +34,7 @@ function About() {
             name
             images {
               childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED, 
-                  width: 1000,
-                  height: 600
-                )
+                gatsbyImageData(placeholder: BLURRED, width: 1000, height: 600)
               }
             }
           }

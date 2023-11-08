@@ -8,6 +8,6 @@ research: []
 headshot: Ellen_You_V2.jpg
 ---
 
-Ellen is a third-year student studying finance. This past summer, she completed an internship at Scotiabank in Commodity Derivatives. 
+Ellen is a third-year student studying finance. This past summer, she completed an internship at Scotiabank in Commodity Derivatives.
 
-Ellen joined WestPeak in her first year and has been with the club since! In her free time, she loves to run, listen to music and go to the gym. 
+Ellen joined WestPeak in her first year and has been with the club since! In her free time, she loves to run, listen to music and go to the gym.

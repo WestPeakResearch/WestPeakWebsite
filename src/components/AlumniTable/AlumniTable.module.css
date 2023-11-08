@@ -79,7 +79,7 @@
     grid-row: span 1 !important;
     grid-column: span 3;
     justify-content: left;
-    padding: 1rem 0.5rem
+    padding: 1rem 0.5rem;
   }
 
   .row {

@@ -8,4 +8,4 @@ research: []
 headshot: Nicole_Sanctis.jpg
 ---
 
-Nicole is a first year Commerce student, intending to specialize in Finance. At WestPeak she hopes to continue exploring her interest in the Capital Markets. She is also excited to meet like-minded individuals who share a passion for finance. In her free time, she likes to listen to music and work out. 
+Nicole is a first year Commerce student, intending to specialize in Finance. At WestPeak she hopes to continue exploring her interest in the Capital Markets. She is also excited to meet like-minded individuals who share a passion for finance. In her free time, she likes to listen to music and work out.

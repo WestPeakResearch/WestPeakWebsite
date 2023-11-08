@@ -6,7 +6,7 @@ import {
   dropdown,
   separation,
   noReport,
-  searchBar
+  searchBar,
 } from "./Research.module.css"
 import ResearchComponent from "./ResearchComponent"
 import { useStaticQuery, graphql } from "gatsby"

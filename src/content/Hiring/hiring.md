@@ -5,7 +5,6 @@ type: "page"
 
 # Applications for the 2023-2024 cohort have closed. Please check back August 2024.
 
-
 ### WHAT WE DO
 
 WestPeak Research Association (“WestPeak”) is a student-run capital markets group that aims to create quality equity research while enriching the education of its members through active peer mentorship and structured training seminars. We seek to prepare our members with the necessary skills required for success in the capital markets.

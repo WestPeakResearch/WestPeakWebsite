@@ -5,11 +5,13 @@ import { container, text, shoutout, linkText } from "./Footer.module.css"
 function Footer() {
   return (
     <div className={container}>
-
       <div className={text}>
         © 2014 - {new Date().getFullYear()}, WestPeak Research Association. All
-        rights reserved. <Link to="/legal" className={linkText}>Please click here for Terms of Use and Website Privacy
-        Statement</Link>.
+        rights reserved.{" "}
+        <Link to="/legal" className={linkText}>
+          Please click here for Terms of Use and Website Privacy Statement
+        </Link>
+        .
         <div className={shoutout}>
           Developed by{" "}
           <a

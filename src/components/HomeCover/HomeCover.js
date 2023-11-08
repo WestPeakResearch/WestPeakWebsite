@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
-import BackgroundImage from 'gatsby-background-image-es5'
+import BackgroundImage from "gatsby-background-image-es5"
 import {
   container,
   homeCover,
@@ -10,7 +10,7 @@ import {
   content,
   section,
   imgRight,
-  imgLeft
+  imgLeft,
 } from "./HomeCover.module.css"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import IncreasingBox from "../ui/IncreasingBox/IncreasingBox"
@@ -60,29 +60,33 @@ function Home() {
   `)
 
   const logo = getImage(data.logo.childImageSharp)
-  //const alumniCount =
-  //  (data.alumni.nodes.length - 1) * 3 +
-  //  Object.values(data.alumni.nodes.at(-1)).filter(e => e !== null).length
   const alumniCount = 100
   const industryCount = data.research.nodes.filter(
     node => node.frontmatter.isIndustryResearch,
   ).length
   const researchCount = data.research.nodes.length - industryCount
   const imageData = data.banner.childImageSharp.fluid
-  const imageStack = [`linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))`, imageData];
+  const imageStack = [
+    `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`,
+    imageData,
+  ]
 
   return (
     <>
-        <BackgroundImage className={homeCover} fluid={imageStack} backgroundColor={`#040e18`}>
-          <FadeInBox>
-            <GatsbyImage className={homeTitle} image={logo} fadeIn alt="logo" />
-            <span
-              dangerouslySetInnerHTML={{
-                __html: data.allMarkdownRemark.nodes[0].html,
-              }}
-            ></span>
-          </FadeInBox>
-        </BackgroundImage>
+      <BackgroundImage
+        className={homeCover}
+        fluid={imageStack}
+        backgroundColor={`#040e18`}
+      >
+        <FadeInBox>
+          <GatsbyImage className={homeTitle} image={logo} fadeIn alt="logo" />
+          <span
+            dangerouslySetInnerHTML={{
+              __html: data.allMarkdownRemark.nodes[0].html,
+            }}
+          ></span>
+        </FadeInBox>
+      </BackgroundImage>
       <div className={container}>
         <FadeInBox>
           <h1>
@@ -99,7 +103,9 @@ function Home() {
             <IncreasingBox to={industryCount}>
               Industry primers published
             </IncreasingBox>
-            <IncreasingBox to={alumniCount} add={true}>Alumni</IncreasingBox>
+            <IncreasingBox to={alumniCount} add={true}>
+              Alumni
+            </IncreasingBox>
           </div>
         </FadeInBox>
       </div>
@@ -114,15 +120,21 @@ function Home() {
             />
             <LinkButton link="/research" text="View Research" />
           </div>
-          <StaticImage 
-            className={imgRight} alt="research" src="../../images/van1.jpg" placeholder="blurred"
+          <StaticImage
+            className={imgRight}
+            alt="research"
+            src="../../images/van1.jpg"
+            placeholder="blurred"
           />
         </div>
       </FadeInBox>
       <FadeInBox>
         <div className={section}>
-          <StaticImage 
-            className={imgLeft} alt="placements" src="../../images/glass1.jpg" placeholder="blurred"
+          <StaticImage
+            className={imgLeft}
+            alt="placements"
+            src="../../images/glass1.jpg"
+            placeholder="blurred"
           />
           <div className={content}>
             <div
@@ -146,8 +158,11 @@ function Home() {
             />
             <LinkButton link="/hiring" text="View Hiring Details" />
           </div>
-          <StaticImage 
-            className={imgRight} alt="hiring" src="../../images/Junior_Analysts.jpg" placeholder="blurred"
+          <StaticImage
+            className={imgRight}
+            alt="hiring"
+            src="../../images/Junior_Analysts.jpg"
+            placeholder="blurred"
           />
         </div>
       </FadeInBox>
@@ -156,5 +171,3 @@ function Home() {
 }
 
 export default Home
-
-

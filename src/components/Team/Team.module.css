@@ -71,10 +71,10 @@
   }
 }
 
-@media only screen and (max-width: 900px){
-  .cards{
+@media only screen and (max-width: 900px) {
+  .cards {
     grid-column: 2 / span 6;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
   }
 

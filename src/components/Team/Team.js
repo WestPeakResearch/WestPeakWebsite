@@ -130,11 +130,19 @@ function Team() {
         {currTeam === "Management" ? (
           <section className={cards}>
             <div className={breakCard}></div>
-            {teamMembers[currTeam].filter(member => member.frontmatter.position.startsWith('Director')).map((member, index) => (
-              <>
-                <ManagementCard key={index} member={member.frontmatter} slug={member.fields.slug}/>
-              </>
-            ))}
+            {teamMembers[currTeam]
+              .filter(member =>
+                member.frontmatter.position.startsWith("Director"),
+              )
+              .map((member, index) => (
+                <>
+                  <ManagementCard
+                    key={index}
+                    member={member.frontmatter}
+                    slug={member.fields.slug}
+                  />
+                </>
+              ))}
             <div className={breakCard}></div>
             {teamMembers[currTeam]
               .filter(member =>

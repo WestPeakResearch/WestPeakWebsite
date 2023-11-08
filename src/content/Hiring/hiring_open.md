@@ -10,10 +10,10 @@ Please apply using the button below before **September 22nd, 11:59pm PT**. Pleas
 
 ### TIMELINE
 
- - August 20: Information Session 1 Online, 7:00pm PT
- - August 21: Applications Open
- - September 13: Information Session 2 In Person, 7:00pm PT
- - September 22: Applications Close, 11:59pm PT
- - September 26-30: Successful candidates will be contacted for interviews
+- August 20: Information Session 1 Online, 7:00pm PT
+- August 21: Applications Open
+- September 13: Information Session 2 In Person, 7:00pm PT
+- September 22: Applications Close, 11:59pm PT
+- September 26-30: Successful candidates will be contacted for interviews
 
 ![Hiring Timeline](hiring_timeline.png)

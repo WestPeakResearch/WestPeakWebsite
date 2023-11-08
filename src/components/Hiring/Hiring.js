@@ -1,6 +1,6 @@
 import React from "react"
 import rehypeReact from "rehype-react"
-import {Fragment, jsx, jsxs} from 'react/jsx-runtime'
+import { Fragment, jsx, jsxs } from "react/jsx-runtime"
 import { useStaticQuery, graphql } from "gatsby"
 import { container } from "./Hiring.module.css"
 import LinkButton from "../ui/LinkButton/LinkButton"
@@ -24,13 +24,7 @@ function Hiring() {
     components: { "link-button": LinkButton },
   }).compiler
 
-  return (
-    <div className={container}>
-      {
-        renderAst(content, "Hiring.js")  
-      }
-    </div>
-  )
+  return <div className={container}>{renderAst(content, "Hiring.js")}</div>
 }
 
 export default Hiring
