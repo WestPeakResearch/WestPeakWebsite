@@ -1,4 +1,4 @@
-# westpeakresearch.com/
+# WestPeak Research Association Website
 
 ### Requirements
 
@@ -10,7 +10,13 @@
 First install all dependencies.
 
 ```sh
-npm install
+npm install --force
+```
+
+Export the Google Analytics tracking ID
+
+```sh
+export GA_TRACKING_ID="."
 ```
 
 Then, run the development server.
