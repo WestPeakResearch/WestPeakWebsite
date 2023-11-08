@@ -6,9 +6,9 @@
   "author": "Hasan Altaf <hasanaltaf2001@gmail.com>",
   "dependencies": {
     "deepmerge": "^4.3.1",
-    "dotenv": "^16.0.3",
-    "formik": "^2.2.9",
-    "framer-motion": "^10.12.18",
+    "dotenv": "^16.3.1",
+    "formik": "^2.4.5",
+    "framer-motion": "^10.16.4",
     "gatsby": "^5.9.0",
     "gatsby-background-image-es5": "^1.6.0",
     "gatsby-plugin-catch-links": "^5.9.0",
@@ -29,17 +29,17 @@
     "gatsby-transformer-sharp": "^5.9.0",
     "imagemin-pngquant": "^9.0.2",
     "install": "^0.13.0",
-    "node": "^19.8.1",
-    "npm": "^9.6.5",
+    "node": "^21.1.0",
+    "npm": "^10.2.3",
     "pngquant-bin": "^8.0.1",
     "primeicons": "^6.0.1",
-    "primereact": "^9.3.1",
+    "primereact": "^10.0.9",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-headroom": "^3.2.1",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.11.0",
     "react-typography": "^0.16.23",
     "rebass": "^4.0.7",
     "rehype-react": "^7.2.0",
@@ -48,7 +48,7 @@
     "typography-theme-github": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "prettier": "^3.0.3"
   },
   "keywords": [
     "gatsby"
