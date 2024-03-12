@@ -4,7 +4,7 @@ name: "Steven Liu"
 degree: "Bachelor of International Economics | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["BRBR_Steven_Liu.pdf"]
 headshot: Steven_Liu.jpg
 ---
 

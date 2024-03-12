@@ -4,7 +4,7 @@ name: "Manha Waheed"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["IPAR_Manha_Waheed.pdf"]
 headshot: Manha_Waheed.jpg
 ---
 

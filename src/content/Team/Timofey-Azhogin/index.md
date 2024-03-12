@@ -4,7 +4,7 @@ name: "Timofey Azhogin"
 degree: "Bachelor of Commerce - Accounting | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SEE_Timofey_Azhogin.pdf"]
 headshot: Timofey_Azhogin.jpg
 ---
 

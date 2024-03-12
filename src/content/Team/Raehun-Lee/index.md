@@ -4,7 +4,7 @@ name: "Raehun Lee"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["NYT_Raehun_Lee.pdf"]
 headshot: Raehun_Lee.jpg
 ---
 

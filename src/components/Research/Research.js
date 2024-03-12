@@ -16,7 +16,7 @@ import "primereact/resources/themes/bootstrap4-light-blue/theme.css"
 import "primereact/resources/primereact.min.css"
 import "primeicons/primeicons.css"
 
-const CURRENT_YEAR = 2023
+const CURRENT_YEAR = 2024
 const EQUITY_START_YEAR = 2014
 const INDUSTRY_START_YEAR = 2021
 

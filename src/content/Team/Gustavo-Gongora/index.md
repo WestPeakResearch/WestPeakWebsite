@@ -4,7 +4,7 @@ name: "Gustavo Gongora"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["DOO_Gustavo_Gongora.pdf"]
 headshot: Gustavo_Gongora.jpg
 ---
 

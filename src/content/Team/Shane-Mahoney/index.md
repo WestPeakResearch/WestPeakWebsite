@@ -4,7 +4,7 @@ name: "Shane Mahoney"
 degree: "Bachelor of International Economics | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["GT_Shane_Mahoney.pdf"]
 headshot: Shane_Mahoney.jpg
 ---
 
