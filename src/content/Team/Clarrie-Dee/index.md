@@ -4,7 +4,7 @@ name: "Clarrie Dee"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["MTN_Clarrie_Dee.pdf"]
 headshot: Clarrie_Dee.jpg
 ---
 

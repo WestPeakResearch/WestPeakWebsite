@@ -4,7 +4,7 @@ name: "Shivani Aggarwal"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["CTC.A_Shivani_Aggarwal.pdf"]
 headshot: Shivani_Aggarwal.jpg
 ---
 

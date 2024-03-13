@@ -4,7 +4,7 @@ name: "Kevin Wang"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["UA_Kevin_Wang.pdf"]
 headshot: Kevin_Wang.jpg
 ---
 
