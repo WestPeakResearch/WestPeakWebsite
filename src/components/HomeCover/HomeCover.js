@@ -61,10 +61,7 @@ function Home() {
 
   const logo = getImage(data.logo.childImageSharp)
   const alumniCount = 100
-  const industryCount = data.research.nodes.filter(
-    node => node.frontmatter.isIndustryResearch,
-  ).length
-  const researchCount = data.research.nodes.length - industryCount
+  const researchCount = data.research.nodes.length
   const imageData = data.banner.childImageSharp.fluid
   const imageStack = [
     `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`,
@@ -90,18 +87,16 @@ function Home() {
       <div className={container}>
         <FadeInBox>
           <h1>
-            Over the{" "}
-            {new Date(new Date() - new Date("2014-09-01")).getFullYear() - 1970}{" "}
-            years since inception, we have...
+            Our Club in Numbers...
           </h1>
         </FadeInBox>
         <FadeInBox>
           <div className={accomplishments}>
-            <IncreasingBox to={researchCount}>
-              Equity research reports published
+            <IncreasingBox to={new Date(new Date() - new Date("2014-09-01")).getFullYear() - 1970}>
+              Years since inception
             </IncreasingBox>
-            <IncreasingBox to={industryCount}>
-              Industry primers published
+            <IncreasingBox to={researchCount}>
+              Research reports published
             </IncreasingBox>
             <IncreasingBox to={alumniCount} add={true}>
               Alumni
