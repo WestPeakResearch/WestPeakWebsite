@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import ResearchComponent from "./ResearchComponent"
 import {
   container,
   reportTypeButtons,
@@ -8,7 +9,6 @@ import {
   noReport,
   searchBar,
 } from "./Research.module.css"
-import ResearchComponent from "./ResearchComponent"
 import { useStaticQuery, graphql } from "gatsby"
 import { Dropdown } from "primereact/dropdown"
 import { InputText } from "primereact/inputtext"

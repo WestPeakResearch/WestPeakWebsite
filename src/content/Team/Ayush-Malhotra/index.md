@@ -4,7 +4,7 @@ name: "Ayush Malhotra"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["COTY_HIMS_Ayush_Malhotra.pdf"]
 headshot: Ayush_Malhotra_V2.jpg
 ---
 

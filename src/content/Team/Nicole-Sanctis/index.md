@@ -4,7 +4,7 @@ name: "Nicole Sanctis"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["TXRH_Nicole_Sanctis.pdf"]
 headshot: Nicole_Sanctis.jpg
 ---
 
