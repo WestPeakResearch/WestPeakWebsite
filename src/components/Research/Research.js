@@ -24,6 +24,7 @@ const REPORT_TYPES = {
   all: "All Research",
   equity: "Equity Research",
   industry: "Industry Research",
+  mna: "M&A Research",
 }
 
 function Research() {
@@ -43,6 +44,7 @@ function Research() {
             date(formatString: "MMMM DD, YYYY")
             isIndustryResearch
             industryGroup
+            isMNAResearch
           }
         }
       }
@@ -58,6 +60,7 @@ function Research() {
     { label: "All Research", value: REPORT_TYPES.all },
     { label: "Equity Research", value: REPORT_TYPES.equity },
     { label: "Industry Research", value: REPORT_TYPES.industry },
+    { label: "M&A Research", value: REPORT_TYPES.mna },
   ]
 
   useEffect(() => {
@@ -153,6 +156,9 @@ function FilteredReports({ research, year, researchType, search }) {
     }
     if (researchType === REPORT_TYPES.industry) {
       return isResearch.frontmatter.isIndustryResearch === "true"
+    }
+    if (researchType === REPORT_TYPES.mna) {
+      return isResearch.frontmatter.isMNAResearch === "true"
     }
     return isResearch.frontmatter.isIndustryResearch !== "true"
   })

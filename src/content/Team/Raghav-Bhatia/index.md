@@ -4,7 +4,7 @@ name: "Raghav Bhatia"
 degree: "Bachelor of Arts - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["HAS_Raghav_Bhatia.pdf"]
 headshot: Raghav_Bhatia.jpg
 ---
 

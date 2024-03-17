@@ -4,7 +4,7 @@ name: "Rajeet Dhillon"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["WAF_ORE_Rajeet_Dhillon.pdf"]
 headshot: "Rajeet_Dhillon.jpg"
 ---
 

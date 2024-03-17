@@ -4,7 +4,7 @@ name: "Casey Whintors"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["NFLX_EA_Casey_Whintors.pdf"]
 headshot: Casey_Whintors.jpg
 ---
 

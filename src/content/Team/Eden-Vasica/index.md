@@ -4,7 +4,7 @@ name: "Eden Vasica"
 degree: "Bachelor of International Economics | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["GLEN_HBM_Eden_Vasica.pdf"]
 headshot: Eden_Vasica_V2.jpg
 ---
 
