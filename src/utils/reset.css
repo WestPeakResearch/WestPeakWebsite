@@ -1,0 +1,33 @@
+/* Order */
+@layer reset, primereact;
+
+/* Reset CSS */
+@layer reset {
+  dropdown,
+  .p-dropdown-panel {
+    color: blue
+  }
+  .p-focus {
+    background-color: transparent;
+    color: black;
+  }
+  .p-highlight {
+    background-color: transparent;
+    color: black;
+  }
+  .p-dropdown-items {
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  .p-dropdown-item {
+    padding-left: 1.45rem !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+    margin-bottom: 0 !important;
+  }
+  .p-dropdown-item:hover {
+    background-color: #eeeeee;
+    -webkit-transition: background 1s;
+    transition: background 0.1s;
+  }
+}

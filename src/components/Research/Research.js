@@ -15,6 +15,7 @@ import { InputText } from "primereact/inputtext"
 import "primereact/resources/themes/bootstrap4-light-blue/theme.css"
 import "primereact/resources/primereact.min.css"
 import "primeicons/primeicons.css"
+import "../../utils/reset.css"
 
 const CURRENT_YEAR = 2024
 const EQUITY_START_YEAR = 2014

@@ -4,9 +4,15 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
-
-exports.shouldUpdateScroll = () => {
+exports.shouldUpdateScroll = ({
+  routerProps,
+  prevRouterProps,
+}) => {
+  if (routerProps && prevRouterProps) {
+    if (routerProps.location.pathname.includes("team") && prevRouterProps.location.pathname.includes("Team")) {
+      return true
+    }
+  }
   window.scrollTo(0, 0)
   return false
 }
