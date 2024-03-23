@@ -4,7 +4,7 @@ name: "Shriyans Duddella"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["IOT_AZPN_Shriyans_Duddella.pdf"]
 headshot: Shriyans_Duddella.jpg
 ---
 
