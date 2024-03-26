@@ -4,7 +4,7 @@ name: "Krystal Guo"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["ENB_NPI_Krystal_Guo.pdf"]
 headshot: Krystal_Guo.jpg
 ---
 

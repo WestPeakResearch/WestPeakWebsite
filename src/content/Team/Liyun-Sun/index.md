@@ -4,7 +4,7 @@ name: "Liyun Sun"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: ["RVLV_Liyun_Sun.pdf"]
+research: ["RVLV_Liyun_Sun.pdf", "MAT_FNKO_Liyun_Sun.pdf"]
 headshot: Liyun_Sun.jpg
 ---
 

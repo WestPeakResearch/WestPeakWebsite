@@ -4,7 +4,7 @@ name: "Benjamin Siem"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: ["CPA_Benjamin_Siem.pdf", "VAC_Benjamin_Siem.pdf"]
+research: ["CPA_Benjamin_Siem.pdf", "VAC_Benjamin_Siem.pdf", "NTAP_NTNX_Benjamin_Siem.pdf"]
 headshot: Benjamin_Siem.jpg
 ---
 

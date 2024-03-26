@@ -4,7 +4,7 @@ name: "Marcel Peplow"
 degree: "Bachelor of Commerce | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["KO_MNST_Marcel_Peplow.pdf"]
 headshot: "Marcel_Peplow.png"
 ---
 

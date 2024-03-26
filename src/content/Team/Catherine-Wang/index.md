@@ -4,7 +4,7 @@ name: "Catherine Wang"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: ["TPR_Catherine_Wang.pdf"]
+research: ["TPR_Catherine_Wang.pdf", "TPX_ZZZ_Catherine_Wang.pdf"]
 headshot: Catherine_Wang.jpg
 ---
 
