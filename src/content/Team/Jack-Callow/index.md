@@ -4,7 +4,7 @@ name: "Jack Callow"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["MUSA_Jack_Callow.pdf"]
 headshot: Jack_Callow.jpg
 ---
 
