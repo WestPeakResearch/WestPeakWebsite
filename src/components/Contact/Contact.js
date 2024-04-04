@@ -116,7 +116,7 @@ function Contact() {
     <div>
       <h2 className={header}>
         Please fill out the contact form below or email us at
-        contact@westpeakresearch.com
+        &#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#119;&#101;&#115;&#116;&#112;&#101;&#97;&#107;&#114;&#101;&#115;&#101;&#97;&#114;&#99;&#104;&#46;&#99;&#111;&#109;
       </h2>
       <Formik
         initialValues={formik.initialValues}

@@ -118,7 +118,7 @@ function Home() {
           <StaticImage
             className={imgRight}
             alt="research"
-            src="../../images/van1.jpg"
+            src="../../images/research.jpg"
             placeholder="blurred"
           />
         </div>
@@ -128,7 +128,7 @@ function Home() {
           <StaticImage
             className={imgLeft}
             alt="placements"
-            src="../../images/glass1.jpg"
+            src="../../images/headview.jpg"
             placeholder="blurred"
           />
           <div className={content}>
