@@ -4,6 +4,10 @@
 /* Reset CSS */
 @layer reset {
   dropdown,
+  .p-input-icon-left > .p-inputtext {
+    padding-left: 2.5rem;
+  }
+  
   .p-dropdown-panel {
     color: blue
   }
