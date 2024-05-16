@@ -4,6 +4,13 @@
 /* Reset CSS */
 @layer reset {
   dropdown,
+
+
+  .p-highlight.p-paginator-element {
+    color: white;
+    background-color: #0a233d;
+  }
+
   .p-input-icon-left > .p-inputtext {
     padding-left: 2.5rem;
   }
@@ -33,5 +40,20 @@
     background-color: #eeeeee;
     -webkit-transition: background 1s;
     transition: background 0.1s;
+  }
+
+  .p-paginator {
+    gap: 2px;
+  }
+
+  .p-paginator-pages {
+    display:flex;
+    gap: 4px;
+  }
+
+  .p-paginator-element {
+    border: none;
+    border-radius: 0.8rem;
+    color: black;
   }
 }

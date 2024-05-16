@@ -12,10 +12,12 @@ import {
 import { useStaticQuery, graphql } from "gatsby"
 import { Dropdown } from "primereact/dropdown"
 import { InputText } from "primereact/inputtext"
+import { Paginator } from "primereact/paginator"
 import "primereact/resources/themes/bootstrap4-light-blue/theme.css"
 import "primereact/resources/primereact.min.css"
 import "primeicons/primeicons.css"
 import "../../utils/reset.css"
+import { report } from "process"
 
 const CURRENT_YEAR = 2024
 const EQUITY_START_YEAR = 2014
@@ -64,6 +66,10 @@ function Research() {
     { label: "M&A Research", value: REPORT_TYPES.mna },
   ]
 
+  const [itemsPerPage, setItemsPerPage] = useState(30)
+  const [startIndex, setStartIndex] = useState(0)
+  const [reportCount, setReportCount] = useState(0)
+
   useEffect(() => {
     const years = []
     years.push({ label: "All Years", value: -1 })
@@ -89,8 +95,15 @@ function Research() {
     setSearch(event.target.value)
   }
 
+  function onPageChange(event) {
+    setStartIndex(event.first)
+    setTimeout(() => {
+      document.getElementById("research").scrollIntoView({ behavior: "smooth" });
+    }, 40)
+  }
+
   return (
-    <div className={container}>
+    <div id="research" className={container}>
       <div className={reportTypeButtons}>
         <div>
           <span className="p-float-label">
@@ -139,12 +152,18 @@ function Research() {
         year={year}
         researchType={researchType}
         search={search}
+        startIndex={startIndex}
+        itemsPerPage={itemsPerPage}
+        setReportCount={setReportCount}
       />
+      {
+        reportCount === 0 ? <></> : <Paginator first={startIndex} rows={30} totalRecords={reportCount} onPageChange={onPageChange} />
+      }
     </div>
   )
 }
 
-function FilteredReports({ research, year, researchType, search }) {
+function FilteredReports({ research, year, researchType, search, startIndex, itemsPerPage, setReportCount }) {
   const filteredByYear = research.filter(paper => {
     if (year === -1) {
       return true
@@ -181,11 +200,12 @@ function FilteredReports({ research, year, researchType, search }) {
     }
     return false
   })
+  setReportCount(filteredResearch.length)
 
   return (
     <div className={research}>
       {filteredResearch.length > 0 ? (
-        filteredResearch.map((paper, index) => {
+        filteredResearch.slice(startIndex, startIndex+itemsPerPage).map((paper, index) => {
           return (
             <div key={index}>
               <ResearchComponent report={paper.frontmatter} />

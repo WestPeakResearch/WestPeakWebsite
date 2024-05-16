@@ -3,6 +3,7 @@
   width: 80%;
   max-width: 1600px;
   padding: 1rem;
+  scroll-margin-top: 80px;
 }
 
 @media (max-width: 1024px) {
