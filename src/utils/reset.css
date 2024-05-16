@@ -5,10 +5,14 @@
 @layer reset {
   dropdown,
 
-
   .p-highlight.p-paginator-element {
     color: white;
     background-color: #0a233d;
+  }
+
+  .p-input-icon-left > i:first-of-type {
+    left: 0.75rem;
+    color: #495057;
   }
 
   .p-input-icon-left > .p-inputtext {
