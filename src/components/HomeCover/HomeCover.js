@@ -32,13 +32,6 @@ function Home() {
           gatsbyImageData(placeholder: BLURRED, width: 2000)
         }
       }
-      alumni: allAlumniXlsxAlumni {
-        nodes {
-          name1
-          name2
-          name3
-        }
-      }
       research: allMarkdownRemark(
         filter: { frontmatter: { type: { in: "report" } } }
         sort: { frontmatter: { date: DESC } }

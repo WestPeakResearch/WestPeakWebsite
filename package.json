@@ -43,9 +43,7 @@
     "react-typography": "^0.16.23",
     "rebass": "^4.0.7",
     "rehype-react": "^8.0.0",
-    "typeface-roboto": "^1.1.13",
-    "typography": "^0.16.24",
-    "typography-theme-github": "^0.16.19"
+    "typography": "^0.16.24"
   },
   "devDependencies": {
     "prettier": "^3.2.5"
