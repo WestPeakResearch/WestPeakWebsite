@@ -1,13 +1,13 @@
 ---
 type: "team"
 name: "Gustavo Gongora"
-degree: "Bachelor of Commerce - Finance | Year 3"
-position: "Junior Analyst"
-management: "False"
+degree: "Bachelor of Commerce - Finance | Year 4"
+position: "Vice-President"
+management: "True"
 research: ["DOO_Gustavo_Gongora.pdf"]
 headshot: Gustavo_Gongora.jpg
 ---
 
-Gustavo is a third-year Commerce student specializing in Finance. By joining WestPeak, he hopes to explore his passion for capital markets and build lasting connections. Last summer, he completed an internship at the Vice Presidency of the Republic of Colombia.
+Gustavo is a fourth-year commerce student specializing in finance. Last summer, Gustavo joined Longbow Capital as a Private Equity Summer Analyst in Calgary. This year, he will be working as a Private Equity Fall Analyst at BCI and as an Investment Banking Summer Analyst at TD Securities in Toronto.
 
-In his free time, Gustavo enjoys watching Soccer, spending time with friends, and working on his nonprofit start-up.
+Outside of school and work, Gustavo enjoys travelling, watching soccer, and spending time with friends.

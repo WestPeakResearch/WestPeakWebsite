@@ -129,10 +129,10 @@ function Team() {
 
         {currTeam === "Management" ? (
           <section className={cards}>
-            <div className={breakCard}></div>
+            {/*<div className={breakCard}></div> USED FOR 5 PEOPLE TEAMS ONLY */}
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter.position.startsWith("Director"),
+                member.frontmatter.position.startsWith("Co-Director"),
               )
               .map((member, index) => (
                 <>
@@ -143,10 +143,10 @@ function Team() {
                   />
                 </>
               ))}
-            <div className={breakCard}></div>
+            {/*<div className={breakCard}></div> USED FOR 5 PEOPLE TEAMS ONLY*/}
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter.position.includes("Internal"),
+                member.frontmatter.position.includes("Vice-President"),
               )
               .map((member, index) => (
                 <>
