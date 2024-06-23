@@ -1,13 +1,13 @@
 ---
 type: "team"
 name: "Catherine Wang"
-degree: "Bachelor of Commerce - Finance | Year 3"
-position: "Senior Analyst"
+degree: "Bachelor of Commerce - Finance | Year 4"
+position: "Head of Consumer Retail"
 management: "False"
 research: ["TPR_Catherine_Wang.pdf", "TPX_ZZZ_Catherine_Wang.pdf"]
 headshot: Catherine_Wang.jpg
 ---
 
-Catherine is a third-year finance student with an intended concentration in Business Analytics. The past summer, Catherine completed an internship with RBC Philips, Hager, & North on the fixed income team in Vancouver.
+Catherine is a fourth-year commerce student specializing in Finance. Through WestPeak, she has come to better understand the capital markets. The past summer, she completed an internship with Hillhouse Investment as a private equity analyst.
 
-Outside of school and work, Catherine loves swimming, watching musicals, and culinary.
+Outside of school and work, Catherine enjoys swimming, watching musicals, exploring coffee shops, and restaurant hopping.
