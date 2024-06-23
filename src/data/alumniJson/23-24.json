@@ -1,0 +1,48 @@
+{
+  "order": 10,
+  "year": "2023-2024",
+  "management": [
+    {
+      "name": "Shaan Hooey",
+      "linkedin": "https://www.linkedin.com/in/shaanhooey/"
+    },
+    {
+      "name": "Caleigh Kuramoto",
+      "linkedin": "https://www.linkedin.com/in/caleighkuramoto/"
+    },
+    {
+      "name": "Justin Houlberg",
+      "linkedin": "https://www.linkedin.com/in/justinhoulberg/"
+    },
+    {
+      "name": "Ellen You",
+      "linkedin": "https://www.linkedin.com/in/ellenyou/"
+    },
+    {
+      "name": "Hilary Lau",
+      "linkedin": "https://www.linkedin.com/in/hilarylau/"
+    }
+  ],
+  "gh": [
+    {
+      "name": "Dennis Quek",
+      "linkedin": "https://www.linkedin.com/in/dennis-quek/"
+    },
+    {
+      "name": "Lynne Shi",
+      "linkedin": "https://www.linkedin.com/in/lynneshi/"
+    },
+    {
+      "name": "Garrett Bowley",
+      "linkedin": "https://www.linkedin.com/in/garrett-bowley/"
+    },
+    {
+      "name": "Kelvin Nip",
+      "linkedin": "https://www.linkedin.com/in/nipkelvin/"
+    },
+    {
+      "name": "Frank Xue",
+      "linkedin": "https://www.linkedin.com/in/frankyunxue/"
+    }
+  ]
+}
