@@ -3,11 +3,11 @@ title: "Hiring"
 type: "page"
 ---
 
-# Applications for the 2024-2025 cohort is open until September 20, 2024.
+## Applications for the 2024-2025 cohort is open until September 20, 2024.
 
 ### HOW TO APPLY
 
-We offer a **Junior Analyst** program and a **Senior Analyst** program. <!--Please refer to our <a href="WPRA_Hiring_Package_2024.pdf" target="_blank">**Hiring Package**</a> for more details on each.-->
+We offer a **Junior Analyst** program and a **Senior Analyst** program. Please refer to our <a href="WPRA_Hiring_Package_2024.pdf" target="_blank">**Hiring Package**</a> for more details on each.
 
 Please apply using the button below before **September 20th, 11:59pm PT**. Please note you must be a **UBC Vancouver student**, and may only apply to **one program**.
 

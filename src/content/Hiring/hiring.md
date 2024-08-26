@@ -1,4 +1,4 @@
-# Applications for the 2023-2024 cohort have closed. Please check back August 2024.
+## Applications for the 2023-2024 cohort have closed. Please check back August 2024.
 
 ### WHAT WE DO
 
