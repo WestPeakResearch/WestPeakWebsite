@@ -21,6 +21,7 @@ import { Toast } from "primereact/toast"
 import { classNames } from "primereact/utils"
 import FacebookLogo from "../../images/facebook.svg"
 import LinkedinLogo from "../../images/linkedin.svg"
+import InstagramLogo from "../../images/instagram.svg"
 
 function Contact() {
   const successToast = useRef(null)
@@ -234,11 +235,18 @@ function Contact() {
                 <img src={FacebookLogo} alt="Facebook" />
               </a>
               <a
+                href="https://www.instagram.com/westpeakresearch/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={InstagramLogo} alt="Instagram" />
+              <a
                 href="https://linkedin.com/company/westpeak-research"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img src={LinkedinLogo} alt="Linkedin" />
+              </a>
               </a>
             </div>
           </div>
