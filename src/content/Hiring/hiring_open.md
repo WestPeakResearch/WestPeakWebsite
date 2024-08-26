@@ -3,7 +3,7 @@ title: "Hiring"
 type: "page"
 ---
 
-## Applications for the 2024-2025 cohort is open until September 20, 2024.
+## Applications for the 2024-2025 cohort are open until September 20, 2024.
 
 ### HOW TO APPLY
 
