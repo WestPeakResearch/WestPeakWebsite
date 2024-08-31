@@ -15,8 +15,7 @@ Please apply using the button below before **September 20th, 11:59pm PT**. Pleas
 <link-button link="https://forms.gle/G3v846c9srVEfDXAA" target="_blank" text="Access the 2024 WestPeak Research Association Application Form"></link-button>
 
 For a more in depth overview of our programs and to meet the team, we encourage you to **attend one of our upcoming information sessions**:
- - **August 28, 7:00pm PT, In Person:** [Sign up here!](https://forms.gle/z1NMznMkWSvkMFAG7)
- - **September 11, 7:00pm PT, In Person:** Available Soon!
+ - **September 11, 7:00pm PT, In Person:** [Sign up here!](https://forms.gle/A37vHEgJedbe2sAE8)
 
 ### TIMELINE
 
