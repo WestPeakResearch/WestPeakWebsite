@@ -10,6 +10,34 @@
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
 }
 
+.container bold {
+  font-weight: bold;
+}
+
+.section {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section .image {
+  aspect-ratio: 3 / 2;
+  border-radius: 10px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 1024px) {
   .container {
     width: 95%;

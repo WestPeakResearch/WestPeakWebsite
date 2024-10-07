@@ -5,7 +5,7 @@ degree: "Bachelor of Science – Computer Science and Statistics | Year 4"
 position: "Head of Technology, Media, Telecom"
 management: "False"
 research: []
-headshot: Anne_Zhou.JPG
+headshot: Anne_Zhou.jpg
 ---
 
 Anne is a fourth-year student majoring in Computer Science and Statistics. This past summer, she completed an internship at CPP in Toronto. This upcoming summer, she will be joining Bank of America as an investment banking summer analyst. 
