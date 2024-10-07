@@ -26,15 +26,23 @@
   justify-content: center;
 }
 
-.section .image {
+.image, .imageLeft {
   aspect-ratio: 3 / 2;
   border-radius: 10px;
   margin: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .section {
     grid-template-columns: 1fr;
+  }
+
+  .imageLeft {
+    order: 2
+  }
+
+  .image, .imageLeft {
+    margin-bottom: 2rem;
   }
 }
 

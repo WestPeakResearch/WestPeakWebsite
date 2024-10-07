@@ -1,5 +1,5 @@
 import React from "react"
-import { container, section, content, image } from "./Hiring.module.css"
+import { container, section, content, image, imageLeft } from "./Hiring.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
 function HiringClosed() {
@@ -27,7 +27,7 @@ function HiringClosed() {
         <StaticImage className={image} src="images/media_hiring_analysts.jpg" />
       </div>
       <div className={section}>
-        <StaticImage className={image} src="images/media_hiring_directors.jpg" />
+        <StaticImage className={imageLeft} src="images/media_hiring_directors.jpg" />
         <div className={content}>
           <h3>WHAT WE OFFER</h3>
           <p>
