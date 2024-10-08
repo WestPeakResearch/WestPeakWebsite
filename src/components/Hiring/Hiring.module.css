@@ -32,8 +32,9 @@
   margin: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .section {
+    gap: 0;
     grid-template-columns: 1fr;
   }
 
@@ -42,7 +43,7 @@
   }
 
   .image, .imageLeft {
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
 }
 
