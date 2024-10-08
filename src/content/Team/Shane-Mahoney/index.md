@@ -1,13 +1,13 @@
 ---
 type: "team"
 name: "Shane Mahoney"
-degree: "Bachelor of International Economics | Year 2"
-position: "Junior Analyst"
+degree: "Bachelor of International Economics | Year 3"
+position: "Senior Analyst"
 management: "False"
 research: ["GT_Shane_Mahoney.pdf"]
 headshot: Shane_Mahoney.jpg
 ---
 
-Shane is a second-year Bachelor of International Economics student. He joined WestPeak to delve deeper into his interest in capital markets. He is also excited to learn from motivated and knowledgeable peers.
+Shane is a third-year student in the Bachelor of International Economics program. He is currently completing an accounting internship at Telus. WestPeak has provided him a community of likeminded individuals to lean on and bond with.
 
-In his free time, Shane likes to get out in the mountains by hiking and skiing.
+In his spare time, Shane enjoys cycling, playing board games and hitting the gym! 

@@ -2,7 +2,7 @@
 type: "team"
 name: "Samuel Yang"
 degree: "Bachelor of Commerce - General | Year 2"
-position: "Junior Analyst"
+position: "Senior Analyst"
 management: "False"
 research: []
 headshot: Samuel_Yang.jpg

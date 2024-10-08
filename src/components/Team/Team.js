@@ -75,7 +75,7 @@ function Team() {
         member.frontmatter.management !== "True" &&
         member.frontmatter.position.includes("Head"),
     ),
-    /*"Senior Analysts": team.filter(
+    "Senior Analysts": team.filter(
       member =>
         member.frontmatter.management !== "True" &&
         member.frontmatter.position.includes("Senior Analyst"),
@@ -84,7 +84,7 @@ function Team() {
       member =>
         member.frontmatter.management !== "True" &&
         member.frontmatter.position.includes("Junior Analyst"),
-    ),*/
+    ),
     Alumni: [],
   }
 

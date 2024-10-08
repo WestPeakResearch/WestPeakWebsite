@@ -8,6 +8,6 @@ research: ["WAF_ORE_Rajeet_Dhillon.pdf"]
 headshot: "Rajeet_Dhillon.jpg"
 ---
 
-Rajeet is a fourth-year Commerce student specializing in Finance. He joined WestPeak to develop his technical skills and explore his passion for the capital markets. In the past, Rajeet has completed internships with RBC Global Asset Management and the City of Delta.
+Rajeet is a fourth-year Bachelor of Commerce student specializing in finance. He is returning to WestPeak to further explore the capital markets with like-minded individuals. This upcoming summer, Rajeet will be working as a Corporate Banking Analyst at BMO Capital Markets in Toronto.
 
-Outside of school and work, Rajeet loves to play basketball, explore new restaurants, and go to the gym.
+Outside of school, Rajeet enjoys watching and playing basketball, trying out new restaurants, and going to the gym.

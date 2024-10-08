@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Hasan Altaf <hasanaltaf2001@gmail.com>",
   "dependencies": {
+    "caniuse-lite": "^1.0.30001667",
     "deepmerge": "^4.3.1",
     "dotenv": "^16.4.5",
     "formik": "^2.4.5",
@@ -42,11 +43,15 @@
     "react-icons": "^4.12.0",
     "react-typography": "^0.16.23",
     "rebass": "^4.0.7",
-    "rehype-react": "^8.0.0",
     "typography": "^0.16.24"
   },
   "devDependencies": {
     "prettier": "^3.2.5"
+  },
+  "overrides": {
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.0.0"
+    }
   },
   "keywords": [
     "gatsby"

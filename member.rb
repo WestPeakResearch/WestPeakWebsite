@@ -3,10 +3,9 @@ require "fileutils"
 # helper function for getting multiple lines of text
 def multi_gets
   all_text = ""
-  while (text = gets) != "\n"
-    all_text << text
+  while all_text << STDIN.gets
+    return all_text.sub "DONE", "" if all_text["DONE"]
   end
-  all_text
 end
 
 def main
@@ -34,6 +33,8 @@ def main
   degree = gets.chomp
   if degree == ""
     degree = "Bachelor of Commerce - General"
+  elsif degree == "BIE"
+    degree = "Bachelor of International Economics"
   end
 
   # get year
@@ -46,7 +47,7 @@ def main
   degree_year = degree + " | Year " + year
 
   # get bio
-  puts "bio (multiline input): "
+  puts "bio (multiline input, type DONE to end): "
   bio = multi_gets
 
   # input confirmation
@@ -67,7 +68,6 @@ def main
   print "proceed? (y/n): "
   proceed = gets.chomp
   if proceed == "n"
-    main
     return
   end
 
