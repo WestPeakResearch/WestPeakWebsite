@@ -8,5 +8,4 @@ research: []
 headshot: Dansie_Feng.jpg
 ---
 
-Dansie is a third-year Science student majoring in Statistics. This fall, she is working at BCI in Victoria.
-
+Dansie is a third-year Science student specializing in Statistics with a minor in Commerce. This fall, she is working at BCI in Victoria. Outside of school, Dansie enjoys hiking, traveling and digital painting.
