@@ -8,8 +8,6 @@ research: []
 headshot: Finn_Piney.jpg
 ---
 
-Finn is a second-year student in the Bachelor of International Economics program at UBC. With an interest in finance, he joined WestPeak to learn more about capital markets, producing equity research, and conducting financial analysis. Most recently, he interned at a Search Fund operating out of the United States.
+Finn is a second-year Bachelor of International Economics student at UBC. With an interest in finance, he joined WestPeak to learn more about capital markets, produce equity research, and conduct financial analysis. Most recently, he interned at a Search Fund operating out of the United States.
 
-Finn is always looking for new experiences in Finance, as well as opportunities to build new connections. 
-
-
+Outside of school, Finn loves climbing, running, caving, and spending time outdoors.
