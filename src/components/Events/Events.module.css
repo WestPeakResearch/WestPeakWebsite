@@ -17,6 +17,24 @@
   line-height: 1.7rem;
 }
 
+.section {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section .sectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image, .imageLeft {
+  aspect-ratio: 3 / 2;
+  border-radius: 10px;
+  margin: auto;
+}
+
 .eventContainer {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -51,4 +69,37 @@
 
 .closedButton {
   color: #333333 !important;
+}
+
+@media (max-width: 900px) {
+  .eventContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .eventDate {
+    text-align: start;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: start;
+  }
+
+  .section {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .imageLeft {
+    order: 2;
+  }
+
+  .image, .imageLeft {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
 }

@@ -3,9 +3,12 @@ import { useStaticQuery, graphql } from "gatsby"
 import {
   content,
   title,
-  description,
+  section,
+  sectionContent,
+  image,
+  imageLeft
 } from "./Events.module.css"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import EventComponent from "./EventComponent"
 import { DateTime } from "luxon"
 
@@ -38,23 +41,40 @@ function Events() {
       <div className={content}>
         {
           events.length > 0
-          ?
-          <>
-            <span className={title}>Upcoming Events</span>
-            <div> { events.map(e => <EventComponent event={e.frontmatter} />) } </div>
-            <br />
-          </>
-          :
-          <></>
+            ?
+            <>
+              <span className={title}>Upcoming Events</span>
+              <div> {events.map(e => <EventComponent event={e.frontmatter} />)} </div>
+              <br />
+            </>
+            :
+            <></>
         }
-        <span className={title}>Our Past Events</span>
-        <p className={description}>
-          At WestPeak, we’re redefining and raising the bar of successful
-          careers, and our experiences speak to our commitment to professional
-          development. We have countless members with competitive internships
-          and full-time experience at Fortune 500 companies, prestigious firms,
-          and unicorn startups.
-        </p>
+        <span className={title}>Past Events</span>
+        <div className={section}>
+          <div className={sectionContent}>
+            <h3>YWiB x WestPeak Stock Pitch Competition</h3>
+            <p>
+              WestPeak runs an annual Stock Pitch Competition in collaboration with 
+              Young Women in Business UBC. The goal is to offer post-secondary students 
+              in British Columbia an opportunity to learn about the public markets and 
+              showcase their stock pitching skills, whilst encouraging the participation 
+              of women in finance.
+            </p>
+          </div>
+          <StaticImage className={image} src="images/media_ywib_wp_stock_pitch.jpg" />
+        </div>
+        <div className={section}>
+          <StaticImage className={imageLeft} src="images/media_internal_stock_pitch.jpg" />
+          <div className={sectionContent}>
+            <h3>WestPeak Internal Stock Pitch</h3>
+            <p>
+              The WestPeak Internal Stock Pitch is an annual event at the end of every
+              academic year where all analysts at WestPeak compete with each other, 
+              as a cumulative showcase of skills learned throughout the year.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   )

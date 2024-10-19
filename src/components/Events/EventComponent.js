@@ -11,13 +11,6 @@ import LinkButton from "../ui/LinkButton/LinkButton"
 import { Button } from "primereact/button";
 import { DateTime } from "luxon";
 
-const options = {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-};
-
 function EventComponent(props) {
   const event = props.event
   const today = DateTime.now().startOf("day").setZone('America/Vancouver')
