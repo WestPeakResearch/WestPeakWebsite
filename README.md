@@ -4,22 +4,16 @@ Static site built with Gatsby, React and JavaScript.
 
 ### How to Run Locally
 
-First install all dependencies (force is required to clear conflicts from a legacy dependency we use).
+First install all dependencies
 
 ```sh
-npm install --force
-```
-
-Export the Google Analytics tracking ID (use random characters if it is a test build)
-
-```sh
-export GA_TRACKING_ID="."
+npm install
 ```
 
 Then, run the development server.
 
 ```sh
-gatsby develop
+npm run develop
 ```
 
 Now you can access the site at `localhost:8000`.
