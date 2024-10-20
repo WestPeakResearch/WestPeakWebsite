@@ -53,7 +53,7 @@ function Home() {
   `)
 
   const logo = getImage(data.logo.childImageSharp)
-  const alumniCount = 100
+  const alumniCount = 150
   const researchCount = data.research.nodes.length
   const imageData = data.banner.childImageSharp.gatsbyImageData
 
