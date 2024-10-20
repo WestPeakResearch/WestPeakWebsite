@@ -77,6 +77,10 @@
   border-radius: 0 10px 10px 0;
 }
 
+.blur {
+  backdrop-filter: blur(2px);
+}
+
 @media (max-width: 600px) {
   .homeCover span {
     margin: 7vh 0 7vh 0;

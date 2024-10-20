@@ -52,7 +52,6 @@ function PageCover(props) {
           position: "relative",
           placeItems: "center",
           display: "grid",
-          backdropFilter: "blur(2px)",
           height: "100%"
         }}>
           <div className={pageTitle}>{title}</div>

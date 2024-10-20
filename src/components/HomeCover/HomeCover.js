@@ -10,6 +10,7 @@ import {
   section,
   imgRight,
   imgLeft,
+  blur
 } from "./HomeCover.module.css"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import IncreasingBox from "../ui/IncreasingBox/IncreasingBox"
@@ -61,12 +62,11 @@ function Home() {
     <>
       <div style={{ display: "grid" }} className={homeCover}>
         <GatsbyImage style={{ gridArea: "1/1" }} layout="fullWidth" alt="" image={imageData} />
-        <div style={{
+        <div className={blur} style={{
           gridArea: "1/1",
           position: "relative",
           placeItems: "center",
-          display: "grid",
-          backdropFilter: "blur(2px)"
+          display: "grid"
         }}>
           <div>
             <GatsbyImage className={homeTitle} image={logo} fadeIn alt="logo" />
