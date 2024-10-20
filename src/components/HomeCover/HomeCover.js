@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
-import BackgroundImage from "gatsby-background-image-es5"
 import {
   container,
   homeCover,
@@ -44,9 +43,10 @@ function Home() {
       }
       banner: file(relativePath: { eq: "background.jpg" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(
+            placeholder: BLURRED
+            quality: 70
+          )
         }
       }
     }
@@ -55,28 +55,29 @@ function Home() {
   const logo = getImage(data.logo.childImageSharp)
   const alumniCount = 100
   const researchCount = data.research.nodes.length
-  const imageData = data.banner.childImageSharp.fluid
-  const imageStack = [
-    `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))`,
-    imageData,
-  ]
+  const imageData = data.banner.childImageSharp.gatsbyImageData
 
   return (
     <>
-      <BackgroundImage
-        className={homeCover}
-        fluid={imageStack}
-        backgroundColor={`#040e18`}
-      >
-        <FadeInBox>
-          <GatsbyImage className={homeTitle} image={logo} fadeIn alt="logo" />
-          <span
-            dangerouslySetInnerHTML={{
-              __html: data.allMarkdownRemark.nodes[0].html,
-            }}
-          ></span>
-        </FadeInBox>
-      </BackgroundImage>
+      <div style={{ display: "grid" }} className={homeCover}>
+        <GatsbyImage style={{ gridArea: "1/1" }} layout="fullWidth" alt="" image={imageData} />
+        <div style={{
+          gridArea: "1/1",
+          position: "relative",
+          placeItems: "center",
+          display: "grid",
+          backdropFilter: "blur(2px)"
+        }}>
+          <div>
+            <GatsbyImage className={homeTitle} image={logo} fadeIn alt="logo" />
+            <span
+              dangerouslySetInnerHTML={{
+                __html: data.allMarkdownRemark.nodes[0].html,
+              }}
+            ></span>
+          </div>
+        </div>
+      </div>
       <div className={container}>
         <FadeInBox>
           <h1>

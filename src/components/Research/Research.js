@@ -202,7 +202,7 @@ function FilteredReports({ research, year, researchType, search, startIndex, ite
   setReportCount(filteredResearch.length)
 
   return (
-    <div className={research}>
+    <div>
       {filteredResearch.length > 0 ? (
         filteredResearch.slice(startIndex, startIndex+itemsPerPage).map((paper, index) => {
           return (

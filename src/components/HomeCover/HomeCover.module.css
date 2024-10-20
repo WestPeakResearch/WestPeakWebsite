@@ -1,13 +1,10 @@
 .homeCover {
-  height: 50vh;
-  display: table;
   width: 100%;
   z-index: 0;
-  font-size: 1.05rem;
   line-height: 1.8rem;
 }
 
-.homeCover > * > * {
+.homeCover > * > * > * {
   display: flex !important;
 }
 
@@ -20,7 +17,7 @@
 
 .homeCover span {
   max-width: 1600px;
-  margin: 7vh 10% 7vh 10%;
+  margin: 2vh 10% 2vh 10%;
   padding: 2rem;
   justify-content: center;
   text-align: center;

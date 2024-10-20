@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { pageCover, pageTitle } from "./PageCover.module.css"
-import BackgroundImage from "gatsby-background-image-es5"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 function PageCover(props) {
   const title = props.title
@@ -18,42 +18,46 @@ function PageCover(props) {
           node {
             name
             childImageSharp {
-              fluid(quality: 90, maxWidth: 1800) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
+              gatsbyImageData(
+                placeholder: BLURRED
+                quality: 90
+              )
             }
           }
         }
       }
       banner: file(relativePath: { eq: "banner.jpg" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1800) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(
+            placeholder: BLURRED
+            quality: 90
+          )
         }
       }
     }
   `)
-  var imageData = data.banner.childImageSharp.fluid
+  var imageData = data.banner.childImageSharp.gatsbyImageData
   data.images.edges.forEach(node => {
     if (node.node.name === image) {
-      imageData = node.node.childImageSharp.fluid
+      imageData = node.node.childImageSharp.gatsbyImageData
     }
   })
-  const imageStack = [
-    `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))`,
-    imageData,
-  ]
 
   return (
     <>
-      <BackgroundImage
-        className={pageCover}
-        fluid={imageStack}
-        backgroundColor={`#040e18`}
-      >
-        <div className={pageTitle}>{title}</div>
-      </BackgroundImage>
+      <div style={{ display: "grid", overflow: "hidden"}} className={pageCover}>
+        <GatsbyImage style={{ gridArea: "1/1" }} layout="fullWidth" loading="eager" alt="" image={imageData} />
+        <div style={{
+          gridArea: "1/1",
+          position: "relative",
+          placeItems: "center",
+          display: "grid",
+          backdropFilter: "blur(2px)",
+          height: "100%"
+        }}>
+          <div className={pageTitle}>{title}</div>
+        </div>
+      </div>
     </>
   )
 }
