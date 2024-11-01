@@ -6,7 +6,9 @@ import {
   section,
   sectionContent,
   image,
-  imageLeft
+  imageLeft,
+  sponsors,
+  sponsorLogos
 } from "./Events.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 import EventComponent from "./EventComponent"
@@ -73,6 +75,25 @@ function Events() {
               academic year where all analysts at WestPeak compete with each other, 
               as a cumulative showcase of skills learned throughout the year.
             </p>
+          </div>
+        </div>
+        <br />
+        <span className={title}>Sponsors</span>
+        <div>
+          <p>We would like to sincerely thank our sponsors that make hosting our events possible.</p>
+          <div className={sponsors}>
+            <div>Gold Sponsors</div>
+            <div className={sponsorLogos}>
+              <StaticImage src="images/sponsors_rbc.png" style={{ height: "100%" }} objectFit="contain" />
+            </div>
+            <div>Silver Sponsors</div>
+            <div>
+              <StaticImage src="images/sponsors_cibc.jpg" style={{ height: "100%" }} objectFit="contain" />
+            </div>
+            <div>Bronze Sponsors</div>
+            <div>
+              <StaticImage src="images/sponsors_td.png" style={{ height: "100%" }} objectFit="contain" />
+            </div>
           </div>
         </div>
       </div>

@@ -71,6 +71,21 @@
   color: #333333 !important;
 }
 
+.sponsors {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: center;
+  line-height: 5em;
+  gap: 0.5em;
+  grid-template-rows: 5em 5em 5em;
+}
+
+.sponsorLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 @media (max-width: 900px) {
   .eventContainer {
     grid-template-columns: 1fr;
@@ -94,6 +109,11 @@
 
   .image, .imageLeft {
     margin: 2rem 0;
+  }
+
+  .sponsors {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4em 5em 4em 5em 4em 5em;
   }
 }
 
