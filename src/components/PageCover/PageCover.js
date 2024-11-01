@@ -46,7 +46,7 @@ function PageCover(props) {
   return (
     <>
       <div style={{ display: "grid", overflow: "hidden"}} className={pageCover}>
-        <GatsbyImage style={{ gridArea: "1/1" }} layout="fullWidth" loading="eager" alt="" image={imageData} />
+        <GatsbyImage style={{ gridArea: "1/1", height: "100%"}} layout="fullWidth" loading="eager" alt="" image={imageData} />
         <div style={{
           gridArea: "1/1",
           position: "relative",
