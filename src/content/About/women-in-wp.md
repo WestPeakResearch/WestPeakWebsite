@@ -1,7 +1,7 @@
 ---
 type: "about-strategies"
-name: "Women in WestPeak"
-order: 3
+name: "Embracing Inclusivity"
+order: 4
 images:
   - "images/wiwp-1.jpg"
   - "images/wiwp-2.jpg"
