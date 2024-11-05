@@ -7,7 +7,7 @@ function FadeInBox(props) {
       opacity: 1,
       transition: {
         ease: easeInOut,
-        delay: 0.25,
+        delay: 0.3,
         duration: 1.25,
       },
     },

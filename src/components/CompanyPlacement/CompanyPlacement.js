@@ -4,23 +4,28 @@ import {
   content,
   title,
   description,
-  logoImage,
-  images,
+  imageContainer,
 } from "./CompanyPlacement.module.css"
+import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 function CompanyPlacement() {
   const data = useStaticQuery(graphql`
     query placementsQuery {
-      one: file(absolutePath: { regex: "/placements.png/" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, width: 2000)
+      images: allFile(
+          filter: { absolutePath: { regex: "/placements.+.png/" }}
+          sort: { absolutePath: ASC }
+        ) {
+        nodes {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, width: 2000)
+          }
         }
       }
     }
   `)
 
-  const image1 = getImage(data.one.childImageSharp)
+  const images = data.images.nodes.map((i) => getImage(i.childImageSharp))
 
   return (
     <>
@@ -34,8 +39,10 @@ function CompanyPlacement() {
           and unicorn startups.
         </p>
       </div>
-      <div className={images}>
-        <GatsbyImage className={logoImage} image={image1} fadeIn alt="logo" />
+      <div className={imageContainer}>
+        {
+          images.map((i) => <FadeInBox><GatsbyImage image={i} fadeIn alt="logo" /></FadeInBox>)
+        }
       </div>
     </>
   )
