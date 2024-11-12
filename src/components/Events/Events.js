@@ -57,10 +57,10 @@ function Events() {
           <div className={sectionContent}>
             <h3>YWiB x WestPeak Stock Pitch Competition</h3>
             <p>
-              WestPeak runs an annual Stock Pitch Competition in collaboration with 
-              Young Women in Business UBC. The goal is to offer post-secondary students 
-              in British Columbia an opportunity to learn about the public markets and 
-              showcase their stock pitching skills, whilst encouraging the participation 
+              WestPeak runs an annual Stock Pitch Competition in collaboration with
+              Young Women in Business UBC. The goal is to offer post-secondary students
+              in British Columbia an opportunity to learn about the public markets and
+              showcase their stock pitching skills, whilst encouraging the participation
               of women in finance.
             </p>
           </div>
@@ -72,7 +72,7 @@ function Events() {
             <h3>WestPeak Internal Stock Pitch</h3>
             <p>
               The WestPeak Internal Stock Pitch is an annual event at the end of every
-              academic year where all analysts at WestPeak compete with each other, 
+              academic year where all analysts at WestPeak compete with each other,
               as a cumulative showcase of skills learned throughout the year.
             </p>
           </div>
@@ -82,17 +82,27 @@ function Events() {
         <div>
           <p>We would like to sincerely thank our sponsors that make hosting our events possible.</p>
           <div className={sponsors}>
-            <div>Gold Sponsors</div>
-            <div className={sponsorLogos}>
-              <StaticImage src="images/sponsors_rbc.png" style={{ height: "100%" }} objectFit="contain" />
-            </div>
-            <div>Silver Sponsors</div>
             <div>
-              <StaticImage src="images/sponsors_cibc.jpg" style={{ height: "100%" }} objectFit="contain" />
+              <div>Gold Sponsors</div>
+              <div className={sponsorLogos}>
+                <StaticImage src="images/sponsors_rbc.png" style={{ height: "100%" }} objectFit="contain" />
+              </div>
             </div>
-            <div>Bronze Sponsors</div>
             <div>
-              <StaticImage src="images/sponsors_td.png" style={{ height: "100%" }} objectFit="contain" />
+              <div>Silver Sponsors</div>
+              <div>
+                <div className={sponsorLogos}>
+                  <StaticImage src="images/sponsors_cibc.jpg" style={{ height: "100%" }} objectFit="contain" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>Bronze Sponsors</div>
+              <div>
+                <div className={sponsorLogos}>
+                  <StaticImage src="images/sponsors_td.png" style={{ height: "100%" }} objectFit="contain" />
+                </div>
+              </div>
             </div>
           </div>
         </div>

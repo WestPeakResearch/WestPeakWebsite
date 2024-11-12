@@ -73,14 +73,14 @@
 
 .sponsors {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  line-height: 5em;
   gap: 0.5em;
-  grid-template-rows: 5em 5em 5em;
 }
 
 .sponsorLogos {
+  padding: 1em;
+  height: 8em;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -113,7 +113,6 @@
 
   .sponsors {
     grid-template-columns: 1fr;
-    grid-template-rows: 4em 5em 4em 5em 4em 5em;
   }
 }
 
