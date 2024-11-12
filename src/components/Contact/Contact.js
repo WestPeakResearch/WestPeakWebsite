@@ -1,14 +1,15 @@
 import React, { useRef } from "react"
 import {
-  header,
   container,
   infoContainer,
+  image,
   firstName,
   lastName,
   email,
   textarea,
   buttons,
   button,
+  section,
   submit,
   socials,
   socialsIcons,
@@ -22,6 +23,7 @@ import { classNames } from "primereact/utils"
 import FacebookLogo from "../../images/facebook.svg"
 import LinkedinLogo from "../../images/linkedin.svg"
 import InstagramLogo from "../../images/instagram.svg"
+import { StaticImage } from "gatsby-plugin-image"
 
 function Contact() {
   const successToast = useRef(null)
@@ -114,144 +116,148 @@ function Contact() {
   }
 
   return (
-    <div>
-      <h2 className={header}>
-        Please fill out the contact form below or email us at
-        &#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#119;&#101;&#115;&#116;&#112;&#101;&#97;&#107;&#114;&#101;&#115;&#101;&#97;&#114;&#99;&#104;&#46;&#99;&#111;&#109;
-      </h2>
-      <Formik
-        initialValues={formik.initialValues}
-        validate={formik.validate}
-        onSubmit={formik.onSubmit}
-      >
-        <Form
-          className={container}
-          name="contact"
-          method="post"
-          data-netlify={true}
-          onSubmit={formik.handleSubmit}
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <Toast ref={successToast} />
-          <Toast ref={errorToast} />
+    <div className={container}>
+      <div className={section}>
+        <div>
+          <h1>Chat With Us</h1>
+          <p>
+            If you want to chat with our team, please fill out the contact form below or email us at
+            &#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#119;&#101;&#115;&#116;&#112;&#101;&#97;&#107;&#114;&#101;&#115;&#101;&#97;&#114;&#99;&#104;&#46;&#99;&#111;&#109;.
+          </p>
+          <Formik
+            initialValues={formik.initialValues}
+            validate={formik.validate}
+            onSubmit={formik.onSubmit}
+          >
+            <Form
+              name="contact"
+              method="post"
+              data-netlify={true}
+              onSubmit={formik.handleSubmit}
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <Toast ref={successToast} />
+              <Toast ref={errorToast} />
 
-          <div className={infoContainer}>
-            <div className={firstName}>
-              <span className="p-float-label">
-                <InputText
-                  id="first-name"
-                  name="first_name"
-                  value={formik.values.first_name}
-                  onChange={e => onChange("first_name", e)}
-                  className={classNames({
-                    "p-invalid": isFormFieldInvalid("first_name"),
-                  })}
+              <div className={infoContainer}>
+                <div className={firstName}>
+                  <span className="p-float-label">
+                    <InputText
+                      id="first-name"
+                      name="first_name"
+                      value={formik.values.first_name}
+                      onChange={e => onChange("first_name", e)}
+                      className={classNames({
+                        "p-invalid": isFormFieldInvalid("first_name"),
+                      })}
+                    />
+                    <label id="first-name-label" htmlFor="first-name">
+                      First Name
+                    </label>
+                  </span>
+                </div>
+
+                <div className={lastName}>
+                  <span className="p-float-label">
+                    <InputText
+                      id="last-name"
+                      name="last_name"
+                      value={formik.values.last_name}
+                      onChange={e => onChange("last_name", e)}
+                      className={classNames({
+                        "p-invalid": isFormFieldInvalid("last_name"),
+                      })}
+                    />
+                    <label id="last-name-label" htmlFor="last-name">
+                      Last Name
+                    </label>
+                  </span>
+                </div>
+
+                <div className={email}>
+                  <span className="p-float-label">
+                    <InputText
+                      id="email"
+                      name="email"
+                      value={formik.values.email}
+                      onChange={e => onChange("email", e)}
+                      className={classNames({
+                        "p-invalid": isFormFieldInvalid("email"),
+                      })}
+                    />
+                    <label id="email-label" htmlFor="email">
+                      Email
+                    </label>
+                  </span>
+                </div>
+              </div>
+
+              <div className={textarea}>
+                <span className="p-float-label">
+                  <InputTextarea
+                    id="message"
+                    name="message"
+                    value={formik.values.message}
+                    onChange={e => onChange("message", e)}
+                    className={classNames({
+                      "p-invalid": isFormFieldInvalid("message"),
+                    })}
+                  />
+                  <label id="message-label" htmlFor="message">
+                    Type your message here
+                  </label>
+                </span>
+              </div>
+
+              <div>{getErrors()}</div>
+
+              <div className={buttons}>
+                <Button
+                  className={button}
+                  type="reset"
+                  label="Clear"
+                  onClick={clearForm}
                 />
-                <label id="first-name-label" htmlFor="first-name">
-                  First Name
-                </label>
-              </span>
-            </div>
-
-            <div className={lastName}>
-              <span className="p-float-label">
-                <InputText
-                  id="last-name"
-                  name="last_name"
-                  value={formik.values.last_name}
-                  onChange={e => onChange("last_name", e)}
-                  className={classNames({
-                    "p-invalid": isFormFieldInvalid("last_name"),
-                  })}
+                <Button
+                  className={button + " " + submit}
+                  type="submit"
+                  label="Submit"
                 />
-                <label id="last-name-label" htmlFor="last-name">
-                  Last Name
-                </label>
-              </span>
-            </div>
+              </div>
+            </Form>
+          </Formik>
+        </div>
+        <StaticImage className={image} src="images/media_contact.jpg" />
+      </div>
 
-            <div className={email}>
-              <span className="p-float-label">
-                <InputText
-                  id="email"
-                  name="email"
-                  value={formik.values.email}
-                  onChange={e => onChange("email", e)}
-                  className={classNames({
-                    "p-invalid": isFormFieldInvalid("email"),
-                  })}
-                />
-                <label id="email-label" htmlFor="email">
-                  Email
-                </label>
-              </span>
-            </div>
-          </div>
-
-          <div className={textarea}>
-            <span className="p-float-label">
-              <InputTextarea
-                id="message"
-                name="message"
-                value={formik.values.message}
-                onChange={e => onChange("message", e)}
-                className={classNames({
-                  "p-invalid": isFormFieldInvalid("message"),
-                })}
-              />
-              <label id="message-label" htmlFor="message">
-                Type your message here
-              </label>
-            </span>
-          </div>
-
-          <div>{getErrors()}</div>
-
-          <div className={buttons}>
-            <Button
-              className={button}
-              type="reset"
-              label="Clear"
-              onClick={clearForm}
-            />
-            <Button
-              className={button + " " + submit}
-              type="submit"
-              label="Submit"
-            />
-          </div>
-
-          <div className={socials}>
-            <h3>
-              Make sure to follow our socials to stay up to date on events and
-              hiring!
-            </h3>
-            <div className={socialsIcons}>
-              <a
-                href="https://www.facebook.com/WestPeakResearch/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={FacebookLogo} alt="Facebook" />
-              </a>
-              <a
-                href="https://www.instagram.com/westpeakresearch/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={InstagramLogo} alt="Instagram" />
-              <a
-                href="https://linkedin.com/company/westpeak-research"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={LinkedinLogo} alt="Linkedin" />
-              </a>
-              </a>
-            </div>
-          </div>
-        </Form>
-      </Formik>
+      <div className={socials}>
+        <h3>
+          Make sure to follow our socials to stay up to date!
+        </h3>
+        <div className={socialsIcons}>
+          <a
+            href="https://www.facebook.com/WestPeakResearch/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={FacebookLogo} alt="Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com/westpeakresearch/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={InstagramLogo} alt="Instagram" />
+            <a
+              href="https://linkedin.com/company/westpeak-research"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={LinkedinLogo} alt="Linkedin" />
+            </a>
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

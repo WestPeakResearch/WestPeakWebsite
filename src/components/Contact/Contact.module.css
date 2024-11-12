@@ -1,14 +1,7 @@
 .container {
   margin: 0 auto;
   width: 80%;
-  padding-bottom: 2rem;
-}
-
-.container h2 {
-  text-align: center;
-  margin: 1rem auto;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.07);
+  padding: 2rem;
 }
 
 .header {
@@ -58,6 +51,8 @@
 .socials {
   margin-top: 1.5rem;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .socialsIcons img {
@@ -68,7 +63,19 @@
 }
 
 .socialsIcons {
-  margin-left: 7%;
+  margin-left: 5%;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.image {
+  aspect-ratio: 3 / 2;
+  border-radius: 10px;
+  margin: auto;
 }
 
 @media screen and (max-width: 1068px) {
@@ -78,5 +85,13 @@
 
   .socials h3 {
     font-size: 1.2rem;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    order: -1;
   }
 }
