@@ -87,7 +87,7 @@ function Home() {
         </FadeInBox>
         <FadeInBox>
           <div className={accomplishments}>
-            <IncreasingBox to={new Date().getFullYear() - new Date("2014-09-01").getFullYear()}>
+            <IncreasingBox to={new Date((new Date()).valueOf() - (new Date("2014-09-01")).valueOf()).getFullYear() - 1970}>
               Years since inception
             </IncreasingBox>
             <IncreasingBox to={researchCount}>
