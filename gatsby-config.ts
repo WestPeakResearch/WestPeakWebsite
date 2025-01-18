@@ -7,6 +7,7 @@ module.exports = {
     description: `WestPeak Research Association`,
     author: `Hasan Altaf`,
   },
+  graphqlTypegen: true,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

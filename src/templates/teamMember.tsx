@@ -15,11 +15,11 @@ import {
 import Layout from "../components/Layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export default function teamMember({ data }) {
+export default function teamMember({ data }: { data: Queries.teamMemberQuery }) {
   const post = data.markdownRemark
   const research = post.frontmatter.research
 
-  const getResearchButtonLabel = paper => {
+  const getResearchButtonLabel = (paper: string) => {
     const industryPrefixes = ["CR", "NR", "REGL", "TMT"]
     const prefix = paper.substr(0, paper.indexOf("_"))
     let label = prefix
@@ -80,7 +80,7 @@ export default function teamMember({ data }) {
   )
 }
 export const query = graphql`
-  query ($slug: String!) {
+  query teamMember($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

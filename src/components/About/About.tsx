@@ -12,8 +12,8 @@ import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import BlurredBackground from "../ui/BlurredBackground/BlurredBackground"
 
 function About() {
-  const data = useStaticQuery(graphql`
-    query aboutQuery {
+  const data: Queries.AboutQuery = useStaticQuery(graphql`
+    query About {
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "about" } } }
         sort: { frontmatter: { order: ASC } }
@@ -53,32 +53,31 @@ function About() {
     <div className={container}>
       <div className={content}>
         <FadeInBox>
-          <span dangerouslySetInnerHTML={{ __html: ourMission }} />
+          <span dangerouslySetInnerHTML={{ __html: ourMission! }} />
         </FadeInBox>
       </div>
       <BlurredBackground url="/background/lionsgate.jpg">
         <FadeInBox>
           <div className={content}>
-            <span dangerouslySetInnerHTML={{ __html: ourStory }} />
+            <span dangerouslySetInnerHTML={{ __html: ourStory! }} />
           </div>
         </FadeInBox>
       </BlurredBackground>
       <div className={content}>
         <FadeInBox>
-          <span dangerouslySetInnerHTML={{ __html: ourStrategy }} />
+          <span dangerouslySetInnerHTML={{ __html: ourStrategy! }} />
         </FadeInBox>
         {strategies.map(node => (
           <FadeInBox>
             <div className={strategyCard}>
-              <h3>{node.frontmatter.name}</h3>
-              <span dangerouslySetInnerHTML={{ __html: node.html }} />
+              <h3>{node.frontmatter!.name}</h3>
+              <span dangerouslySetInnerHTML={{ __html: node.html! }} />
               <section className={images}>
-                {node.frontmatter.images.map(image => (
+                {node.frontmatter?.images!.map(image => (
                   <GatsbyImage
                     className={media}
-                    image={getImage(image.childImageSharp)}
-                    fadeIn
-                    alt={node.frontmatter.name}
+                    image={getImage(image!.childImageSharp!)!}
+                    alt={node.frontmatter!.name!}
                   />
                 ))}
               </section>

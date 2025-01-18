@@ -15,8 +15,8 @@ import EventComponent from "./EventComponent"
 import { DateTime } from "luxon"
 
 function Events() {
-  const data = useStaticQuery(graphql`
-    query eventsQuery {
+  const data: Queries.EventsQuery = useStaticQuery(graphql`
+    query Events {
       allMarkdownRemark(
         filter: { frontmatter: { type: { in: "events" } } }
         sort: { frontmatter: { date: ASC } }
@@ -36,7 +36,7 @@ function Events() {
     }
   `)
   const today = DateTime.now().startOf("day").setZone('America/Vancouver')
-  const events = data.allMarkdownRemark.nodes.filter(e => DateTime.fromISO(e.frontmatter.date).setZone('America/Vancouver') >= today)
+  const events = data.allMarkdownRemark.nodes.filter(e => DateTime.fromISO(e.frontmatter!.date!).setZone('America/Vancouver') >= today)
 
   return (
     <>

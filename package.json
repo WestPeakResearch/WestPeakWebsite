@@ -13,7 +13,7 @@
     "gatsby": "^5.14.1",
     "gatsby-plugin-catch-links": "^5.13.1",
     "gatsby-plugin-google-analytics": "^5.13.1",
-    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-offline": "^6.13.1",
     "gatsby-plugin-react-helmet": "^6.13.1",
@@ -44,9 +44,12 @@
     "typography": "^0.16.24"
   },
   "devDependencies": {
+    "@types/luxon": "^3.4.2",
     "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
+    "@types/react-headroom": "^3.2.3",
+    "@types/react-helmet": "^6.1.11",
     "prettier": "^3.2.5",
     "typescript": "^5.7.3"
   },

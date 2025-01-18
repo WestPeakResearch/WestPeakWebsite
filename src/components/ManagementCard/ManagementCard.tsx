@@ -9,7 +9,7 @@ import {
 import { Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-function ManagementCard(props) {
+function ManagementCard(props: any) {
   return (
     <>
       <div className={card}>
@@ -17,7 +17,6 @@ function ManagementCard(props) {
           <div className={cardImageContainer}>
             <GatsbyImage
               image={props.member.headshot.childImageSharp.gatsbyImageData}
-              fadeIn
               alt={props.member.name}
             />
           </div>

@@ -10,9 +10,9 @@ import {
   searchBar,
 } from "./Research.module.css"
 import { useStaticQuery, graphql } from "gatsby"
-import { Dropdown } from "primereact/dropdown"
+import { Dropdown, DropdownChangeEvent } from "primereact/dropdown"
 import { InputText } from "primereact/inputtext"
-import { Paginator } from "primereact/paginator"
+import { Paginator, PaginatorPageChangeEvent } from "primereact/paginator"
 import "primereact/resources/themes/bootstrap4-light-blue/theme.css"
 import "primereact/resources/primereact.min.css"
 import "primeicons/primeicons.css"
@@ -54,9 +54,9 @@ function Research() {
   `)
 
   const [year, setYear] = useState(-1)
-  const [years, setYears] = useState(null)
+  const [years, setYears] = useState<{ label: string, value: number }[] | undefined>(undefined)
   const [researchType, setResearchType] = useState(REPORT_TYPES.all)
-  const [search, setSearch] = useState(null)
+  const [search, setSearch] = useState<string | null>(null)
   const research = data.allMarkdownRemark.nodes
   const researchOptions = [
     { label: "All Research", value: REPORT_TYPES.all },
@@ -74,30 +74,30 @@ function Research() {
     years.push({ label: "All Years", value: -1 })
     let startYear = EQUITY_START_YEAR
     for (var i = CURRENT_YEAR; i >= startYear; i--) {
-      years.push({ label: i, value: i })
+      years.push({ label: String(i), value: i })
     }
     setYears(years)
   }, [])
 
-  const handleResearchSelect = event => {
+  const handleResearchSelect = (event: DropdownChangeEvent) => {
     event.preventDefault()
     setResearchType(event.target.value)
   }
 
-  function handleYearSelect(event) {
+  function handleYearSelect(event: DropdownChangeEvent) {
     event.preventDefault()
-    setYear(event.target.value)
+    setYear(Number(event.target.value))
   }
 
-  function handleSearch(event) {
+  function handleSearch(event: React.ChangeEvent<HTMLInputElement>) {
     event.preventDefault()
     setSearch(event.target.value)
   }
 
-  function onPageChange(event) {
+  function onPageChange(event: PaginatorPageChangeEvent) {
     setStartIndex(event.first)
     setTimeout(() => {
-      document.getElementById("research").scrollIntoView({ behavior: "smooth" });
+      document.getElementById("research")!.scrollIntoView({ behavior: "smooth" });
     }, 40)
   }
 
@@ -162,14 +162,14 @@ function Research() {
   )
 }
 
-function FilteredReports({ research, year, researchType, search, startIndex, itemsPerPage, setReportCount }) {
-  const filteredByYear = research.filter(paper => {
+function FilteredReports({ research, year, researchType, search, startIndex, itemsPerPage, setReportCount }: any) {
+  const filteredByYear = research.filter((paper: any) => {
     if (year === -1) {
       return true
     }
     return new Date(paper.frontmatter.date).getFullYear() === year
   })
-  const filteredByType = filteredByYear.filter(isResearch => {
+  const filteredByType = filteredByYear.filter((isResearch: any) => {
     if (researchType === REPORT_TYPES.all) {
       return true
     }
@@ -181,7 +181,7 @@ function FilteredReports({ research, year, researchType, search, startIndex, ite
     }
     return isResearch.frontmatter.isIndustryResearch !== "true"
   })
-  const filteredResearch = filteredByType.filter(res => {
+  const filteredResearch = filteredByType.filter((res: any) => {
     if (!search) {
       return true
     }
@@ -204,7 +204,7 @@ function FilteredReports({ research, year, researchType, search, startIndex, ite
   return (
     <div>
       {filteredResearch.length > 0 ? (
-        filteredResearch.slice(startIndex, startIndex+itemsPerPage).map((paper, index) => {
+        filteredResearch.slice(startIndex, startIndex+itemsPerPage).map((paper: any, index: any) => {
           return (
             <div key={index}>
               <ResearchComponent report={paper.frontmatter} />
