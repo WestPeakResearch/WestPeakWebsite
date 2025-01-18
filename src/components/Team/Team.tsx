@@ -12,11 +12,11 @@ import {
 import { useStaticQuery, graphql } from "gatsby"
 import ManagementCard from "../ManagementCard"
 import AlumniTable from "../AlumniTable"
-import { Dropdown } from "primereact/dropdown"
+import { Dropdown, DropdownChangeEvent } from "primereact/dropdown"
 
 function Team() {
-  const data = useStaticQuery(graphql`
-    query teamQuery {
+  const data: Queries.TeamQuery = useStaticQuery(graphql`
+    query Team {
       allMarkdownRemark(
         filter: { frontmatter: { type: { eq: "team" } } }
         sort: { frontmatter: { name: ASC } }
@@ -62,39 +62,37 @@ function Team() {
 
   useEffect(() => {
     setTeam(
-      localStorage.getItem("team")
-        ? localStorage.getItem("team")
-        : "Management",
+      localStorage.getItem("team") || "Management",
     )
   }, [])
 
   const teamMembers = {
-    Management: team.filter(member => member.frontmatter.management === "True"),
+    Management: team.filter(member => member.frontmatter!.management === "True"),
     "Group Heads": team.filter(
       member =>
-        member.frontmatter.management !== "True" &&
-        member.frontmatter.position.includes("Head"),
+        member.frontmatter!.management !== "True" &&
+        member.frontmatter!.position!.includes("Head"),
     ),
     "Senior Analysts": team.filter(
       member =>
-        member.frontmatter.management !== "True" &&
-        member.frontmatter.position.includes("Senior Analyst"),
+        member.frontmatter!.management !== "True" &&
+        member.frontmatter!.position!.includes("Senior Analyst"),
     ),
     "Junior Analysts": team.filter(
       member =>
-        member.frontmatter.management !== "True" &&
-        member.frontmatter.position.includes("Junior Analyst"),
+        member.frontmatter!.management !== "True" &&
+        member.frontmatter!.position!.includes("Junior Analyst"),
     ),
     Alumni: [],
   }
 
-  const handleTeamMobileSelect = event => {
+  const handleTeamMobileSelect = (event: DropdownChangeEvent) => {
     event.preventDefault()
     setTeam(event.target.value)
     localStorage.setItem("team", event.target.value)
   }
 
-  function handleMemberButtonClick(event) {
+  function handleMemberButtonClick(event: any) {
     setTeam(event.target.value)
     localStorage.setItem("team", event.target.value)
   }
@@ -132,64 +130,64 @@ function Team() {
             {/*<div className={breakCard}></div> USED FOR 5 PEOPLE TEAMS ONLY */}
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter.position.startsWith("Co-Director"),
+                member.frontmatter!.position!.startsWith("Co-Director"),
               )
               .map((member, index) => (
                 <>
                   <ManagementCard
                     key={index}
                     member={member.frontmatter}
-                    slug={member.fields.slug}
+                    slug={member.fields!.slug}
                   />
                 </>
               ))}
             {/*<div className={breakCard}></div> USED FOR 5 PEOPLE TEAMS ONLY*/}
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter.position.includes("Vice-President"),
+                member.frontmatter!.position!.includes("Vice-President"),
               )
               .map((member, index) => (
                 <>
                   <ManagementCard
                     key={index}
                     member={member.frontmatter}
-                    slug={member.fields.slug}
+                    slug={member.fields!.slug}
                   />
                 </>
               ))}
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter.position.includes("External"),
+                member.frontmatter!.position!.includes("External"),
               )
               .map((member, index) => (
                 <>
                   <ManagementCard
                     key={index}
                     member={member.frontmatter}
-                    slug={member.fields.slug}
+                    slug={member.fields!.slug}
                   />
                 </>
               ))}
             {teamMembers[currTeam]
-              .filter(member => member.frontmatter.position.includes("Tech"))
+              .filter(member => member.frontmatter!.position!.includes("Tech"))
               .map((member, index) => (
                 <>
                   <ManagementCard
                     key={index}
                     member={member.frontmatter}
-                    slug={member.fields.slug}
+                    slug={member.fields!.slug}
                   />
                 </>
               ))}
           </section>
         ) : (
           <section className={cards}>
-            {teamMembers[currTeam].map((member, index) => (
+            {teamMembers[currTeam as keyof typeof teamMembers].map((member, index) => (
               <>
                 <ManagementCard
                   key={index}
                   member={member.frontmatter}
-                  slug={member.fields.slug}
+                  slug={member.fields!.slug}
                 />
               </>
             ))}

@@ -11,16 +11,18 @@ import LinkButton from "../ui/LinkButton/LinkButton"
 import { Button } from "primereact/button";
 import { DateTime } from "luxon";
 
-function EventComponent(props) {
+function EventComponent(props: {
+  event: any
+}) {
   const event = props.event
   const today = DateTime.now().startOf("day").setZone('America/Vancouver')
-  const date = DateTime.fromISO(event.date).setZone('America/Vancouver')
+  const date = DateTime.fromISO(event.date!).setZone('America/Vancouver')
 
   return (
     <div className={eventContainer}>
       <div className={eventDate}>
         <span>{date.toFormat("LLLL dd")}</span>
-        {event.time !== "" ? <span>{event.time}</span> : <></>}
+        <span>{event.time}</span>
       </div>
       <div className={eventDetails}>
         <span className={eventTitle}>{event.title}</span>

@@ -11,13 +11,13 @@ function HiringOpen() {
         <div className={content}>
           <h3>HOW TO APPLY</h3>
           <p>
-            We offer a <bold>Junior Analyst</bold> program and a <bold>Senior Analyst</bold> program.
-            Please refer to our <a href="WPRA_Hiring_Package_2024.pdf" target="_blank"><bold>Hiring Package </bold></a>
+            We offer a <b>Junior Analyst</b> program and a <b>Senior Analyst</b> program.
+            Please refer to our <a href="WPRA_Hiring_Package_2024.pdf" target="_blank"><b>Hiring Package </b></a>
             for more details on each.
           </p>
           <p>
-            Please apply using the button below before <bold>September 20th, 11:59pm PT</bold>.
-            Please note you must be a <bold>UBC Vancouver student</bold>, and may only apply to <bold>one program</bold>.
+            Please apply using the button below before <b>September 20th, 11:59pm PT</b>.
+            Please note you must be a <b>UBC Vancouver student</b>, and may only apply to <b>one program</b>.
           </p>
           <p>
             <LinkButton link="https://forms.gle/G3v846c9srVEfDXAA"
@@ -26,15 +26,15 @@ function HiringOpen() {
           </p>
           <p>
             For a more in depth overview of our programs and to meet the team, we encourage you to
-            <bold> attend one of our upcoming information sessions</bold>:
+            <b> attend one of our upcoming information sessions</b>:
             <ul>
               <li>
-                <bold>September 11, 7:00pm PT, In Person:</bold> <a href="https://forms.gle/A37vHEgJedbe2sAE8">Sign up here!</a>
+                <b>September 11, 7:00pm PT, In Person:</b> <a href="https://forms.gle/A37vHEgJedbe2sAE8">Sign up here!</a>
               </li>
             </ul>
           </p>
         </div>
-        <StaticImage className={image} src="images/media_hiring_analysts.jpg" />
+        <StaticImage alt="analysts" className={image} src="images/media_hiring_analysts.jpg" />
       </div>
       <h3>TIMELINE</h3>
       <ul>
@@ -45,7 +45,7 @@ function HiringOpen() {
         <li>September 23-25: Successful candidates will be contacted for interviews</li>
       </ul>
 
-      <StaticImage src="images/hiring_timeline.png" />
+      <StaticImage alt="timeline" src="images/hiring_timeline.png" />
     </div>
   )
 }

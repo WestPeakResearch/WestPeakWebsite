@@ -26,11 +26,11 @@ import InstagramLogo from "../../images/instagram.svg"
 import { StaticImage } from "gatsby-plugin-image"
 
 function Contact() {
-  const successToast = useRef(null)
-  const errorToast = useRef(null)
+  const successToast = useRef<Toast>(null)
+  const errorToast = useRef<Toast>(null)
 
   const showSuccessToast = () => {
-    successToast.current.show({
+    successToast.current!.show({
       severity: "success",
       summary: "Form Submitted",
       detail: "We'll get back to you as soon as possible!",
@@ -38,7 +38,7 @@ function Contact() {
   }
 
   const showErrorToast = () => {
-    errorToast.current.show({
+    errorToast.current!.show({
       severity: "error",
       summary: "Form Not Submitted",
       detail:
@@ -46,7 +46,12 @@ function Contact() {
     })
   }
 
-  const formik = useFormik({
+  const formik = useFormik<{
+    first_name: string;
+    last_name: string;
+    email: string;
+    message: string;
+  }>({
     initialValues: {
       first_name: "",
       last_name: "",
@@ -54,7 +59,12 @@ function Contact() {
       message: "",
     },
     validate: data => {
-      let errors = {}
+      let errors: {
+        first_name?: string;
+        last_name?: string;
+        email?: string;
+        message?: string;
+      } = {}
 
       if (!data.first_name) errors.first_name = "First name is required."
       if (!data.last_name) errors.last_name = "Last name is required."
@@ -71,7 +81,7 @@ function Contact() {
       })
         .then(response => {
           if (!response.ok) {
-            throw new Error(response.status)
+            throw new Error(String(response.status))
           } else {
             showSuccessToast()
             clearForm()
@@ -84,10 +94,10 @@ function Contact() {
     },
   })
 
-  const isFormFieldInvalid = name =>
-    !!(formik.touched[name] && formik.errors[name])
+  const isFormFieldInvalid = (name: string) =>
+    !!(formik.touched[name as keyof typeof formik.touched] && formik.errors[name as keyof typeof formik.errors])
 
-  const onChange = (fieldName, event) =>
+  const onChange = (fieldName: string, event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
     formik.setFieldValue(fieldName, event.target.value)
 
   const clearForm = () => {
@@ -109,9 +119,15 @@ function Contact() {
     )
   }
 
-  const encode = data => {
+  const encode = (data: {
+    first_name: string;
+    last_name: string;
+    email: string;
+    message: string;
+    "form-name": string;
+  }) => {
     return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key as keyof typeof data]))
       .join("&")
   }
 
@@ -126,8 +142,40 @@ function Contact() {
           </p>
           <Formik
             initialValues={formik.initialValues}
-            validate={formik.validate}
-            onSubmit={formik.onSubmit}
+            validate={data => {
+              let errors: {
+                first_name?: string;
+                last_name?: string;
+                email?: string;
+                message?: string;
+              } = {}
+
+              if (!data.first_name) errors.first_name = "First name is required."
+              if (!data.last_name) errors.last_name = "Last name is required."
+              if (!data.email) errors.email = "Email is required."
+              if (!data.message) errors.message = "Message is required."
+
+              return errors
+            }}
+            onSubmit={(data, actions) => {
+              fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...data }),
+              })
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error(String(response.status))
+                  } else {
+                    showSuccessToast()
+                    clearForm()
+                  }
+                })
+                .catch(() => {
+                  showErrorToast()
+                })
+                .finally(() => actions.setSubmitting(false))
+            }}
           >
             <Form
               name="contact"
@@ -227,7 +275,7 @@ function Contact() {
             </Form>
           </Formik>
         </div>
-        <StaticImage className={image} src="images/media_contact.jpg" />
+        <StaticImage alt="contact" className={image} src="images/media_contact.jpg" />
       </div>
 
       <div className={socials}>

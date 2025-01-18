@@ -15,8 +15,8 @@ import EventComponent from "./EventComponent"
 import { DateTime } from "luxon"
 
 function Events() {
-  const data = useStaticQuery(graphql`
-    query eventsQuery {
+  const data: Queries.EventsQuery = useStaticQuery(graphql`
+    query Events {
       allMarkdownRemark(
         filter: { frontmatter: { type: { in: "events" } } }
         sort: { frontmatter: { date: ASC } }
@@ -36,7 +36,7 @@ function Events() {
     }
   `)
   const today = DateTime.now().startOf("day").setZone('America/Vancouver')
-  const events = data.allMarkdownRemark.nodes.filter(e => DateTime.fromISO(e.frontmatter.date).setZone('America/Vancouver') >= today)
+  const events = data.allMarkdownRemark.nodes.filter(e => DateTime.fromISO(e.frontmatter!.date!).setZone('America/Vancouver') >= today)
 
   return (
     <>
@@ -64,10 +64,10 @@ function Events() {
               of women in finance.
             </p>
           </div>
-          <StaticImage className={image} src="images/media_ywib_wp_stock_pitch.jpg" />
+          <StaticImage alt="YWiB x WestPeak Stock Pitch Competition" className={image} src="images/media_ywib_wp_stock_pitch.jpg" />
         </div>
         <div className={section}>
-          <StaticImage className={imageLeft} src="images/media_internal_stock_pitch.jpg" />
+          <StaticImage alt="Internal Stock Pitch" className={imageLeft} src="images/media_internal_stock_pitch.jpg" />
           <div className={sectionContent}>
             <h3>WestPeak Internal Stock Pitch</h3>
             <p>
@@ -85,14 +85,14 @@ function Events() {
             <div>
               <div>Gold Sponsors</div>
               <div className={sponsorLogos}>
-                <StaticImage src="images/sponsors_rbc.png" style={{ height: "100%" }} objectFit="contain" />
+                <StaticImage alt="RBC" src="images/sponsors_rbc.png" style={{ height: "100%" }} objectFit="contain" />
               </div>
             </div>
             <div>
               <div>Silver Sponsors</div>
               <div>
                 <div className={sponsorLogos}>
-                  <StaticImage src="images/sponsors_cibc.jpg" style={{ height: "100%" }} objectFit="contain" />
+                  <StaticImage alt="CIBC" src="images/sponsors_cibc.jpg" style={{ height: "100%" }} objectFit="contain" />
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ function Events() {
               <div>Bronze Sponsors</div>
               <div>
                 <div className={sponsorLogos}>
-                  <StaticImage src="images/sponsors_td.png" style={{ height: "100%" }} objectFit="contain" />
+                  <StaticImage alt="TD" src="images/sponsors_td.png" style={{ height: "100%" }} objectFit="contain" />
                 </div>
               </div>
             </div>

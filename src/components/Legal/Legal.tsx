@@ -4,7 +4,7 @@ import { container } from "./Legal.module.css"
 
 function Legal() {
   const data = useStaticQuery(graphql`
-    query LegalQuery {
+    query Legal {
       allMarkdownRemark(filter: { frontmatter: { title: { eq: "Legal" } } }) {
         nodes {
           html

@@ -3,11 +3,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import { pageCover, pageTitle } from "./PageCover.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-function PageCover(props) {
+function PageCover(props: {title: string, image: string}) {
   const title = props.title
   const image = props.image
-  const data = useStaticQuery(graphql`
-    query {
+  const data: Queries.PageCoverQuery = useStaticQuery(graphql`
+    query PageCover {
       images: allFile(
         filter: {
           extension: { eq: "jpg" }
@@ -36,17 +36,18 @@ function PageCover(props) {
       }
     }
   `)
-  var imageData = data.banner.childImageSharp.gatsbyImageData
+  var imageData = data.banner!.childImageSharp!.gatsbyImageData
   data.images.edges.forEach(node => {
     if (node.node.name === image) {
-      imageData = node.node.childImageSharp.gatsbyImageData
+      imageData = node.node.childImageSharp!.gatsbyImageData
     }
   })
+  imageData.layout = "fullWidth"
 
   return (
     <>
       <div style={{ display: "grid", overflow: "hidden"}} className={pageCover}>
-        <GatsbyImage style={{ gridArea: "1/1", height: "100%"}} layout="fullWidth" loading="eager" alt="" image={imageData} />
+        <GatsbyImage style={{ gridArea: "1/1", height: "100%"}} loading="eager" alt="" image={imageData} />
         <div style={{
           gridArea: "1/1",
           position: "relative",

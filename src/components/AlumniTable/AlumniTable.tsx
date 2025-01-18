@@ -9,15 +9,15 @@ import {
   nameRowTitle,
 } from "./AlumniTable.module.css"
 
-function Alumni(props) {
+function Alumni(props: { data: Queries.AlumniQuery }) {
   return (
     <div className={table}>
       <div style={{ overflowX: "auto" }}>
-        {props.data.edges
-          .toSorted((a, b) => {
+        {(props.data.alumni.edges as any)
+          .toSorted((a: any, b: any) => {
             return b.node.order - a.node.order
           })
-          .map((edge, i) => (
+          .map((edge: any, i: number) => (
             <YearRow
               key={"row" + i}
               year={edge.node.year}
@@ -30,7 +30,7 @@ function Alumni(props) {
   )
 }
 
-function YearRow(props) {
+function YearRow(props: {key: string, year: string, management: any[], gh: any[]}) {
   return (
     <div className={row}>
       <div className={year}>
@@ -100,7 +100,7 @@ function YearRow(props) {
 
 function AlumniTable() {
   const data = useStaticQuery(graphql`
-    query alumniQuery {
+    query Alumni {
       alumni: allAlumniJsonJson {
         edges {
           node {
@@ -119,8 +119,7 @@ function AlumniTable() {
       }
     }
   `)
-  const alumni = data.alumni
-  return <Alumni data={alumni} />
+  return <Alumni data={data} />
 }
 
 export default AlumniTable

@@ -57,11 +57,12 @@ function Home() {
   const alumniCount = 150
   const researchCount = data.research.nodes.length
   const imageData = data.banner.childImageSharp.gatsbyImageData
+  imageData.layout = "fullWidth"
 
   return (
     <>
       <div style={{ display: "grid" }} className={homeCover}>
-        <GatsbyImage style={{ gridArea: "1/1" }} layout="fullWidth" alt="" image={imageData} />
+        <GatsbyImage style={{ gridArea: "1/1" }} alt="" image={imageData} />
         <div className={blur} style={{
           gridArea: "1/1",
           position: "relative",
@@ -69,7 +70,7 @@ function Home() {
           display: "grid"
         }}>
           <div>
-            <GatsbyImage className={homeTitle} image={logo} fadeIn alt="logo" />
+            <GatsbyImage className={homeTitle} image={logo!} alt="logo" />
             <span
               dangerouslySetInnerHTML={{
                 __html: data.allMarkdownRemark.nodes[0].html,
@@ -86,7 +87,7 @@ function Home() {
         </FadeInBox>
         <FadeInBox>
           <div className={accomplishments}>
-            <IncreasingBox to={new Date(new Date() - new Date("2014-09-01")).getFullYear() - 1970}>
+            <IncreasingBox to={new Date().getFullYear() - new Date("2014-09-01").getFullYear()}>
               Years since inception
             </IncreasingBox>
             <IncreasingBox to={researchCount}>

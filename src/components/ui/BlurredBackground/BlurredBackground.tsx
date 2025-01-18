@@ -1,7 +1,7 @@
 import React from "react"
 import { background, blur } from "./BlurredBackground.module.css"
 
-function BlurredBackground({ url, children }) {
+function BlurredBackground({ url, children }: {url: string, children?: React.ReactNode}) {
   return (
     <div
       className={background}

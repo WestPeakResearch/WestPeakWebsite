@@ -4,6 +4,10 @@ Static site built with Gatsby, React and JavaScript.
 
 ### How to Run Locally
 
+Requires `node` and `npm` on the development machine. Production environment currently runs
+Node v22.13.0, development is recommended on this specific version. Changing Node versions
+can be done with `n` (install using `npm install -g n` and then run `n 22.13.0`).
+
 First install all dependencies
 
 ```sh
@@ -29,3 +33,15 @@ More scripts to come.
 
 The GitHub master branch is configured to automatically deploy to Netlify. Check Netlify for 
 build logs or in case of failures.
+
+### Development
+
+Recommended VSCode Extensions:
+
+- JavaScript and TypeScript: https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next
+- GraphQL LSP: https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql
+
+Use of Copilot is recommended.
+
+TypeScript note: GraphQL Types are only generated when `develop` is run. If you seem to be missing GraphQL types,
+run `npm run develop`.

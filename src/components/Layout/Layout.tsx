@@ -4,7 +4,7 @@ import NavBar from "../NavBar"
 import Footer from "../Footer"
 import Headroom from "react-headroom"
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Headroom>

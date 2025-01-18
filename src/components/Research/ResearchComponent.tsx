@@ -8,7 +8,7 @@ import {
 } from "./Research.module.css"
 import { withPrefix } from "gatsby"
 
-function ResearchComponent(props) {
+function ResearchComponent(props: any) {
   const report = props.report
 
   return (

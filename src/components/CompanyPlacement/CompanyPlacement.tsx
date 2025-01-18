@@ -10,8 +10,8 @@ import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 function CompanyPlacement() {
-  const data = useStaticQuery(graphql`
-    query placementsQuery {
+  const data: Queries.CompanyPlacementQuery = useStaticQuery(graphql`
+    query CompanyPlacement {
       images: allFile(
           filter: { absolutePath: { regex: "/placements.+.png/" }}
           sort: { absolutePath: ASC }
@@ -41,7 +41,7 @@ function CompanyPlacement() {
       </div>
       <div className={imageContainer}>
         {
-          images.map((i) => <FadeInBox><GatsbyImage image={i} fadeIn alt="logo" /></FadeInBox>)
+          images.map((i) => <FadeInBox><GatsbyImage image={i!} alt="logo" /></FadeInBox>)
         }
       </div>
     </>
