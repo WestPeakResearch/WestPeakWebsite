@@ -10,7 +10,7 @@
     "dotenv": "^16.4.5",
     "formik": "^2.4.5",
     "framer-motion": "^10.18.0",
-    "gatsby": "^5.13.3",
+    "gatsby": "^5.14.1",
     "gatsby-plugin-catch-links": "^5.13.1",
     "gatsby-plugin-google-analytics": "^5.13.1",
     "gatsby-plugin-image": "^3.13.1",
@@ -32,7 +32,7 @@
     "luxon": "^3.5.0",
     "pngquant-bin": "^8.0.1",
     "primeicons": "^6.0.1",
-    "primereact": "^10.5.1",
+    "primereact": "^10.9.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,7 +44,11 @@
     "typography": "^0.16.24"
   },
   "devDependencies": {
-    "prettier": "^3.2.5"
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "prettier": "^3.2.5",
+    "typescript": "^5.7.3"
   },
   "overrides": {
     "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {

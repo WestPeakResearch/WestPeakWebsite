@@ -41,7 +41,7 @@ function CompanyPlacement() {
       </div>
       <div className={imageContainer}>
         {
-          images.map((i) => <FadeInBox><GatsbyImage image={i} fadeIn alt="logo" /></FadeInBox>)
+          images.map((i) => <FadeInBox><GatsbyImage image={i} alt="logo" /></FadeInBox>)
         }
       </div>
     </>

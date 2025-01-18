@@ -41,7 +41,7 @@ function MinimalBar(props) {
     return (
       <div className={props.className}>
         <a className={mobileBrand} href="/">
-          <GatsbyImage image={logo} fadeIn alt="logo" />
+          <GatsbyImage image={logo} alt="logo" />
         </a>
         <button className={closeButton} onClick={props.onClick}>
           <span style={{ color: props.textColor }}>Menu</span>
@@ -60,10 +60,10 @@ function FullBar(props) {
       <div className={spacer}>
         <div className={navbarImage}>
           <a href="/">
-            <GatsbyImage image={logo} fadeIn alt="logo" />
+            <GatsbyImage image={logo} alt="logo" />
           </a>
         </div>
-        <Links isFull={true} />
+        <Links />
       </div>
     </div>
   )
@@ -78,7 +78,7 @@ function NavMobileMenu(props) {
         <button className={closeButton} onClick={props.onClick}>
           <img src={CloseIcon} alt="close" />
         </button>
-        <Links isFull={false} />
+        <Links />
       </div>
     )
   }
@@ -125,6 +125,7 @@ function Navbar(props) {
   )
 }
 
-const props = () => <Navbar>{props.children}</Navbar>
+// TODO: figure out what the typing is doing here
+const props: any = () => <Navbar>{props.children}</Navbar>
 
 export default props

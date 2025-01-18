@@ -24,10 +24,10 @@ function HiringClosed() {
             industry are encouraged to apply.
           </p>
         </div>
-        <StaticImage className={image} src="images/media_hiring_analysts.jpg" />
+        <StaticImage alt="analysts" className={image} src="images/media_hiring_analysts.jpg" />
       </div>
       <div className={section}>
-        <StaticImage className={imageLeft} src="images/media_hiring_directors.jpg" />
+        <StaticImage alt="directors" className={imageLeft} src="images/media_hiring_directors.jpg" />
         <div className={content}>
           <h3>WHAT WE OFFER</h3>
           <p>

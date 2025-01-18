@@ -46,7 +46,8 @@ function Contact() {
     })
   }
 
-  const formik = useFormik({
+  // TODO: FIX TYPES
+  const formik: any = useFormik({
     initialValues: {
       first_name: "",
       last_name: "",
@@ -54,7 +55,8 @@ function Contact() {
       message: "",
     },
     validate: data => {
-      let errors = {}
+      // TODO: FIX TYPES
+      let errors: any = {}
 
       if (!data.first_name) errors.first_name = "First name is required."
       if (!data.last_name) errors.last_name = "Last name is required."
@@ -71,7 +73,7 @@ function Contact() {
       })
         .then(response => {
           if (!response.ok) {
-            throw new Error(response.status)
+            throw new Error(String(response.status))
           } else {
             showSuccessToast()
             clearForm()
@@ -227,7 +229,7 @@ function Contact() {
             </Form>
           </Formik>
         </div>
-        <StaticImage className={image} src="images/media_contact.jpg" />
+        <StaticImage alt="contact" className={image} src="images/media_contact.jpg" />
       </div>
 
       <div className={socials}>

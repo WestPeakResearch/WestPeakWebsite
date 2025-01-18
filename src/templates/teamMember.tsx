@@ -39,7 +39,7 @@ export default function teamMember({ data }) {
       <div className={container}>
         <div className={member}>
           <div className={memberImage}>
-            <GatsbyImage image={headshot} fadeIn alt="headshot" />
+            <GatsbyImage image={headshot} alt="headshot" />
           </div>
           <div>
             <span className={name}>{post.frontmatter.name}</span>
@@ -60,7 +60,6 @@ export default function teamMember({ data }) {
                     <a
                       rel="noopener noreferrer"
                       href={withPrefix(`${paper}`)}
-                      n
                       target="_blank"
                       key={index}
                       className={researchLink}
