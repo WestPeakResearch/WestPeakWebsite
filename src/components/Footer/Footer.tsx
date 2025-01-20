@@ -28,14 +28,22 @@ function Footer() {
             rel="noreferrer"
           >
             Jocelyn Bachmann
-          </a>{" "}
-          and{" "}
+          </a>
+          ,{" "}
           <a
             href="https://www.linkedin.com/in/hilarylau/"
             target="_blank"
             rel="noreferrer"
           >
             Hilary Lau
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.linkedin.com/in/nathanliou/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Nathan Liou
           </a>
         </div>
       </div>
