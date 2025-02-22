@@ -2,6 +2,8 @@
 
 Static site built with Gatsby, React and JavaScript.
 
+<img width="1423" alt="Screenshot 2025-02-22 at 4 22 37 PM" src="https://github.com/user-attachments/assets/c4dbfeff-ff7e-4f79-aff5-4be795ca80bf" />
+
 ### How to Run Locally
 
 Requires `node` and `npm` on the development machine. Production environment currently runs
