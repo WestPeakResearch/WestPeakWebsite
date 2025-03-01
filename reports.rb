@@ -7,13 +7,15 @@ def main
   name = gets.chomp
 
   filename_ending = "_" + (name.gsub " ", "_") + ".pdf"
-  filename = Dir.glob("*" + filename_ending)[0]
-  print "filename is " + filename
+  full_filename = Dir.glob("./tmp/*#{filename_ending}")[0]
+  filename = full_filename.split("/").last
+
+  puts "filename is " + filename
   
   ticker = filename.split("_")[0]
-  print "ticker is " + ticker
+  puts "ticker is " + ticker
   
-  print "date: "
+  print "date (ex 2025-02-14): "
   date = gets.chomp
 
   print "company: "
@@ -60,7 +62,7 @@ def main
   end
 
   # write markdown
-  md_dest = "./src/content/Reports" + filename.sub("pdf", "md")
+  md_dest = "./src/content/Reports/" + filename.sub("pdf", "md")
   File.write(md_dest, writeback)
   puts "markdown written"
 
