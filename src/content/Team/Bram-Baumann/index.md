@@ -4,7 +4,7 @@ name: "Bram Baumann"
 degree: "Bachelor of International Economics | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["TMHC_Bram_Baumann.pdf"]
 headshot: Bram_Baumann.jpg
 ---
 

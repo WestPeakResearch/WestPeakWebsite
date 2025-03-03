@@ -4,7 +4,7 @@ name: "Raymond Li"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["9992_Raymond_Li.pdf"]
 headshot: Raymond_Li.jpg
 ---
 

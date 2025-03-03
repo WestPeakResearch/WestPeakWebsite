@@ -4,7 +4,7 @@ name: "Arthur Vu"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SAM_Arthur_Vu.pdf"]
 headshot: Arthur_Vu.jpg
 ---
 

@@ -4,7 +4,7 @@ name: "Colin Illing"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SMPL_Colin_Illing.pdf"]
 headshot: Colin_Illing.jpg
 ---
 

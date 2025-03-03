@@ -4,7 +4,7 @@ name: "Alex Hong"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["CPB_Alex_Hong.pdf"]
 headshot: Alex_Hong.jpg
 ---
 
