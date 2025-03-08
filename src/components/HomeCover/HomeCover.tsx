@@ -4,7 +4,6 @@ import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
 import {
   container,
   homeCover,
-  homeTitle,
   accomplishments,
   content,
   section,
@@ -53,7 +52,6 @@ function Home() {
     }
   `)
 
-  const logo = getImage(data.logo.childImageSharp)
   const alumniCount = 150
   const researchCount = data.research.nodes.length
   const imageData = data.banner.childImageSharp.gatsbyImageData
@@ -61,22 +59,19 @@ function Home() {
 
   return (
     <>
-      <div style={{ display: "grid" }} className={homeCover}>
-        <GatsbyImage style={{ gridArea: "1/1" }} alt="" image={imageData} />
+      <div style={{ display: "grid", height: "600px"}} className={homeCover}>
+        <GatsbyImage style={{ gridArea: "1/1"}} alt="" image={imageData} />
         <div className={blur} style={{
           gridArea: "1/1",
           position: "relative",
-          placeItems: "center",
-          display: "grid"
+          display: "flex",
         }}>
-          <div>
-            <GatsbyImage className={homeTitle} image={logo!} alt="logo" />
-            <span
-              dangerouslySetInnerHTML={{
-                __html: data.allMarkdownRemark.nodes[0].html,
-              }}
-            ></span>
-          </div>
+          <span>
+            <h1>UBC's Premier Capital Markets Club</h1>
+            <p>
+              We aim to create quality equity research while enriching education of our members through active peer mentorship and structured training seminars.
+            </p>
+          </span>
         </div>
       </div>
       <div className={container}>

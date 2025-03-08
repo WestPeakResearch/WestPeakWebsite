@@ -3,12 +3,12 @@ import Typography from "typography"
 const typography = new Typography({
   googleFonts: [{
     name: "Inter",
-    styles: ["400", "500", "600", "700", "800"],
+    styles: ["400", "700"],
   }],
   headerFontFamily: ["Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
   "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
   "sans-serif"],
-  bodyFontFamily: ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+  bodyFontFamily: ["Inter", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
   "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
   "sans-serif"],
 })
