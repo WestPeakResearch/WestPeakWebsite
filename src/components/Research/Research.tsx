@@ -27,6 +27,7 @@ const REPORT_TYPES = {
   equity: "Equity Research",
   industry: "Industry Research",
   mna: "M&A Research",
+  aa: "Alternative Assets Research"
 }
 
 function Research() {
@@ -47,6 +48,7 @@ function Research() {
             isIndustryResearch
             industryGroup
             isMNAResearch
+            isAA
           }
         }
       }
@@ -63,6 +65,7 @@ function Research() {
     { label: "Equity Research", value: REPORT_TYPES.equity },
     { label: "Industry Research", value: REPORT_TYPES.industry },
     { label: "M&A Research", value: REPORT_TYPES.mna },
+    { label: "Alternative Assets Research", value: REPORT_TYPES.aa }
   ]
 
   const [itemsPerPage, setItemsPerPage] = useState(30)
@@ -178,6 +181,9 @@ function FilteredReports({ research, year, researchType, search, startIndex, ite
     }
     if (researchType === REPORT_TYPES.mna) {
       return isResearch.frontmatter.isMNAResearch === "true"
+    }
+    if (researchType === REPORT_TYPES.aa) {
+      return isResearch.frontmatter.isAA === "true"
     }
     return isResearch.frontmatter.isIndustryResearch !== "true"
   })

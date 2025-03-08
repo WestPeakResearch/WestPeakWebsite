@@ -4,7 +4,7 @@ name: "Victor Nguyen-Tuong"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["OPCH_Victor_Nguyen-Tuong.pdf"]
 headshot: Victor_Nguyen-Tuong.jpg
 ---
 

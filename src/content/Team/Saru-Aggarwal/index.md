@@ -4,7 +4,7 @@ name: "Saru Aggarwal"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["BYD_Saru_Aggarwal.pdf"]
 headshot: Saru_Aggarwal.jpg
 ---
 
