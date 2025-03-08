@@ -50,6 +50,7 @@
     "@types/react-dom": "^19.0.3",
     "@types/react-headroom": "^3.2.3",
     "@types/react-helmet": "^6.1.11",
+    "@types/typography": "^0.16.8",
     "prettier": "^3.2.5",
     "typescript": "^5.7.3"
   },

@@ -4,14 +4,15 @@ import { m, LazyMotion, domAnimation, easeInOut } from "framer-motion"
 function FadeInBox(props: { className?: string; children?: React.ReactElement; rest?: any }) {
   const sectionVariant = {
     visible: {
+      translateY: 0,
       opacity: 1,
       transition: {
         ease: easeInOut,
         delay: 0.3,
-        duration: 1.25,
+        duration: 1,
       },
     },
-    hidden: { opacity: 0 },
+    hidden: { translateY: 25, opacity: 0 },
   }
 
   return (
