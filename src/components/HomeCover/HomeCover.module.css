@@ -68,6 +68,11 @@
   backdrop-filter: blur(7px);
 }
 
+.glanceSection {
+  background-color: #f7f7f7;
+  color: #0a233d;
+}
+
 @media (max-width: 1000px) {
   .homeCover h1 {
     font-size: 3rem;

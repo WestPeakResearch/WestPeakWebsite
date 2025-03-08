@@ -1,7 +1,7 @@
 import React from "react"
 import { m, LazyMotion, domAnimation, easeInOut } from "framer-motion"
 
-function FadeInBox(props: { className?: string; children?: React.ReactElement; rest?: any }) {
+function FadeInBox(props: { className?: string; children?: any; rest?: any }) {
   const sectionVariant = {
     visible: {
       translateY: 0,

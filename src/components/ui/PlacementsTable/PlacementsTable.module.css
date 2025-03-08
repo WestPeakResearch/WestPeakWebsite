@@ -1,0 +1,30 @@
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(var(--items-per-row), 1fr);
+  gap: 2rem 8%;
+  padding: 0 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.gridImage {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .imageGrid {
+    gap: 2rem 4%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .noMobileGrid {
+    padding: 0;
+  }
+}
+
+.noMobileGrid {
+  grid-template-columns: repeat(var(--items-per-row), 1fr) !important;
+}

@@ -24,6 +24,7 @@ function IncreasingBox({
   useEffect(() => {
     if (inView) {
       animate(from, to, {
+        type: "spring",
         delay: delay,
         duration: duration,
         onUpdate(value) {

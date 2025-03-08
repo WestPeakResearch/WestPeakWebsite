@@ -6,26 +6,26 @@ import {
   description,
   imageContainer,
 } from "./CompanyPlacement.module.css"
-import FadeInBox from "../ui/FadeInBox/FadeInBox"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
+import PlacementsTable from "../ui/PlacementsTable/PlacementsTable"
 
 function CompanyPlacement() {
   const data: Queries.CompanyPlacementQuery = useStaticQuery(graphql`
     query CompanyPlacement {
       images: allFile(
-          filter: { absolutePath: { regex: "/placements.+.png/" }}
+          filter: { absolutePath: { regex: "/placements\/.+(png|jpg|webp)/" }}
           sort: { absolutePath: ASC }
         ) {
         nodes {
           childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, width: 2000)
+            gatsbyImageData(placeholder: BLURRED, width: 1000)
           }
         }
       }
     }
   `)
 
-  const images = data.images.nodes.map((i) => getImage(i.childImageSharp))
+  const images = data.images.nodes.map((i) => getImage(i.childImageSharp)!)
 
   return (
     <>
@@ -40,9 +40,7 @@ function CompanyPlacement() {
         </p>
       </div>
       <div className={imageContainer}>
-        {
-          images.map((i) => <FadeInBox><GatsbyImage image={i!} alt="logo" /></FadeInBox>)
-        }
+        <PlacementsTable images={images} />
       </div>
     </>
   )
