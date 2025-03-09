@@ -15,7 +15,7 @@ import {
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import IncreasingBox from "../ui/IncreasingBox/IncreasingBox"
 import LinkButton from "../ui/LinkButton/LinkButton"
-import PlacementsTable from "../ui/PlacementsTable/PlacementsTable"
+import RandomPlacementsTable from "../ui/PlacementsTable/RandomPlacementsTable"
 
 function Home() {
   const data: Queries.HomeQuery = useStaticQuery(graphql`
@@ -49,7 +49,7 @@ function Home() {
         }
       }
       placements: allFile(
-          filter: { absolutePath: { regex: "/placements\/(goldman|jpmorgan|morganstanley|evercore|cpp|blackrock|blackstone|rbc|cibc|td)/" }}
+          filter: { absolutePath: { regex: "/placements\/.+(jpg|png|webp)/" }}
           sort: { absolutePath: ASC }
         ) {
         nodes {
@@ -181,12 +181,7 @@ function Home() {
         <FadeInBox> 
           <h1>A Higher Standard of Career Success</h1>
         </FadeInBox>
-        <FadeInBox>
-          <PlacementsTable images={placements} homeCover/>
-        </FadeInBox>
-        <FadeInBox>
-          <LinkButton link="/placements" text="See Our Placements" />
-        </FadeInBox>
+          <RandomPlacementsTable images={placements} limit={10} mobileItemsPerRow={4} mobileLimit={8}/>
       </div>
     </>
   )

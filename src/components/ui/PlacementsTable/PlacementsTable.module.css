@@ -18,9 +18,6 @@
   .imageGrid {
     gap: 2rem 4%;
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .noMobileGrid {
     padding: 0;
   }
 }
