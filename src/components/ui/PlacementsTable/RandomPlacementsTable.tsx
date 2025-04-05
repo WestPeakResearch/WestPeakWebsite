@@ -3,10 +3,10 @@ import { IGatsbyImageData, GatsbyImage } from "gatsby-plugin-image"
 import { imageGrid, gridImage } from "./PlacementsTable.module.css"
 import { m, LazyMotion, domAnimation, AnimatePresence } from "framer-motion"
 
-const useWindowSize = () => {
+function useWindowSize() {
   const [windowSize, setWindowSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: typeof window !== 'undefined' ? window.innerWidth : 1200,
+    height: typeof window !== 'undefined' ? window.innerHeight : 800
   })
 
   useEffect(() => {
