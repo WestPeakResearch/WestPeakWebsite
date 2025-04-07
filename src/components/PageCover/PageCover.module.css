@@ -23,6 +23,37 @@
   backdrop-filter: blur(5px);
 }
 
+.pageCoverLong {
+  width: 100%;
+  z-index: 0;
+  line-height: 1.8rem;
+}
+
+.pageTitleLong {  
+  max-width: 800px;
+  margin: 2vh 10% 2vh 10%;
+  padding: 2rem;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.pageTitleLong h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.pageTitleLong p {
+  font-size: 1.5rem;
+}
+
+.blur {
+  backdrop-filter: blur(7px);
+}
+
 @media (max-width: 1000px) {
   .pageTitle {
     font-size: 3rem;

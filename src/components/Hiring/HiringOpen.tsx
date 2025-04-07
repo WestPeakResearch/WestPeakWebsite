@@ -6,7 +6,6 @@ import { container, section, content, image, imageLeft } from "./Hiring.module.c
 function HiringOpen() {
   return (
     <div className={container}>
-      <h2>Applications for the 2024-2025 cohort are open until September 20, 2024.</h2>
       <div className={section}>
         <div className={content}>
           <h3>HOW TO APPLY</h3>
@@ -36,16 +35,19 @@ function HiringOpen() {
         </div>
         <StaticImage alt="analysts" className={image} src="images/media_hiring_analysts.jpg" />
       </div>
-      <h3>TIMELINE</h3>
-      <ul>
-        <li>August 25: Applications Open</li>
-        <li>August 28: Information Session 1 Online, 7:00pm PT</li>
-        <li>September 11: Information Session 2 In Person, 7:00pm PT</li>
-        <li>September 20: Applications Close, 11:59pm PT</li>
-        <li>September 23-25: Successful candidates will be contacted for interviews</li>
-      </ul>
-
-      <StaticImage alt="timeline" src="images/hiring_timeline.png" />
+      <div className={section}>
+        <StaticImage alt="directors" className={imageLeft} src="images/media_hiring_directors.jpg" />
+        <div className={content}>
+          <h3>TIMELINE</h3>
+          <ul>
+            <li>August 25: Applications Open</li>
+            <li>August 28: Information Session 1 Online, 7:00pm PT</li>
+            <li>September 11: Information Session 2 In Person, 7:00pm PT</li>
+            <li>September 20: Applications Close, 11:59pm PT</li>
+            <li>September 23-25: Successful candidates will be contacted for interviews</li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }

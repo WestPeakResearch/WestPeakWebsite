@@ -1,7 +1,9 @@
 .button {
-  color: #113d69 !important;
+  color: var(--custom-button-color, #113d69) !important;
+  border-color: var(--custom-button-color, #113d69) !important;
 }
 
 .button:hover {
-  background-color: rgba(17, 61, 105, 0.1) !important;
+  background-color: color-mix(in srgb, var(--custom-button-color, #113d69) 12%, transparent) !important;
+  border-color: var(--custom-button-color, #113d69) !important;
 }

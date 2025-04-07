@@ -86,9 +86,9 @@ function Home() {
             </FadeInBox>
             <FadeInBox>
               <p>
-                We aim to create quality equity research while enriching
-                education of our members through active peer mentorship and
-                structured training seminars.
+                Creating quality equity research while enriching
+                education through peer mentorship and
+                training seminars.
               </p>
             </FadeInBox>
           </span>

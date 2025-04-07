@@ -20,6 +20,10 @@
   font-size: 4rem;
 }
 
+.homeCover p {
+  font-size: 1.5rem;
+}
+
 .container {
   width: 80%;
   max-width: 1600px;
