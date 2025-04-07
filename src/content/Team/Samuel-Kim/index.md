@@ -4,7 +4,7 @@ name: "Samuel Kim"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["DFH_Samuel_Kim.pdf"]
 headshot: Samuel_Kim.jpg
 ---
 

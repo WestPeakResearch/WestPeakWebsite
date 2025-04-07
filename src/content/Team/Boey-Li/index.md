@@ -4,7 +4,7 @@ name: "Boey Li"
 degree: "Bachelor of International Economics | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["ATZ_Boey_Li.pdf"]
 headshot: Boey_Li.jpg
 ---
 
