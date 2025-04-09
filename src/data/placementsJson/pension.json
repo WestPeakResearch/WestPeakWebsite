@@ -1,7 +1,8 @@
 {
     "title": "Pension Funds",
+    "order": 3,
     "images": [
-        "bdc",
+        "bci",
         "cpp",
         "hoopp",
         "omers",

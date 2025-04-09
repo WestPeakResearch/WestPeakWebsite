@@ -1,8 +1,10 @@
 {
-    "title": "Investment Banking",
+    "title": "Banking",
+    "order": 1,
     "images": [
         "bankofamerica",
         "barclays",
+        "bdc",
         "bmo",
         "cibc",
         "citi",

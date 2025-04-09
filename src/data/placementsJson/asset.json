@@ -1,14 +1,19 @@
 {
-    "title": "Hedge Funds & Long-Only Equities",
+    "title": "Asset Management",
+    "order": 2,
     "images": [
+        "altas",
         "ares",
-        "bci",
+        "bcpartners",
         "blackrock",
+        "blackstone",
         "citadel",
         "connorclarlunn",
         "fidelity",
         "jarislowskyfraser",
         "leithwheeler",
-        "mackenzie"
+        "mackenzie",
+        "oakhill",
+        "silverlake"
     ]
 }

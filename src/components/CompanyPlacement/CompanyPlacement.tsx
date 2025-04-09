@@ -27,6 +27,7 @@ function CompanyPlacement() {
         edges {
           node {
             title
+            order
             images
           }
         }
@@ -42,12 +43,12 @@ function CompanyPlacement() {
   const placementsWithImage = placementsEdges.map(edge => {
     return {
       title: edge.node.title,
+      order: edge.node.order,
       images: edge.node.images?.map(image =>
         image ? getImage(imageMap[image]) : null,
       ),
     }
-  })
-  console.log(placementsWithImage)
+  }).sort((a, b) => (a.order ? a.order : 0) - (b.order ? b.order : 0));
 
   return (
     <>
