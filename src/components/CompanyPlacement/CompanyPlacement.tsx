@@ -48,7 +48,7 @@ function CompanyPlacement() {
         image ? getImage(imageMap[image]) : null,
       ),
     }
-  }).sort((a, b) => (a.order ? a.order : 0) - (b.order ? b.order : 0));
+  }).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
 
   return (
     <>
