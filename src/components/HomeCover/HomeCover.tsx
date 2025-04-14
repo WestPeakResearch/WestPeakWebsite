@@ -1,21 +1,20 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, StaticImage, getImage } from "gatsby-plugin-image"
+import { StaticImage, getImage } from "gatsby-plugin-image"
 import {
   container,
-  homeCover,
   accomplishments,
   content,
   section,
   imgRight,
   imgLeft,
-  blur,
   glanceSection,
 } from "./HomeCover.module.css"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import IncreasingBox from "../ui/IncreasingBox/IncreasingBox"
 import LinkButton from "../ui/LinkButton/LinkButton"
 import RandomPlacementsTable from "../ui/PlacementsTable/RandomPlacementsTable"
+import PageCoverLong from "../PageCover/PageCoverLong"
 
 function Home() {
   const data: Queries.HomeQuery = useStaticQuery(graphql`
@@ -28,30 +27,18 @@ function Home() {
           html
         }
       }
-      logo: file(absolutePath: { regex: "/logo.png/" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, width: 2000)
-        }
-      }
       research: allMarkdownRemark(
         filter: { frontmatter: { type: { in: "report" } } }
         sort: { frontmatter: { date: DESC } }
       ) {
         nodes {
-          frontmatter {
-            isIndustryResearch
-          }
-        }
-      }
-      banner: file(relativePath: { eq: "background.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, quality: 70)
+          id
         }
       }
       placements: allFile(
-          filter: { absolutePath: { regex: "/placements\/.+(jpg|png|webp)/" }}
-          sort: { absolutePath: ASC }
-        ) {
+        filter: { absolutePath: { regex: "/placements/.+(jpg|png|webp)/" } }
+        sort: { absolutePath: ASC }
+      ) {
         nodes {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED, width: 1000)
@@ -61,39 +48,20 @@ function Home() {
     }
   `)
 
-
   const alumniCount = 150
   const researchCount = data.research.nodes.length
-  const imageData = data.banner!.childImageSharp!.gatsbyImageData
-  imageData.layout = "fullWidth"
-  const placements = data.placements.nodes.map((i) => getImage(i.childImageSharp)!)
+  const placements = data.placements.nodes.map(
+    i => getImage(i.childImageSharp)!,
+  )
 
   return (
     <>
-      <div style={{ display: "grid", height: "600px" }} className={homeCover}>
-        <GatsbyImage style={{ gridArea: "1/1" }} alt="" image={imageData} />
-        <div
-          className={blur}
-          style={{
-            gridArea: "1/1",
-            position: "relative",
-            display: "flex",
-          }}
-        >
-          <span>
-            <FadeInBox>
-              <h1>UBC's Premier Capital Markets Club</h1>
-            </FadeInBox>
-            <FadeInBox>
-              <p>
-                Creating quality equity research while enriching
-                education through peer mentorship and
-                training seminars.
-              </p>
-            </FadeInBox>
-          </span>
-        </div>
-      </div>
+      <PageCoverLong
+        title="UBC's Premier Capital Markets Club"
+        image="home"
+        description="Creating quality equity research while enriching education through peer mentorship and training seminars."
+        height="600px"
+      />
       <FadeInBox>
         <div className={section}>
           <div />
@@ -178,10 +146,17 @@ function Home() {
         </div>
       </div>
       <div className={container}>
-        <FadeInBox> 
-          <h1>A Higher Standard of Career Success</h1>
+        <FadeInBox>
+          <h1>Reach New Heights</h1>
         </FadeInBox>
-          <RandomPlacementsTable images={placements} limit={10} mobileItemsPerRow={4} mobileLimit={8}/>
+        <FadeInBox>
+          <RandomPlacementsTable
+            images={placements}
+            limit={10}
+            mobileItemsPerRow={4}
+            mobileLimit={8}
+          />
+        </FadeInBox>
       </div>
     </>
   )

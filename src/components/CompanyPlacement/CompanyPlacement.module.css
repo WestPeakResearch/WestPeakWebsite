@@ -1,8 +1,7 @@
-.content {
+.container {
   margin: 0 auto;
   width: 80%;
-  max-width: 1600px;
-  padding: 1.5rem 1rem;
+  padding: 1rem 2rem;
 }
 
 .title {
@@ -18,7 +17,6 @@
 }
 
 .imageContainer {
-  width: 80%;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -26,13 +24,7 @@
   padding-bottom: 5rem;
 }
 
-@media only screen and (max-width: 1000px) {
-  .imageContainer {
-    width: 95%;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .container {
     width: 95%;
     padding: 1rem;

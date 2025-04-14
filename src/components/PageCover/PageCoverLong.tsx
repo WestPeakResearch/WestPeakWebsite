@@ -2,19 +2,27 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import {
   pageCoverLong,
-  pageTitle,
   pageTitleLong,
-  pageTitleHeader,
   blur,
 } from "./PageCover.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 
-function PageCoverLong(props: { title: string; image: string; description: string; cta?: React.ReactNode }) {
-  const title = props.title
-  const image = props.image
-  const description = props.description
-  const cta = props.cta
+interface PageCoverLongProps {
+  title: string
+  image: string
+  description: string
+  height?: string
+  cta?: React.ReactNode
+}
+
+function PageCoverLong({
+  title,
+  image,
+  description,
+  cta,
+  height = "400px",
+}: PageCoverLongProps) {
   const data: Queries.PageCoverLongQuery = useStaticQuery(graphql`
     query PageCoverLong {
       images: allFile(
@@ -48,37 +56,32 @@ function PageCoverLong(props: { title: string; image: string; description: strin
   imageData.layout = "fullWidth"
 
   return (
-    <>
+    <div style={{ display: "grid", height: height }} className={pageCoverLong}>
+      <GatsbyImage
+        style={{ gridArea: "1/1", height: "100%" }}
+        loading="eager"
+        alt=""
+        image={imageData}
+      />
       <div
-        style={{ display: "grid", height: "450px" }}
-        className={pageCoverLong}
+        className={blur}
+        style={{
+          gridArea: "1/1",
+          position: "relative",
+          display: "flex",
+        }}
       >
-        <GatsbyImage
-          style={{ gridArea: "1/1", height: "100%" }}
-          loading="eager"
-          alt=""
-          image={imageData}
-        />
-        <div
-          className={blur}
-          style={{
-            gridArea: "1/1",
-            position: "relative",
-            display: "flex",
-          }}
-        >
-          <span className={pageTitleLong}>
-            <FadeInBox>
-              <h1 className={pageTitleHeader}>{title}</h1>
-            </FadeInBox>
-            <FadeInBox>
-              <p>{description}</p>
-            </FadeInBox>
-            {cta && <FadeInBox>{cta}</FadeInBox>}
-          </span>
-        </div>
+        <span className={pageTitleLong}>
+          <FadeInBox>
+            <h1>{title}</h1>
+          </FadeInBox>
+          <FadeInBox>
+            <p>{description}</p>
+          </FadeInBox>
+          {cta && <FadeInBox>{cta}</FadeInBox>}
+        </span>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,13 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import {
-  content,
-  title,
+  container,
   description,
   imageContainer,
 } from "./CompanyPlacement.module.css"
 import { getImage } from "gatsby-plugin-image"
 import PlacementsTable from "../ui/PlacementsTable/PlacementsTable"
+import PageCoverLong from "../PageCover/PageCoverLong"
 
 function CompanyPlacement() {
   const data: Queries.CompanyPlacementQuery = useStaticQuery(graphql`
@@ -40,20 +40,26 @@ function CompanyPlacement() {
   }
 
   const placementsEdges = data.placements.edges
-  const placementsWithImage = placementsEdges.map(edge => {
-    return {
-      title: edge.node.title,
-      order: edge.node.order,
-      images: edge.node.images?.map(image =>
-        image ? getImage(imageMap[image]) : null,
-      ),
-    }
-  }).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+  const placementsWithImage = placementsEdges
+    .map(edge => {
+      return {
+        title: edge.node.title,
+        order: edge.node.order,
+        images: edge.node.images?.map(image =>
+          image ? getImage(imageMap[image]) : null,
+        ),
+      }
+    })
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
 
   return (
     <>
-      <div className={content}>
-        <span className={title}>A Higher Standard of Career Success</span>
+      <PageCoverLong
+        title="Placements"
+        description="A Higher Standard of Career Success"
+        image="placements"
+      />
+      <div className={container}>
         <p className={description}>
           At WestPeak, we’re redefining and raising the bar of successful
           careers, and our experiences speak to our commitment to professional
@@ -61,11 +67,14 @@ function CompanyPlacement() {
           and full-time experience at Fortune 500 companies, prestigious firms,
           and unicorn startups.
         </p>
-      </div>
-      <div className={imageContainer}>
-        {placementsWithImage.map(obj => (
-          <PlacementsTable title={obj.title || ""} images={obj.images || []} />
-        ))}
+        <div className={imageContainer}>
+          {placementsWithImage.map(obj => (
+            <PlacementsTable
+              title={obj.title || ""}
+              images={obj.images || []}
+            />
+          ))}
+        </div>
       </div>
     </>
   )

@@ -29,8 +29,7 @@
   line-height: 1.8rem;
 }
 
-.pageTitleLong {  
-  max-width: 800px;
+.pageTitleLong {
   margin: 2vh 10% 2vh 10%;
   padding: 2rem;
   text-align: left;
@@ -39,6 +38,10 @@
   flex-direction: column;
   justify-content: end;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.pageTitleLong div {
+  max-width: 800px;
 }
 
 .pageTitleLong h1 {
@@ -62,13 +65,25 @@
   .pageCover {
     height: 25vh;
   }
+
+  .pageCoverLong h1 {
+    font-size: 3rem;
+  }
+
+  .pageCoverLong span {
+    margin: 2vh auto;
+    width: 95%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pageTitleLong h1 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 500px) {
-  .pageTitle {
-    font-size: 2.5rem;
-  }
-
   .pageCover {
     height: 22vh;
   }

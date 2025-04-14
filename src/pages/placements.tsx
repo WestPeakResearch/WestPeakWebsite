@@ -8,7 +8,6 @@ import CompanyPlacement from "../components/CompanyPlacement"
 const Placements = () => (
   <Layout>
     <SEO title="Placements" />
-    <PageCover title="Placements" image="placements" />
     <CompanyPlacement />
   </Layout>
 )
