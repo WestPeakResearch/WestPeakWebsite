@@ -57,11 +57,11 @@ function Team() {
 
   const team = data.allMarkdownRemark.nodes
 
-  useEffect(() => {
-    setTeam(
-      localStorage.getItem("team") || "Management",
-    )
-  }, [])
+  // useEffect(() => {
+  //   setTeam(
+  //     localStorage.getItem("team") || "Management",
+  //   )
+  // }, [])
 
   // const teamMembers = {
   //   Management: team.filter(member => member.frontmatter!.management === "True"),
