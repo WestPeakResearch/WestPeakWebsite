@@ -147,7 +147,7 @@ function Team() {
             {/*<div className={breakCard}></div> USED FOR 5 PEOPLE TEAMS ONLY*/}
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter!.position!.includes("Vice-President"),
+                member.frontmatter!.position!.startsWith("Vice-President"),
               )
               .map((member, index) => (
                 <>
