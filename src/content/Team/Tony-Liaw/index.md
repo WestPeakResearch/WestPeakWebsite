@@ -1,13 +1,15 @@
 ---
 type: "team"
 name: "Tony Liaw"
-degree: "Bachelor of Commerce - Finance | Year 3"
-position: "Head of Alternative Assets"
-management: "False"
+degree: "Bachelor of Commerce - Finance | Year 4"
+position: "Director"
+management: "True"
 research: ["MGPI_Tony_Liaw.pdf"]
-headshot: tony.jpg
+headshot: Tony_Liaw.jpg
 ---
 
-Tony is a third-year commerce student specializing in Finance at the Sauder School of Business. This past summer, he completed an internship with Scotiabank Global Banking and Markets in Vancouver.
-Through working with WestPeak, he hopes to expand his knowledge of the capital markets, and meet other hard-working and like-minded individuals.
-Outside of school, Tony loves to go to the gym and try new restaurants with friends.
+Tony is a fourth-year Commerce student majoring in Finance. Through WestPeak, he has expanded his knowledge of the capital markets and connected with other hardworking, like-minded individuals.
+
+Tony has completed internships with BCI, OTPP, and Scotiabank. This summer, he will be interning at Evercore in New York, where he got to apply what he learned at WestPeak.
+
+Outside of school and work, Tony enjoys going to the gym, cooking, and trying new restaurants with friends.

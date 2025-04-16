@@ -52,9 +52,6 @@ function Team() {
   const [currTeam, setTeam] = useState("Management")
   const teamMobileOptions = [
     { label: "Management", value: "Management" },
-    { label: "Group Heads", value: "Group Heads" },
-    { label: "Senior Analysts", value: "Senior Analysts" },
-    { label: "Junior Analysts", value: "Junior Analysts" },
     { label: "Alumni", value: "Alumni" },
   ]
 
@@ -66,24 +63,29 @@ function Team() {
     )
   }, [])
 
+  // const teamMembers = {
+  //   Management: team.filter(member => member.frontmatter!.management === "True"),
+  //   "Group Heads": team.filter(
+  //     member =>
+  //       member.frontmatter!.management !== "True" &&
+  //       member.frontmatter!.position!.includes("Head"),
+  //   ),
+  //   "Senior Analysts": team.filter(
+  //     member =>
+  //       member.frontmatter!.management !== "True" &&
+  //       member.frontmatter!.position!.includes("Senior Analyst"),
+  //   ),
+  //   "Junior Analysts": team.filter(
+  //     member =>
+  //       member.frontmatter!.management !== "True" &&
+  //       member.frontmatter!.position!.includes("Junior Analyst"),
+  //   ),
+  //   Alumni: [],
+  // }
+
   const teamMembers = {
     Management: team.filter(member => member.frontmatter!.management === "True"),
-    "Group Heads": team.filter(
-      member =>
-        member.frontmatter!.management !== "True" &&
-        member.frontmatter!.position!.includes("Head"),
-    ),
-    "Senior Analysts": team.filter(
-      member =>
-        member.frontmatter!.management !== "True" &&
-        member.frontmatter!.position!.includes("Senior Analyst"),
-    ),
-    "Junior Analysts": team.filter(
-      member =>
-        member.frontmatter!.management !== "True" &&
-        member.frontmatter!.position!.includes("Junior Analyst"),
-    ),
-    Alumni: [],
+    Alumni: []
   }
 
   const handleTeamMobileSelect = (event: DropdownChangeEvent) => {
@@ -130,7 +132,8 @@ function Team() {
             {/*<div className={breakCard}></div> USED FOR 5 PEOPLE TEAMS ONLY */}
             {teamMembers[currTeam]
               .filter(member =>
-                member.frontmatter!.position!.startsWith("Co-Director"),
+                member.frontmatter!.position!.startsWith("Co-Director") ||
+                member.frontmatter!.position!.startsWith("Director"),
               )
               .map((member, index) => (
                 <>

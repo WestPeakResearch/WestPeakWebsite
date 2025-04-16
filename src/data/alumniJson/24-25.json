@@ -1,0 +1,67 @@
+{
+  "order": 11,
+  "year": "2024-2025",
+  "management": [
+    {
+      "name": "Benjamin Siem",
+      "linkedin": "https://www.linkedin.com/in/benjamin-siem/"
+    },
+    {
+      "name": "Eden Vasica",
+      "linkedin": "https://www.linkedin.com/in/edenvasica/"
+    },
+    {
+      "name": "Shivani Aggarwal",
+      "linkedin": "https://www.linkedin.com/in/aggarwal-shivani/"
+    },
+    {
+      "name": "Gustavo Gongora",
+      "linkedin": "https://www.linkedin.com/in/gustavogongora/"
+    },
+    {
+      "name": "Raghav Bhatia",
+      "linkedin": "https://www.linkedin.com/in/raghavbhatia0611/"
+    },
+    {
+      "name": "Hilary Lau",
+      "linkedin": "https://www.linkedin.com/in/hilarylau/"
+    },
+    {
+      "name": "Nathan Liou",
+      "linkedin": "https://www.linkedin.com/in/nathanliou/"
+    }
+  ],
+  "gh": [
+    {
+      "name": "Anne Zhou",
+      "linkedin": "https://www.linkedin.com/in/annezhouxy/"
+    },
+    {
+      "name": "Benjamin Carter",
+      "linkedin": "https://www.linkedin.com/in/cartergbenjamin/"
+    },
+    {
+      "name": "Bob Han",
+      "linkedin": "https://www.linkedin.com/in/hanbob/"
+    },
+    {
+      "name": "Catherine Wang",
+      "linkedin": "https://www.linkedin.com/in/catherine-wangjiayi/"
+    },
+    {
+      "name": "Josh Bianchini"
+    },
+    {
+      "name": "Leonard Wang",
+      "linkedin": "https://www.linkedin.com/in/leonardnwang/"
+    },
+    {
+      "name": "Rex Cheung",
+      "linkedin": "https://www.linkedin.com/in/shutakcheung/"
+    },
+    {
+      "name": "Tony Liaw",
+      "linkedin": "https://www.linkedin.com/in/tony-liaw-943a5b166/"
+    }
+  ]
+}

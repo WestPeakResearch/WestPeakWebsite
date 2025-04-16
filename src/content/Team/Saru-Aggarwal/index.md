@@ -2,13 +2,15 @@
 type: "team"
 name: "Saru Aggarwal"
 degree: "Bachelor of Commerce - Finance | Year 4"
-position: "Senior Analyst"
-management: "False"
+position: "Director"
+management: "True"
 research: ["BYD_Saru_Aggarwal.pdf"]
 headshot: Saru_Aggarwal.jpg
 ---
 
-Saru is a fourth-year commerce student specializing in Finance with a minor in Economics. This summer, Saru is in Victoria, interning at BCI as a Private Equity Summer Analyst. She joined WestPeak to further her understanding of capital markets and hopes that she can help other students develop a passion for finance.
+Saru is a fourth-year Commerce student specializing in Finance and minoring in Economics. Through WestPeak, she aims to further her understanding of capital markets, form lasting friendships and hopes to help members develop a passion for finance similar to her own.
 
-You will often find Saru hiking, relaxing at the beach or trying out new recipes on the weekends. 
+Saru has completed an internship in Private Equity at BCI, and will be joining CIBC Capital Markets in their investment banking team this summer.
+
+Outside of school and work, Saru enjoys hiking, relaxing at the beach and trying out new recipes in her kitchen.
 
