@@ -85,7 +85,9 @@ function Team() {
   // }
 
   const teamMembers = {
-    Management: team.filter(member => member.frontmatter!.management === "True"),
+    Management: team.filter(
+      member => member.frontmatter!.management === "True",
+    ),
     "Group Heads": team.filter(
       member =>
         member.frontmatter!.management !== "True" &&
@@ -137,9 +139,10 @@ function Team() {
           <section className={cards}>
             <div className={breakCard}></div>
             {teamMembers[currTeam]
-              .filter(member =>
-                member.frontmatter!.position!.startsWith("Co-Director") ||
-                member.frontmatter!.position!.startsWith("Director"),
+              .filter(
+                member =>
+                  member.frontmatter!.position!.startsWith("Co-Director") ||
+                  member.frontmatter!.position!.startsWith("Director"),
               )
               .map((member, index) => (
                 <>
@@ -199,17 +202,38 @@ function Team() {
 
             <div className={breakCard}></div>
           </section>
+        ) : null}
+
+        {currTeam === "Group Heads" ? (
+          <section className={cards}>
+            {teamMembers[currTeam as keyof typeof teamMembers]
+              .sort((a, b) =>
+                a.frontmatter!.position!.localeCompare(b.frontmatter!.position!),
+              )
+              .map((member, index) => (
+                <>
+                  <ManagementCard
+                    key={index}
+                    member={member.frontmatter}
+                    slug={member.fields!.slug}
+                  />
+                </>
+              ),
+            )}
+          </section>
         ) : (
           <section className={cards}>
-            {teamMembers[currTeam as keyof typeof teamMembers].map((member, index) => (
-              <>
-                <ManagementCard
-                  key={index}
-                  member={member.frontmatter}
-                  slug={member.fields!.slug}
-                />
-              </>
-            ))}
+            {teamMembers[currTeam as keyof typeof teamMembers].map(
+              (member, index) => (
+                <>
+                  <ManagementCard
+                    key={index}
+                    member={member.frontmatter}
+                    slug={member.fields!.slug}
+                  />
+                </>
+              ),
+            )}
           </section>
         )}
 
