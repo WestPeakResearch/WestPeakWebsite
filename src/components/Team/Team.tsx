@@ -202,9 +202,7 @@ function Team() {
 
             <div className={breakCard}></div>
           </section>
-        ) : null}
-
-        {currTeam === "Group Heads" ? (
+        ) : currTeam === "Group Heads" ? (
           <section className={cards}>
             {teamMembers[currTeam as keyof typeof teamMembers]
               .sort((a, b) =>
