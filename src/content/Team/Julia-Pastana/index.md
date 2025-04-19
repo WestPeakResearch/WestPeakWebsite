@@ -1,11 +1,11 @@
 ---
 type: "team"
-name: "Julia Pastena"
+name: "Julia Pastana"
 degree: "Bachelor of Arts - Economics | Year 4"
 position: "Head of Alternative Assets"
 management: "False"
 research: []
-headshot: Julia_Pastena.jpg
+headshot: Julia_Pastana.jpg
 ---
 
 Julia is a fourth-year student majoring in Economics with a minor in Commerce. Through WestPeak, she aims to help fellow UBC students deepen their understanding of the capital markets and gain confidence to break into the Finance industry.
