@@ -8,6 +8,7 @@ import {
 import { getImage } from "gatsby-plugin-image"
 import PlacementsTable from "../ui/PlacementsTable/PlacementsTable"
 import PageCoverLong from "../PageCover/PageCoverLong"
+import FadeInBox from "../ui/FadeInBox/FadeInBox"
 
 function CompanyPlacement() {
   const data: Queries.CompanyPlacementQuery = useStaticQuery(graphql`
@@ -60,13 +61,15 @@ function CompanyPlacement() {
         image="placements"
       />
       <div className={container}>
-        <p className={description}>
-          At WestPeak, we’re redefining and raising the bar of successful
-          careers, and our experiences speak to our commitment to professional
-          development. We have countless members with competitive internships
-          and full-time experience at Fortune 500 companies, prestigious firms,
-          and unicorn startups.
-        </p>
+        <FadeInBox>
+          <p className={description}>
+            At WestPeak, we’re redefining and raising the bar of successful
+            careers, and our experiences speak to our commitment to professional
+            development. We have countless members with competitive internships
+            and full-time experience at Fortune 500 companies, prestigious firms,
+            and unicorn startups.
+          </p>
+        </FadeInBox>
         <div className={imageContainer}>
           {placementsWithImage.map(obj => (
             <PlacementsTable

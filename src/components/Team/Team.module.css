@@ -43,10 +43,10 @@
 }
 
 .cards {
-  grid-column: 2 / span 12;
+  grid-column: 2 / span 16;
   display: grid;
-  grid-template-columns: repeat(12, minmax(auto, 5rem));
-  grid-gap: 5rem;
+  grid-template-columns: repeat(16, minmax(auto, 5rem));
+  grid-gap: max(3vw, 10px);
   padding: 10px 10%;
   justify-content: center;
 }
@@ -71,11 +71,11 @@
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .cards {
-    grid-column: 2 / span 6;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    grid-column: 2 / span 12;
+    grid-template-columns: repeat(12, minmax(auto, 5rem));
+    padding: 0;
   }
 
   .container {
@@ -112,17 +112,22 @@
   .memberButtons {
     display: none;
   }
-}
 
-@media only screen and (max-width: 500px) {
   .cards {
-    grid-column: 2 / span 6;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 20px;
+    grid-column: 2 / span 8;
+    grid-template-columns: repeat(8, minmax(auto, 5rem));
   }
 
   .container {
     margin-left: 5%;
     margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cards {
+    grid-column: 2 / span 4;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
   }
 }

@@ -1,16 +1,16 @@
 ---
 type: "team"
 name: "Colin Illing"
-degree: "Bachelor of Commerce - General | Year 2"
-position: "Junior Analyst"
-management: "False"
+degree: "Bachelor of Commerce - Finance | Year 2"
+position: "Vice-President"
+management: "True"
 research: ["SMPL_Colin_Illing.pdf"]
 headshot: Colin_Illing.jpg
 ---
 
-Colin is a second-year commerce student specializing in finance. He recently joined WestPeak, and is excited to explore his avid interest in the capital markets by learning more about financial modelling, business valuation, and equity research. This summer, Colin is looking for a summer internship, where he can apply his learnings from WestPeak!
+Colin is a second-year Commerce student, specializing in finance. WestPeak offers a platform for him to continue exploring his interest in capital markets and learning from peers.
 
-Outside of school, Colin can be found playing basketball, weightlifting, running, trying local restaurants, watching new movies, and spending time with his family and friends. 
+Colin will be joining Brookfield Properties this summer on their Asset Management team, followed by a 2026 internship with RBC Capital Markets in Investment Banking, both based in his hometown, Calgary. 
 
-He’s excited to contribute to the WestPeak team and learn from the great mentors in the club!
+Outside of academics and work, he’s passionate about running, basketball, and travelling with friends and family.
 

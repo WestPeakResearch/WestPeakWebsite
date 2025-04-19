@@ -52,6 +52,7 @@ function Team() {
   const [currTeam, setTeam] = useState("Management")
   const teamMobileOptions = [
     { label: "Management", value: "Management" },
+    { label: "Group Heads", value: "Group Heads" },
     { label: "Alumni", value: "Alumni" },
   ]
 
@@ -85,7 +86,12 @@ function Team() {
 
   const teamMembers = {
     Management: team.filter(member => member.frontmatter!.management === "True"),
-    Alumni: []
+    "Group Heads": team.filter(
+      member =>
+        member.frontmatter!.management !== "True" &&
+        member.frontmatter!.position!.includes("Head"),
+    ),
+    Alumni: [],
   }
 
   const handleTeamMobileSelect = (event: DropdownChangeEvent) => {
@@ -129,7 +135,7 @@ function Team() {
 
         {currTeam === "Management" ? (
           <section className={cards}>
-            {/*<div className={breakCard}></div> USED FOR 5 PEOPLE TEAMS ONLY */}
+            <div className={breakCard}></div>
             {teamMembers[currTeam]
               .filter(member =>
                 member.frontmatter!.position!.startsWith("Co-Director") ||
@@ -144,7 +150,8 @@ function Team() {
                   />
                 </>
               ))}
-            {/*<div className={breakCard}></div> USED FOR 5 PEOPLE TEAMS ONLY*/}
+            <div className={breakCard}></div>
+            <div className={breakCard}></div>
             {teamMembers[currTeam]
               .filter(member =>
                 member.frontmatter!.position!.startsWith("Vice-President"),
@@ -158,6 +165,7 @@ function Team() {
                   />
                 </>
               ))}
+            <div className={breakCard}></div>
             {teamMembers[currTeam]
               .filter(member =>
                 member.frontmatter!.position!.includes("External"),
@@ -171,6 +179,10 @@ function Team() {
                   />
                 </>
               ))}
+
+            <div className={breakCard}></div>
+
+            <div className={breakCard}></div>
             {teamMembers[currTeam]
               .filter(member => member.frontmatter!.position!.includes("Tech"))
               .map((member, index) => (
@@ -182,6 +194,10 @@ function Team() {
                   />
                 </>
               ))}
+
+            <div className={breakCard}></div>
+
+            <div className={breakCard}></div>
           </section>
         ) : (
           <section className={cards}>
