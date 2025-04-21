@@ -1,8 +1,11 @@
 {
     "title": "Other",
-    "order": 4,
+    "order": 3,
     "images": [
         "amazon",
-        "microsoft"
+        "bain",
+        "microsoft",
+        "robinhood",
+        "shopify"
     ]
 }
