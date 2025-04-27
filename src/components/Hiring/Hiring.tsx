@@ -9,7 +9,7 @@ function Hiring() {
 
   const coverDescription = HIRING_OPEN
     ? "Applications are open until April 24, 2025."
-    : "Applications are currently closed. Please check back August 2025."
+    : "Applications are currently closed."
   const coverCta = HIRING_OPEN ? (
     <LinkButton
       link="https://forms.gle/4DbV5S1KBvSpud3p8"
