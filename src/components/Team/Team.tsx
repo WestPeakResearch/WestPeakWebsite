@@ -96,15 +96,34 @@ function Team() {
     Alumni: [],
   }
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    const team = params.get("team")
+    const validTeams = ["Management", "Group Heads", "Alumni"]
+    if (team && validTeams.includes(team)) {
+        setTeam(team)
+    } else {
+        setTeam("Management")
+        params.set("team", "Management")
+    }
+    window.history.replaceState({}, "", `${window.location.pathname}?${params.toString()}`)
+  }, [])
+
+  const handleTeamChange = (newTeam: string) => {
+    const newParams = new URLSearchParams(window.location.search)
+    newParams.set("team", newTeam)
+    const newUrl = `${window.location.pathname}?${newParams.toString()}`
+    window.history.replaceState({}, "", newUrl)
+    setTeam(newTeam)
+  }
+
   const handleTeamMobileSelect = (event: DropdownChangeEvent) => {
     event.preventDefault()
-    setTeam(event.target.value)
-    localStorage.setItem("team", event.target.value)
+    handleTeamChange(event.value)
   }
 
   function handleMemberButtonClick(event: any) {
-    setTeam(event.target.value)
-    localStorage.setItem("team", event.target.value)
+    handleTeamChange(event.target.value)
   }
 
   return (
