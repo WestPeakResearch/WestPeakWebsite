@@ -4,7 +4,7 @@ name: "Niko Kanagawa"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["CALM_Niko_Kanagawa.pdf"]
 headshot: Niko_Kanagawa.jpg
 ---
 
