@@ -1,16 +1,14 @@
-import React from "react"
-
-import Layout from "../components/Layout"
 import PageCover from "../components/PageCover"
 import SEO from "../components/SEO"
 import Contact from "../components/Contact"
+import contactImage from "@images/banners/contact.jpg"
 
 const ContactPage = () => (
-  <Layout>
-    <SEO title="Contact" />
-    <PageCover title="Contact" image="contact" />
+  <>
+    <SEO title="Contact" meta={[]} />
+    <PageCover title="Contact" image={contactImage} />
     <Contact />
-  </Layout>
+  </>
 )
 
 export default ContactPage

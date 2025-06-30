@@ -1,5 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import {
   content,
   title,
@@ -10,7 +9,6 @@ import {
   sponsors,
   sponsorLogos
 } from "./Events.module.css"
-import { StaticImage } from "gatsby-plugin-image"
 import EventComponent from "./EventComponent"
 import { DateTime } from "luxon"
 

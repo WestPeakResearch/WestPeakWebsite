@@ -5,28 +5,12 @@
   "version": "1.0.0",
   "author": "Hasan Altaf <hasanaltaf2001@gmail.com>",
   "dependencies": {
+    "buffer": "^6.0.3",
     "caniuse-lite": "^1.0.30001667",
     "deepmerge": "^4.3.1",
     "dotenv": "^16.4.5",
     "formik": "^2.4.5",
     "framer-motion": "^10.18.0",
-    "gatsby": "^5.14.1",
-    "gatsby-plugin-catch-links": "^5.13.1",
-    "gatsby-plugin-google-analytics": "^5.13.1",
-    "gatsby-plugin-image": "^3.14.0",
-    "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-offline": "^6.13.1",
-    "gatsby-plugin-react-helmet": "^6.13.1",
-    "gatsby-plugin-sharp": "^5.13.1",
-    "gatsby-plugin-typography": "^5.13.1",
-    "gatsby-react-router-scroll": "^6.13.1",
-    "gatsby-remark-copy-linked-files": "^6.13.1",
-    "gatsby-remark-images": "^7.13.1",
-    "gatsby-source-filesystem": "^5.13.1",
-    "gatsby-transformer-excel": "^5.13.1",
-    "gatsby-transformer-json": "^5.13.1",
-    "gatsby-transformer-remark": "^6.13.1",
-    "gatsby-transformer-sharp": "^5.13.1",
     "imagemin-pngquant": "^9.0.2",
     "install": "^0.13.0",
     "luxon": "^3.5.0",
@@ -39,6 +23,7 @@
     "react-headroom": "^3.2.1",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.12.0",
+    "react-router": "^7.6.3",
     "react-typography": "^0.16.23",
     "rebass": "^4.0.7",
     "typography": "^0.16.24"
@@ -51,13 +36,10 @@
     "@types/react-headroom": "^3.2.3",
     "@types/react-helmet": "^6.1.11",
     "@types/typography": "^0.16.8",
+    "@vitejs/plugin-react": "^4.6.0",
     "prettier": "^3.2.5",
-    "typescript": "^5.7.3"
-  },
-  "overrides": {
-    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
-      "react": "^18.0.0"
-    }
+    "typescript": "^5.7.3",
+    "vite": "^7.0.0"
   },
   "keywords": [
     "gatsby"

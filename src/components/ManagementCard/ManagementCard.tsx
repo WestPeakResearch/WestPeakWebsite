@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
+import { Link } from "react-router"
 import {
   card,
   link,
@@ -6,23 +7,45 @@ import {
   cardContent,
   cardTitle,
 } from "./ManagementCard.module.css"
-import { Link } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { TeamMember } from "../../utils/content"
 
-function ManagementCard(props: any) {
+interface ManagementCardProps {
+  member: TeamMember
+  slug: string
+}
+
+function ManagementCard({ member, slug }: ManagementCardProps) {
+  const [imageUrl, setImageUrl] = useState<string>()
+
+  useEffect(() => {
+    const loadImage = async () => {
+      try {
+        const imageModule = await import(`../../content/Team/${member.slug}/${member.headshot}`)
+        setImageUrl(imageModule.default)
+      } catch (error) {
+        console.warn(`Headshot ${member.headshot} not found for ${member.name}`)
+      }
+    }
+
+    loadImage()
+  }, [member.headshot, member.slug])
+
   return (
     <>
       <div className={card}>
-        <Link to={props.slug} className={link}>
+        <Link to={`/team/${slug}`} className={link}>
           <div className={cardImageContainer}>
-            <GatsbyImage
-              image={props.member.headshot.childImageSharp.gatsbyImageData}
-              alt={props.member.name}
-            />
+            {imageUrl && (
+              <img
+                src={imageUrl}
+                alt={member.name}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            )}
           </div>
           <div className={cardContent}>
             <p className={cardTitle}>
-              {props.member.name} | {props.member.position}
+              {member.name} | {member.position}
             </p>
           </div>
         </Link>

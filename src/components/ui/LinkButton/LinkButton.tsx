@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link } from "react-router"
 import { Button } from "primereact/button"
 import { button } from "./LinkButton.module.css"
 

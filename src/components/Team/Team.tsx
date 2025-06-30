@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
+import { useLoaderData } from "react-router"
 import {
   container,
   memberButtons,
@@ -9,45 +10,17 @@ import {
   mobileDropdown,
   breakCard,
 } from "./Team.module.css"
-import { useStaticQuery, graphql } from "gatsby"
 import ManagementCard from "../ManagementCard"
 import AlumniTable from "../AlumniTable"
 import { Dropdown, DropdownChangeEvent } from "primereact/dropdown"
+import { TeamMember } from "../../utils/content"
+
+interface TeamLoaderData {
+  teamMembers: TeamMember[]
+}
 
 function Team() {
-  const data: Queries.TeamQuery = useStaticQuery(graphql`
-    query Team {
-      allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: "team" } } }
-        sort: { frontmatter: { name: ASC } }
-      ) {
-        nodes {
-          frontmatter {
-            degree
-            management
-            name
-            position
-            research
-            headshot {
-              publicURL
-              childImageSharp {
-                gatsbyImageData(
-                  placeholder: BLURRED
-                  quality: 70
-                  layout: CONSTRAINED
-                  width: 800
-                  height: 1200
-                )
-              }
-            }
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `)
+  const { teamMembers: team } = useLoaderData() as TeamLoaderData
 
   const [currTeam, setTeam] = useState("Management")
   const teamMobileOptions = [
@@ -55,8 +28,6 @@ function Team() {
     { label: "Group Heads", value: "Group Heads" },
     { label: "Alumni", value: "Alumni" },
   ]
-
-  const team = data.allMarkdownRemark.nodes
 
   // useEffect(() => {
   //   setTeam(
@@ -86,14 +57,14 @@ function Team() {
 
   const teamMembers = {
     Management: team.filter(
-      member => member.frontmatter!.management === "True",
+      (member: TeamMember) => member.management === true,
     ),
     "Group Heads": team.filter(
-      member =>
-        member.frontmatter!.management !== "True" &&
-        member.frontmatter!.position!.includes("Head"),
+      (member: TeamMember) =>
+        member.management !== true &&
+        member.position.includes("Head"),
     ),
-    Alumni: [],
+    Alumni: [] as TeamMember[],
   }
 
   useEffect(() => {
@@ -143,8 +114,9 @@ function Team() {
         </div>
 
         <div className={memberButtons}>
-          {Object.keys(teamMembers).map(key => (
+          {Object.keys(teamMembers).map((key: string) => (
             <button
+              key={key}
               onClick={handleMemberButtonClick}
               value={key}
               className={key === currTeam ? activeButton : inactiveButton}
@@ -159,62 +131,54 @@ function Team() {
             <div className={breakCard}></div>
             {teamMembers[currTeam]
               .filter(
-                member =>
-                  member.frontmatter!.position!.startsWith("Co-Director") ||
-                  member.frontmatter!.position!.startsWith("Director"),
+                (member: TeamMember) =>
+                  member.position.startsWith("Co-Director") ||
+                  member.position.startsWith("Director"),
               )
-              .map((member, index) => (
-                <>
-                  <ManagementCard
-                    key={index}
-                    member={member.frontmatter}
-                    slug={member.fields!.slug}
-                  />
-                </>
+              .map((member: TeamMember, index: number) => (
+                <ManagementCard
+                  key={index}
+                  member={member}
+                  slug={member.slug}
+                />
               ))}
             <div className={breakCard}></div>
             <div className={breakCard}></div>
             {teamMembers[currTeam]
-              .filter(member =>
-                member.frontmatter!.position!.startsWith("Vice-President"),
+              .filter((member: TeamMember) =>
+                member.position.startsWith("Vice-President"),
               )
-              .map((member, index) => (
-                <>
-                  <ManagementCard
-                    key={index}
-                    member={member.frontmatter}
-                    slug={member.fields!.slug}
-                  />
-                </>
+              .map((member: TeamMember, index: number) => (
+                <ManagementCard
+                  key={index}
+                  member={member}
+                  slug={member.slug}
+                />
               ))}
             <div className={breakCard}></div>
             {teamMembers[currTeam]
-              .filter(member =>
-                member.frontmatter!.position!.includes("External"),
+              .filter((member: TeamMember) =>
+                member.position.includes("External"),
               )
-              .map((member, index) => (
-                <>
-                  <ManagementCard
-                    key={index}
-                    member={member.frontmatter}
-                    slug={member.fields!.slug}
-                  />
-                </>
+              .map((member: TeamMember, index: number) => (
+                <ManagementCard
+                  key={index}
+                  member={member}
+                  slug={member.slug}
+                />
               ))}
 
             <div className={breakCard}></div>
 
             <div className={breakCard}></div>
             {teamMembers[currTeam]
-              .filter(member => member.frontmatter!.position!.includes("Tech"))
-              .map((member, index) => (
-                <>
-                  <ManagementCard
-                    key={index}
-                    member={member.frontmatter}
-                    slug={member.fields!.slug}
-                  />
-                </>
+              .filter((member: TeamMember) => member.position.includes("Tech"))
+              .map((member: TeamMember, index: number) => (
+                <ManagementCard
+                  key={index}
+                  member={member}
+                  slug={member.slug}
+                />
               ))}
 
             <div className={breakCard}></div>
@@ -224,31 +188,26 @@ function Team() {
         ) : currTeam === "Group Heads" ? (
           <section className={cards}>
             {teamMembers[currTeam as keyof typeof teamMembers]
-              .sort((a, b) =>
-                a.frontmatter!.position!.localeCompare(b.frontmatter!.position!),
+              .sort((a: TeamMember, b: TeamMember) =>
+                a.position.localeCompare(b.position),
               )
-              .map((member, index) => (
-                <>
-                  <ManagementCard
-                    key={index}
-                    member={member.frontmatter}
-                    slug={member.fields!.slug}
-                  />
-                </>
-              ),
-            )}
+              .map((member: TeamMember, index: number) => (
+                <ManagementCard
+                  key={index}
+                  member={member}
+                  slug={member.slug}
+                />
+              ))}
           </section>
         ) : (
           <section className={cards}>
             {teamMembers[currTeam as keyof typeof teamMembers].map(
-              (member, index) => (
-                <>
-                  <ManagementCard
-                    key={index}
-                    member={member.frontmatter}
-                    slug={member.fields!.slug}
-                  />
-                </>
+              (member: TeamMember, index: number) => (
+                <ManagementCard
+                  key={index}
+                  member={member}
+                  slug={member.slug}
+                />
               ),
             )}
           </section>

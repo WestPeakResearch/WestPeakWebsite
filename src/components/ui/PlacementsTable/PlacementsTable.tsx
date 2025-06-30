@@ -1,5 +1,4 @@
 import React from "react"
-import { IGatsbyImageData, GatsbyImage } from "gatsby-plugin-image"
 import {
   imageGrid,
   gridImage,

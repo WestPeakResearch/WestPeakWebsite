@@ -1,5 +1,4 @@
 import React from "react"
-import { graphql, withPrefix } from "gatsby"
 import {
   container,
   member,
@@ -13,7 +12,6 @@ import {
   noResearch,
 } from "./teamMember.module.css"
 import Layout from "../components/Layout"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function teamMember({ data }: { data: Queries.teamMemberQuery }) {
   const post = data.markdownRemark

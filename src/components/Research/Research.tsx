@@ -9,7 +9,6 @@ import {
   noReport,
   searchBar,
 } from "./Research.module.css"
-import { useStaticQuery, graphql } from "gatsby"
 import { Dropdown, DropdownChangeEvent } from "primereact/dropdown"
 import { InputText } from "primereact/inputtext"
 import { Paginator, PaginatorPageChangeEvent } from "primereact/paginator"

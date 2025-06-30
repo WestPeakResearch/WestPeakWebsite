@@ -1,5 +1,4 @@
-import React from "react"
-import { Link } from "gatsby"
+import { Link } from "react-router"
 import { container, text, shoutout, linkText } from "./Footer.module.css"
 
 function Footer() {

@@ -1,11 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React, { useState, useEffect } from "react"
 import {
   pageCoverLong,
   pageTitleLong,
   blur,
 } from "./PageCover.module.css"
-import { GatsbyImage } from "gatsby-plugin-image"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 
 interface PageCoverLongProps {
@@ -23,45 +21,41 @@ function PageCoverLong({
   cta,
   height = "400px",
 }: PageCoverLongProps) {
-  const data: Queries.PageCoverLongQuery = useStaticQuery(graphql`
-    query PageCoverLong {
-      images: allFile(
-        filter: {
-          extension: { eq: "jpg" }
-          relativeDirectory: { eq: "banners" }
-        }
-      ) {
-        edges {
-          node {
-            name
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, quality: 90)
-            }
-          }
-        }
-      }
-      banner: file(relativePath: { eq: "banner.jpg" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, quality: 90)
-        }
+  const [imageUrl, setImageUrl] = useState<string>()
+
+  useEffect(() => {
+    const loadImage = async () => {
+      try {
+        // Try to load the specific banner image
+        const imageModule = await import(`@images/banners/${image}.jpg`)
+        setImageUrl(imageModule.default)
+      } catch (error) {
+        console.warn(`Banner image ${image}.jpg not found, falling back to banner.jpg`)
+        // Fallback to default banner
+        const fallbackModule = await import(`@images/banner.jpg`)
+        setImageUrl(fallbackModule.default)
       }
     }
-  `)
-  var imageData = data.banner!.childImageSharp!.gatsbyImageData
-  data.images.edges.forEach(node => {
-    if (node.node.name === image) {
-      imageData = node.node.childImageSharp!.gatsbyImageData
-    }
-  })
-  imageData.layout = "fullWidth"
+
+    loadImage()
+  }, [image])
+
+  if (!imageUrl) {
+    return null // or a loading spinner
+  }
 
   return (
     <div style={{ display: "grid", height: height }} className={pageCoverLong}>
-      <GatsbyImage
-        style={{ gridArea: "1/1", height: "100%" }}
+      <img
+        style={{ 
+          gridArea: "1/1", 
+          height: "100%", 
+          width: "100%", 
+          objectFit: "cover" 
+        }}
         loading="eager"
         alt=""
-        image={imageData}
+        src={imageUrl}
       />
       <div
         className={blur}

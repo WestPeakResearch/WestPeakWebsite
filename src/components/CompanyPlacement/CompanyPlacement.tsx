@@ -1,11 +1,9 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import {
   container,
   description,
   imageContainer,
 } from "./CompanyPlacement.module.css"
-import { getImage } from "gatsby-plugin-image"
 import PlacementsTable from "../ui/PlacementsTable/PlacementsTable"
 import PageCoverLong from "../PageCover/PageCoverLong"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"

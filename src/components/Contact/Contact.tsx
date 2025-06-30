@@ -23,7 +23,6 @@ import { classNames } from "primereact/utils"
 import FacebookLogo from "../../images/facebook.svg"
 import LinkedinLogo from "../../images/linkedin.svg"
 import InstagramLogo from "../../images/instagram.svg"
-import { StaticImage } from "gatsby-plugin-image"
 
 function Contact() {
   const successToast = useRef<Toast>(null)

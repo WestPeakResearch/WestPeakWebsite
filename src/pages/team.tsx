@@ -1,16 +1,14 @@
-import React from "react"
-
-import Layout from "../components/Layout"
 import Team from "../components/Team"
 import PageCover from "../components/PageCover"
 import SEO from "../components/SEO"
+import teamImage from "@images/banners/team.jpg"
 
 const TeamPage = () => (
-  <Layout>
+  <>
     <SEO title="Team" />
-    <PageCover title="Our Team" image="team" />
+    <PageCover title="Our Team" image={teamImage} />
     <Team />
-  </Layout>
+  </>
 )
 
 export default TeamPage

@@ -6,7 +6,6 @@ import {
   image,
   imageLeft,
 } from "./Hiring.module.css"
-import { StaticImage } from "gatsby-plugin-image"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 
 function HiringClosed() {

@@ -6,7 +6,6 @@ import {
   reportText,
   reportTitle,
 } from "./Research.module.css"
-import { withPrefix } from "gatsby"
 
 function ResearchComponent(props: any) {
   const report = props.report

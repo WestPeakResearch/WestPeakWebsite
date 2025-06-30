@@ -1,6 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {
   container,
   media,
@@ -67,7 +65,7 @@ function About() {
         <FadeInBox>
           <span dangerouslySetInnerHTML={{ __html: ourStrategy! }} />
         </FadeInBox>
-        {strategies.map(node => (
+        {/*strategies.map(node => (
           <FadeInBox>
             <div className={strategyCard}>
               <h3>{node.frontmatter!.name}</h3>
@@ -83,7 +81,7 @@ function About() {
               </section>
             </div>
           </FadeInBox>
-        ))}
+        ))*/}
       </div>
     </div>
   )

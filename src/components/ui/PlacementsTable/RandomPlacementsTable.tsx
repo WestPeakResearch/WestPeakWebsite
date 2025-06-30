@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef, useMemo } from "react"
-import { IGatsbyImageData, GatsbyImage } from "gatsby-plugin-image"
 import { imageGrid, gridImage } from "./PlacementsTable.module.css"
 import { m, LazyMotion, domAnimation, AnimatePresence } from "framer-motion"
 

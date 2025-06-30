@@ -1,16 +1,14 @@
-import React from "react"
-
-import Layout from "../components/Layout"
 import Legal from "../components/Legal"
 import PageCover from "../components/PageCover"
 import SEO from "../components/SEO"
+import legalImage from "@images/banners/about.jpg"
 
 const LegalPage = () => (
-  <Layout>
+  <>
     <SEO title="Legal" />
-    <PageCover title="Legal" />
+    <PageCover title="Legal" image={legalImage} />
     <Legal />
-  </Layout>
+  </>
 )
 
 export default LegalPage

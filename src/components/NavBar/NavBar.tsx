@@ -9,9 +9,9 @@ import {
   navbarMobileMenu,
   spacer,
 } from "./NavBar.module.css"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import CloseIcon from "../../images/close.svg"
+import logo from "@images/logo.png"
+import { Link } from "react-router"
 
 interface ListLinkProps {
   to: string
@@ -36,19 +36,16 @@ const Links = () => (
   </ul>
 )
 
-function MinimalBar(props: { data: Queries.NavbarQuery, show: boolean, className: string, onClick: () => void }) {
+function MinimalBar(props: { show: boolean, className: string, onClick: () => void }) {
   {
-    const data = props.data
     if (!props.show) {
       return null
     } else {
-      const logo = getImage(data.logo!.childImageSharp)!
-
       return (
         <div className={props.className}>
-          <a className={mobileBrand} href="/">
-            <GatsbyImage image={logo} alt="logo" />
-          </a>
+          <Link className={mobileBrand} to="/">
+            <img src={logo} alt="logo" />
+          </Link>
           <button className={closeButton} onClick={props.onClick}>
             <span>Menu</span>
           </button>
@@ -58,17 +55,14 @@ function MinimalBar(props: { data: Queries.NavbarQuery, show: boolean, className
   }
 }
 
-function FullBar(props: { data: Queries.NavbarQuery, className: string }) {
-  const data = props.data
-  const logo = getImage(data.logo!.childImageSharp)!
-
+function FullBar(props: { className: string }) {
   return (
-    <div className={[navbar, navbarDesktop].join(" ")}>
+    <div className={[navbar, navbarDesktop, props.className].join(" ")}>
       <div className={spacer}>
         <div className={navbarImage}>
-          <a href="/">
-            <GatsbyImage image={logo} alt="logo" />
-          </a>
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
         <Links />
       </div>
@@ -92,15 +86,6 @@ function NavMobileMenu(props: { show: boolean, className: string, onClick: () =>
 }
 
 export default function Navbar(props: { className?: string, children?: React.ReactNode }) {
-  const data = useStaticQuery(graphql`
-    query Navbar {
-      logo: file(absolutePath: { regex: "/logo.png/" }) {
-        childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, width: 200)
-        }
-      }
-    }
-  `)
   const [toggled, setToggled] = useState(false)
 
   function handleMenuClick() {
@@ -113,15 +98,11 @@ export default function Navbar(props: { className?: string, children?: React.Rea
 
   return (
     <div>
-      <FullBar
-        className={[navbar, navbarDesktop, props.className].join(" ")}
-        data={data}
-      />
+      <FullBar className={[navbar, navbarDesktop, props.className].join(" ")} />
       <MinimalBar
         className={[navbar, navbarMobile, props.className].join(" ")}
         show={!toggled}
         onClick={handleMenuClick}
-        data={data}
       />
       <NavMobileMenu
         className={[navbarMobileMenu, props.className].join(" ")}

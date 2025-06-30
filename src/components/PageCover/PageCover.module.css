@@ -57,6 +57,27 @@
   backdrop-filter: blur(7px);
 }
 
+/* GatsbyImage replacement styles for regular img tags */
+.gatsbyImageReplacement {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  object-fit: cover;
+  border: 0;
+}
+
+/* Specific variant for cover images that need to fill container */
+.gatsbyImageCover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;
+  border: 0;
+}
+
 @media (max-width: 1000px) {
   .pageTitle {
     font-size: 3rem;

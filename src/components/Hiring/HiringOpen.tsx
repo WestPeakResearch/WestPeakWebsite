@@ -1,6 +1,5 @@
 import React from "react"
 import LinkButton from "../ui/LinkButton/LinkButton"
-import { StaticImage } from "gatsby-plugin-image"
 import { container, section, content, image, imageLeft } from "./Hiring.module.css"
 
 function HiringOpen() {
