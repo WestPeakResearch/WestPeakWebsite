@@ -1,4 +1,3 @@
-import React from "react"
 import {
   table,
   name,
@@ -7,8 +6,10 @@ import {
   nameRow,
   nameRowTitle,
 } from "./AlumniTable.module.css"
+import { AlumniData } from "../../utils/content"
+import { useLoaderData } from "react-router"
 
-function Alumni(props: { data: Queries.AlumniQuery }) {
+function Alumni(props: { data: AlumniData }) {
   return (
     <div className={table}>
       <div style={{ overflowX: "auto" }}>
@@ -97,28 +98,13 @@ function YearRow(props: {key: string, year: string, management: any[], gh: any[]
   )
 }
 
+interface AlumniLoaderData {
+  alumniData: AlumniData
+}
+
 function AlumniTable() {
-  const data = useStaticQuery(graphql`
-    query Alumni {
-      alumni: allAlumniJsonJson {
-        edges {
-          node {
-            order
-            year
-            management {
-              name
-              linkedin
-            }
-            gh {
-              name
-              linkedin
-            }
-          }
-        }
-      }
-    }
-  `)
-  return <Alumni data={data} />
+  const { alumniData } = useLoaderData() as AlumniLoaderData
+  return <Alumni data={alumniData} />
 }
 
 export default AlumniTable

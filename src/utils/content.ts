@@ -32,6 +32,26 @@ export interface AboutStrategy {
   images: string[]
 }
 
+export interface AlumniMember {
+  name: string
+  linkedin: string
+}
+
+export interface AlumniYear {
+  order: number
+  year: string
+  management: AlumniMember[]
+  gh: AlumniMember[]
+}
+
+export interface AlumniData {
+  alumni: {
+    edges: {
+      node: AlumniYear
+    }[]
+  }
+}
+
 // Process markdown files
 export const processMarkdown = async (markdownContent: string, filePath: string): Promise<ContentFile> => {
   const { data: frontmatter, content } = matter(markdownContent)
@@ -134,4 +154,23 @@ export const loadImages = async (directory: string): Promise<string[]> => {
 // Load placement company images specifically
 export const loadPlacementImages = async (): Promise<string[]> => {
   return loadImages('placements')
+}
+
+// Load alumni data
+export const loadAlumniData = async (): Promise<AlumniData> => {
+  const alumniModules = import.meta.glob('/src/data/alumniJson/*.json', { as: 'json' })
+  const alumniYears: AlumniYear[] = []
+  
+  for (const [path, loadAlumni] of Object.entries(alumniModules)) {
+    const alumniData = await loadAlumni() as AlumniYear
+    alumniYears.push(alumniData)
+  }
+  
+  return {
+    alumni: {
+      edges: alumniYears.map(year => ({
+        node: year
+      }))
+    }
+  }
 }

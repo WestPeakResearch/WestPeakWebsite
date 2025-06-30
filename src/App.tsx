@@ -1,7 +1,7 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router'
 import Layout from './components/Layout'
-import { loadTeamMembers } from './utils/content'
+import { loadTeamMembers, loadAlumniData } from './utils/content'
 
 import Home from './pages/index'
 import About from './pages/about'
@@ -21,8 +21,11 @@ const RootLayout = () => (
 )
 
 const teamLoader = async () => {
-  const teamMembers = await loadTeamMembers()
-  return { teamMembers }
+  const [teamMembers, alumniData] = await Promise.all([
+    loadTeamMembers(),
+    loadAlumniData()
+  ])
+  return { teamMembers, alumniData }
 }
 
 const router = createBrowserRouter([
