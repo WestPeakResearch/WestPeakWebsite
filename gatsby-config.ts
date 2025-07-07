@@ -49,7 +49,6 @@ module.exports = {
           placeholder: `blurred`,
           breakpoints: [360, 640, 960, 1200, 1920],
         },
-        failOnError: false,
       },
     },
     {
