@@ -59,7 +59,7 @@ function Home() {
       <PageCoverLong
         title="UBC's Premier Capital Markets Club"
         image="home"
-        description="Creating quality equity research while enriching education through peer mentorship and training seminars."
+        description="Creating quality equity research and supporting finance education through peer mentorship."
         height="600px"
       />
       <FadeInBox>

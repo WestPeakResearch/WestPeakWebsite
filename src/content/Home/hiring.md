@@ -5,4 +5,4 @@ order: 4
 
 # Join Us
 
-Learn with a group of passionate like-minded individuals.
+Learn with a group of passionate like-minded individuals from UBC interested in finance.
