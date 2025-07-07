@@ -35,14 +35,14 @@ function PageCoverLong({
           node {
             name
             childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, quality: 90)
+              gatsbyImageData(placeholder: BLURRED, quality: 50, width: 300)
             }
           }
         }
       }
       banner: file(relativePath: { eq: "banner.jpg" }) {
         childImageSharp {
-          gatsbyImageData(placeholder: BLURRED, quality: 90)
+          gatsbyImageData(placeholder: BLURRED, quality: 50, width: 300)
         }
       }
     }

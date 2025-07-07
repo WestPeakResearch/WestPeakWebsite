@@ -20,7 +20,8 @@ function PageCover(props: {title: string, image: string}) {
             childImageSharp {
               gatsbyImageData(
                 placeholder: BLURRED
-                quality: 90
+                quality: 50
+                width: 300
               )
             }
           }
@@ -30,7 +31,8 @@ function PageCover(props: {title: string, image: string}) {
         childImageSharp {
           gatsbyImageData(
             placeholder: BLURRED
-            quality: 90
+            quality: 50
+            width: 300
           )
         }
       }
