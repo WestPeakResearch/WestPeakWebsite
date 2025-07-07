@@ -13,6 +13,7 @@
     "gatsby-plugin-google-analytics": "^5.13.1",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-preact": "^7.14.0",
     "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-typography": "^5.13.1",
     "gatsby-remark-copy-linked-files": "^6.13.1",
@@ -22,6 +23,8 @@
     "gatsby-transformer-remark": "^6.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "luxon": "^3.5.0",
+    "preact": "^10.26.9",
+    "preact-render-to-string": "^6.5.13",
     "primeicons": "^6.0.1",
     "primereact": "^10.9.1",
     "react": "^18.2.0",
@@ -44,6 +47,9 @@
   "overrides": {
     "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
       "react": "^18.0.0"
+    },
+    "gatsby-plugin-preact": {
+      "preact-render-to-string": "^6.5.13"
     }
   },
   "keywords": [
