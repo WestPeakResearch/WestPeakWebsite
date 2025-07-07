@@ -7,10 +7,13 @@ import SEO from "../components/SEO"
 
 const TeamPage = () => (
   <Layout>
-    <SEO title="Team" />
     <PageCover title="Our Team" image="team" />
     <Team />
   </Layout>
 )
 
 export default TeamPage
+
+export function Head() {
+  return <SEO title="Team" />
+}

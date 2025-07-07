@@ -7,10 +7,13 @@ import SEO from "../components/SEO"
 
 const LegalPage = () => (
   <Layout>
-    <SEO title="Legal" />
-    <PageCover title="Legal" />
+    <PageCover title="Legal" image="home" />
     <Legal />
   </Layout>
 )
 
 export default LegalPage
+
+export function Head() {
+  return <SEO title="Legal" />
+}

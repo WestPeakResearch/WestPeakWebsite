@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 interface SEOProps {
@@ -30,33 +29,20 @@ function SEO({ description, lang, meta, title } : SEOProps) {
   `)
 
   const metaDescription = description || site!.siteMetadata!.description!
+  console.log(metaDescription)
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site!.siteMetadata!.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-      ].concat(meta)}
-    />
+    <>
+      <html lang={lang} />
+      <title>{title} | {site!.siteMetadata!.title}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      {meta.map((metaItem, index) => (
+        <meta key={index} {...metaItem} />
+      ))}
+    </>
   )
 }
 

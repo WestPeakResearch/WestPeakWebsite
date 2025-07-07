@@ -7,9 +7,12 @@ import CompanyPlacement from "../components/CompanyPlacement"
 
 const Placements = () => (
   <Layout>
-    <SEO title="Placements" />
     <CompanyPlacement />
   </Layout>
 )
 
 export default Placements
+
+export function Head() {
+  return <SEO title="Placements" />
+}

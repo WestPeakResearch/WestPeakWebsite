@@ -7,10 +7,13 @@ import Events from "../components/Events/Events"
 
 const EventsPage = () => (
   <Layout>
-    <SEO title="Hiring" />
     <PageCover title="Events" image="events" />
     <Events />
   </Layout>
 )
 
 export default EventsPage
+
+export function Head() {
+  return <SEO title="Events" />
+}

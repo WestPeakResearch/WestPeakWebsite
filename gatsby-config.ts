@@ -4,12 +4,11 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `WestPeak Research Association`,
-    description: `WestPeak Research Association`,
-    author: `Hasan Altaf`,
+    description: `UBC's Premier Capital Markets Club`,
+    author: `WestPeak Research Association`,
   },
   graphqlTypegen: true,
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,7 +23,6 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    `gatsby-transformer-excel`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -80,9 +78,5 @@ module.exports = {
         ],
       },
     },
-    // `gatsby-plugin-catch-links`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

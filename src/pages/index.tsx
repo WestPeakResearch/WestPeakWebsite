@@ -6,9 +6,12 @@ import SEO from "../components/SEO"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
     <HomeCover />
   </Layout>
 )
 
 export default IndexPage
+
+export function Head() {
+  return <SEO title="Home" />
+}

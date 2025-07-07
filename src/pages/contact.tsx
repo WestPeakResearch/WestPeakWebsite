@@ -7,10 +7,13 @@ import Contact from "../components/Contact"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact" />
     <PageCover title="Contact" image="contact" />
     <Contact />
   </Layout>
 )
 
 export default ContactPage
+
+export function Head() {
+  return <SEO title="Contact" />
+}
