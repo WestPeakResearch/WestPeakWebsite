@@ -8,4 +8,4 @@ images:
 ---
 
 In a male-dominated field, WestPeak strives to provide the skills and knowledge neccessary to women for success within the capital markets.
-We aim to create an welcoming and inclusive environment through events such as socials and the WP x YWiB Stock Pitch.
+We aim to create a welcoming and inclusive environment through events such as socials and the WP x YWiB Stock Pitch.

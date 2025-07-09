@@ -1,5 +1,7 @@
 # WestPeak Research Association Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a20733cc-ea2e-4fc8-97ac-d1b91270ad1f/deploy-status)](https://app.netlify.com/projects/westpeak/deploys)
+
 Static site built with Gatsby, React and JavaScript.
 
 <img width="1423" alt="Screenshot 2025-02-22 at 4 22 37 PM" src="https://github.com/user-attachments/assets/c4dbfeff-ff7e-4f79-aff5-4be795ca80bf" />
