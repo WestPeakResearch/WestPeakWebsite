@@ -2,7 +2,7 @@
 type: "team"
 name: "Evan Calbick"
 degree: "Bachelor of Commerce - Finance | Year 4"
-position: "Head of Real Estate"
+position: "Head of Real Estate, Gaming, and Lodging"
 management: "False"
 research: []
 headshot: Evan_Calbick.jpg
