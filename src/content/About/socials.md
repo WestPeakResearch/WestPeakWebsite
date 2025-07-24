@@ -1,6 +1,6 @@
 ---
 type: "about-strategies"
-name: "Building Community"
+name: "Connect"
 order: 2
 images:
   - "images/socials-1.jpg"

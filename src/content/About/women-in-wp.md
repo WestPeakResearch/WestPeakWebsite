@@ -1,6 +1,6 @@
 ---
 type: "about-strategies"
-name: "Embracing Inclusivity"
+name: "Empower"
 order: 4
 images:
   - "images/wiwp-1.jpg"

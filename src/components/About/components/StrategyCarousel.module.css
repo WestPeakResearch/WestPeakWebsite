@@ -1,0 +1,50 @@
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 1em 1em;
+  margin: 1em 2em;
+}
+
+.media {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.strategyCardDescription {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap-x: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0 0 0;
+}
+
+.strategyCardDescription h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselContainer {
+  margin: 0 -32px;
+}
+
+.carouselContent {
+  overflow: visible;
+  margin-bottom: -32px;
+}
+
+@media (max-width: 600px) {
+  .strategyCardDescription {
+    grid-template-columns: 1fr;
+  }
+
+  .strategyCardDescription h1 {
+    justify-content: start;
+    font-size: 1.5rem;
+  }
+}

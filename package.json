@@ -28,7 +28,7 @@
     "preact": "^10.26.9",
     "preact-render-to-string": "^6.5.13",
     "primeicons": "^6.0.1",
-    "primereact": "^10.9.1",
+    "primereact": "^10.9.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-headroom": "^3.2.1",

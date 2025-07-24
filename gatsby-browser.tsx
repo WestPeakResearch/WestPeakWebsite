@@ -3,11 +3,10 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-
-exports.shouldUpdateScroll = ({
+export function shouldUpdateScroll({
   routerProps,
   prevRouterProps,
-}) => {
+}) {
   if (routerProps && prevRouterProps) {
     if (routerProps.location.pathname.includes("team") && prevRouterProps.location.pathname.includes("Team")) {
       return true

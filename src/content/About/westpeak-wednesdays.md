@@ -1,6 +1,6 @@
 ---
 type: "about-strategies"
-name: "Learning Together"
+name: "Learn"
 order: 1
 images:
   - "images/wpw-1.jpg"

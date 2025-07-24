@@ -61,6 +61,7 @@ function Home() {
         image="home"
         description="Creating quality equity research and supporting finance education through peer mentorship."
         height="600px"
+        mobileHeight="500px"
       />
       <FadeInBox>
         <div className={section}>

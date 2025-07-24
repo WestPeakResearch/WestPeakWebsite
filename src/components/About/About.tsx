@@ -1,15 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import {
-  container,
-  media,
-  strategyCard,
-  images,
-  content,
-} from "./About.module.css"
+import { container, content } from "./About.module.css"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import BlurredBackground from "../ui/BlurredBackground/BlurredBackground"
+import PageCoverLong from "../PageCover/PageCoverLong"
+import { StrategyCarousel } from "./components/StrategyCarousel"
 
 function About() {
   const data: Queries.AboutQuery = useStaticQuery(graphql`
@@ -34,7 +30,12 @@ function About() {
             name
             images {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, width: 1000, height: 600)
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  width: 2000
+                  height: 800
+                  layout: CONSTRAINED
+                )
               }
             }
           }
@@ -43,18 +44,26 @@ function About() {
       }
     }
   `)
-
-  const ourMission = data.allMarkdownRemark.nodes[0].html
-  const ourStory = data.allMarkdownRemark.nodes[1].html
-  const ourStrategy = data.allMarkdownRemark.nodes[2].html
+  const ourStory = data.allMarkdownRemark.nodes[0].html
+  const ourStrategy = data.allMarkdownRemark.nodes[1].html
   const strategies = data.strategies.nodes
 
   return (
-    <div className={container}>
-      <div className={content}>
-        <FadeInBox>
-          <span dangerouslySetInnerHTML={{ __html: ourMission! }} />
-        </FadeInBox>
+    <>
+      <PageCoverLong
+        title="About Us"
+        image="about"
+        description="Where UBC students ignite their spark for finance."
+      />
+      <div className={container}>
+        <div className={content}>
+          <FadeInBox>
+            <h1>Our Strategy</h1>
+          </FadeInBox>
+          <FadeInBox>
+            <StrategyCarousel strategies={strategies} />
+          </FadeInBox>
+        </div>
       </div>
       <BlurredBackground url="/background/lionsgate.jpg">
         <FadeInBox>
@@ -63,29 +72,7 @@ function About() {
           </div>
         </FadeInBox>
       </BlurredBackground>
-      <div className={content}>
-        <FadeInBox>
-          <span dangerouslySetInnerHTML={{ __html: ourStrategy! }} />
-        </FadeInBox>
-        {strategies.map(node => (
-          <FadeInBox>
-            <div className={strategyCard}>
-              <h3>{node.frontmatter!.name}</h3>
-              <span dangerouslySetInnerHTML={{ __html: node.html! }} />
-              <section className={images}>
-                {node.frontmatter?.images!.map(image => (
-                  <GatsbyImage
-                    className={media}
-                    image={getImage(image!.childImageSharp!)!}
-                    alt={node.frontmatter!.name!}
-                  />
-                ))}
-              </section>
-            </div>
-          </FadeInBox>
-        ))}
-      </div>
-    </div>
+    </>
   )
 }
 

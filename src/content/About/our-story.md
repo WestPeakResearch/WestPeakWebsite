@@ -1,7 +1,7 @@
 ---
 type: "about"
 name: "Our Story"
-order: 2
+order: 1
 ---
 
 # Our Story
