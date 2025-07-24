@@ -35,7 +35,7 @@ export function StrategyCarousel({
   useEffect(() => {
     pageChangeInterval.current = setInterval(() => {
       setPage(page => (page + 1) % cards.length);
-    }, 6000);
+    }, 10000);
   }, []);
 
   return (
