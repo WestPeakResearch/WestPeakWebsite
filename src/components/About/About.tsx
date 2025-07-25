@@ -1,11 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { container, content } from "./About.module.css"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
 import BlurredBackground from "../ui/BlurredBackground/BlurredBackground"
 import PageCoverLong from "../PageCover/PageCoverLong"
-import { StrategyCarousel } from "./components/StrategyCarousel"
+import { StrategyCards } from "./components/StrategyCards"
 
 function About() {
   const data: Queries.AboutQuery = useStaticQuery(graphql`
@@ -60,9 +59,7 @@ function About() {
           <FadeInBox>
             <h1>Our Strategy</h1>
           </FadeInBox>
-          <FadeInBox>
-            <StrategyCarousel strategies={strategies} />
-          </FadeInBox>
+          <StrategyCards strategies={strategies} />
         </div>
       </div>
       <BlurredBackground url="/background/lionsgate.jpg">

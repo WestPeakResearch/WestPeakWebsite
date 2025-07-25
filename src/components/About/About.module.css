@@ -1,7 +1,7 @@
 .container {
   font-size: 1.05rem;
   line-height: 1.8rem;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow: hidden; /* Prevent horizontal scrolling */
 }
 
 .content {
