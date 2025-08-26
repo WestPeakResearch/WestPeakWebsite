@@ -5,4 +5,4 @@ order: 2
 
 # What We Do
 
-Our equity research investigates the valuation of public equities, built on a balance of both quantitative analysis and qualitative consideration.
+Our student analysts produce equity research reports that combine quantitative techniques with qualitative analysis. These reports mirror professional standards used in industry, giving members direct exposure to the world of finance.

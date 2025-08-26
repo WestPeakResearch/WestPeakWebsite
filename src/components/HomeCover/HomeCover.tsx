@@ -57,9 +57,9 @@ function Home() {
   return (
     <>
       <PageCoverLong
-        title="UBC's Premier Capital Markets Club"
+        title="WestPeak Research Association"
         image="home"
-        description="Creating quality equity research and supporting finance education through peer mentorship."
+        description="The University of British Columbia's premier student led capital markets and finance club."
         height="600px"
         mobileHeight="500px"
       />
