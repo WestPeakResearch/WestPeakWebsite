@@ -1,0 +1,5 @@
+name = "gatsby-worker"
+compatibility_date = "2025-08-25"
+
+[site]
+bucket = "./public"
