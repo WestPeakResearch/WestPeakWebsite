@@ -9,7 +9,6 @@ module.exports = {
   },
   graphqlTypegen: true,
   plugins: [
-    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
