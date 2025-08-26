@@ -1,5 +1,7 @@
-name = 'westpeakwebsite'
-compatibility_date = "2025-08-25"
+name = "westpeak-website"
+compatibility_date = "2025-08-01"
 
-[site]
-bucket = "./public"
+assets = { directory = "public", not_found_handling = "single-page-application" }
+
+[build]
+command = "gatsby build"
