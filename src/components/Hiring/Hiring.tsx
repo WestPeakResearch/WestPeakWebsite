@@ -3,14 +3,19 @@ import HiringOpen from "./HiringOpen"
 import HiringClosed from "./HiringClosed"
 import PageCoverLong from "../PageCover/PageCoverLong"
 import LinkButton from "../ui/LinkButton/LinkButton"
+import HiringUpcoming from "./HiringUpcoming"
+
+enum HiringStatus {
+  Open = 'open',
+  Upcoming = 'upcoming',
+  Closed = 'closed'
+}
+
+const HIRING_STATUS = HiringStatus.Upcoming as HiringStatus
 
 function Hiring() {
-  const HIRING_OPEN = false
-
-  const coverDescription = HIRING_OPEN
-    ? "Applications are open until April 24, 2025."
-    : "Applications are currently closed."
-  const coverCta = HIRING_OPEN ? (
+  const coverDescription = getCoverDescription(HIRING_STATUS)
+  const coverCta = HIRING_STATUS === HiringStatus.Open ? (
     <LinkButton
       link="https://forms.gle/4DbV5S1KBvSpud3p8"
       target="_blank"
@@ -18,6 +23,7 @@ function Hiring() {
       color="rgba(255, 255, 255, 0.9)"
     />
   ) : undefined
+  const pageElement = getPageElement(HIRING_STATUS)
 
   return (
     <>
@@ -27,9 +33,31 @@ function Hiring() {
         description={coverDescription}
         cta={coverCta}
       />
-      {HIRING_OPEN ? <HiringOpen /> : <HiringClosed />}
+      {pageElement}
     </>
   )
+}
+
+function getCoverDescription(status: HiringStatus) {
+  switch (status) {
+    case HiringStatus.Closed:
+      return "Applications are currently closed."
+    case HiringStatus.Upcoming:
+      return "Applications will open on September 2, 2025."
+    case HiringStatus.Open:
+      return "Applications are open until September 18, 2025."
+  }
+}
+
+function getPageElement(status: HiringStatus) {
+  switch (status) {
+    case HiringStatus.Closed:
+      return <HiringClosed />
+    case HiringStatus.Upcoming:
+      return <HiringUpcoming />
+    case HiringStatus.Open:
+      return <HiringOpen />
+  }
 }
 
 export default Hiring
