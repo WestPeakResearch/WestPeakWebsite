@@ -1,0 +1,10 @@
+---
+type: "events"
+title: "Info Session 1"
+details: "Information Session for the WestPeak Research Association 2025 Analyst Hiring"
+date: "2025-09-02"
+time: "9:00pm PT"
+link: ""
+registration: "https://forms.gle/Eczr9KSs7LzhMain6"
+deadline: "2025-09-01"
+---

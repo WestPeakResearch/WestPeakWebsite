@@ -77,7 +77,7 @@ function Events() {
             </p>
           </div>
         </div>
-        <br />
+        {/* <br />
         <span className={title}>Sponsors</span>
         <div>
           <p>We would like to sincerely thank our sponsors that make hosting our events possible.</p>
@@ -105,7 +105,7 @@ function Events() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
