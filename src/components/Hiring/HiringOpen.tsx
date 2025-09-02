@@ -15,11 +15,11 @@ function HiringOpen() {
             for more details on each.
           </p>
           <p>
-            Please apply using the button below before <b>April 24th 2025, 11:59pm PT</b>.
+            Please apply using the button below before <b>September 18th 2025, 11:59pm PT</b>.
             Please note you must be a <b>UBC Vancouver student</b>, and may only apply to <b>one program</b>.
           </p>
           <p>
-            <LinkButton link="https://forms.gle/4DbV5S1KBvSpud3p8"
+            <LinkButton link="https://forms.gle/kMpGzKJRmLn6T7qJ7"
               target="_blank"
               text="Access the 2025 WestPeak Research Association Application Form" />
           </p>

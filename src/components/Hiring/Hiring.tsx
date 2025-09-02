@@ -5,14 +5,14 @@ import PageCoverLong from "../PageCover/PageCoverLong"
 import LinkButton from "../ui/LinkButton/LinkButton"
 
 function Hiring() {
-  const HIRING_OPEN = false
+  const HIRING_OPEN = true
 
   const coverDescription = HIRING_OPEN
-    ? "Applications are open until April 24, 2025."
+    ? "Applications are open until September 18, 2025."
     : "Applications are currently closed."
   const coverCta = HIRING_OPEN ? (
     <LinkButton
-      link="https://forms.gle/4DbV5S1KBvSpud3p8"
+      link="https://forms.gle/kMpGzKJRmLn6T7qJ7"
       target="_blank"
       text="Apply Now"
       color="rgba(255, 255, 255, 0.9)"
