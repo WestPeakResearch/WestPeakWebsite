@@ -11,13 +11,13 @@ enum HiringStatus {
   Closed = 'closed'
 }
 
-const HIRING_STATUS = HiringStatus.Upcoming as HiringStatus
+const HIRING_STATUS = HiringStatus.Open as HiringStatus
 
 function Hiring() {
   const coverDescription = getCoverDescription(HIRING_STATUS)
   const coverCta = HIRING_STATUS === HiringStatus.Open ? (
     <LinkButton
-      link="https://forms.gle/4DbV5S1KBvSpud3p8"
+      link="https://forms.gle/kMpGzKJRmLn6T7qJ7"
       target="_blank"
       text="Apply Now"
       color="rgba(255, 255, 255, 0.9)"
