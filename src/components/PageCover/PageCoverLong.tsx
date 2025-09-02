@@ -7,12 +7,14 @@ import {
 } from "./PageCover.module.css"
 import { GatsbyImage } from "gatsby-plugin-image"
 import FadeInBox from "../ui/FadeInBox/FadeInBox"
+import { useWindowSize } from "../../hooks/useWindowSize"
 
 interface PageCoverLongProps {
   title: string
   image: string
   description: string
   height?: string
+  mobileHeight?: string
   cta?: React.ReactNode
 }
 
@@ -22,7 +24,11 @@ function PageCoverLong({
   description,
   cta,
   height = "400px",
+  mobileHeight = "300px",
 }: PageCoverLongProps) {
+  const {width} = useWindowSize();
+  const isMobile = width < 600
+
   const data: Queries.PageCoverLongQuery = useStaticQuery(graphql`
     query PageCoverLong {
       images: allFile(
@@ -56,7 +62,7 @@ function PageCoverLong({
   imageData.layout = "fullWidth"
 
   return (
-    <div style={{ display: "grid", height: height }} className={pageCoverLong}>
+    <div style={{ display: "grid", height: isMobile ? mobileHeight : height }} className={pageCoverLong}>
       <GatsbyImage
         style={{ gridArea: "1/1", height: "100%" }}
         loading="eager"

@@ -1,0 +1,7 @@
+name = "westpeak-website"
+compatibility_date = "2025-08-01"
+
+assets = { directory = "public", not_found_handling = "single-page-application" }
+
+[build]
+command = "gatsby build"

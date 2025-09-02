@@ -1,6 +1,6 @@
 ---
 type: "about-strategies"
-name: "Excelling Collectively"
+name: "Excel"
 order: 3
 images:
   - "images/comp-1.jpg"

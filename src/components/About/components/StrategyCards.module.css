@@ -1,0 +1,31 @@
+.media {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+}
+
+.strategyCardDescription {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap-x: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.strategyCardDescription h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .strategyCardDescription {
+    grid-template-columns: 1fr;
+  }
+
+  .strategyCardDescription h1 {
+    justify-content: start;
+    font-size: 1.5rem;
+  }
+}

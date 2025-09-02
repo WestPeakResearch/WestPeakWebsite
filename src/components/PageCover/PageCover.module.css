@@ -10,7 +10,7 @@
 
 .pageTitle {
   color: #f2f2f2;
-  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.8);
   padding-top: 80px;
   text-align: center;
   font-size: 4rem;
@@ -54,7 +54,8 @@
 }
 
 .blur {
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 10, 0.1);
 }
 
 @media (max-width: 1000px) {
@@ -73,7 +74,7 @@
   .pageTitleLong {
     margin: 2vh auto;
     width: 95%;
-    padding: 1rem;
+    padding: 0 1rem;
   }
 }
 

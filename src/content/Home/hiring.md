@@ -5,4 +5,4 @@ order: 4
 
 # Join Us
 
-Learn with a group of passionate like-minded individuals from UBC interested in finance.
+Join UBC’s leading finance and capital markets student club. Learn financial modeling, write equity research reports, connect with alumni in global finance, and prepare for careers in the capital markets.
