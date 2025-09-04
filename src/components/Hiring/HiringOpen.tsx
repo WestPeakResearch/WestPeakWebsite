@@ -38,6 +38,18 @@ function HiringOpen() {
                 text="Access the 2025 WestPeak Research Association Application Form"
               />
             </p>
+            <p>
+              For a more in depth overview of our programs and to meet the team,
+              we encourage you to attend our upcoming information
+              session:
+              <ul>
+                <li>
+                  <a href="https://forms.gle/SxJs5g3KN47JkW6w9" target="_blank">
+                    <b>September 12, 7:00pm PT, In Person</b>
+                  </a>
+                </li>
+              </ul>
+            </p>
           </div>
           <StaticImage
             alt="analysts"
