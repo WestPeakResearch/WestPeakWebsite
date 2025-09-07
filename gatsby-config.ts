@@ -6,6 +6,7 @@ module.exports = {
     title: `WestPeak Research Association`,
     description: `UBC's Premier Capital Markets Club`,
     author: `WestPeak Research Association`,
+    siteUrl: "https://westpeakresearch.com/"
   },
   graphqlTypegen: true,
   plugins: [
@@ -76,6 +77,14 @@ module.exports = {
             },
           },
         ],
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        policy: [{ userAgent: "*", allow: "/" }],
+        sitemap: "https://westpeakresearch.com/sitemap-index.xml",
       },
     },
   ],
