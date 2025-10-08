@@ -6,16 +6,16 @@ import PageCover from "../../components/PageCover"
 
 const AlumniSocialFormPage = () => (
   <Layout>
-    <PageCover title=""image="toronto" />
+    <PageCover title="" image="toronto" />
     <ProxiedForm
       formName="alumnisocial"
       formDescription={
         <>
-          <h2>Toronto Alumni Social RSVP</h2>
+          <h2>WestPeak Alumni Cocktail Reception RSVP</h2>
           <p>
-            Please fill out the form below to RSVP for our upcoming Alumni
-            Social. It will take place on Thursday November 13th 7 pm ET at
-            Local Public Eatery - Adelaide.
+            Please fill out the form below to RSVP for our upcoming WestPeak
+            Alumni Cocktail Reception in Downtown Toronto on November 13th at
+            7:00 PM ET.
           </p>
         </>
       }
