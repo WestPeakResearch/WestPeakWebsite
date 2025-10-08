@@ -79,11 +79,16 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        excludes: ["/forms/*"],
+      },
+    },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        policy: [{ userAgent: "*", allow: "/", disallow: "/events/*" }],
+        policy: [{ userAgent: "*", allow: "/", disallow: ["/events/*", "/forms/*"] }],
         sitemap: "https://westpeakresearch.com/sitemap-index.xml",
       },
     },

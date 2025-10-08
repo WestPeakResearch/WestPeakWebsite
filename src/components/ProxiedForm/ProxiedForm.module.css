@@ -1,0 +1,127 @@
+:root {
+  --pf-text: #111827;
+  --pf-muted: #6b7280;
+  --pf-border: #d1d5db;
+  --pf-border-hover: #9ca3af;
+  --pf-primary: #2563eb;
+  --pf-primary-weak: #dbeafe;
+  --pf-danger: #dc2626;
+  --pf-success: #15803d;
+}
+
+/* Wrapper */
+.pfForm {
+  max-width: 46rem;
+  padding: 2rem;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  color: var(--pf-text);
+}
+
+/* Group */
+.pfGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+/* Label + required mark */
+.pfLabel {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.pfRequiredMark {
+  color: var(--pf-danger);
+}
+
+/* Inputs */
+.pfInput,
+.pfTextarea,
+.pfSelect {
+  width: 100%;
+  border: 1px solid var(--pf-border);
+  border-radius: 0.8rem;
+  padding: 10px 12px;
+  font-size: 1rem;
+  line-height: 1.4;
+  background: white;
+  transition: border-color 0.12s ease, box-shadow 0.12s ease;
+}
+.pfInput:hover,
+.pfTextarea:hover,
+.pfSelect:hover {
+  border-color: var(--pf-border-hover);
+}
+.pfInput:focus,
+.pfTextarea:focus,
+.pfSelect:focus {
+  border-color: var(--pf-primary);
+  box-shadow: 0 0 0 3px var(--pf-primary-weak);
+}
+
+/* Help text */
+.pfHelp {
+  font-size: 0.8rem;
+  color: var(--pf-muted);
+}
+
+
+/* Button */
+.pfButton {
+  width: 100%;
+  border: 1px solid var(--pf-border);
+  border-radius: 0.8rem;
+  padding: 12px 16px;
+  font-weight: 600;
+  color: #113d69;
+  border-color: #113d69;
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.08s ease, opacity 0.12s ease;
+}
+.pfButton:hover {
+  transition: background-color 0.3s ease;
+  background-color: color-mix(in srgb, #113d69 12%, transparent);
+  border-color: #113d69;
+}
+.pfButton:active {
+  transform: translateY(1px);
+}
+.pfButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status */
+.pfStatus {
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+.pfStatusSuccess {
+  color: var(--pf-success);
+}
+.pfStatusError {
+  color: var(--pf-danger);
+}
+
+.pfCheckboxGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.pfCheckboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.pfCheckboxInput {
+  width: 1.1em;
+  height: 1.1em;
+  accent-color: var(--pf-primary);
+}
