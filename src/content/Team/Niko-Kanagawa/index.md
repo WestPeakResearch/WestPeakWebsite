@@ -1,14 +1,14 @@
 ---
 type: "team"
 name: "Niko Kanagawa"
-degree: "Bachelor of Commerce - General | Year 1"
-position: "Junior Analyst"
+degree: "Bachelor of Commerce - General | Year 2"
+position: "Senior Analyst"
 management: "False"
 research: ["CALM_Niko_Kanagawa.pdf"]
 headshot: Niko_Kanagawa.jpg
 ---
 
-Niko is a first-year commerce student intending to specialize in finance. He joined WestPeak to build a strong foundation in financial analysis, explore the different areas in capital markets and develop under the mentorship of experienced senior club members. 
+Niko is a second-year Commerce student and intends to specialize in finance. WestPeak offers him the opportunity to further his curiosity for the capital markets and receive mentorship from experienced senior students.
 
-Outside of academics, Niko plays varsity football for the UBC Thunderbirds. He also enjoys community service, extreme sports, and trying new foods. 
+Outside of academics, Niko enjoys managing his fantasy football team and trying new cuisines. 
 

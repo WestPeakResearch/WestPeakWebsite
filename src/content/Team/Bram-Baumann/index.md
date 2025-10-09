@@ -2,13 +2,11 @@
 type: "team"
 name: "Bram Baumann"
 degree: "Bachelor of International Economics | Year 3"
-position: "Junior Analyst"
+position: "Senior Analyst"
 management: "False"
 research: ["TMHC_Bram_Baumann.pdf"]
 headshot: Bram_Baumann.jpg
 ---
 
-Bram is a third year student in the Bachelor of International Economics Program. He has previously completed internships at a boutique strategy consulting firm, a search fund and a boutique M&A firm. He joined WestPeak to further his understanding of finance and capital markets. 
-
-Outside of school and work he enjoys playing guitar, watching TV and reading. 
+Bram is a 4th year BIE student. He joined WestPeak to learn more about capital markets and recruiting. Bram worked at Fulcra Asset Management over the Summer. In his free time he likes to exercise and watch movies.
 
