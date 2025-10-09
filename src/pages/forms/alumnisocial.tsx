@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../../components/Layout/Layout"
 import ProxiedForm from "../../components/ProxiedForm/ProxiedForm"
 import PageCover from "../../components/PageCover"
+import SEO from "../../components/SEO"
 
 const AlumniSocialFormPage = () => (
   <Layout>
@@ -38,3 +39,11 @@ const AlumniSocialFormPage = () => (
 )
 
 export default AlumniSocialFormPage
+
+export function Head() {
+  return (<SEO
+    title="Alumni Social Form"
+    description="Alumni Social Form"
+    meta={[{ name: "robots", content: "noindex" }]}
+  />)
+}

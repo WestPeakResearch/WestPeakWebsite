@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../../components/Layout"
 import ProxiedForm from "../../components/ProxiedForm/ProxiedForm"
 import PageCover from "../../components/PageCover"
+import SEO from "../../components/SEO"
 
 const IndustryMentorshipFormPage = () => (
   <Layout>
@@ -79,5 +80,10 @@ const IndustryMentorshipFormPage = () => (
 export default IndustryMentorshipFormPage
 
 export function Head() {
-  return <meta name="robots" content="noindex" />
+  return (<SEO
+    title="Mentorship Form"
+    description="Mentorship Form"
+    meta={[{ name: "robots", content: "noindex" }]}
+  />)
 }
+
