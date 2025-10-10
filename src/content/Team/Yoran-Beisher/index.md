@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Entrepreneurship | Year 5"
 position: "Head of Alternative Assets"
 management: "False"
 research: []
-headshot: Yoran_Beisher.jpeg
+headshot: Yoran_Beisher.jpg
 ---
 
 Yoran is a fifth-year entrepreneurship student working in venture capital.

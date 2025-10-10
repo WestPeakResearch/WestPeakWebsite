@@ -53,53 +53,55 @@ function Team() {
   const teamMobileOptions = [
     { label: "Management", value: "Management" },
     { label: "Group Heads", value: "Group Heads" },
+    { label: "Senior Analysts", value: "Senior Analysts" },
+    { label: "Junior Analysts", value: "Junior Analysts" },
     { label: "Alumni", value: "Alumni" },
   ]
 
   const team = data.allMarkdownRemark.nodes
 
-  // useEffect(() => {
-  //   setTeam(
-  //     localStorage.getItem("team") || "Management",
-  //   )
-  // }, [])
-
-  // const teamMembers = {
-  //   Management: team.filter(member => member.frontmatter!.management === "True"),
-  //   "Group Heads": team.filter(
-  //     member =>
-  //       member.frontmatter!.management !== "True" &&
-  //       member.frontmatter!.position!.includes("Head"),
-  //   ),
-  //   "Senior Analysts": team.filter(
-  //     member =>
-  //       member.frontmatter!.management !== "True" &&
-  //       member.frontmatter!.position!.includes("Senior Analyst"),
-  //   ),
-  //   "Junior Analysts": team.filter(
-  //     member =>
-  //       member.frontmatter!.management !== "True" &&
-  //       member.frontmatter!.position!.includes("Junior Analyst"),
-  //   ),
-  //   Alumni: [],
-  // }
+  useEffect(() => {
+    setTeam(
+      localStorage.getItem("team") || "Management",
+    )
+  }, [])
 
   const teamMembers = {
-    Management: team.filter(
-      member => member.frontmatter!.management === "True",
-    ),
+    Management: team.filter(member => member.frontmatter!.management === "True"),
     "Group Heads": team.filter(
       member =>
         member.frontmatter!.management !== "True" &&
         member.frontmatter!.position!.includes("Head"),
     ),
+    "Senior Analysts": team.filter(
+      member =>
+        member.frontmatter!.management !== "True" &&
+        member.frontmatter!.position!.includes("Senior Analyst"),
+    ),
+    "Junior Analysts": team.filter(
+      member =>
+        member.frontmatter!.management !== "True" &&
+        member.frontmatter!.position!.includes("Junior Analyst"),
+    ),
     Alumni: [],
   }
+
+//   const teamMembers = {
+//     Management: team.filter(
+//       member => member.frontmatter!.management === "True",
+//     ),
+//     "Group Heads": team.filter(
+//       member =>
+//         member.frontmatter!.management !== "True" &&
+//         member.frontmatter!.position!.includes("Head"),
+//     ),
+//     Alumni: [],
+//   }
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     const team = params.get("team")
-    const validTeams = ["Management", "Group Heads", "Alumni"]
+    const validTeams = ["Management", "Group Heads", "Senior Analysts", "Junior Analysts", "Alumni"]
     if (team && validTeams.includes(team)) {
         setTeam(team)
     } else {
