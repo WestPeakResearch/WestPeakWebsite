@@ -53,8 +53,8 @@ function Team() {
   const teamMobileOptions = [
     { label: "Management", value: "Management" },
     { label: "Group Heads", value: "Group Heads" },
-    { label: "Senior Analyst", value: "Senior Analyst" },
-    { label: "Junior Analyst", value: "Junior Analyst" },
+    { label: "Senior Analysts", value: "Senior Analysts" },
+    { label: "Junior Analysts", value: "Junior Analysts" },
     { label: "Alumni", value: "Alumni" },
   ]
 
@@ -101,7 +101,7 @@ function Team() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     const team = params.get("team")
-    const validTeams = ["Management", "Group Heads", "Senior Analyst", "Junior Analyst", "Alumni"]
+    const validTeams = ["Management", "Group Heads", "Senior Analysts", "Junior Analysts", "Alumni"]
     if (team && validTeams.includes(team)) {
         setTeam(team)
     } else {
