@@ -60,10 +60,10 @@ function HiringOpen() {
       </FadeInBox>
       <FadeInBox>
         <div className={section}>
-          <StaticImage
-            alt="directors"
+        <StaticImage
+            alt="group"
             className={imageLeft}
-            src="images/media_hiring_directors.jpg"
+            src="images/media_hiring_group.jpg"
           />
           <div className={content}>
             <h3>Timeline</h3>

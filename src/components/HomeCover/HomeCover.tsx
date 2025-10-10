@@ -115,7 +115,7 @@ function Home() {
           <StaticImage
             className={imgRight}
             alt="hiring"
-            src="../../images/2nd_Years.jpg"
+            src="../../images/firstyears.jpg"
             placeholder="blurred"
           />
         </div>

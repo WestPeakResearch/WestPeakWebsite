@@ -37,9 +37,9 @@ function HiringClosed() {
       <FadeInBox>
         <div className={section}>
           <StaticImage
-            alt="directors"
+            alt="group"
             className={imageLeft}
-            src="images/media_hiring_directors.jpg"
+            src="images/media_hiring_group.jpg"
           />
           <div className={content}>
             <h3>WHAT WE OFFER</h3>
