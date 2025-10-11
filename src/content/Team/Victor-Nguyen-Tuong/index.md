@@ -10,7 +10,6 @@ headshot: Victor_Nguyen-Tuong.jpg
 
 Victor is a fourth-year Commerce student specializing in Finance. At WestPeak, he’s developed his passion for capital markets and connected with like-minded individuals at UBC.
 
-Victor has completed internships at Alquity Investment Management, a boutique asset manager in London, and will be joining the Private Equity team at BCI this summer.
+Victor has completed internships at the Private Equity team at BCI and is currently interning in the Diversified team at RBC in Toronto.
 
 Outside of school and work, Victor enjoys skiing, supporting Arsenal FC, and fishkeeping.
-
