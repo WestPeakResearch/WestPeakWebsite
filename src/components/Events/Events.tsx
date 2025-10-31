@@ -55,16 +55,15 @@ function Events() {
         <span className={title}>Past Events</span>
         <div className={section}>
           <div className={sectionContent}>
-            <h3>YWiB x WestPeak Stock Pitch Competition</h3>
+            <h3>WestPeak Women In Finance Stock Pitch Competition</h3>
             <p>
-              WestPeak runs an annual Stock Pitch Competition in collaboration with
-              Young Women in Business UBC. The goal is to offer post-secondary students
-              in British Columbia an opportunity to learn about the public markets and
+              WestPeak runs an annual Stock Pitch Competition open to post-secondary students
+              in British Columbia. It provides students an opportunity to learn about the public markets and
               showcase their stock pitching skills, whilst encouraging the participation
               of women in finance.
             </p>
           </div>
-          <StaticImage alt="YWiB x WestPeak Stock Pitch Competition" className={image} src="images/media_ywib_wp_stock_pitch.jpg" />
+          <StaticImage alt="YWiB x WestPeak Stock Pitch Competition" className={image} src="images/media_wwif_stock_pitch.jpg" />
         </div>
         <div className={section}>
           <StaticImage alt="Internal Stock Pitch" className={imageLeft} src="images/media_internal_stock_pitch.jpg" />
