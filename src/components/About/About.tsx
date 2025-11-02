@@ -33,6 +33,7 @@ function About() {
                   placeholder: BLURRED
                   width: 2000
                   height: 800
+                  quality: 95
                   layout: CONSTRAINED
                 )
               }

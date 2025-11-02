@@ -11,7 +11,7 @@ enum HiringStatus {
   Closed = 'closed'
 }
 
-const HIRING_STATUS = HiringStatus.Closed as HiringStatus
+const HIRING_STATUS: HiringStatus = HiringStatus.Closed
 
 function Hiring() {
   const coverDescription = getCoverDescription(HIRING_STATUS)
