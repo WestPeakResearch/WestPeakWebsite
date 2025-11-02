@@ -61,7 +61,7 @@ function Home() {
         image="home"
         description="The University of British Columbia's premier student led capital markets and finance club."
         height="600px"
-        mobileHeight="500px"
+        mobileHeight="400px"
       />
       <FadeInBox>
         <div className={section}>
