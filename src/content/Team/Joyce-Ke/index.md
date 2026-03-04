@@ -4,7 +4,7 @@ name: "Joyce Ke"
 degree: "Bachelor of Commerce - General | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["AMD_Joyce_Ke.pdf"]
 headshot: Joyce_Ke.jpg
 ---
 

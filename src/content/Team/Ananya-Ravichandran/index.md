@@ -4,7 +4,7 @@ name: "Ananya Ravichandran"
 degree: "Bachelor of International Economics | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["HWX_Ananya_Ravichandran.pdf"]
 headshot: Ananya_Ravichandran.jpg
 ---
 

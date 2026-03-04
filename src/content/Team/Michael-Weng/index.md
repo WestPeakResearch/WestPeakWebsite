@@ -4,7 +4,7 @@ name: "Michael Weng"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["CELH_Michael_Weng.pdf"]
 headshot: Michael_Weng.jpg
 ---
 

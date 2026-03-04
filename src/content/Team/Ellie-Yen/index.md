@@ -4,7 +4,7 @@ name: "Ellie Yen"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["EL_Ellie_Yen.pdf"]
 headshot: Ellie_Yen.jpg
 ---
 

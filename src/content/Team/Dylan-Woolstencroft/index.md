@@ -4,7 +4,7 @@ name: "Dylan Woolstencroft"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["SN_Dylan_Woolstencroft.pdf"]
 headshot: Dylan_Woolstencroft.jpg
 ---
 

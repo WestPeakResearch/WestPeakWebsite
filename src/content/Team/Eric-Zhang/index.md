@@ -4,7 +4,7 @@ name: "Eric Zhang"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["ROKU_Eric_Zhang.pdf"]
 headshot: Eric_Zhang.jpg
 ---
 

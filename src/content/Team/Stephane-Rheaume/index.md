@@ -4,7 +4,7 @@ name: "Stephane Rheaume"
 degree: "Bachelor of Commerce - General | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: ["MRU_Stephane_Rheaume.pdf"]
+research: ["EGP_Stephane_Rheaume.pdf","MRU_Stephane_Rheaume.pdf"]
 headshot: Stephane_Rheaume.jpg
 ---
 

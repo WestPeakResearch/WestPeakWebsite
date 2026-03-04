@@ -4,7 +4,7 @@ name: "Austin Ng"
 degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["LULU_Austin_Ng.pdf"]
 headshot: Austin_Ng.jpg
 ---
 

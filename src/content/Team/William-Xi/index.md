@@ -4,7 +4,7 @@ name: "William Xi"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["ETN_William_Xi.pdf"]
 headshot: William_Xi.jpg
 ---
 

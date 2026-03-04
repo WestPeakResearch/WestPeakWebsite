@@ -4,7 +4,7 @@ name: "Colin Illing"
 degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Vice-President"
 management: "True"
-research: ["SMPL_Colin_Illing.pdf"]
+research: ["BIR_Colin_Illing.pdf","SMPL_Colin_Illing.pdf"]
 headshot: Colin_Illing.jpg
 ---
 
