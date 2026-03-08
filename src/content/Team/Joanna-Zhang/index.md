@@ -4,7 +4,7 @@ name: "Joanna Zhang"
 degree: "Bachelor of Commerce - General | Year 2"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["ELF_Joanna_Zhang.pdf"]
 headshot: Joanna_Zhang.jpg
 ---
 

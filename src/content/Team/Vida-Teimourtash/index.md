@@ -4,7 +4,7 @@ name: "Vida Teimourtash"
 degree: "Bachelor of Commerce - General | Year 3"
 position: "Junior Analyst"
 management: "False"
-research: []
+research: ["DXCM_Vida_Teimourtash.pdf"]
 headshot: Vida_Teimourtash.jpg
 ---
 
