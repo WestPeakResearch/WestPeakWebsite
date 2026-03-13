@@ -4,7 +4,7 @@ name: "Ishan Nagra"
 degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Senior Analyst"
 management: "False"
-research: []
+research: ["FOM_Ishan_Nagra.pdf"]
 headshot: Ishan_Nagra.jpg
 ---
 
