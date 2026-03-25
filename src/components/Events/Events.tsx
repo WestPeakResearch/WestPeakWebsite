@@ -76,6 +76,18 @@ function Events() {
             </p>
           </div>
         </div>
+        <div className={section}>
+          <div className={sectionContent}>
+            <h3>WestPeak Toronto Trip</h3>
+            <p>
+              The WestPeak Toronto Trip is a multi-day event that brings WestPeak students 
+              to Canada's financial hub for office tours, firm presentations, and networking events. 
+              It provides students with deeper insights into the capital markets while creating 
+              connections with industry professionals and WestPeak alumni.
+            </p>
+          </div>
+          <StaticImage alt="Photo outside Hoopp" className={image} src="images/toronto_trip_hoopp.jpg" />
+        </div>
         {/* <br />
         <span className={title}>Sponsors</span>
         <div>
