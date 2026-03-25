@@ -48,7 +48,7 @@ function Home() {
     }
   `)
 
-  const alumniCount = 150
+  const alumniCount = 200
   const researchCount = data.research.nodes.length
   const placements = data.placements.nodes.map(
     i => getImage(i.childImageSharp)!,
