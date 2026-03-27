@@ -1,0 +1,67 @@
+{
+  "order": 12,
+  "year": "2024-2025",
+  "management": [
+    {
+      "name": "Gustavo Gongora",
+      "linkedin": "https://www.linkedin.com/in/gustavogongora/"
+    },
+    {
+      "name": "Saru Aggarwal",
+      "linkedin": "https://www.linkedin.com/in/saru-aggarwal/"
+    },
+    {
+      "name": "Tony Liaw",
+      "linkedin": "https://www.linkedin.com/in/tony-liaw-943a5b166/"
+    },
+    {
+      "name": "Colin Illing",
+      "linkedin": "https://www.linkedin.com/in/colinilling/"
+    },
+    {
+      "name": "Raghav Bhatia",
+      "linkedin": "https://www.linkedin.com/in/raghavbhatia0611/"
+    },
+    {
+      "name": "Victor Nguyen-Tuong",
+      "linkedin": "https://www.linkedin.com/in/victornguyent/"
+    },
+    {
+      "name": "Hilary Lau",
+      "linkedin": "https://www.linkedin.com/in/hilarylau/"
+    },
+    {
+      "name": "Nathan Liou",
+      "linkedin": "https://www.linkedin.com/in/nathanliou/"
+    }
+  ],
+  "gh": [
+    {
+      "name": "Julia Pastana",
+      "linkedin": "https://www.linkedin.com/in/juliapastana/"
+    },
+    {
+      "name": "Yoran Beisher",
+      "linkedin": "https://www.linkedin.com/in/yoran-beisher/"
+    },
+    {
+      "name": "Angel Li",
+      "linkedin": "https://www.linkedin.com/in/angel-li17/"
+    },
+    {
+      "name": "Raymond Li",
+      "linkedin": "https://www.linkedin.com/in/xiangcenli/"
+    },
+    {
+      "name": "Graham Seltzer",
+      "linkedin": "https://www.linkedin.com/in/grahamjseltzer/"
+    },
+    {
+      "name": "Josh Bianchini"
+    },
+    {
+      "name": "Evan Calbick",
+      "linkedin": "https://www.linkedin.com/in/evancalbick/"
+    }
+  ]
+}
