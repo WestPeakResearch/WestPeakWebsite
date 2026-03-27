@@ -11,13 +11,13 @@ enum HiringStatus {
   Closed = 'closed'
 }
 
-const HIRING_STATUS: HiringStatus = HiringStatus.Closed
+const HIRING_STATUS: HiringStatus = HiringStatus.Open
 
 function Hiring() {
   const coverDescription = getCoverDescription(HIRING_STATUS)
   const coverCta = HIRING_STATUS === HiringStatus.Open ? (
     <LinkButton
-      link="https://forms.gle/kMpGzKJRmLn6T7qJ7"
+      link="https://forms.gle/WgYVF2Wg5UApthin8"
       target="_blank"
       text="Apply Now"
       color="rgba(255, 255, 255, 0.9)"
@@ -43,9 +43,9 @@ function getCoverDescription(status: HiringStatus) {
     case HiringStatus.Closed:
       return "Applications are currently closed."
     case HiringStatus.Upcoming:
-      return "Applications will open on September 2, 2025."
+      return "Applications will open on March 28, 2026."
     case HiringStatus.Open:
-      return "Applications are open until September 18, 2025."
+      return "Applications are open until April 2, 2026."
   }
 }
 

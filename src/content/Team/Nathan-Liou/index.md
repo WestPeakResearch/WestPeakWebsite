@@ -2,7 +2,7 @@
 type: "team"
 name: "Nathan Liou"
 degree: "Bachelor of Science - Computer Science and Mathematics | Year 2"
-position: "Tech Vice-President"
+position: "Tech Director"
 management: "True"
 research: []
 headshot: Nathan_Liou.jpg

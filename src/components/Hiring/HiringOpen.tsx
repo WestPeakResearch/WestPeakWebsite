@@ -20,32 +20,32 @@ function HiringOpen() {
             <p>
               We offer a <b>Junior Analyst</b> program and a{" "}
               <b>Senior Analyst</b> program. Please refer to our{" "}
-              <a href="WPRA_Hiring_Package_2025.pdf" target="_blank">
+              <a href="WPRA_Hiring_Package_2026.pdf" target="_blank">
                 <b>Hiring Package </b>
               </a>
-              for more details on each.
+              for more details.
             </p>
             <p>
               Please apply using the button below before{" "}
-              <b>September 18th 2025, 11:59pm PT</b>. Please note you must be a{" "}
+              <b>April 2 2026, 11:59AM PT</b>. Please note you must be a{" "}
               <b>UBC Vancouver student</b>, and may only apply to{" "}
               <b>one program</b>.
             </p>
             <p>
               <LinkButton
-                link="https://forms.gle/kMpGzKJRmLn6T7qJ7"
+                link="https://forms.gle/WgYVF2Wg5UApthin8"
                 target="_blank"
-                text="Access the 2025 WestPeak Research Association Application Form"
+                text="Access the 2026-2027 WestPeak Research Association Application Form"
               />
             </p>
             <p>
-              For a more in depth overview of our programs and to meet the team,
+              For a more in-depth overview of our programs and to meet the team,
               we encourage you to attend our upcoming information
               session:
               <ul>
                 <li>
-                  <a href="https://forms.gle/SxJs5g3KN47JkW6w9" target="_blank">
-                    <b>September 12, 7:00pm PT, In Person</b>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGQ1fXnCcYcdomKLaekAj8hkp0in-XI86erFIOVsTo_LK4FQ/viewform?usp=publish-editor" target="_blank">
+                    <b>April 1, 6:00PM PT</b>
                   </a>
                 </li>
               </ul>
@@ -58,7 +58,7 @@ function HiringOpen() {
           />
         </div>
       </FadeInBox>
-      <FadeInBox>
+      {/* <FadeInBox>
         <div className={section}>
         <StaticImage
             alt="group"
@@ -68,20 +68,20 @@ function HiringOpen() {
           <div className={content}>
             <h3>Timeline</h3>
             <ul>
-              <li>September 2: Information Session 1 Online, 7:00pm PT</li>
-              <li>September 2: Applications Open</li>
-              <li>September 12: Information Session 2 In Person, 7:00pm PT</li>
-              <li>September 18: Applications Close, 11:59pm PT</li>
-              <li>
-                September 20-21: Successful candidates will be contacted for
-                interviews
-              </li>
+              <li>March 29: Applications Open</li>
+              <li>April 1: Information Session, 6:30pm PT</li>
+              <li>April 2: Applications Close, 5:00pm PT</li>
             </ul>
           </div>
         </div>
-      </FadeInBox>
+      </FadeInBox> */}
       <FadeInBox>
         <div className={section}>
+            <StaticImage
+            alt="discussion"
+            className={image}
+            src="images/media_hiring_discussion.jpg"
+          />
           <div className={content}>
             <h3>WHAT WE LOOK FOR</h3>
             <p>
@@ -95,20 +95,10 @@ function HiringOpen() {
               to apply.
             </p>
           </div>
-          <StaticImage
-            alt="discussion"
-            className={image}
-            src="images/media_hiring_discussion.jpg"
-          />
         </div>
       </FadeInBox>
       <FadeInBox>
         <div className={section}>
-          <StaticImage
-            alt="computer"
-            className={imageLeft}
-            src="images/media_hiring_computer.jpg"
-          />
           <div className={content}>
             <h3>WHAT WE OFFER</h3>
             <p>
@@ -124,6 +114,11 @@ function HiringOpen() {
               management, wealth management, and more.
             </p>
           </div>
+          <StaticImage
+            alt="computer"
+            className={imageLeft}
+            src="images/media_hiring_computer.jpg"
+          />
         </div>
       </FadeInBox>
     </div>
