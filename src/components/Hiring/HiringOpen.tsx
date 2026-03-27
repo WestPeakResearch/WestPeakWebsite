@@ -27,7 +27,7 @@ function HiringOpen() {
             </p>
             <p>
               Please apply using the button below before{" "}
-              <b>April 2nd 2025, 11:59am PT</b>. Please note you must be a{" "}
+              <b>April 2nd 2026, 11:59am PT</b>. Please note you must be a{" "}
               <b>UBC Vancouver student</b>, and may only apply to{" "}
               <b>one program</b>.
             </p>

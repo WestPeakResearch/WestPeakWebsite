@@ -19,12 +19,12 @@ function HiringUpcoming() {
             <h3>HOW TO APPLY</h3>
             <p>
               The link to the application will be available at this page on
-              March 28, 2025 until April 2, 2025.
+              March 27, 2026 until April 2, 2026.
             </p>
             <p>
               We offer a <b>Junior Analyst</b> program and a{" "}
               <b>Senior Analyst</b> program. Please refer to our{" "}
-              <a href="WPRA_Hiring_Package_2025.pdf" target="_blank">
+              <a href="WPRA_Hiring_Package_2026.pdf" target="_blank">
                 <b>Hiring Package </b>
               </a>
               for more details on each.
