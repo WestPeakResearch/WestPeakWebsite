@@ -27,7 +27,7 @@ function HiringOpen() {
             </p>
             <p>
               Please apply using the button below before{" "}
-              <b>April 2nd 2026, 11:59am PT</b>. Please note you must be a{" "}
+              <b>April 2 2026, 11:59AM PT</b>. Please note you must be a{" "}
               <b>UBC Vancouver student</b>, and may only apply to{" "}
               <b>one program</b>.
             </p>
@@ -35,17 +35,17 @@ function HiringOpen() {
               <LinkButton
                 link="https://forms.gle/WgYVF2Wg5UApthin8"
                 target="_blank"
-                text="Access the 2026 WestPeak Research Association Application Form"
+                text="Access the 2026-2027 WestPeak Research Association Application Form"
               />
             </p>
             <p>
-              For a more in depth overview of our programs and to meet the team,
+              For a more in-depth overview of our programs and to meet the team,
               we encourage you to attend our upcoming information
               session:
               <ul>
                 <li>
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLSeGQ1fXnCcYcdomKLaekAj8hkp0in-XI86erFIOVsTo_LK4FQ/viewform?usp=publish-editor" target="_blank">
-                    <b>April 1, 6:30pm PT</b>
+                    <b>April 1, 6:00PM PT</b>
                   </a>
                 </li>
               </ul>
