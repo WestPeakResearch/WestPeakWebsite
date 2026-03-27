@@ -19,7 +19,7 @@ function HiringUpcoming() {
             <h3>HOW TO APPLY</h3>
             <p>
               The link to the application will be available at this page on
-              September 2, 2025 until September 18, 2025.
+              March 28, 2025 until April 2, 2025.
             </p>
             <p>
               We offer a <b>Junior Analyst</b> program and a{" "}
@@ -29,7 +29,7 @@ function HiringUpcoming() {
               </a>
               for more details on each.
             </p>
-            <p>
+            {/* <p>
               For a more in depth overview of our programs and to meet the team,
               we encourage you to attend one of our upcoming information
               sessions:
@@ -43,7 +43,7 @@ function HiringUpcoming() {
                   <b>September 12, 7:00pm PT, In Person</b>
                 </li>
               </ul>
-            </p>
+            </p> */}
           </div>
           <StaticImage
             alt="analysts"
@@ -52,7 +52,7 @@ function HiringUpcoming() {
           />
         </div>
       </FadeInBox>
-      <FadeInBox>
+      {/* <FadeInBox>
         <div className={section}>
           <StaticImage
             alt="group"
@@ -73,9 +73,14 @@ function HiringUpcoming() {
             </ul>
           </div>
         </div>
-      </FadeInBox>
+      </FadeInBox> */}
       <FadeInBox>
         <div className={section}>
+          <StaticImage
+            alt="discussion"
+            className={image}
+            src="images/media_hiring_discussion.jpg"
+          />
           <div className={content}>
             <h3>WHAT WE LOOK FOR</h3>
             <p>
@@ -89,20 +94,10 @@ function HiringUpcoming() {
               to apply.
             </p>
           </div>
-          <StaticImage
-            alt="discussion"
-            className={image}
-            src="images/media_hiring_discussion.jpg"
-          />
         </div>
       </FadeInBox>
       <FadeInBox>
         <div className={section}>
-          <StaticImage
-            alt="computer"
-            className={imageLeft}
-            src="images/media_hiring_computer.jpg"
-          />
           <div className={content}>
             <h3>WHAT WE OFFER</h3>
             <p>
@@ -118,6 +113,11 @@ function HiringUpcoming() {
               management, wealth management, and more.
             </p>
           </div>
+          <StaticImage
+            alt="computer"
+            className={imageLeft}
+            src="images/media_hiring_computer.jpg"
+          />
         </div>
       </FadeInBox>
     </div>
