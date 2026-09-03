@@ -20,25 +20,28 @@ function HiringOpen() {
             <p>
               We offer a <b>Junior Analyst</b> program and a{" "}
               <b>Senior Analyst</b> program. Please refer to our{" "}
-              <a href="WPRA_Hiring_Package_2026.pdf" target="_blank">
+              <a href="WPRA_Hiring_Package_2026_Fall.pdf" target="_blank">
                 <b>Hiring Package </b>
               </a>
               for more details.
             </p>
             <p>
               Please apply using the button below before{" "}
-              <b>April 2 2026, 11:59AM PT</b>. Please note you must be a{" "}
+              <b>September 24th, 11:59AM PT</b>. Please note you must be a{" "}
               <b>UBC Vancouver student</b>, and may only apply to{" "}
               <b>one program</b>.
             </p>
             <p>
+                Please note that applications will be reviewed on a rolling basis.
+            </p>
+            <p>
               <LinkButton
-                link="https://forms.gle/WgYVF2Wg5UApthin8"
+                link="https://forms.gle/x8ySk2pxjq9Pfv3g6"
                 target="_blank"
                 text="Access the 2026-2027 WestPeak Research Association Application Form"
               />
             </p>
-            <p>
+            {/* <p>
               For a more in-depth overview of our programs and to meet the team,
               we encourage you to attend our upcoming information
               session:
@@ -49,7 +52,7 @@ function HiringOpen() {
                   </a>
                 </li>
               </ul>
-            </p>
+            </p> */}
           </div>
           <StaticImage
             alt="analysts"
