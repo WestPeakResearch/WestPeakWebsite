@@ -14,7 +14,7 @@ const IndustryMentorshipFormPage = () => (
         <>
           <h2>Industry Mentorship Form</h2>
           <p>
-            To indicate interest in becoming a mentor for the 2025-2026 academic
+            To indicate interest in becoming a mentor for the 2026-2027 academic
             year, please fill out the form below.
           </p>
         </>
@@ -44,13 +44,19 @@ const IndustryMentorshipFormPage = () => (
           label: "Areas of Expertise",
           required: false,
           options: [
-            { value: "private_equity", label: "Private Equity" },
             { value: "investment_banking", label: "Investment Banking" },
-            { value: "public_equities", label: "Public Equities" },
+            { value: "equity_research", label: "Equity Research (Sell-side)" },
+            { value: "sales_and_trading", label: "Sales and Trading" },
+            { value: "private_equity", label: "Private Equity" },
+            { value: "asset_management", label: "Asset Management" },
             { value: "corporate_banking", label: "Corporate Banking" },
-            { value: "s_n_t", label: "S&T" },
+            { value: "quantitative_finance", label: "Quantitative Finance" },
+            { value: "private_credit", label: "Private Credit" },
             { value: "venture_capital", label: "Venture Capital" },
-            { value: "corporate_development", label: "Corporate Development" },
+            { value: "infrastructure_investing", label: "Infrastructure Investing" },
+            { value: "public_equities", label: "Public Equities (Buy-Side)" },
+            { value: "growth_equity", label: "Growth Equity" },
+            { value: "public_credit", label: "Public Credit" },
             { value: "other", label: "Other" },
           ],
         },

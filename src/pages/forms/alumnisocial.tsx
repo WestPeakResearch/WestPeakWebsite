@@ -15,8 +15,8 @@ const AlumniSocialFormPage = () => (
           <h2>WestPeak Alumni Cocktail Reception RSVP</h2>
           <p>
             Please fill out the form below to RSVP for our upcoming WestPeak
-            Alumni Cocktail Reception in Downtown Toronto on November 13th at
-            7:00 PM ET.
+            Alumni Cocktail Reception in Downtown Toronto on November 12th.
+            Emails will be sent out when details are confirmed.
           </p>
         </>
       }
