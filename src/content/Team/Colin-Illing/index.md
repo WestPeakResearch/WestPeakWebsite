@@ -1,7 +1,7 @@
 ---
 type: "team"
 name: "Colin Illing"
-degree: "Bachelor of Commerce - Finance | Year 3"
+degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of Natural Resources"
 management: "False"
 research: ["BIR_Colin_Illing.pdf","SMPL_Colin_Illing.pdf"]
