@@ -8,9 +8,6 @@ research: ["BIR_Colin_Illing.pdf","SMPL_Colin_Illing.pdf"]
 headshot: Colin_Illing.jpeg
 ---
 
-Colin is a fourth-year Commerce student, specializing in finance. WestPeak offers a platform for him to continue exploring his interest in capital markets and learning from peers.
+Colin is a fourth-year Finance student at UBC’s Sauder School of Business. This past summer, he worked in investment banking with RBC Capital Markets’ Energy team in Calgary, where he’ll be returning full-time after graduation in July 2027. 
 
-Colin completed an internship with Brookfield Properties this past summer on their Asset Management team, and will be joining RBC Capital Markets in 2026 for an Investment Banking internship.
-
-Outside of academics and work, he’s passionate about running, basketball, and travelling with friends and family.
-
+Outside of school and work, Colin enjoys running and weightlifting, and is currently training for the Victoria Half Ironman in May. He also enjoys travelling and watching movies.

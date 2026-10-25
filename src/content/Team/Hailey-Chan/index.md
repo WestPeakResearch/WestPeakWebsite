@@ -8,5 +8,8 @@ research: []
 headshot: Hailey_Chan.jpg
 ---
 
-I am a second-year international economics student. I interned at Invest HK over the summer.
+Hailey is a second year International Economics student. She joined WestPeak hoping to deepen her passion in finance and meet like-minded peers at UBC.
 
+This past summer, Hailey completed an internship at Invest HK.
+
+Outside of school, Hailey enjoys playing tennis and listening to music.
