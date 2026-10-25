@@ -12,4 +12,4 @@ Nathan is a third-year Science student specializing in Computer Science and Math
 
 Nathan is currently a developer at MDA Space, working to bolster Canada's largest space and defence company.
 
-Outside of school, Nathan enjoys playing the piano and skating.
+Outside of school, Nathan enjoys playing the piano and skating. 
