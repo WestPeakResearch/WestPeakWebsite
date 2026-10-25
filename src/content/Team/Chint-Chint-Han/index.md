@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
 research: []
-headshot: empty.jpg
+headshot: Chint_Chint_Han.jpg
 ---
 
 Chint Chint is a first-year Commerce student. At WestPeak, he's looking forward to building his foundation in capital markets and equity research while connecting with like-minded peers at UBC.

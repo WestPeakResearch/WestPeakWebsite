@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - Finance | Year 3"
 position: "Senior Analyst"
 management: "False"
 research: []
-headshot: empty.jpg
+headshot: Adam_Chu.png
 ---
 
 Adam is a third-year Bachelor of Commerce student specializing in Finance. Through his involvement with WestPeak, he has explored his interest in the mining sector, while deepening his network with peers and mentors.  

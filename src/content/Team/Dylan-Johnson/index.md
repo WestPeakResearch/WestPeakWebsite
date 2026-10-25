@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - General | Year 1"
 position: "Junior Analyst"
 management: "False"
 research: []
-headshot: empty.jpg
+headshot: Dylan_Johnson.jpg
 ---
 
 Dylan is a first-year Commerce student intending to specialize in Finance. He joined WestPeak to develop a deep understanding of financial markets and equity research while immersing himself in a community of equally passionate and driven individuals. He is especially interested in areas of asset management and equity research.
