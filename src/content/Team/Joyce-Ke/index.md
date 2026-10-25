@@ -5,7 +5,7 @@ degree: "Bachelor of Commerce - General | Year 4"
 position: "Vice-President"
 management: "True"
 research: ["AMD_Joyce_Ke.pdf"]
-headshot: Joyce_Ke.jpg
+headshot: Joyce_Ke.jpeg
 ---
 
 Joyce is a fourth-year Commerce student specializing in Finance. Through her involvement with WestPeak, she has developed a strong foundation in capital markets and equity research while building lasting connections with like-minded peers.

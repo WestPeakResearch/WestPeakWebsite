@@ -1,11 +1,11 @@
 ---
 type: "team"
 name: "Colin Illing"
-degree: "Bachelor of Commerce - Finance | Year 3"
+degree: "Bachelor of Commerce - Finance | Year 4"
 position: "Head of Natural Resources"
 management: "False"
 research: ["BIR_Colin_Illing.pdf","SMPL_Colin_Illing.pdf"]
-headshot: Colin_Illing.jpg
+headshot: Colin_Illing.jpeg
 ---
 
 Colin is a fourth-year Commerce student, specializing in finance. WestPeak offers a platform for him to continue exploring his interest in capital markets and learning from peers.
